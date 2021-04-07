@@ -3,6 +3,7 @@
     background: #419be0;
 }
   
-.slick-slide img {
+.slick-slide img, .slick-slide h3 {
     margin: auto;
+    max-width: 500px;
 }
