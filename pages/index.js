@@ -10,7 +10,7 @@ export default function Home() {
     <div>
         <Header/>
         <h1>Start Asian Love</h1>
-        <div><Carousel/></div>
+        <Carousel/>
     </div>
     
   )
