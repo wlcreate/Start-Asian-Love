@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styles from '../styles/Carousel.module.css'
 
 
 const Carousel = () => {
@@ -12,7 +13,7 @@ const Carousel = () => {
     slidesToScroll: 1
   };
   return (
-      <div>
+      <div className={styles.container}> 
         <Slider {...settings}>
             <div>
                 <img src="https://images.unsplash.com/photo-1616170969412-d66071bb2da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE3NzQ1NjE4&ixlib=rb-1.2.1&q=80&w=1080"/>
