@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Carousel from '../components/Carousel.js'
+import VideoPlayer from '../components/VideoPlayer.js'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <Header/>
         <h1>Start Asian Love</h1>
         <Carousel/>
-        
+        <VideoPlayer />
     </div>
   )
 }
