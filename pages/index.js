@@ -9,8 +9,8 @@ export default function Home() {
         <Header/>
         <h1>Start Asian Love</h1>
         <Carousel/>
+        
     </div>
-    
   )
 }
 
