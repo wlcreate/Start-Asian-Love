@@ -5,7 +5,7 @@ const VideoPlayer = () => {
     return (
         <div className={styles["player-wrapper"]}>
             <ReactPlayer 
-                url='https://www.youtube.com/playlist?list=PLogRWNZ498ETeQNYrOlqikEML3bKJcdcx'
+                url='https://www.youtube.com/playlist?list=PLL9IeepyId7qhVcWFLrXFC0BIKEe6eM5i'
                 // playing={true} // if do not have controls, allows user to play/pause
                 controls={true} // for native player controls
                 // light={true} // just shows video thumbnail and loads full player on click
