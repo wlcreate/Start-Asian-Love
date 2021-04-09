@@ -1,8 +1,10 @@
 ## Description
 
-<!-- include the related issue number, what you changed, why you chose this approach, and resources (if any) you used -->
+<!-- If merging to main, write "closes" followed by the issue # -->
 
-This PR resolves issue number: 
+Related Issue: 
+
+<!-- Include the related issue number, what you changed, why you chose this approach, and resources (if any) you used -->
 
 Resources:
 
@@ -36,11 +38,11 @@ Please check all that apply:
 
 ### Before
 
-<!-- If UI feature, take provide screenshots -->
+<!-- If UI feature, provide screenshots or gifs -->
 
 ### After
 
-<!-- If UI feature, take provide screenshots -->
+<!-- If UI feature, provide screenshots or gifs -->
 
 ## Testing Steps / QA Criteria
 
