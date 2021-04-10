@@ -1,0 +1,25 @@
+/* Container puts the title div and link divs side by side*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 0.5rem;
+}
+
+.main div {
+  margin: 25px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+/* header links stack below Start Asian Love title when resized */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
