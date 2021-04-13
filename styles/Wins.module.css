@@ -1,0 +1,16 @@
+.container {
+}
+
+.main {
+  text-align: center;
+  outline: 2px dashed red;
+}
+
+.content {
+  height: calc(100% - 100px);
+  padding: 1em;
+  font-size: 2em;
+}
+
+/* Pinning a header or footer according to height of middle content
+https://codepen.io/jdsteinbach/pen/YPPegq */
