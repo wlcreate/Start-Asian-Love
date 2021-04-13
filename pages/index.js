@@ -1,16 +1,18 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Header from '../components/header'
+import { Header } from '../components/header'
+// import Header from '../components/header'
 import Carousel from '../components/Carousel.js'
 import VideoPlayer from '../components/VideoPlayer.js'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
     <div>
         <Header/>
-        <h1>Start Asian Love</h1>
+        {/* <h1>Start Asian Love</h1> */}
         <Carousel/>
-        <div>
+        <div className={styles.content}>
           <p>
             Since the beginning of the pandemic there has been an increase in the number of hate incidents and crimes against Asian Americans. While some have been prosecuted as hate crimes, others have not because it’s hard to prove racist intent. Then there are incidents that have not resulted in official charges at all, such as verbal harassment or coughing/spitting.
           </p>
@@ -38,6 +40,7 @@ export default function Home() {
           </p>
         </div>
         <VideoPlayer />
+        <Footer/>
     </div>
     
   )

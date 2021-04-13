@@ -21,7 +21,7 @@ const Carousel = () => {
       <div className={styles.container}> 
         <Slider {...settings}>
             <div className={styles["slick-slide"]}>
-                <img src="https://images.unsplash.com/photo-1616170969412-d66071bb2da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE3NzQ1NjE4&ixlib=rb-1.2.1&q=80&w=1080"/>
+                <img src="/image01.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
                 <h3>
@@ -32,7 +32,7 @@ const Carousel = () => {
                 </h3>
             </div>
             <div className={styles["slick-slide"]}>
-                <img src="https://images.unsplash.com/photo-1617127894864-e0a367f148e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE3NTQ2OTk4&ixlib=rb-1.2.1&q=80&w=1080"/>
+                <img src="/image02.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
                 <h3>
@@ -43,7 +43,7 @@ const Carousel = () => {
                 </h3>
             </div>
             <div className={styles["slick-slide"]}>
-            <img src="https://images.unsplash.com/photo-1616606321933-6d410f975e3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE3NzQyMjc4&ixlib=rb-1.2.1&q=80&w=1080"/>
+            <img src="/image03.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
                 <h3>
