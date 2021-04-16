@@ -17,7 +17,7 @@ export default function Support() {
       return;
     }
 
-    const filteredResources = resourcesData.filter(resource => resource.category === buttonCategory);
+    const filteredResources = resourcesData.filter(resource => resource.category[0] === buttonCategory || resource.category[1] === buttonCategory);
     setResourcesList(filteredResources)
   }
 
