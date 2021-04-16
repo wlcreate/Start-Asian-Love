@@ -1,7 +1,7 @@
 import styles from '../styles/AllyshipList.module.css';
 import resourcesData from '../SupportResources.js';
 
-const CategoryList = ({filter}) => {
+const CategoryList = ({filterResourcesByCategory}) => {
     const getCategories = (information) => {
         // information.map(info => info.category)
         
@@ -24,7 +24,7 @@ const CategoryList = ({filter}) => {
             <h1>Filter by Category</h1>
              {
                 allCategories.map((category, i)=>{
-                    return <button type="button" onClick={()=> filter(category)} key={i}>{category}</button>
+                    return <button type="button" onClick={()=> filterResourcesByCategory(category)} key={i}>{category}</button>
                 })
             }
         </div>

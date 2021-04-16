@@ -10,7 +10,18 @@ import resourcesData from '../SupportResources.js';
 export default function Support() {
   const [resourcesList, setResourcesList] = useState(resourcesData);
 
-  const filter = (buttonCategory) =>{
+  const filterResourcesByAllyship = (allyship) =>{
+
+    if(allyship === 'anyone'){
+      setResourcesList(resourcesData);
+      return;
+    }
+
+    const filteredResources = resourcesData.filter(resource => resource.category[0] === buttonCategory || resource.category[1] === buttonCategory);
+    setResourcesList(filteredResources)
+  }
+
+  const filterResourcesByCategory = (buttonCategory) =>{
 
     if(buttonCategory === 'All'){
       setResourcesList(resourcesData);
@@ -33,7 +44,7 @@ console.log(resourcesList)
         <h2>I am the Support Page</h2>
       </div>
       <Allyship/>
-      <CategoryList filter={filter}/>
+      <CategoryList filterResourcesByCategory={filterResourcesByCategory}/>
       <Resources resourcesList={resourcesList}/>
       <div className={styles.content}>
           
