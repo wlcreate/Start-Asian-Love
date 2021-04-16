@@ -13,6 +13,7 @@ export const Resources = (props) => {
                             <img src={resource.image} alt="resource title"/>
                             <h2>{resource.title}</h2>
                             <p>{resource.content}</p>
+                            <p>{resource.category}</p>
                         </div>
                     </div>
                 })
