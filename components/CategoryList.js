@@ -1,7 +1,7 @@
 import styles from '../styles/AllyshipList.module.css';
 import resourcesData from '../SupportResources.js';
 
-const CategoryList = (filter) => {
+const CategoryList = ({filter}) => {
     
     const allCategories = ['All', ...new Set(resourcesData.map(resource => resource.category))];
 

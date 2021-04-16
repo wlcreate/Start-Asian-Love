@@ -10,10 +10,9 @@ import resourcesData from '../SupportResources.js';
 export default function Support() {
   const [resourcesList, setResourcesList] = useState(resourcesData);
 
-  console.log(resourcesData)
   const filter = (buttonCategory) =>{
 
-    if(button === 'All'){
+    if(buttonCategory === 'All'){
       setResourcesList(resourcesData);
       return;
     }
@@ -22,7 +21,7 @@ export default function Support() {
     setResourcesList(filteredResources)
   }
 
-
+console.log(resourcesList)
   return (
     <div className={styles.container}>
 
@@ -35,7 +34,7 @@ export default function Support() {
       </div>
       <Allyship/>
       <CategoryList filter={filter}/>
-      <Resources resourcesList={resourcesData}/>
+      <Resources resourcesList={resourcesList}/>
       <div className={styles.content}>
           
       </div>
