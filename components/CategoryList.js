@@ -2,8 +2,21 @@ import styles from '../styles/AllyshipList.module.css';
 import resourcesData from '../SupportResources.js';
 
 const CategoryList = ({filter}) => {
-    
-    const allCategories = ['All', ...new Set(resourcesData.map(resource => resource.category))];
+    const getCategories = (information) => {
+        // information.map(info => info.category)
+        
+        let categories = new Set()
+        for (let i=0; i < information.length; i++ ){
+            categories.add(information[i].category[0])
+            // if (information[i].category > 1){
+            //     categories.add(information[i].category[0])
+            // }
+            // else {categories.add(information[i].category)}
+        }
+        // console.log(categories)
+        return categories
+    }
+    const allCategories = ['All', ...getCategories(resourcesData)];
 
     return (
         <div className={styles.main}>
