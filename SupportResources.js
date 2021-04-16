@@ -1,6 +1,4 @@
 export default [
-    {
-    "resources":[
         {
         "id": 1,
         "title": "Anti Asian Violence Resources",
@@ -379,6 +377,5 @@ export default [
         "allyship": ["asian", "anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618585125/SAL/image42_o2yehc.png"
         }
-    ]
-}
+    
 ]
