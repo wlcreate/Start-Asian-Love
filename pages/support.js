@@ -1,8 +1,28 @@
+import { useState } from 'react';
 import { Header } from '../components/header'
 import { Footer } from '../components/Footer'
+import { Allyship } from '../components/AllyshipList'
+import  CategoryList  from '../components/CategoryList'
+import { Resources } from '../components/Resources'
 import styles from '../styles/Support.module.css';
+import resourcesData from '../SupportResources.js';
 
 export default function Support() {
+  const [resourcesList, setResourcesList] = useState(resourcesData);
+
+  console.log(resourcesData)
+  const filter = (buttonCategory) =>{
+
+    if(button === 'All'){
+      setResourcesList(resourcesData);
+      return;
+    }
+
+    const filteredResources = resourcesData.filter(resource => resource.category === buttonCategory);
+    setResourcesList(filteredResources)
+  }
+
+
   return (
     <div className={styles.container}>
 
@@ -13,10 +33,11 @@ export default function Support() {
       <div className={styles.main}>
         <h2>I am the Support Page</h2>
       </div>
-      
+      <Allyship/>
+      <CategoryList filter={filter}/>
+      <Resources resourcesList={resourcesData}/>
       <div className={styles.content}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit, commodi omnis ab aliquam ea eius corrupti, aspernatur facilis ipsam nihil perferendis asperiores quia consectetur excepturi ducimus laborum, officiis in pariatur deleniti deserunt necessitatibus? Ullam animi adipisci nulla nisi dolore et tempora? Vel quas repellendus alias excepturi quos odit nisi! Et cupiditate minus recusandae architecto ut ea eligendi quidem aspernatur atque nostrum officiis fugiat, dolore, aliquam expedita vel voluptatum earum ab. At labore repellendus odit ad blanditiis nihil laudantium veritatis quam iste, provident tenetur esse ea dolorum libero maxime ex. Doloribus assumenda blanditiis, soluta repudiandae ex ipsum pariatur debitis eum.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit, commodi omnis ab aliquam ea eius corrupti, aspernatur facilis ipsam nihil perferendis asperiores quia consectetur excepturi ducimus laborum, officiis in pariatur deleniti deserunt necessitatibus? Ullam animi adipisci nulla nisi dolore et tempora? Vel quas repellendus alias excepturi quos odit nisi! Et cupiditate minus recusandae architecto ut ea eligendi quidem aspernatur atque nostrum officiis fugiat, dolore, aliquam expedita vel voluptatum earum ab. At labore repellendus odit ad blanditiis nihil laudantium veritatis quam iste, provident tenetur esse ea dolorum libero maxime ex. Doloribus assumenda blanditiis, soluta repudiandae ex ipsum pariatur debitis eum.</p>
+          
       </div>
       
 
