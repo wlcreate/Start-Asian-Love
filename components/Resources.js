@@ -1,4 +1,4 @@
-import styles from '../styles/AllyshipList.module.css';
+import styles from '../styles/Resources.module.css';
 
 export const Resources = (props) => {
     const {resourcesList} = props
@@ -9,8 +9,8 @@ export const Resources = (props) => {
             {
                 resourcesList.map((resource) =>{
                     return <div className="resource-container" key={resource.id}>
-                        <div className="resource-card">
-                            <img src={resource.image} alt="resource title"/>
+                        <div className={styles["resource-container"]}>
+                            <img className={styles.image} src={resource.image} alt="resource title"/>
                             <h2>{resource.title}</h2>
                             <p>{resource.content}</p>
                             <p>{resource.category}</p>
