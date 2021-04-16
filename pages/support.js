@@ -13,25 +13,15 @@ export default function Support() {
   const [category, setCategory] = useState("All")
 
   const changeAllyship = (chosenAllyship) => {
+    console.log("chosenAllyship: ", chosenAllyship)
     setAllyship(chosenAllyship)
   }
 
   const changeCategory = (chosenCategory) => {
+    console.log("chosenCategory: ", chosenCategory)
     setCategory(chosenCategory)
   }
 
-  const filterResourcesByCategory = (buttonCategory) =>{
-
-    if(buttonCategory === 'All'){
-      setResourcesList(resourcesData);
-      return;
-    }
-
-    const filteredResources = resourcesData.filter(resource => resource.category[0] === buttonCategory || resource.category[1] === buttonCategory);
-    setResourcesList(filteredResources)
-  }
-
-console.log(resourcesList)
   return (
     <div className={styles.container}>
     <Header/>

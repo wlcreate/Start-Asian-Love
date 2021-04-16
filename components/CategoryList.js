@@ -21,7 +21,7 @@ const CategoryList = ({changeCategory}) => {
     return (
         <div className={styles.main}>
             <p>I am the Category Component.</p>
-            <h1>Filter by Category</h1>
+            <h2>Filter by Category</h2>
              {
                 allCategories.map((category, i)=>{
                     return <button type="button" onClick={()=> changeCategory(category)} key={i}>{category}</button>
