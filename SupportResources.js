@@ -217,7 +217,7 @@ export default [
         },
         {
         "id": 25,
-        "title": "Stop Asian Hate: A Toolkit for Addressing Anti-Asian Bias, Discrimination, and Hate",
+        "title": "Stop Asian Hate: A Toolkit",
         "url": "https://www1.nyc.gov/site/cchr/community/stop-asian-hate.page",
         "content": "A toolkit by the NYC Commission on Human Rights in response to the rise of anti-Asian sentiment.",
         "category": ["attacks"],
@@ -231,7 +231,7 @@ export default [
         "content": "Support human rights causes around the world.",
         "category": ["education"],
         "allyship": ["anyone"],
-        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470286/SAL/image26_bfwrrr.png"
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618696622/SAL/image26_ds3iio.png"
         },
         {
         "id": 27,
