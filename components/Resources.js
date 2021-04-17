@@ -4,13 +4,13 @@ export const Resources = ({resourcesList}) => {
 
     return (
         <div className={styles.main}>
-            <p>I am the Resources Component.</p>
-
+            {/* <p>I am the Resources Component.</p> */}
+            
             {
                 resourcesList.length > 0
                 ?
                 resourcesList.map((resource) =>{
-                    return <div className={styles.main} key={resource.id}>
+                    return <div className={styles.card} key={resource.id}>
                         <div className={styles["resource-container"]}>
                             <img className={styles.image} src={resource.image} alt="resource title"/>
                             <h2>{resource.title}</h2>
@@ -22,7 +22,9 @@ export const Resources = ({resourcesList}) => {
                 })
                 :
                 <p>Sorry! No resources yet!</p>
+
             }
+            
         </div>
     )
 }
