@@ -1,35 +1,29 @@
 .main {
   margin: 60px auto;
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  align-items: stretch;
-
-  border: 1px solid #2d2d2d;
-
-  /* grid-auto-rows: auto; */
-  /* grid-template-columns: repeat(auto-fill, minmax(375px, 1fr)); */
+  grid-gap: 1.5em;
+  /* border: 1px solid #2d2d2d; */
+  margin-bottom: 5em;
 }
 
 .card {
-  width: 370px;
+  width: 450px;
   height: auto;
   margin-bottom: 5px;
-  padding: 20px;
+  padding: 15px;
   border-bottom: 1px solid black;
   cursor: pointer;
   border: 1px solid lightgray;
   border-radius: 5px;
   background-color: white;
   line-height: 1.5;
-  box-shadow: 4px 4px 16px #adadad;
+  box-shadow: 4px 4px 16px #cccccc;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.card {
   transition: all 0.2s ease-in-out;
+
+  position: relative;
 }
 
 .card:hover {
@@ -40,8 +34,12 @@
   width: 100%;
 }
 
+.titlebox {
+  height: 1.75em;
+}
+
 .card h2 {
-  font-size: 0.65em;
+  font-size: 0.7em;
   color: #000000;
   text-align: justify;
   text-justify: inter-word;
@@ -52,9 +50,56 @@
 }
 
 .content {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .cardtext {
-  top: 60%;
+  font-size: 0.9em;
+  padding-bottom: 0.75em;
+}
+
+.cardbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  padding-top: 2em;
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: rgb(204, 201, 201);
+  font-variant: small-caps;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+@media (max-width: 1330px) {
+  .main {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .main {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .post {
+    width: 350px;
+  }
 }

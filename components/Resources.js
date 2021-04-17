@@ -11,21 +11,25 @@ export const Resources = ({resourcesList}) => {
                 ?
                 resourcesList.map((resource) =>{
                     return <div className={styles.card} key={resource.id}>
-                        <div>
+                        <div onClick={() => window.open(resource.url,'_blank')}>
                             <img className={styles.image} src={resource.image} alt="resource title"/>
-                            <h2>{resource.title}</h2>
-                            <div className={styles.cardtext}>
+                            <div className={styles.titlebox}><h2>{resource.title}</h2></div>
+                            <p className={styles.cardtext}>
                             <p className={styles.content}>{resource.content}</p>
-                            <p className={styles.category}>{resource.category[0]}</p>
-                            <p className={styles.category}>{resource.category[1]}</p>
+                            <div className={styles.cardbottom}>
+                                {/* Should categories at bottom of cards be clickable? */}
+                                <div><p>{resource.category[0]}</p></div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <div><p>{resource.category[1]}</p></div>
                             </div>
+                            </p>
                         </div>
                     </div>
                 })
                 :
                 <p>Sorry! No resources yet!</p>
-
             }
+            <br></br>
             </div>
         </div>
     )
