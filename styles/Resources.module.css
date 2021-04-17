@@ -3,9 +3,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
+  outline: red;
 }
 
-.post {
+.card {
   width: 400px;
   height: auto;
   margin-bottom: 5px;
@@ -24,19 +25,19 @@
   text-justify: inter-word;
 }
 
-.post {
+.card {
   transition: all 0.2s ease-in-out;
 }
 
-.post:hover {
+.card:hover {
   transform: scale(1.03);
 }
 
 .image {
-  width: 200px;
+  width: 100%;
 }
 
-.post h1 {
+.card h1 {
   font-size: 1.15em;
   color: #083357;
   text-align: justify;
