@@ -13,13 +13,58 @@ export default function Support() {
   const [category, setCategory] = useState("All")
 
   const changeAllyship = (chosenAllyship) => {
-    console.log("chosenAllyship: ", chosenAllyship)
+    // console.log("chosenAllyship: ", chosenAllyship)
     setAllyship(chosenAllyship)
   }
 
   const changeCategory = (chosenCategory) => {
-    console.log("chosenCategory: ", chosenCategory)
+    // console.log("chosenCategory: ", chosenCategory)
     setCategory(chosenCategory)
+  }
+
+  const filterResources = () =>{
+    if (allyship === "anyone" && category === "All") {
+      return resourcesData
+    } else if (allyship === "anyone" && category !== "All") {
+      let filteredResourcesByCategory = resourcesData.filter(resource => {
+        return resource.category[0] === category || resource.category[1] === category
+      })
+
+      return filteredResourcesByCategory
+    } else if (allyship === "asian" && category === "All") {
+      let filteredResourcesByAllyship = resourcesData.filter(resource => {
+        return resource.allyship[0] === "asian" || resource.allyship[1] === "asian"
+      });
+
+      return filteredResourcesByAllyship
+    } else if (allyship === "asian" && category !== "All") {
+      let filteredResourcesByAllyship = resourcesData.filter(resource => {
+        return resource.allyship[0] === "asian" || resource.allyship[1] === "asian"
+      });
+
+      let filteredResourcesByCategory = filteredResourcesByAllyship.filter(resource => {
+        return resource.category[0] === category || resource.category[1] === category
+      })
+
+      return filteredResourcesByCategory
+    } else if (allyship === "bipoc" && category === "All") {
+      let filteredResourcesByAllyship = resourcesData.filter(resource => {
+        return resource.allyship[0] === "bipoc" || resource.allyship[1] === "bipoc"
+      });
+
+      return filteredResourcesByAllyship
+    } else if (allyship === "bipoc" && category !== "All") {
+      let filteredResourcesByAllyship = resourcesData.filter(resource => {
+        return resource.allyship[0] === "bipoc" || resource.allyship[1] === "bipoc"
+      });
+
+      let filteredResourcesByCategory = filteredResourcesByAllyship.filter(resource => {
+        return resource.category[0] === category || resource.category[1] === category
+      })
+      return filteredResourcesByCategory
+    }
+    
+    // setResourcesList(filteredResources)
   }
 
   return (
@@ -30,9 +75,9 @@ export default function Support() {
         <h2>I am the Support Page</h2>
       </div>
       <div className={styles.content}>
-        <Allyship changeAllyship={changeAllyship}/>
-        <CategoryList changeCategory={changeCategory}/>
-        <Resources resourcesList={resourcesList}/>
+        <Allyship currentAllyship={allyship} changeAllyship={changeAllyship}/>
+        <CategoryList currentCategory={category} changeCategory={changeCategory}/>
+        <Resources resourcesList={filterResources()}/>
       </div>
       
     <Footer/>

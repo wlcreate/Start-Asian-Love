@@ -1,24 +1,26 @@
 import styles from '../styles/AllyshipList.module.css';
 import resourcesData from '../SupportResources.js';
 
-export const Allyship = ({changeAllyship}) => {
+export const Allyship = ({currentAllyship, changeAllyship}) => {
 
     const getAllyships = (information) => {
         let allyships = new Set()
 
         for (let i=0; i < information.length; i++ ){
             allyships.add(information[i].allyship[0])
-            
+            // console.log("information[i].allyship: ", information[i].allyship)
+            // console.log("information[i].allyship[0]: ", information[i].allyship[0])
         }
 
         return allyships
     }
 
-    const allAllyships = ['All', ...getAllyships(resourcesData)];
+    const allAllyships = [...getAllyships(resourcesData)];
     
     return (
         <div className={styles.main}>
             <p>I am the Allyship Component.</p>
+            <p>Current Allyship: {currentAllyship}</p>
             <h2>Who are these resources for?</h2>
             {/* <button onClick={()=> changeAllyship("anyone")}>Everyone</button>
             <button onClick={()=> changeAllyship("asian")}>Asian/AAPI</button>
