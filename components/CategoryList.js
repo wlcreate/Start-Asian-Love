@@ -1,11 +1,12 @@
 import styles from '../styles/AllyshipList.module.css';
 import resourcesData from '../SupportResources.js';
 
-const CategoryList = ({changeCategory}) => {
+const CategoryList = ({currentCategory, changeCategory}) => {
     const getCategories = (information) => {
         // information.map(info => info.category)
         
         let categories = new Set()
+        
         for (let i=0; i < information.length; i++ ){
             categories.add(information[i].category[0])
             // if (information[i].category > 1){
@@ -13,16 +14,18 @@ const CategoryList = ({changeCategory}) => {
             // }
             // else {categories.add(information[i].category)}
         }
-        // console.log(categories)
+
         return categories
     }
+
     const allCategories = ['All', ...getCategories(resourcesData)];
 
     return (
         <div className={styles.main}>
             <p>I am the Category Component.</p>
+            <p>Category selected: {currentCategory}</p>
             <h2>Filter by Category</h2>
-             {
+            {
                 allCategories.map((category, i)=>{
                     return <button type="button" onClick={()=> changeCategory(category)} key={i}>{category}</button>
                 })

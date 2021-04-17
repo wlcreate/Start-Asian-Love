@@ -2,11 +2,14 @@ import styles from '../styles/Resources.module.css';
 
 export const Resources = (props) => {
     const {resourcesList} = props
+
     return (
         <div className={styles.main}>
             <p>I am the Resources Component.</p>
 
             {
+                resourcesList.length > 0
+                ?
                 resourcesList.map((resource) =>{
                     return <div className="resource-container" key={resource.id}>
                         <div className={styles["resource-container"]}>
@@ -17,6 +20,8 @@ export const Resources = (props) => {
                         </div>
                     </div>
                 })
+                :
+                <p>Sorry! No resources yet!</p>
             }
         </div>
     )
