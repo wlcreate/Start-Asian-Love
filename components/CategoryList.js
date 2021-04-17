@@ -6,7 +6,7 @@ const CategoryList = ({currentCategory, changeCategory}) => {
         // information.map(info => info.category)
         
         let categories = new Set()
-        
+
         for (let i=0; i < information.length; i++ ){
             categories.add(information[i].category[0])
             // if (information[i].category > 1){
@@ -23,11 +23,11 @@ const CategoryList = ({currentCategory, changeCategory}) => {
     return (
         <div className={styles.main}>
             <p>I am the Category Component.</p>
-            <p>Category selected: {currentCategory}</p>
+            <p>Category selected: {currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1)}</p>
             <h2>Filter by Category</h2>
             {
                 allCategories.map((category, i)=>{
-                    return <button type="button" onClick={()=> changeCategory(category)} key={i}>{category}</button>
+                    return <button type="button" onClick={()=> changeCategory(category)} key={i}>{category.charAt(0).toUpperCase() + category.slice(1)}</button>
                 })
             }
         </div>

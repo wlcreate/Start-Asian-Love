@@ -16,7 +16,8 @@ export const Resources = (props) => {
                             <img className={styles.image} src={resource.image} alt="resource title"/>
                             <h2>{resource.title}</h2>
                             <p>{resource.content}</p>
-                            <p>{resource.category}</p>
+                            <p>{resource.category[0]}</p>
+                            <p>{resource.category[1]}</p>
                         </div>
                     </div>
                 })
