@@ -1,4 +1,4 @@
-.resource-container {
+.main {
   margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
