@@ -1,7 +1,6 @@
 import styles from '../styles/Resources.module.css';
 
-export const Resources = (props) => {
-    const {resourcesList} = props
+export const Resources = ({resourcesList}) => {
 
     return (
         <div className={styles.main}>
