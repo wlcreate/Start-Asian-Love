@@ -10,7 +10,7 @@ export const Resources = ({resourcesList}) => {
                 resourcesList.length > 0
                 ?
                 resourcesList.map((resource) =>{
-                    return <div className="resource-container" key={resource.id}>
+                    return <div className={styles.main} key={resource.id}>
                         <div className={styles["resource-container"]}>
                             <img className={styles.image} src={resource.image} alt="resource title"/>
                             <h2>{resource.title}</h2>
