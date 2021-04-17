@@ -1,26 +1,29 @@
 .main {
   margin: 60px auto;
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
-  outline: red;
+  grid-gap: 1em;
+  align-items: stretch;
+
+  border: 1px solid #2d2d2d;
+
+  /* grid-auto-rows: auto; */
+  /* grid-template-columns: repeat(auto-fill, minmax(375px, 1fr)); */
 }
 
 .card {
-  width: 400px;
+  width: 370px;
   height: auto;
   margin-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   border-bottom: 1px solid black;
   cursor: pointer;
   border: 1px solid lightgray;
   border-radius: 5px;
   background-color: white;
   line-height: 1.5;
-  box-shadow: 4px 4px 16px #92b7c2;
+  box-shadow: 4px 4px 16px #adadad;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -37,13 +40,21 @@
   width: 100%;
 }
 
-.card h1 {
-  font-size: 1.15em;
-  color: #083357;
+.card h2 {
+  font-size: 0.65em;
+  color: #000000;
   text-align: justify;
   text-justify: inter-word;
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.5px;
   font-family: "Helvetica Neue", sans-serif;
+}
+
+.content {
+  font-size: 0.6em;
+}
+
+.cardtext {
+  top: 60%;
 }

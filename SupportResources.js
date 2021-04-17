@@ -186,7 +186,7 @@ export default [
         "content": "If you or someone you know is thinking about suicide, please call 800-273-8255.",
         "category": ["health"],
         "allyship": ["asian", "anyone"],
-        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470285/SAL/image20_mo8g0j.png"
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470282/SAL/image21_pizhfu.png"
         },
         {
         "id": 22,
