@@ -27,10 +27,10 @@ export const Resources = ({resourcesList}) => {
                     </div>
                 })
                 :
-                <p>Sorry! No resources yet!</p>
+                <div className={styles.sorry}>Sorry! No resources yet!</div>
             }
-            <br></br>
             </div>
+            <br/>
         </div>
     )
 }

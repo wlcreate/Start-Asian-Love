@@ -77,12 +77,21 @@ export default function Support() {
       <div className={styles.content}>
         <Allyship currentAllyship={allyship} changeAllyship={changeAllyship}/>
         <CategoryList currentCategory={category} changeCategory={changeCategory}/>
+
+        <div className={styles.viewing}>
+          <p>Viewing</p>&nbsp;
+          <p className={styles.category}>{category}</p>&nbsp;
+          <p>resources for</p>&nbsp;
+          <p className={styles.allyship}>{allyship}</p>&nbsp;
+          <p>folx.</p>
+        </div>
+
         <Resources resourcesList={filterResources()}/>
       </div>
     
       {/* Commenting out footer due to overlapping issue
       <Footer/> */}
-    
+      
     </div>
 
   );

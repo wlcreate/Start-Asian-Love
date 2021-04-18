@@ -1,4 +1,4 @@
-import styles from '../styles/AllyshipList.module.css';
+import styles from '../styles/CategoryList.module.css';
 import resourcesData from '../SupportResources.js';
 
 const CategoryList = ({currentCategory, changeCategory}) => {
@@ -22,12 +22,12 @@ const CategoryList = ({currentCategory, changeCategory}) => {
 
     return (
         <div className={styles.main}>
-            <p>I am the Category Component.</p>
-            <p>Category selected: {currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1)}</p>
+            {/* <p>I am the Category Component.</p> */}
+            {/* <p>Category selected: {currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1)}</p> */}
             <h2>Filter by Category</h2>
             {
                 allCategories.map((category, i)=>{
-                    return <button type="button" onClick={()=> changeCategory(category)} key={i}>{category.charAt(0).toUpperCase() + category.slice(1)}</button>
+                    return <button className={styles.button} type="button" onClick={()=> changeCategory(category)} key={i}>{category.charAt(0).toUpperCase() + category.slice(1)}</button>
                 })
             }
         </div>
