@@ -19,6 +19,9 @@ export const Allyship = ({currentAllyship, changeAllyship}) => {
     
     return (
         <div className={styles.main}>
+
+            {/* Commenting out lines 25-26 to consolidate current filter in Support.js page (line 83)*/}
+
             {/* <p>I am the Allyship Component.</p> */}
             {/* <p>Current Allyship: {currentAllyship}</p> */}
             <h2>Who are these resources for?</h2>
