@@ -22,6 +22,9 @@ const CategoryList = ({currentCategory, changeCategory}) => {
 
     return (
         <div className={styles.main}>
+
+            {/* Commenting out lines 28-29 to consolidate current filter in Support.js page (line 83)*/}
+
             {/* <p>I am the Category Component.</p> */}
             {/* <p>Category selected: {currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1)}</p> */}
             <h2>Filter by Category</h2>

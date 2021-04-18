@@ -78,6 +78,8 @@ export default function Support() {
         <Allyship currentAllyship={allyship} changeAllyship={changeAllyship}/>
         <CategoryList currentCategory={category} changeCategory={changeCategory}/>
 
+        {/* Created the following div element to consolidate current filtered resources */}
+
         <div className={styles.viewing}>
           <p>Viewing</p>&nbsp;
           <p className={styles.category}>{category}</p>&nbsp;
