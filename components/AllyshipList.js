@@ -19,15 +19,16 @@ export const Allyship = ({currentAllyship, changeAllyship}) => {
     
     return (
         <div className={styles.main}>
-            <p>I am the Allyship Component.</p>
-            <p>Current Allyship: {currentAllyship}</p>
+            {/* <p>I am the Allyship Component.</p> */}
+            {/* <p>Current Allyship: {currentAllyship}</p> */}
             <h2>Who are these resources for?</h2>
             {/* <button onClick={()=> changeAllyship("anyone")}>Everyone</button>
             <button onClick={()=> changeAllyship("asian")}>Asian/AAPI</button>
             <button onClick={()=> changeAllyship("bipoc")}>BIPOC</button> */}
             {
                 allAllyships.map((allyship, i)=>{
-                    return <button type="button" onClick={()=> changeAllyship(allyship)} key={i}>{allyship}</button>
+                    return <button className={styles.button} type="button" onClick={()=> changeAllyship(allyship)} key={i}>{allyship}</button>
+
                 })
             }
         </div>

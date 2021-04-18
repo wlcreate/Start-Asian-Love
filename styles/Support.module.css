@@ -1,4 +1,6 @@
 .container {
+  align-items: center;
+  text-align: center;
 }
 
 .main {
@@ -9,6 +11,20 @@
 .content {
   padding: 1em;
   font-size: 2em;
+}
+
+.viewing p {
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.category {
+  color: rgb(255, 123, 0);
+}
+
+.allyship {
+  color: rgb(255, 123, 0);
 }
 
 /* .content {

@@ -1,0 +1,29 @@
+.button {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.7em;
+  border-radius: 4px;
+  align-items: center;
+  border: none;
+}
+
+.main h2 {
+  font-size: 0.75em;
+}
+
+.button:focus {
+  background-color: rgb(166, 199, 248);
+}
+
+.button:hover {
+  background-color: rgb(206, 222, 248);
+}
+
+.main {
+  margin-top: -30px;
+}
+
+.main p {
+  font-size: 0.75em;
+}
