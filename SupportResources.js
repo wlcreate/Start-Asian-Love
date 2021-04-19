@@ -3,7 +3,7 @@ export default [
         "id": 1,
         "title": "Anti Asian Violence Resources",
         "url": "https://anti-asianviolenceresources.carrd.co/",
-        "content": "A comprehensive list of resources organized by category.",
+        "content": "The latest news and updates, with a comprehensive list of resources organized by category.",
         "category": ["education"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470274/SAL/image01_heryuv.png"
@@ -28,7 +28,7 @@ export default [
         },
         {
         "id": 4,
-        "title": "NAPABA Hate Crimes Task Force and Pro Bono Legal Resources",
+        "title": "Hate Crimes Task Force and Pro Bono Legal Resources",
         "url": "https://www.napaba.org/page/HateCrimeResources&utm_source=homebutton",
         "content": "Pro bono legal resources compiled by the National Asian Pacific American Bar Association.",
         "category": ["rights"],
@@ -48,7 +48,7 @@ export default [
         "id": 6,
         "title": "Stop AAPI Hate",
         "url": "https://stopaapihate.org/",
-        "content": "The reporting center website to track and respond to incidents of hate, harassment, and discrimination against Asian Americans and Pacific Islanders in the United States.",
+        "content": "Report, track, and respond to incidents of hate, harassment, and discrimination against Asian Americans and Pacific Islanders in the United States.",
         "category": ["attacks"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470275/SAL/image06_nigpm5.png"
@@ -109,9 +109,9 @@ export default [
         },
         {
         "id": 13,
-        "title": "GoFundMe - Armed Patrol Security Guards for Oakland Chinatown",
+        "title": "Armed Patrol Security Guards for Oakland Chinatown",
         "url": "https://www.gofundme.com/f/securityforoaklandchinatown?member=8504160&rcid=4202770111234948bcac218ab4a0eb98&sharetype=teams&utm_campaign=p_na+share-sheet&utm_medium=copy_link&utm_source=customer",
-        "content": "GoFundMe page to establish a security patrol for the AAPI citizens in Oakland Chinatown.",
+        "content": "The GoFundMe page to establish a security patrol for the AAPI citizens in Oakland Chinatown.",
         "category": ["financial"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470285/SAL/image13_dyrtkq.png"
@@ -120,7 +120,7 @@ export default [
         "id": 14,
         "title": "Contact Your Representative",
         "url": "https://actionnetwork.org/letters/take-action-against-the-racial-profiling-of-asian-americans-and-asian-immigrants-and-call-for-an-end-to-the-justice-departments-china-initiative",
-        "content": "Send a letter to your representative to end the racial profiling of Asian Americans and Asian immigrants and to end the Justice Department's 'China Initiative.'",
+        "content": "Contact your representative to end the racial profiling of Asian Americans and Asian immigrants and to end the Justice Department's 'China Initiative.'",
         "category": ["rights"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470279/SAL/image14_xluyni.png"
@@ -138,7 +138,7 @@ export default [
         "id": 16,
         "title": "Heart of Dinner",
         "url": "https://www.heartofdinner.org/",
-        "content": "Heart of Dinner is an volunteer-led organization that hand delivers meals to Asian elders in New York City",
+        "content": "Heart of Dinner is an volunteer-led organization that hand delivers meals to Asian elders in New York City.",
         "category": ["volunteer", "financial"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470282/SAL/image16_ac4ori.png"
@@ -147,7 +147,7 @@ export default [
         "id": 17,
         "title": "Stand Against Hatred",
         "url": "https://www.standagainsthatred.org/",
-        "content": "Asian Americans Advancing Justice's Stand Against Hatred website documents hate and aims to educate about the environment of hate around the country.",
+        "content": "The AAJC's Stand Against Hatred website documents hate and aims to educate about the environment of hate around the country.",
         "category": ["attacks"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470282/SAL/image17_wq4rr7.png"
@@ -174,7 +174,7 @@ export default [
         "id": 20,
         "title": "Don't Call the Police",
         "url": "https://dontcallthepolice.com/",
-        "content": "An online directory of local resources available as alternatives to calling the police or 911 when faced with a situation that requires de-escalation and/or intervention, not violence.",
+        "content": "Alternatives to calling the police or 911 when faced with a situation that requires de-escalation and/or intervention, not violence.",
         "category": ["education"],
         "allyship": ["asian", "bipoc"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470285/SAL/image20_mo8g0j.png"
@@ -186,7 +186,7 @@ export default [
         "content": "If you or someone you know is thinking about suicide, please call 800-273-8255.",
         "category": ["health"],
         "allyship": ["asian", "anyone"],
-        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470285/SAL/image20_mo8g0j.png"
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470282/SAL/image21_pizhfu.png"
         },
         {
         "id": 22,
@@ -217,7 +217,7 @@ export default [
         },
         {
         "id": 25,
-        "title": "Stop Asian Hate: A Toolkit for Addressing Anti-Asian Bias, Discrimination, and Hate",
+        "title": "Stop Asian Hate: A Toolkit",
         "url": "https://www1.nyc.gov/site/cchr/community/stop-asian-hate.page",
         "content": "A toolkit by the NYC Commission on Human Rights in response to the rise of anti-Asian sentiment.",
         "category": ["attacks"],
@@ -231,13 +231,13 @@ export default [
         "content": "Support human rights causes around the world.",
         "category": ["education"],
         "allyship": ["anyone"],
-        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470286/SAL/image26_bfwrrr.png"
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618696622/SAL/image26_ds3iio.png"
         },
         {
         "id": 27,
         "title": "Red Canary Song",
         "url": "https://www.redcanarysong.net/",
-        "content": "Red Canary Song is a grassroots collective of Asian and Migrant sex workers, organizing transnationally to provide community, legal protection, and education.",
+        "content": "A grassroots collective of Asian and Migrant sex workers, organizing transnationally to provide community, legal protection, and education.",
         "category": ["rights", "education"],
         "allyship": ["asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470287/SAL/image27_r8qgzi.png"
@@ -246,7 +246,7 @@ export default [
         "id": 28,
         "title": "Asian American Federation",
         "url": "https://www.aafederation.org/",
-        "content": "The Asian American Federation works to advance the pan-Asian American community through research, policy advocacy, public awareness, and nonprofit support in New York.",
+        "content": "Advancing the pan-Asian American community through research, policy advocacy, public awareness, and nonprofit support in New York.",
         "category": ["education", "rights"],
         "allyship": ["asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470287/SAL/image28_v5ugft.png"
@@ -255,7 +255,7 @@ export default [
         "id": 29,
         "title": "National Asian Pacific American Women’s Forum",
         "url": "https://www.napawf.org/",
-        "content": "The National Asian Pacific American Women's Forum mission is to elevate AAPI women and girls to impact policy and drive systemic change in the United States.",
+        "content": "Elevating AAPI women and girls to impact policy and drive systemic change in the United States.",
         "category": ["education"],
         "allyship": ["asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470290/SAL/image29_budgtx.png"
@@ -264,7 +264,7 @@ export default [
         "id": 30,
         "title": "Asian Mental Health Project",
         "url": "https://asianmentalhealthproject.com/",
-        "content": "The Asian Mental Health Project is bringing mental health into the fold of anti-racism work by providing resources to all Asian people seeking mental healthcare.",
+        "content": "Bringing mental health into the fold of anti-racism work by providing resources to all Asian people seeking mental healthcare.",
         "category": ["education", "health"],
         "allyship": ["asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470287/SAL/image30_rbywu6.png"
@@ -273,7 +273,7 @@ export default [
         "id": 31,
         "title": "Asian Mental Health Collective",
         "url": "https://www.asianmhc.org/",
-        "content": "The Asian Mental Health Collective works to destigmatize and normalize mental health within the Asian community by addressing mental health taboos.",
+        "content": "Destigmatizing and normalizing mental health within the Asian community by addressing mental health taboos.",
         "category": ["education", "health"],
         "allyship": ["asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470288/SAL/image31_dzrzvh.png"
@@ -282,7 +282,7 @@ export default [
         "id": 32,
         "title": "Asian Pacific Environmental Network",
         "url": "http://apen4ej.org/",
-        "content": "The Asian Pacific Environmental Network (APEN) advocates for Asian immigrant and refugee communities to seek environmental, social, and economic justice.",
+        "content": "Advocating for Asian immigrant and refugee communities to seek environmental, social, and economic justice.",
         "category": ["rights"],
         "allyship": ["anyone", "asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470288/SAL/image32_asos4h.png"
@@ -309,7 +309,7 @@ export default [
         "id": 35,
         "title": "Asian American Advocacy Fund",
         "url": "https://www.asianamericanadvocacyfund.org/take-action",
-        "content": "The Asian American Advocacy Fund is a grassroots 501(c)4 social welfare organization dedicated to building a politically-conscious, engaged, and progressive Asian American base in Georgia.",
+        "content": "A grassroots social welfare organization dedicated to building a politically-conscious, engaged, and progressive Asian American base in Georgia.",
         "category": ["rights"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470290/SAL/image35_soqki0.png"
@@ -318,7 +318,7 @@ export default [
         "id": 36,
         "title": "Asian Pacific American Labor Alliance",
         "url": "https://www.apalanet.org/",
-        "content": "The Asian Pacific American Labor Alliance (APALA), AFL-CIO, is the first and only national organization of Asian American and Pacific Islander (AAPI) workers.",
+        "content": "The first and only national organization of Asian American and Pacific Islander (AAPI) workers.",
         "category": ["rights"],
         "allyship": ["asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618470289/SAL/image36_wbdiki.png"
@@ -345,7 +345,7 @@ export default [
         "id": 39,
         "title": "East Side Stories",
         "url": "https://www.eastsidestories.org",
-        "content": "East Side Stories is dedicated to sharing authentic expressions of the Asian American & Pacific Islander experience through film, media, and education.",
+        "content": "Dedicated to sharing authentic expressions of the Asian American & Pacific Islander experience through film, media, and education.",
         "category": ["art"],
         "allyship": ["anyone", "asian"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618585126/SAL/image39_oilfzy.png"
@@ -354,7 +354,7 @@ export default [
         "id": 40,
         "title": "Chinatown Partnership",
         "url": "http://www.chinatownpartnership.org/index.htm",
-        "content": "The Chinatown Partnership works with the Chinatown Business Improvement District to engage the community and lead efforts to enhance the presence of New York's Chinatown.",
+        "content": "Engaging the community and leading efforts to enhance the presence of New York's Chinatown.",
         "category": ["education"],
         "allyship": ["anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618585124/SAL/image40_ui9exa.png"
@@ -372,7 +372,7 @@ export default [
         "id": 42,
         "title": "Protect Chinatown",
         "url": "https://www.protectchinatown.com/",
-        "content": "Protect Chinatown stands to protect the community, ensure safety to the elderly, condemn racism, and spread awareness.",
+        "content": "A community-led chaperoning initiative where volunteers can be requested to safely escort residents to their destinations.",
         "category": ["attacks", "volunteer"],
         "allyship": ["asian", "anyone"],
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1618585125/SAL/image42_o2yehc.png"
