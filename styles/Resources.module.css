@@ -1,0 +1,133 @@
+/* Grid display of filtered resources */
+.main {
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5em;
+}
+
+.card {
+  width: 350px;
+  height: auto;
+  margin-bottom: 5px;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  line-height: 1.5;
+  box-shadow: 4px 4px 16px #dfdede;
+
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.image {
+  width: 100%;
+}
+
+/* The titlebox is the headline for the resource title, I gave a fixed height so the contents in each card start at the same height. */
+.titlebox {
+  height: 1.9em;
+}
+
+.card h2 {
+  font-size: 0.6em;
+  color: #000000;
+  text-align: justify;
+  text-justify: inter-word;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.card:hover {
+  background: rgb(227, 241, 253);
+}
+
+.card:hover .cardbottom {
+  color: rgb(129, 129, 129);
+}
+
+.content {
+  font-size: 0.55em;
+  color: rgb(114, 113, 113);
+}
+
+.cardtext {
+  font-size: 0.9em;
+  padding-bottom: 0.5em;
+}
+
+/* cardbottom text are the gray categories below resource content/description */
+.cardbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  /* padding-top: 1.5em; */
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: rgb(223, 221, 221);
+  font-variant: small-caps;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+/* The "Sorry! No resources Yet!" text */
+.main .sorry {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-weight: 700;
+  white-space: none;
+  color: rgb(197, 197, 197);
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+@media (max-width: 1580px) {
+  .main {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .main {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .main {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 625px) {
+  .main {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .post {
+    width: 350px;
+  }
+}

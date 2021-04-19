@@ -8,10 +8,19 @@ body {
 
 a {
   color: inherit;
-  /* color: red; */
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }

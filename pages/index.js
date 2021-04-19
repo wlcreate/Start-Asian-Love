@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Header } from '../components/header'
-// import Header from '../components/header'
+import { Header } from '../components/Header'
 import Carousel from '../components/Carousel.js'
 import VideoPlayer from '../components/VideoPlayer.js'
 import { Footer } from '../components/Footer'
