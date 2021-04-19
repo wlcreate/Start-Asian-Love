@@ -8,9 +8,11 @@ import styles from '../styles/Support.module.css';
 import resourcesData from '../SupportResources.js';
 
 export default function Support() {
-  const [resourcesList, setResourcesList] = useState(resourcesData);
   const [allyship, setAllyship] = useState("anyone")
   const [category, setCategory] = useState("All")
+  
+  // not using anymore because we are listening to the user filtering the data instead of displaying all of the resources 
+  const [resourcesList, setResourcesList] = useState(resourcesData); 
 
   const changeAllyship = (chosenAllyship) => {
     // console.log("chosenAllyship: ", chosenAllyship)
@@ -22,6 +24,10 @@ export default function Support() {
     setCategory(chosenCategory)
   }
 
+  // filters the resources based on the allyship and category chosen by the user 
+    // the default being anyone && all
+    // otherwise, since the resources first depend on the allyship, filter the resources by allyship then by category (unless allyship is anyone)
+  // future: if a resource has more than 2 categories?
   const filterResources = () =>{
     if (allyship === "anyone" && category === "All") {
       return resourcesData
@@ -64,7 +70,7 @@ export default function Support() {
       return filteredResourcesByCategory
     }
     
-    // setResourcesList(filteredResources)
+    // setResourcesList(filteredResources) // if we weren't filtering for 2 things, potentially could have used setResourcesList to update/pass down the resources
   }
 
   return (
