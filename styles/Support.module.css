@@ -1,4 +1,6 @@
 .container {
+  align-items: center;
+  text-align: center;
 }
 
 .main {
@@ -7,10 +9,31 @@
 }
 
 .content {
-  height: calc(100% - 100px);
   padding: 1em;
   font-size: 2em;
 }
+
+/* "Viewing All Resources for Asian Folx" text */
+.viewing p {
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+}
+
+/* Styling for the current selected allyship and categories */
+.category {
+  color: rgb(255, 123, 0);
+}
+
+.allyship {
+  color: rgb(255, 123, 0);
+}
+
+/* .content {
+  height: calc(100% - 100px);
+  padding: 1em;
+  font-size: 1.5em;
+} */
 
 /* Pinning a header or footer according to height of middle content
 https://codepen.io/jdsteinbach/pen/YPPegq */
