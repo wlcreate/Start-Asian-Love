@@ -21,6 +21,8 @@ a {
 
 .page-container {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   flex-direction: column;
 }
+
+/* commenting out the viewport height (100vh) fixes the footer issue! */
