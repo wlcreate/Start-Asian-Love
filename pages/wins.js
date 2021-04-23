@@ -8,6 +8,8 @@ import { representation as representationResources } from '../Wins-separate.js';
 import { cultural as culturalResources } from '../Wins-separate.js';
 import {WinsResources} from '../components/WinsResources'
 
+import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 export default function Wins() {
   console.log(artResources)
   return (
@@ -20,27 +22,68 @@ export default function Wins() {
       <div className={styles.main}>
         <h2>I am the Wins Page</h2>
       </div>
-      <div>Scroll to Section</div>
-        <button onClick={()=> ("heritage")}>Heritage</button>
-        <button onClick={()=> ("contributions")}>Contributions</button>
-        <button onClick={()=> ("representation")}>Representation</button> 
-        <button onClick={()=> ("cultural")}>Cultural</button> 
-        <button onClick={()=> ("art")}>Art</button> 
+       <Element name="top"><div>Scroll to Section</div></Element>
+        <Link className={styles.scroll} activeClass="active" to="heritage" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Heritage
+        </Link>
+        <Link className={styles.scroll} activeClass="active" to="contributions" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Contributions
+        </Link>
+        <Link className={styles.scroll} activeClass="active" to="representation" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Representation
+        </Link>
+        <Link className={styles.scroll} activeClass="active" to="art" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Art
+        </Link>
+        <Link className={styles.scroll} activeClass="active" to="cultural" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Cultural
+        </Link>
+        
+        
       <div className={styles.content}>
-         <h3>AAPI Heritage Month</h3> 
-         
+        
+        <div className={styles["wins-section"]}>
+         <Element name="heritage"><h3>AAPI Heritage Month</h3></Element>
           <WinsResources resources={heritageResources}/>
-         <h3>Contributions</h3>
-          <WinsResources resources={contributionsResources}/>
-         <h3>Representation</h3>
-          <WinsResources resources={representationResources}/>
-         <h3>Cultural Centers</h3>
-          <WinsResources resources={culturalResources}/>
-          <p id="art"></p>
-         <h3>Art</h3>
-          <WinsResources resources={artResources}/>
-      </div>
+          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Scroll to Top
+        </Link>
+        </div>
 
+         <div className={styles["wins-section"]}>
+         <Element name="contributions"><h3>Contributions</h3></Element>
+          <WinsResources resources={contributionsResources}/>
+          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Scroll to Top
+        </Link>
+        </div>
+
+         <div className={styles["wins-section"]}>
+           <Element name="representation"><h3>Representation</h3></Element>
+          <WinsResources resources={representationResources}/>
+          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Scroll to Top
+        </Link>
+        </div>
+
+        <div className={styles["wins-section"]}>
+          <Element name="art"><h3>Art</h3></Element>
+          <WinsResources resources={artResources}/>
+          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Scroll to Top
+        </Link>
+        </div>
+
+        <div className={styles["wins-section"]}>
+          <Element name="cultural"><h3>Cultural Centers</h3></Element>
+          <WinsResources resources={culturalResources}/>
+          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+            Scroll to Top
+        </Link>
+        </div>
+         
+      </div>
+{/* Commenting out footer for now */}
     <Footer/>
     </div>
 
