@@ -13,7 +13,7 @@
 
 
 
-export default art [{
+export const art = [{
         "id": 1,
         "title": "East Side Stories",
         "url": "https://www.eastsidestories.org",
@@ -56,7 +56,7 @@ export default art [{
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-export default heritage [
+export const heritage = [
     {
         "id": 1,
         "title": "Angel Island, California",
@@ -100,7 +100,7 @@ export default heritage [
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-export default contributions [{
+export const contributions = [{
         "id": 1,
         "title": "Yuri Kochiyama",
         "url": "https://blogs.brown.edu/ethn-1890v-s01-fall-2016/historical-figures-and-organizations/yuri-kochiyama/",
@@ -143,7 +143,7 @@ export default contributions [{
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-export default representation [{
+export const representation = [{
         "id": 1,
         "title": "Kamala Harris",
         "url": "https://www.whitehouse.gov/administration/vice-president-harris/",
@@ -191,7 +191,7 @@ export default representation [{
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-export default cultural [{
+export const cultural = [{
         "id": 1,
         "title": "Rubin Museum of Art",
         "url": "https://rubinmuseum.org/",
@@ -236,3 +236,4 @@ export default cultural [{
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145397/SAL%20Wins/win25b_iugd7w.png",
         "location": "Seattle, WA"
     }]
+
