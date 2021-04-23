@@ -1,6 +1,11 @@
 .container {
 }
 
+.container {
+  align-items: center;
+  text-align: center;
+}
+
 .main {
   text-align: center;
   outline: 2px dashed red;
@@ -10,6 +15,15 @@
   height: calc(100% - 100px);
   padding: 1em;
   font-size: 2em;
+}
+
+.scroll {
+  cursor: pointer;
+  /* background: red; */
+}
+
+.wins-section {
+  display: column;
 }
 
 /* Pinning a header or footer according to height of middle content

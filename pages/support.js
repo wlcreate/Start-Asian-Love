@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Header } from '../components/Header'
-// import { Footer } from '../components/Footer'
+import { Footer } from '../components/Footer'
 import { Allyship } from '../components/AllyshipList'
 import  CategoryList  from '../components/CategoryList'
 import { Resources } from '../components/Resources'
@@ -97,8 +97,8 @@ export default function Support() {
         <Resources resourcesList={filterResources()}/>
       </div>
     
-      {/* Commenting out footer due to overlapping issue
-      <Footer/> */}
+
+      <Footer/>
       
     </div>
 
