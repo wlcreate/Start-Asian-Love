@@ -1,13 +1,14 @@
 /* Grid display of filtered resources */
+
 .main {
   margin: 60px auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5em;
 }
 
 .card {
-  width: 300px;
+  width: 425px;
   height: auto;
   margin-bottom: 5px;
   padding: 20px;
