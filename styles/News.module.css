@@ -6,7 +6,7 @@
 }
 
 .post {
-  width: 400px;
+  width: 500px;
   height: auto;
   margin-bottom: 5px;
   padding-left: 20px;
@@ -19,8 +19,8 @@
   border-radius: 5px;
   background-color: white;
   line-height: 1.5;
-  box-shadow: 4px 4px 16px #92b7c2;
-  text-align: justify;
+  box-shadow: 4px 4px 16px #c8c9c9;
+  text-align: left;
   text-justify: inter-word;
 }
 
