@@ -11,6 +11,7 @@ export const Header = () => {
             </div>
             <div className={styles.main}>
                 <div onClick={() => router.push('/')}>Home</div>
+                <div onClick={() => router.push('/news/1')}>News</div>
                 <div onClick={() => router.push('/support')}>Support</div>
                 <div onClick={() => router.push('/wins')}>Wins</div>
             </div>
