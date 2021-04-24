@@ -1,0 +1,137 @@
+.main {
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.post {
+  width: 400px;
+  height: auto;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  line-height: 1.5;
+  box-shadow: 4px 4px 16px #92b7c2;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.post {
+  transition: all 0.2s ease-in-out;
+}
+
+.post:hover {
+  transform: scale(1.03);
+}
+
+.post img {
+  width: 100%;
+}
+
+.post h1 {
+  font-size: 1.15em;
+  color: #083357;
+  text-align: justify;
+  text-justify: inter-word;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.paginator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  white-space: nowrap;
+  font-family: "Alfa Slab One", cursive;
+  color: #529db4;
+}
+
+.paginator div {
+  margin: 25px;
+  padding-bottom: 20px;
+}
+
+.paginator .active {
+  cursor: pointer;
+}
+
+.paginator .active:hover {
+  color: red;
+}
+
+.current-page {
+  color: red;
+}
+
+.paginator .disabled {
+  cursor: not-allowed;
+  color: #a2c9d4;
+}
+
+@media (max-width: 1300px) {
+  .main {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .main {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .paginator {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .post {
+    width: 350px;
+  }
+
+  .paginator {
+    margin: 20px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 420px) {
+  .paginator {
+    margin: 15px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 320px) {
+  .paginator {
+    margin: 10px;
+    font-size: 1em;
+  }
+}
