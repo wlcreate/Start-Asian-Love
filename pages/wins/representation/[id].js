@@ -4,15 +4,16 @@ import { representation as representationResources } from '../../../Wins-separat
 const Representive = () => {
   const router = useRouter()
   const { id } = router.query
+
 let foundRepresentative = representationResources.find(resource => {
 
     return resource.id===parseInt(id)})
-// console.log(representationResources)
+console.log(foundRepresentative)
 
   return (
       <div>
           <p>Representive: {id}</p>
-          <p>Name: {foundRepresentative.title}</p>
+          <p>Name: {foundRepresentative.title}</p> 
           <p>Name: <img src={foundRepresentative.image}></img></p>
           </div>
     ) 
