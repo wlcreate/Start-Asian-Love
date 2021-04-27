@@ -4,6 +4,21 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 1rem;
+  cursor: pointer;
+}
+
+.titlelogo {
+  color: rgb(255, 59, 59);
+  font-size: 1.5em;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  padding-bottom: 7px;
+  font-style: bold;
+  white-space: nowrap;
+}
+
+.titlelogo:hover {
+  color: rgb(255, 137, 59);
 }
 
 .main {
@@ -15,12 +30,27 @@
 .main div {
   margin: 25px;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+.main div:hover {
+  color: rgb(0, 110, 255);
 }
 
 /* header links stack below Start Asian Love title when resized */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .container {
     flex-direction: column;
+  }
+
+  .main div {
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main div {
+    font-size: 1.5em;
   }
 }
