@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import styles from '../styles/Wins.module.css';
@@ -11,10 +12,10 @@ import {WinsResources} from '../components/WinsResources'
 import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function Wins() {
-  console.log(artResources)
+  // console.log(artResources)
   return (
     <div className={styles.container}>
-
+    <Head><title>Start Asian Love</title></Head>
     <Header/>
 
       {/* divs are outlined for reference in module.css file */}

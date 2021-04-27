@@ -16,7 +16,7 @@ console.log(resources)
                             <p className={styles.cardtext}>
                                 {resource.location
                                 ?
-                                <p>{resource.location}</p>
+                                <h6>{resource.location}</h6>
                                 :
                                 <></>}
                             <p className={styles.content}>{resource.content}</p>

@@ -1,13 +1,15 @@
 import { useRouter } from 'next/router';
 import styles from '../styles/Header.module.css';
 
+// "Title" div is now clickable
+
 export const Header = () => {
     const router = useRouter();
 
     return(
         <div className={styles.container}>
-            <div id="title">
-                <h1>Start Asian Love</h1>
+            <div className={styles.titlelogo}>
+                <div onClick={() => router.push('/')}><h1>Start Asian Love</h1></div>
             </div>
             <div className={styles.main}>
                 <div onClick={() => router.push('/')}>Home</div>

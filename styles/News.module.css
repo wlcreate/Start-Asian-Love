@@ -1,6 +1,6 @@
 /* The article cards are currently dislayed as a grid, but this can be changed.
 
-In each row, the height of the tallest image and the length of the longest headline title determines the total height of the individual row. That's why some rows are shorter or taller than others.
+Initially, each row of cards had different heights due to image size and length of headline and content. For consistent card size, fixed heights were assignd to the child divs in the cards, and clamping effects were added to only show the first 3 lines of article content (see line 85).
 
 I've noticed that several websites use the Proxima Nova typeface for bold headlines, so I imported the font from Adobe Fonts into the global CSS file, but we can use other fonts too! */
 
@@ -20,38 +20,116 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
 
 .post {
   width: 400px;
-  height: auto;
+  height: 425px;
+  /* height: 555px; */
   margin-bottom: 5px;
-  padding: 20px;
+  border: 1px solid rgb(231, 229, 229);
+  /* padding: 20px; */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: white;
+
   box-shadow: 4px 4px 16px #d8d8d8;
+  /* box-shadow: 4px 4px 16px #919191; */
+
   text-align: left;
   text-justify: inter-word;
+
+  overflow: hidden;
 }
 
 .post {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .post:hover {
-  transform: scale(1.03);
+  width: 400px;
+  height: 555px;
 }
+
+/* .post:hover {
+  transform: scale(1.03);
+} */
 
 .post img {
   width: 100%;
+  /* min-height: 250px; */
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+
+/* optional image zoom in on hover effect */
+.post img {
+  transition: transform 0.5s ease;
+}
+
+/* .post:hover img {
+  transform: scale(1.1);
+} */
 
 .post h1 {
   font-size: 1.5em;
-  color: #4d4d4d;
+  color: #313131;
   text-align: left;
   cursor: pointer;
   margin-bottom: 2px;
   letter-spacing: 0.25px;
-  font-family: proxima-nova, sans-serif;
+  font-family: proxima-nova-condensed, sans-serif;
   font-weight: 700;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  /* background-color: yellow; */
+  height: 95px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post p {
+  color: rgb(109, 109, 109);
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1em;
+  line-height: 1.45;
+  margin-top: 15px;
+  /* background-color: yellow; */
+  height: 70px;
+
+  /* clamping the description text to 3 lines
+  https://css-tricks.com/line-clampin/
+  https://dropshado.ws/post/1015351370/webkit-line-clamp */
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  /* opacity: 0; */
+}
+
+.post p:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out 0s;
+  transition: opacity 0.25s ease-in-out 0s;
+}
+.post span {
+  color: rgb(86, 103, 255);
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 25px;
+  float: right;
+}
+
+.post span:hover {
+  color: red;
 }
 
 .paginator {

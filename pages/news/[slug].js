@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styles from '../../styles/News.module.css';
 import { useRouter } from 'next/router';
 import { Header } from '../../components/Header'
@@ -10,9 +11,9 @@ import { Footer } from '../../components/Footer'
 
 // • The YouTube instructor for the news tutorial uses "window.open" (Line 34) for the onClick action, and the target "blank" has to be used as one of two arguments when a window location is used: https://stackoverflow.com/questions/18476373/how-to-add-target-blank-to-javascript-window-location
 
-// • I temporarily commented out the article description since it looks a little cluttered under the headline title.
+// • Testing to see if news images should/should not go to edges of cards. For now, I used object-fit css class for images, and line-clamping css properties to only show the first 3 lines of article content.
 
-// • For now, I repeated "{styles.container}" for lines 25 and 28 in so that the dashed outline page title is consistent with other page titles.
+// • For now, I repeated "{styles.container}" for lines 26 and 30 in so that the dashed outline page title is consistent with other page titles.
 
 // • Since the news grid is not a component like the grids in the support and wins pages, the div hierarchy is slightly different to render consistent styling.
 
@@ -23,6 +24,7 @@ export const News = ({ pageNumber, articles }) => {
 
     return (
         <div className={styles.container}>
+        <Head><title>Start Asian Love</title></Head>    
         <Header/>
 
             <div className={styles.container}>
@@ -34,7 +36,8 @@ export const News = ({ pageNumber, articles }) => {
                         <div onClick={() => window.open(article.url,'_blank')} key={index} className={styles.post}>
                             {!!article.urlToImage && <img src={article.urlToImage} alt='news article image' />}
                             <h1>{article.title}</h1>
-                            {/* <p>{article.description}</p> */}
+                            <p>{article.description}</p>
+                            <h3> <span>Read more</span></h3>
                         </div>
                     ))}
                 </div>
@@ -87,7 +90,7 @@ export const getServerSideProps = async pageContext => {
         }
     }
 
-// • The fetch request is using the phrase query of "stop asian hate," which brought back more relevant articles than the query keywords of 'asian,' 'race,' and 'racism' used together. Initially, there were some non-English articles, and then I set language to "en."
+// • The fetch request is using the phrase query of "stop asian hate," which brought back more relevant articles. Initially, there were some non-English articles, and then I set language to "en." UPDATE: added second query of "asians" and changed the sortBy attribute from "relevancy" to "publishedAt" for more current chronology. Some domains excluded for headline length, content, lack of images or lack of relevancy.
 
 // • https://newsapi.org/docs/endpoints/everything
 
@@ -100,7 +103,7 @@ export const getServerSideProps = async pageContext => {
         // git commit -m "Stopped tracking .env File"
 
     const apiResponse = await fetch(
-        `https://newsapi.org/v2/everything?q="stopasianhate"&language=en&pageSize=9&page=${pageNumber}`,
+        `https://newsapi.org/v2/everything?&q="stopasianhate"&language=en&excludeDomains=propublica.org,freerepublic.com,boyculture.com,thesocietypages.org,people.cn,pjmedia.com,greenspun.com&sortBy=publishedAt&pageSize=9&page=${pageNumber}`,
         {
             headers: {
                 Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
