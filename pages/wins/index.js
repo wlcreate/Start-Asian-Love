@@ -1,12 +1,12 @@
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
-import styles from '../styles/Wins.module.css';
-import { art as artResources } from '../Wins-separate.js';
-import { heritage as heritageResources } from '../Wins-separate.js';
-import { contributions as contributionsResources } from '../Wins-separate.js';
-import { representation as representationResources } from '../Wins-separate.js';
-import { cultural as culturalResources } from '../Wins-separate.js';
-import {WinsResources} from '../components/WinsResources'
+import { Header } from '../../components/Header'
+import { Footer } from '../../components/Footer'
+import styles from '../../styles/Wins.module.css';
+import { art as artResources } from '../../Wins-separate.js';
+import { heritage as heritageResources } from '../../Wins-separate.js';
+import { contributions as contributionsResources } from '../../Wins-separate.js';
+import { representation as representationResources } from '../../Wins-separate.js';
+import { cultural as culturalResources } from '../../Wins-separate.js';
+import {WinsResources} from '../../components/WinsResources'
 
 import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 

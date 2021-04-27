@@ -1,4 +1,5 @@
 import styles from '../styles/WinsResources.module.css';
+import Link from 'next/link';
 
 export const WinsResources = (props) => {
 
@@ -10,7 +11,9 @@ console.log(resources)
             <div className={styles.main}>
             {resources.map((resource) =>{
                     return <div className={styles.card} key={resource.id}>
-                        <div onClick={() => window.open(resource.url,'_blank')}>
+                        {/* <div onClick={() => window.open(resource.url,'_blank')}> */}
+                            <Link href="/wins/representation/[id]" as={`/wins/representation/${resource.id}`}><div>
+                                {/* href='/coin/[id]' as={`/coin/${id}`} */}
                             <img className={styles.portrait} src={resource.portrait} alt="resource title"/>
                             <div className={styles.titlebox}><h2>{resource.title}</h2></div>
                             <p className={styles.cardtext}>
@@ -31,7 +34,7 @@ console.log(resources)
                                 }
                             </div>
                             </p>
-                        </div>
+                        </div></Link>
                     </div>
                 })}
             </div>
