@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { heritage as heritageResources } from '../../../Wins-separate.js';
 
 const Heritage = (props) => {

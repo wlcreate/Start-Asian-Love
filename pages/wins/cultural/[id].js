@@ -4,12 +4,12 @@ const Cultural = (props) => {
   const {id, title, image} = props.foundCultural
 
   return (
-      <div>
-          <p>Cultural: {id}</p>
-          <p>Name: {title}</p>
-          <img src={image}></img>
-      </div>
-    ) 
+    <div>
+        <p>Cultural: {id}</p>
+        <p>Name: {title}</p>
+        <img src={image}></img>
+    </div>
+  ) 
   
 }
 

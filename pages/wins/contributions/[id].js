@@ -2,13 +2,14 @@ import { contributions as contributionResources } from '../../../Wins-separate.j
 
 const Contributor = (props) => {
   const {id, title, image} = props.foundContributor
+
   return (
-      <div>
-          <p>Contributor: {id}</p>
-          <p>Name: {title}</p>
-          <img src={image}></img>
-        </div>
-    ) 
+    <div>
+        <p>Contributor: {id}</p>
+        <p>Name: {title}</p>
+        <img src={image}></img>
+    </div>
+  ) 
   
 }
 

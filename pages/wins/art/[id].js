@@ -1,14 +1,15 @@
 import { art as artResources } from '../../../Wins-separate.js';
 
-
 const Artist = (props) => {
+  const {id, title, image} = props.foundArtist
+
   return (
-      <div>
-          <p>Artist: {props.foundArtist.id}</p>
-          <p>Name: {props.foundArtist.title}</p>
-          <img src={props.foundArtist.image}></img>
-        </div>
-    ) 
+    <div>
+        <p>Artist: {id}</p>
+        <p>Name: {title}</p>
+        <img src={image}></img>
+    </div>
+  ) 
   
 }
 

@@ -9,7 +9,7 @@ const Representative = (props) => {
         <p>Name: {title}</p> 
         <img src={image}></img>
     </div>
-    ) 
+  ) 
   
 }
 
