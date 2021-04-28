@@ -1,22 +1,27 @@
-import { useRouter } from 'next/router'
 import { cultural as culturalResources } from '../../../Wins-separate.js';
 
-const Cultural = () => {
-  const router = useRouter()
-  const { id } = router.query
-let foundCultural = culturalResources.find(resource => {
-
-    return resource.id===parseInt(id)})
-// console.log(representationResources)
+const Cultural = (props) => {
+  const {id, title, image} = props.foundCultural
 
   return (
       <div>
           <p>Cultural: {id}</p>
-          <p>Name: {foundCultural.title}</p>
-          <p>Name: <img src={foundCultural.image}></img></p>
-          </div>
+          <p>Name: {title}</p>
+          <img src={image}></img>
+      </div>
     ) 
   
+}
+
+Cultural.getInitialProps = ({query}) => {
+
+  let foundCultural = culturalResources.find(resource => {
+    return resource.id === parseInt(query.id)
+  })
+
+  return {
+    foundCultural
+  }
 }
 
 export default Cultural
