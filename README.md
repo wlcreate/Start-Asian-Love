@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Start Asian Love
+<p align=center>We're currently under construction!</p>
+
+<p align=center>
+  <img src="https://media.giphy.com/media/5t20H3tq99Y1DYFuEX/giphy.gif" alt="Three workers are doing various construction tasks for the room" width=40% />
+</p>
+
+After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa Shootings that occurred on March 16, 2021 and rise of the Stop Asian Hate movement, Emmanuel Jose and Waverley Leung came together to work on Start Asian Love as our own way to take action. 
+
+Start Asian Love is a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement. Through these resources we hope to raise awareness and encourage you to join the fight and support Asian Americans.
 
 ## Getting Started
-
-First, run the development server:
-
+1. Download Node.js and `npm` (follow instructions [here](https://nodejs.org/en/))
+2. Clone this project locally
+3. `cd` into the directory
+4. Install all dependencies
+```bash
+npm install
+```
+5. Run the development server
 ```bash
 npm run dev
-# or
-yarn dev
 ```
+6. Access the project in your browser at [`localhost:3000`](http://localhost:3000)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tools
+* [react-slick](https://www.npmjs.com/package/react-slick)
+* [react-player](https://github.com/CookPete/react-player)
+* [react-scroll](https://www.npmjs.com/package/react-scroll)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributors
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/wlcreate">
+        <img src="https://avatars0.githubusercontent.com/u/62153993?s=460&v=4" width="200px;" alt=""/><br/><sub><b>Waverley Leung</b></sub>
+      </a>         
+    </td>
+    <td align="center">
+      <a href="https://github.com/emjose">
+        <img src="https://avatars.githubusercontent.com/u/61435324?v=4" width="200px;" alt=""/><br/>
+        <sub><b>Emmanuel Jose</b></sub>
+      </a>         
+    </td>
+  </tr>
+</table>
