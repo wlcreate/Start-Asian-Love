@@ -1,22 +1,26 @@
-import { useRouter } from 'next/router'
 import { contributions as contributionResources } from '../../../Wins-separate.js';
 
-const Contributor = () => {
-  const router = useRouter()
-  const { id } = router.query
-let foundContributor = contributionResources.find(resource => {
-
-    return resource.id===parseInt(id)})
-// console.log(representationResources)
-
+const Contributor = (props) => {
+  const {id, title, image} = props.foundContributor
   return (
       <div>
           <p>Contributor: {id}</p>
-          <p>Name: {foundContributor.title}</p>
-          <p>Name: <img src={foundContributor.image}></img></p>
-          </div>
+          <p>Name: {title}</p>
+          <img src={image}></img>
+        </div>
     ) 
   
+}
+
+Contributor.getInitialProps = ({query}) => {
+
+  let foundContributor = contributionResources.find(resource => {
+    return resource.id === parseInt(query.id)
+  })
+
+  return {
+    foundContributor
+  }
 }
 
 export default Contributor
