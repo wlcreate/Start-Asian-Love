@@ -1,10 +1,37 @@
 .player-wrapper {
-    position: relative;
-    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  position: relative;
+  display: flex;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
 }
-  
+
 /* .react-player {
     position: absolute;
     top: 0;
     left: 0;
 } */
+
+/* The width of the video player has been reduced by wrapping the '.container' div around the '.player-wrapper' div. 
+
+Video player is still responsive, but it's smaller than ideal when browser is resized, so media query will be tweaked with.
+
+The stackoverflow answer I am constantly googling for:
+https://stackoverflow.com/questions/15376634/how-can-i-center-a-div-within-another-div */
+
+.container {
+  width: 60%; /* Can be in percentage or pixel values. */
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+
+  /* comment out later */
+  outline: 2px dashed blue;
+  background: rgb(255, 214, 221);
+}
+
+/* Wraps around both the '.container' and '.player-wrapper' divs. */
+
+.wide {
+  /* comment out later, possibly place image or background behind video player, maybe parallax effect? */
+  background: #dbefff;
+}

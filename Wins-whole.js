@@ -11,6 +11,8 @@
 
 // • Optional "location" attribute has been added to Cultural Centers category.
 
+// • Updated Chloé Zhao's entry with Oscar win!
+
 
 
 export default [
@@ -188,7 +190,7 @@ export default [
         "title": "Chloé Zhao",
         "url": "https://caviar.tv/losangeles/directors/chlozhao",
         "field": "artist",
-        "content": "Chloé Zhao is a Chinese American filmmaker, director, writer, and producer. Zhao is known for her critically acclaimed independent films, which include Songs My Brothers Taught Me (2015), The Rider (2017), and Nomadland (2020). As of April 2021, Zhao is the first Asian woman and first woman of color to receive an Oscar nomination for Best Director for the upcoming 93rd Academy Awards.",
+        "content": "Chloé Zhao is a Chinese American filmmaker, director, writer, and producer. Zhao is known for her critically acclaimed independent films, which include Songs My Brothers Taught Me (2015), The Rider (2017), and Nomadland (2020), which won Best Picture at the 93rd Academy Awards, and for which Zhao won the Oscar for Best Director. Zhao is the first Asian woman, first woman of color, and second woman to win Best Director.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145334/SAL%20Wins/win20a_l09mhk.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145339/SAL%20Wins/win20b_faonbe.png"
     }],

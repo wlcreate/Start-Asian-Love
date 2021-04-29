@@ -1,7 +1,45 @@
-/* .content {
-  height: calc(100% - 100px);
-  padding: 1em;
+.content {
+  /* height: calc(100% - 100px); */
+  /* padding: 1em; */
+  padding-left: 70px;
+  padding-right: 70px;
+  font-weight: 700;
+  font-size: 2.25em;
+  color: rgb(129, 128, 128);
+  line-height: 1.4;
 }
+
+.content h2 {
+  color: rgb(0, 0, 0);
+  font-size: 2.5em;
+  margin: 4px;
+}
+
+/* Testing to see if individual words in <p> text should be highlighted */
+.content span {
+  color: rgba(255, 0, 0, 0.658);
+}
+
+.checkout {
+  align-items: center;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  margin: 5px;
+  padding: 5px;
+  font-family: "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  /* text-transform: uppercase; */
+
+  /* comment out later */
+  outline: 2px dashed rgb(180, 180, 180);
+}
+
+.checkout:hover {
+  color: rgb(255, 115, 0);
+}
+
+/* 
 
 .page-container {
   height: calc(100% - 100px);

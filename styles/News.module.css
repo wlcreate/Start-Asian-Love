@@ -1,0 +1,223 @@
+/* The article cards are currently dislayed as a grid, but this can be changed.
+
+Initially, each row of cards had different heights due to image size and length of headline and content. For consistent card size, fixed heights were assignd to the child divs in the cards, and clamping effects were added to only show the first 3 lines of article content (see line 85).
+
+I've noticed that several websites use the Proxima Nova typeface for bold headlines, so I imported the font from Adobe Fonts into the global CSS file, but we can use other fonts too! */
+
+.container {
+  align-items: center;
+  text-align: center;
+  outline: 2px dashed violet;
+}
+
+.main {
+  text-align: center;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.post {
+  width: 400px;
+  height: 425px;
+  /* height: 555px; */
+  margin-bottom: 5px;
+  border: 1px solid rgb(231, 229, 229);
+  /* padding: 20px; */
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: white;
+
+  box-shadow: 4px 4px 16px #d8d8d8;
+  /* box-shadow: 4px 4px 16px #919191; */
+
+  text-align: left;
+  text-justify: inter-word;
+
+  overflow: hidden;
+}
+
+.post {
+  transition: all 0.8s ease-in-out;
+}
+
+.post:hover {
+  width: 400px;
+  height: 555px;
+}
+
+/* .post:hover {
+  transform: scale(1.03);
+} */
+
+.post img {
+  width: 100%;
+  /* min-height: 250px; */
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.post img {
+  transition: transform 0.5s ease;
+}
+
+/* optional image zoom in on hover effect */
+
+/* .post:hover img {
+  transform: scale(1.1);
+} */
+
+.post h1 {
+  font-size: 1.5em;
+  color: #313131;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 2px;
+  letter-spacing: 0.25px;
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 700;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  /* background-color: yellow; */
+  height: 95px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post p {
+  color: rgb(109, 109, 109);
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1em;
+  line-height: 1.45;
+  margin-top: 15px;
+  /* background-color: yellow; */
+  height: 70px;
+
+  /* clamping the description text to 3 lines
+  https://css-tricks.com/line-clampin/
+  https://dropshado.ws/post/1015351370/webkit-line-clamp */
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  /* opacity: 0; */
+}
+
+.post p:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out 0s;
+  transition: opacity 0.25s ease-in-out 0s;
+}
+.post span {
+  color: rgb(86, 103, 255);
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 25px;
+  float: right;
+}
+
+.post span:hover {
+  color: red;
+}
+
+.paginator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+  font-family: proxima-nova, sans-serif;
+  color: #c4c3c3;
+}
+
+.paginator div {
+  margin: 25px;
+  padding-bottom: 20px;
+}
+
+.paginator .active {
+  cursor: pointer;
+}
+
+.paginator .active:hover {
+  color: red;
+}
+
+.current-page {
+  color: red;
+}
+
+.paginator .disabled {
+  cursor: not-allowed;
+  color: #ececec;
+}
+
+@media (max-width: 1300px) {
+  .main {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .main {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .paginator {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .post {
+    width: 350px;
+  }
+
+  .paginator {
+    margin: 20px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 420px) {
+  .paginator {
+    margin: 15px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 320px) {
+  .paginator {
+    margin: 10px;
+    font-size: 1em;
+  }
+}
