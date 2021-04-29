@@ -14,7 +14,6 @@ export default function Home() {
       <Head><title>Start Asian Love</title></Head>
 
         <Header/>
-        {/* <h1>Start Asian Love</h1> */}
         <Carousel/>
         <div className={styles.content}>
           <p>

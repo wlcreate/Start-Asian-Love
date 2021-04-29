@@ -12,7 +12,6 @@ import {WinsResources} from '../components/WinsResources'
 import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function Wins() {
-  // console.log(artResources)
   return (
     <div className={styles.container}>
     <Head><title>Start Asian Love</title></Head>
@@ -82,9 +81,8 @@ export default function Wins() {
             Scroll to Top
         </Link>
         </div>
-         
+
       </div>
-{/* Commenting out footer for now */}
     <Footer/>
     </div>
 
