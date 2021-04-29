@@ -58,6 +58,14 @@ export default [
         "content": "Known for his stunning pyrotechnic and firework performances, Cai Guo-Qiang was born in Quanzhou City, China, and studied gunpowder techniques in Japan. Currently based in New York City, Guo-Qiang was the director of visual and special effects in the 2008 Beijing Olympic Games and was the subject of the critically acclaimed 2016 Netflix documentary, Sky Ladder: The Art of Cai Guo-Qiang.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145212/SAL%20Wins/win05a_zqrfmv.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145217/SAL%20Wins/win05b_j28pfm.png"
+    },
+    {
+        "id": 6,
+        "title": "Drue Kataoka",
+        "url": "https://www.drue.net/",
+        "content": "Drue Kataoka is a Japanese American contemporary artist, technologist, and activist. Kataoka works in a wide variety of media, from the material genres of steel sculpture, painting, installations, to interactive digital and technological platforms such as virtual reality and brain wave EEG. Her artwork Up! was featured in the first zero gravity art exhibit at the International Space Station, and she is a recipient of the Martin Luther King, Jr. Research & Education Institute Award for her extensive community service.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733977/SAL%20Wins/win26a_vl2ru7.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733988/SAL%20Wins/win26b_wt1vrw.png"
     }],
 
 // AAPI HERITAGE MONTH CATEGORY
@@ -102,6 +110,14 @@ export default [
         "content": "May is designated as Asian American and Pacific Islander Heritage month to recognize and celebrate the tremendous contributions and influence of Asian Americans and Pacific Islanders. Under President Jimmy Carter, the observance began in 1979 as Asian Pacific American Heritage Week. In 1990, President George H.W. Bush expanded the observance to a month. The significance of the month of May is to commemorate the immigration of the first Japanese to the United States on May 7, 1843, and to mark the anniversary of completion of the Transcontinental Railroad on May 10, 1869." ,
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145255/SAL%20Wins/win10a_ryg7l8.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145258/SAL%20Wins/win10b_hes0ju.png"
+    },
+    {
+        "id": 6,
+        "title": "Coining of the term 'Asian American'",
+        "url": "http://berkeleyplaques.org/e-plaque/asian-american-political-alliance-aapa/",
+        "content": "During the Third World Liberation Front student strikes of 1968, University of California Berkeley graduate students Emma Gee and Yuji Ichioka first coined the term 'Asian American' in the naming of their student organization, the Asian American Political Alliance (AAPA). Not only did 'Asian American' combat the racist and colonial connotations of the term 'Oriental,' it increased the visibility and political unification of all activists and citizens of Asian descent." ,
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733994/SAL%20Wins/win27a_e4axua.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733997/SAL%20Wins/win27b_u6eoz8.png"
     }],
 
 // CONTRIBUTIONS CATEGORY
@@ -145,6 +161,14 @@ export default [
         "content": "Mabel Ping-Hua Lee was a Chinese advocate for womens' suffrage in the United States. Although the Chinese Exclusion Act of 1882 denied US citizenship to Chinese immigrants until 1943, 16-year-old Lee mobilized the Chinese community to support the women's suffrage movement leading up to the ratification of the 19th Amendment in 1920. Lee was also the first Chinese woman in the United States to earn a PhD in economics, and for over 40 years, Lee was head of the First Chinese Baptist Church in New York's Chinatown.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145295/SAL%20Wins/win15a_jloc0l.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145299/SAL%20Wins/win15b_h0xyj1.png"
+    },
+    {
+        "id": 6,
+        "title": "Amanda Nguyen",
+        "url": "https://www.risenow.us/",
+        "content": "Amanda Nguyen is a civil rights activist, social entreprenuer, and CEO and founder of Rise, a nonprofit organization aimed to protect the civil rights of sexual assault and rape survivors. In 2013, Nguyen was raped while studying at Harvard University, and she faced tremendous challenges to preserve her rape kit. Nguyen founded Rise in 2014, and she wrote the Sexual Assault Survivors' Rights Act, a bill which passed in 2016. The legislation overhauls the process of how rape kits are processed in the United States and creates a bill of rights for all sexual assault and rape survivors." ,
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734002/SAL%20Wins/win28a_vkkrou.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734005/SAL%20Wins/win28b_h7bu9y.png"
     }],
 
 // REPRESENTATION CATEGORY
@@ -193,6 +217,15 @@ export default [
         "content": "Chloé Zhao is a Chinese American filmmaker, director, writer, and producer. Zhao is known for her critically acclaimed independent films, which include Songs My Brothers Taught Me (2015), The Rider (2017), and Nomadland (2020), which won Best Picture at the 93rd Academy Awards, and for which Zhao won the Oscar for Best Director. Zhao is the first Asian woman, first woman of color, and second woman to win Best Director.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145334/SAL%20Wins/win20a_l09mhk.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145339/SAL%20Wins/win20b_faonbe.png"
+    },
+    {
+        "id": 6,
+        "title": "Simu Liu",
+        "url": "https://www.instagram.com/simuliu/?hl=en",
+        "field": "artist",
+        "content": "Simu Liu is a Chinese Canadian actor, writer, filmmaker, and stuntman. Liu is set to become the first Asian actor to lead a Marvel Studios film, as the star of Shang-Chi and the Legend of the Ten Rings (2021). Liu previously appeared in the tv series Kim's Convenience, Taken, and Orphan Black. The role of Shang-Chi holds special meaning for Liu, who shared that when he was a struggling actor playing superheroes at childrens' birthday parties, he could only play masked characters to hide his race." ,
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734010/SAL%20Wins/win29a_dnqo1h.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734013/SAL%20Wins/win29b_nbsexl.png"
     }],
 
 // CULTURAL CENTERS CATEGORY. 
@@ -240,6 +273,15 @@ export default [
         "content": "As a National Park Service Affiliated Area and the first Smithsonian affiliate in the Pacific Northwest, the Wing Luke Museum of the Asian Pacific American Experience offers an authentic and unique perspective on the American story.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145394/SAL%20Wins/win25a_db0i66.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145397/SAL%20Wins/win25b_iugd7w.png",
+        "location": "Seattle, WA"
+    },
+    {
+        "id": 6,
+        "title": "Seattle Asian Art Museum",
+        "url": "https://www.seattleartmuseum.org/visit/asian-art-museum",
+        "content": "After a major three-year renovation and a year-long shutdown due to the covid-19 pandemic, the Seattle Asian Art Museum is reopening in the spring of 2021. Located in the grand 1933 Art Deco building in Volunteer Park, the Seattle Asian Art Museum (SAAM) exhibits historic and contemporary artworks.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734018/SAL%20Wins/win30a_k8poic.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734023/SAL%20Wins/win30b_w31amd.png",
         "location": "Seattle, WA"
     }]
 ]
