@@ -61,10 +61,11 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   border-top-right-radius: 8px;
 }
 
-/* optional image zoom in on hover effect */
 .post img {
   transition: transform 0.5s ease;
 }
+
+/* optional image zoom in on hover effect */
 
 /* .post:hover img {
   transform: scale(1.1);
