@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useState } from 'react';
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
@@ -74,7 +75,9 @@ export default function Support() {
   }
 
   return (
+    
     <div className={styles.container}>
+    <Head><title>Start Asian Love</title></Head>
     <Header/>
 
       <div className={styles.main}>
