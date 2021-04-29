@@ -54,6 +54,14 @@ export const art = [{
         "content": "Known for his stunning pyrotechnic and firework performances, Cai Guo-Qiang was born in Quanzhou City, China, and studied gunpowder techniques in Japan. Currently based in New York City, Guo-Qiang was the director of visual and special effects in the 2008 Beijing Olympic Games and was the subject of the critically acclaimed 2016 Netflix documentary, Sky Ladder: The Art of Cai Guo-Qiang.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145212/SAL%20Wins/win05a_zqrfmv.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145217/SAL%20Wins/win05b_j28pfm.png"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "url": "",
+        "content": "" ,
+        "image": "",
+        "portrait": ""
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -98,6 +106,14 @@ export const heritage = [
         "content": "May is designated as Asian American and Pacific Islander Heritage month to recognize and celebrate the tremendous contributions and influence of Asian Americans and Pacific Islanders. Under President Jimmy Carter, the observance began in 1979 as Asian Pacific American Heritage Week. In 1990, President George H.W. Bush expanded the observance to a month. The significance of the month of May is to commemorate the immigration of the first Japanese to the United States on May 7, 1843, and to mark the anniversary of completion of the Transcontinental Railroad on May 10, 1869." ,
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145255/SAL%20Wins/win10a_ryg7l8.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145258/SAL%20Wins/win10b_hes0ju.png"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "url": "",
+        "content": "" ,
+        "image": "",
+        "portrait": ""
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -141,6 +157,14 @@ export const contributions = [{
         "content": "Mabel Ping-Hua Lee was a Chinese advocate for womens' suffrage in the United States. Although the Chinese Exclusion Act of 1882 denied US citizenship to Chinese immigrants until 1943, 16-year-old Lee mobilized the Chinese community to support the women's suffrage movement leading up to the ratification of the 19th Amendment in 1920. Lee was also the first Chinese woman in the United States to earn a PhD in economics, and for over 40 years, Lee was head of the First Chinese Baptist Church in New York's Chinatown.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145295/SAL%20Wins/win15a_jloc0l.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145299/SAL%20Wins/win15b_h0xyj1.png"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "url": "",
+        "content": "" ,
+        "image": "",
+        "portrait": ""
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -189,6 +213,15 @@ export const representation = [{
         "content": "Chloé Zhao is a Chinese American filmmaker, director, writer, and producer. Zhao is known for her critically acclaimed independent films, which include Songs My Brothers Taught Me (2015), The Rider (2017), and Nomadland (2020), which won Best Picture at the 93rd Academy Awards, and for which Zhao won the Oscar for Best Director. Zhao is the first Asian woman, first woman of color, and second woman to win Best Director.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145334/SAL%20Wins/win20a_l09mhk.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145339/SAL%20Wins/win20b_faonbe.png"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "url": "",
+        "field": "",
+        "content": "" ,
+        "image": "",
+        "portrait": ""
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -237,5 +270,14 @@ export const cultural = [{
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145394/SAL%20Wins/win25a_db0i66.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145397/SAL%20Wins/win25b_iugd7w.png",
         "location": "Seattle, WA"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "url": "",
+        "content": "" ,
+        "image": "",
+        "portrait": "",
+        "location": ""
     }]
 
