@@ -57,11 +57,11 @@ export const art = [{
     },
     {
         "id": 6,
-        "title": "",
-        "url": "",
-        "content": "" ,
-        "image": "",
-        "portrait": ""
+        "title": "Drue Kataoka",
+        "url": "https://www.drue.net/",
+        "content": "Drue Kataoka is a Japanese American contemporary artist, technologist, and activist. Kataoka works in a wide variety of media, from the material genres of steel sculpture, painting, installations, to interactive digital and technological platforms such as virtual reality and brain wave EEG. Her artwork Up! was featured in the first zero gravity art exhibit at the International Space Station, and she is a recipient of the Martin Luther King, Jr. Research & Education Institute Award for her extensive community service.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733977/SAL%20Wins/win26a_vl2ru7.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733988/SAL%20Wins/win26b_wt1vrw.png"
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -109,11 +109,11 @@ export const heritage = [
     },
     {
         "id": 6,
-        "title": "",
-        "url": "",
-        "content": "" ,
-        "image": "",
-        "portrait": ""
+        "title": "Coining of the term 'Asian American'",
+        "url": "http://berkeleyplaques.org/e-plaque/asian-american-political-alliance-aapa/",
+        "content": "During the Third World Liberation Front student strikes of 1968, University of California Berkeley graduate students Emma Gee and Yuji Ichioka first coined the term 'Asian American' in the naming of their student organization, the Asian American Political Alliance (AAPA). Not only did 'Asian American' combat the racist and colonial connotations of the term 'Oriental,' it increased the visibility and political unification of all activists and citizens of Asian descent." ,
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733994/SAL%20Wins/win27a_e4axua.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619733997/SAL%20Wins/win27b_u6eoz8.png"
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -160,11 +160,11 @@ export const contributions = [{
     },
     {
         "id": 6,
-        "title": "",
-        "url": "",
-        "content": "" ,
-        "image": "",
-        "portrait": ""
+        "title": "Amanda Nguyen",
+        "url": "https://www.risenow.us/",
+        "content": "Amanda Nguyen is a civil rights activist, social entreprenuer, and CEO and founder of Rise, a nonprofit organization aimed to protect the civil rights of sexual assault and rape survivors. In 2013, Nguyen was raped while studying at Harvard University, and she faced tremendous challenges to preserve her rape kit. Nguyen founded Rise in 2014, and she wrote the Sexual Assault Survivors' Rights Act, a bill which passed in 2016. The legislation overhauls the process of how rape kits are processed in the United States and creates a bill of rights for all sexual assault and rape survivors." ,
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734002/SAL%20Wins/win28a_vkkrou.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734005/SAL%20Wins/win28b_h7bu9y.png"
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -216,12 +216,12 @@ export const representation = [{
     },
     {
         "id": 6,
-        "title": "",
-        "url": "",
-        "field": "",
-        "content": "" ,
-        "image": "",
-        "portrait": ""
+        "title": "Simu Liu",
+        "url": "https://www.instagram.com/simuliu/?hl=en",
+        "field": "artist",
+        "content": "Simu Liu is a Chinese Canadian actor, writer, filmmaker, and stuntman. Liu is set to become the first Asian actor to lead a Marvel Studios film, as the star of Shang-Chi and the Legend of the Ten Rings (2021). Liu previously appeared in the tv series Kim's Convenience, Taken, and Orphan Black. The role of Shang-Chi holds special meaning for Liu, who shared that when he was a struggling actor playing superheroes at childrens' birthday parties, he could only play masked characters to hide his race." ,
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734010/SAL%20Wins/win29a_dnqo1h.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734013/SAL%20Wins/win29b_nbsexl.png"
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -273,11 +273,11 @@ export const cultural = [{
     },
     {
         "id": 6,
-        "title": "",
-        "url": "",
-        "content": "" ,
-        "image": "",
-        "portrait": "",
-        "location": ""
+        "title": "Seattle Asian Art Museum",
+        "url": "https://www.seattleartmuseum.org/visit/asian-art-museum",
+        "content": "After a major three-year renovation and a year-long shutdown due to the covid-19 pandemic, the Seattle Asian Art Museum is reopening in the spring of 2021. Located in the grand 1933 Art Deco building in Volunteer Park, the Seattle Asian Art Museum (SAAM) exhibits historic and contemporary artworks.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734018/SAL%20Wins/win30a_k8poic.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734023/SAL%20Wins/win30b_w31amd.png",
+        "location": "Seattle, WA"
     }]
 
