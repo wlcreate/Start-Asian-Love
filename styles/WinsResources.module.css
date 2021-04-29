@@ -21,7 +21,18 @@
 
   transition: all 0.2s ease-in-out;
   position: relative;
+
+  overflow: hidden;
 }
+
+/* optional image zoom in on hover effect */
+/* .card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+} */
 
 .card:hover {
   transform: scale(1.03);
@@ -35,13 +46,14 @@
   width: 100%;
 }
 
-/* The titlebox is the headline for the resource title, I gave a fixed height so the contents in each card start at the same height. */
+/* The titlebox is the headline for the resource title, added a fixed height so the contents in each card start at the same height. */
+
 .titlebox {
   height: 1.9em;
 }
 
 .card h2 {
-  font-size: 0.6em;
+  font-size: 0.75em;
   color: #000000;
   text-align: justify;
   text-justify: inter-word;
@@ -53,6 +65,11 @@
 
 .card:hover {
   background: rgb(227, 241, 253);
+}
+
+/* Cultural Center location text */
+.card h6 {
+  color: rgb(99, 99, 99);
 }
 
 .card:hover .cardbottom {
