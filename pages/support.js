@@ -16,12 +16,10 @@ export default function Support() {
   const [resourcesList, setResourcesList] = useState(resourcesData); 
 
   const changeAllyship = (chosenAllyship) => {
-    // console.log("chosenAllyship: ", chosenAllyship)
     setAllyship(chosenAllyship)
   }
 
   const changeCategory = (chosenCategory) => {
-    // console.log("chosenCategory: ", chosenCategory)
     setCategory(chosenCategory)
   }
 

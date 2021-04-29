@@ -1,18 +1,17 @@
 import Head from 'next/head'
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
-import styles from '../styles/Wins.module.css';
-import { art as artResources } from '../Wins-separate.js';
-import { heritage as heritageResources } from '../Wins-separate.js';
-import { contributions as contributionsResources } from '../Wins-separate.js';
-import { representation as representationResources } from '../Wins-separate.js';
-import { cultural as culturalResources } from '../Wins-separate.js';
-import {WinsResources} from '../components/WinsResources'
+import { Header } from '../../components/Header'
+import { Footer } from '../../components/Footer'
+import styles from '../../styles/Wins.module.css';
+import { art as artResources } from '../../Wins-separate';
+import { heritage as heritageResources } from '../../Wins-separate';
+import { contributions as contributionsResources } from '../../Wins-separate';
+import { representation as representationResources } from '../../Wins-separate';
+import { cultural as culturalResources } from '../../Wins-separate';
+import {WinsResources} from '../../components/WinsResources'
 
 import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function Wins() {
-  // console.log(artResources)
   return (
     <div className={styles.container}>
     <Head><title>Start Asian Love</title></Head>
@@ -45,7 +44,7 @@ export default function Wins() {
         
         <div className={styles["wins-section"]}>
          <Element name="heritage"><h3>AAPI Heritage Month</h3></Element>
-          <WinsResources resources={heritageResources}/>
+          <WinsResources resources={heritageResources} category="heritage"/>
           <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
             Scroll to Top
         </Link>
@@ -53,7 +52,7 @@ export default function Wins() {
 
          <div className={styles["wins-section"]}>
          <Element name="contributions"><h3>Contributions</h3></Element>
-          <WinsResources resources={contributionsResources}/>
+          <WinsResources resources={contributionsResources} category="contributions"/>
           <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
             Scroll to Top
         </Link>
@@ -61,7 +60,7 @@ export default function Wins() {
 
          <div className={styles["wins-section"]}>
            <Element name="representation"><h3>Representation</h3></Element>
-          <WinsResources resources={representationResources}/>
+          <WinsResources resources={representationResources} category="representation"/>
           <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
             Scroll to Top
         </Link>
@@ -69,7 +68,7 @@ export default function Wins() {
 
         <div className={styles["wins-section"]}>
           <Element name="art"><h3>Art</h3></Element>
-          <WinsResources resources={artResources}/>
+          <WinsResources resources={artResources} category="art"/>
           <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
             Scroll to Top
         </Link>
@@ -77,14 +76,13 @@ export default function Wins() {
 
         <div className={styles["wins-section"]}>
           <Element name="cultural"><h3>Cultural Centers</h3></Element>
-          <WinsResources resources={culturalResources}/>
+          <WinsResources resources={culturalResources} category="cultural"/>
           <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
             Scroll to Top
         </Link>
         </div>
-         
+
       </div>
-{/* Commenting out footer for now */}
     <Footer/>
     </div>
 
