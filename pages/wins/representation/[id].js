@@ -1,13 +1,17 @@
 import { representation as representationResources } from '../../../Wins-separate.js';
+import { Header } from '../../../components/Header'
+import { Footer } from '../../../components/Footer'
 
 const Representative = (props) => {
   const { id, title, image } = props.foundRepresentative
 
   return (
     <div>
-        <p>Representive: {id}</p>
-        <p>Name: {title}</p> 
-        <img src={image}></img>
+      <Header />
+      <p>Representive: {id}</p>
+      <p>Name: {title}</p>
+      <img src={image}></img>
+      <Footer />
     </div>
   ) 
   

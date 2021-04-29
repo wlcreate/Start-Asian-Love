@@ -1,13 +1,17 @@
 import { cultural as culturalResources } from '../../../Wins-separate.js';
+import { Header } from '../../../components/Header'
+import { Footer } from '../../../components/Footer'
 
 const Cultural = (props) => {
   const {id, title, image} = props.foundCultural
 
   return (
     <div>
-        <p>Cultural: {id}</p>
-        <p>Name: {title}</p>
-        <img src={image}></img>
+      <Header />
+      <p>Cultural: {id}</p>
+      <p>Name: {title}</p>
+      <img src={image}></img>
+      <Footer />
     </div>
   ) 
   
