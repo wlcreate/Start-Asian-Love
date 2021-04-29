@@ -1,12 +1,14 @@
 ## Description
 
-<!-- If merging to main, write "closes" followed by the issue # -->
-
 Related Issue: 
 
-<!-- Include the related issue number, what you changed, why you chose this approach, and resources (if any) you used -->
+<!-- If merging to main, write "closes" followed by the issue # for a single issue or "resolves" for more than one issue -->
+
+<!-- Include what you changed, why you chose this approach -->
 
 Resources:
+
+<!-- Resources or packages (if any) you used -->
 
 ## Acceptance Criteria
 
@@ -15,7 +17,7 @@ Resources:
 ## Self-check
 
 Please check all that apply:
-<!-- Put an `✓` for the applicable box: -->
+<!-- Put an `x` for the applicable box: -->
 
 - [ ] I have reviewed my code, refactored it to the best of my abilities and deleted all unnecessary code
 - [ ] I have commented my code, particularly in hard-to-understand areas; my comments are concise
