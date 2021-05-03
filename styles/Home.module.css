@@ -1,3 +1,7 @@
+.hero {
+  width: 100%;
+}
+
 .content {
   /* height: calc(100% - 100px); */
   /* padding: 1em; */
@@ -52,6 +56,46 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   display: grid;
   grid-gap: var(--gap);
   grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
+}
+
+/* Two graphic container divs created because one uses margin-top, and the other uses margin-bottom (depending on placement on home page) */
+
+.graphicContainer {
+  --min: 15ch;
+  --gap: 3rem;
+
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
+  margin-top: 50px;
+  vertical-align: bottom;
+}
+
+.graphicContainerTwo {
+  --min: 15ch;
+  --gap: 3rem;
+
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
+  margin-bottom: 50px;
+}
+
+.graphic {
+  margin: 0px;
+  /* height: auto; */
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 16px 16px 16px #ecb724;
+  border-radius: 8px;
+}
+
+/* Use "display: block" to delete extra padding below images, since they are by default displayed inline. */
+/* https://stackoverflow.com/questions/17771230/img-has-5px-extra-padding-at-bottom-of-div */
+
+.graphic img {
+  width: 100%;
+  display: block;
 }
 
 .facts {

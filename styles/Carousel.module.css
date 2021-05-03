@@ -5,7 +5,8 @@
 .container {
   /* testing out visibility of arrows, full-width of slides, and background colors */
   /* padding: 40px; */
-  background: #ffe66a;
+  transition: all 0.8s ease-in-out;
+  margin-top: 50px;
 }
 
 .slick-slide img,
