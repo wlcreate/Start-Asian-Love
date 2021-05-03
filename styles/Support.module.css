@@ -1,14 +1,38 @@
+@import url("https://use.typekit.net/wdx7jdm.css");
+
 .container {
   align-items: center;
   text-align: center;
+}
+
+.supportTitle {
+  color: #4d005a;
+  /* color: #f21905; */
+  margin-top: -20px;
+  margin-bottom: -80px;
+  font-size: 3em;
+  font-family: reklame-script, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
 }
 
 .main {
   text-align: center;
 }
 
+.description {
+  margin: 20px auto;
+  font-size: 1.5em;
+  font-weight: 800;
+  padding: 10px;
+  color: #4d005a;
+  margin-bottom: 10px;
+}
+
 .content {
-  padding: 1em;
+  padding: 0.25em;
   font-size: 2em;
 }
 
