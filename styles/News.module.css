@@ -4,10 +4,19 @@ Initially, each row of cards had different heights due to image size and length 
 
 I've noticed that several websites use the Proxima Nova typeface for bold headlines, so I imported the font from Adobe Fonts into the global CSS file, but we can use other fonts too! */
 
+/* The cards in the News, Support, and Win pages now all have the same width for consistency, and a box shadow effect with a darker yellow hue has been applied to all of them for depth. */
+
 .container {
   align-items: center;
   text-align: center;
-  outline: 2px dashed violet;
+}
+
+.container h2 {
+  color: #6a1f77;
+  /* color: #f21905; */
+  margin-top: 50px;
+  font-size: 3.5em;
+  font-weight: 800;
 }
 
 .main {
@@ -15,54 +24,36 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 60px;
 }
 
 .post {
-  width: 400px;
+  width: 425px;
   height: 425px;
-  /* height: 555px; */
   margin-bottom: 5px;
-  border: 1px solid rgb(231, 229, 229);
-  /* padding: 20px; */
   cursor: pointer;
   border-radius: 8px;
   background-color: white;
 
-  box-shadow: 4px 4px 16px #d8d8d8;
-  /* box-shadow: 4px 4px 16px #919191; */
-
+  box-shadow: 26px 26px 26px #ecb724;
   text-align: left;
   text-justify: inter-word;
-
   overflow: hidden;
-}
-
-.post {
   transition: all 0.8s ease-in-out;
 }
 
 .post:hover {
-  width: 400px;
   height: 555px;
+  transform: scale(1.05);
 }
-
-/* .post:hover {
-  transform: scale(1.03);
-} */
 
 .post img {
   width: 100%;
-  /* min-height: 250px; */
   min-height: 300px;
   max-height: 300px;
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-.post img {
-  transition: transform 0.5s ease;
 }
 
 /* optional image zoom in on hover effect */
@@ -82,8 +73,7 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   font-weight: 700;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 20px;
-  /* background-color: yellow; */
+  margin-top: 16px;
   height: 95px;
 
   overflow: hidden;
@@ -100,7 +90,6 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   font-size: 1em;
   line-height: 1.45;
   margin-top: 15px;
-  /* background-color: yellow; */
   height: 70px;
 
   /* clamping the description text to 3 lines
@@ -112,17 +101,11 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-
-  /* opacity: 0; */
 }
 
-.post p:hover {
-  opacity: 1;
-  -webkit-transition: opacity 0.25s ease-in-out 0s;
-  transition: opacity 0.25s ease-in-out 0s;
-}
 .post span {
-  color: rgb(86, 103, 255);
+  /* color: rgb(86, 103, 255); */
+  color: #9729ff;
   font-weight: 600;
   padding-left: 15px;
   padding-right: 25px;
@@ -130,20 +113,17 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
 }
 
 .post span:hover {
-  color: red;
+  color: #f21905;
 }
 
 .paginator {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 2em;
-  font-weight: 700;
-  /* text-transform: uppercase; */
-  letter-spacing: 0.25px;
+  font-size: 2.5em;
+  font-weight: 800;
   white-space: nowrap;
-  font-family: proxima-nova, sans-serif;
-  color: #c4c3c3;
+  color: #875c8f;
 }
 
 .paginator div {
@@ -156,68 +136,74 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
 }
 
 .paginator .active:hover {
-  color: red;
+  color: #f21905;
 }
 
 .current-page {
-  color: red;
+  color: #f21905;
 }
 
 .paginator .disabled {
   cursor: not-allowed;
-  color: #ececec;
+  color: #f7cb54;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1430px) {
   .main {
-    margin: 60px auto;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 950px) {
   .main {
-    margin: 50px auto;
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
   }
 
   .paginator {
-    font-size: 1.75em;
+    font-size: 2em;
+  }
+
+  .container h2 {
+    font-size: 3em;
+    margin-bottom: 0px;
   }
 }
 
-@media (max-width: 600px) {
-  .main {
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-  }
-
+@media (max-width: 625px) {
   .post {
     width: 350px;
   }
 
   .paginator {
-    margin: 20px;
     font-size: 1.5em;
+  }
+
+  .container h2 {
+    font-size: 2.75em;
+    margin-bottom: 0px;
   }
 }
 
 @media (max-width: 420px) {
   .paginator {
-    margin: 15px;
-    font-size: 1.1em;
+    font-size: 1.25em;
+  }
+
+  .container h2 {
+    font-size: 2.25em;
+    margin-bottom: 0px;
   }
 }
 
 @media (max-width: 320px) {
+  .post {
+    width: 280px;
+  }
+
   .paginator {
-    margin: 10px;
     font-size: 1em;
+    margin-top: -20px;
+    margin-bottom: -10px;
   }
 }

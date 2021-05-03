@@ -5,22 +5,72 @@
   padding-right: 70px;
   font-weight: 700;
   font-size: 2.25em;
-  color: rgb(129, 128, 128);
+  color: rgb(83, 83, 83);
   line-height: 1.4;
 }
 
 .content h2 {
   color: rgb(0, 0, 0);
-  font-size: 2.5em;
+  font-size: 3em;
   margin: 4px;
+  font-weight: 800;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
-/* Testing to see if individual words in <p> text should be highlighted */
+.facts:hover h2 {
+  color: #f21905;
+  font-size: 5em;
+}
+
+/* Testing to see if individual words/links in home page <p> text should be highlighted */
 .content span {
-  color: rgba(255, 0, 0, 0.658);
+  color: #f21905;
+  transition: all 0.5s ease-in-out;
 }
 
-.checkout {
+/* The paragraph divs in the home page. */
+.text {
+  margin-top: 50px;
+  background: rgb(255, 255, 255);
+  font-size: 0.8em;
+  padding: 30px;
+  box-shadow: 16px 16px 16px #ecb724;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+/* The ".factcontainer" div contains the two fact divs with the numerical titles. 
+The side by side flex property is from Sylwia's friend, Stephanie Eckles: https://smolcss.dev/ */
+
+/* the media query does need to be tweaked, since the child divs are not completely centered when simulating device sizes. */
+
+.factcontainer {
+  --min: 15ch;
+  --gap: 3rem;
+
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
+}
+
+.facts {
+  margin: 0px;
+  height: auto;
+  background: white;
+  font-size: 0.65em;
+  padding: 30px;
+  box-shadow: 16px 16px 16px #ecb724;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.facts:hover {
+  color: black;
+}
+
+/* .checkout {
   align-items: center;
   text-align: center;
   font-size: 3em;
@@ -29,15 +79,11 @@
   padding: 5px;
   font-family: "Helvetica Neue", sans-serif;
   cursor: pointer;
-  /* text-transform: uppercase; */
+} */
 
-  /* comment out later */
-  outline: 2px dashed rgb(180, 180, 180);
-}
-
-.checkout:hover {
+/* .checkout:hover {
   color: rgb(255, 115, 0);
-}
+} */
 
 /* 
 

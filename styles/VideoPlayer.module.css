@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  box-shadow: 26px 26px 26px #ecb724;
 }
 
 /* .react-player {
@@ -18,20 +19,17 @@ The stackoverflow answer I am constantly googling for:
 https://stackoverflow.com/questions/15376634/how-can-i-center-a-div-within-another-div */
 
 .container {
-  width: 60%; /* Can be in percentage or pixel values. */
+  width: 65%; /* Can be in percentage or pixel values. */
   height: auto;
   margin: 0 auto;
   padding: 10px;
   position: relative;
-
-  /* comment out later */
-  outline: 2px dashed blue;
-  background: rgb(255, 214, 221);
 }
 
 /* Wraps around both the '.container' and '.player-wrapper' divs. */
 
-.wide {
-  /* comment out later, possibly place image or background behind video player, maybe parallax effect? */
+/* comment out later, possibly place image or background behind video player, maybe parallax effect? */
+
+/* .wide {
   background: #dbefff;
-}
+} */

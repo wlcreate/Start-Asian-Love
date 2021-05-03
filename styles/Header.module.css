@@ -1,24 +1,37 @@
 /* Container puts the title div and link divs side by side*/
+
+/* Similar to the footer, the purple header was looking a bit flat, and a darker purple hue/greater contrast looked better with the global yellow value, and reduces eye strain. To minimize the flat appearance, the header's height was increased, and I looked for a purple banner to add some styling.
+
+We need to be careful with our color scheme, since it gives off athletic/sporty vibes with its similarity to the Los Angeles Lakers' purple and yellow color scheme. */
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 1rem;
+  height: 172px;
   cursor: pointer;
+  /* background: rgb(115, 17, 228); */
+
+  background: url(https://res.cloudinary.com/dn1e07eul/image/upload/v1619843039/SAL/background-wallpaper-4k-gamer-2020-06-01-162712-6-3840x2160_t5bibd.jpg)
+    no-repeat center center/cover;
+  background-position: 50% 54%;
 }
 
 .titlelogo {
-  color: rgb(255, 59, 59);
+  /* color: #f21905; */
+  color: #ffdc2f;
   font-size: 1.5em;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 900;
   padding-bottom: 7px;
+  padding-left: 130px;
   font-style: bold;
   white-space: nowrap;
 }
 
 .titlelogo:hover {
-  color: rgb(255, 137, 59);
+  color: #f21905;
 }
 
 .main {
@@ -28,29 +41,52 @@
 }
 
 .main div {
-  margin: 25px;
+  margin: 15px;
   cursor: pointer;
   font-size: 2.25em;
   font-weight: 700;
+  color: white;
 }
 
 .main div:hover {
-  color: rgb(0, 110, 255);
+  color: #f21905;
+  /* color: #ffdc2f; */
 }
 
 /* header links stack below Start Asian Love title when resized */
-@media (max-width: 1000px) {
+@media (max-width: 1170px) {
   .container {
     flex-direction: column;
   }
 
+  .titlelogo {
+    padding-left: 0px;
+  }
+
   .main div {
-    margin-top: -10px;
+    margin-top: -20px;
+    padding-bottom: 15px;
   }
 }
 
 @media (max-width: 600px) {
   .main div {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .main div {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .main div {
+    font-size: 0.9em;
+  }
+
+  .titlelogo {
+    font-size: 1.1em;
   }
 }

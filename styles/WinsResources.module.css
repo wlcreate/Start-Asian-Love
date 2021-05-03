@@ -1,45 +1,40 @@
+/* Similar to the news page, the hover action triggers the card to expand, with a call to action ("Learn more") to prompt the user to read/visit the ID page. */
+
 /* Grid display of filtered resources */
 
 .main {
-  margin: 60px auto;
+  margin: 50px auto;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5em;
+  grid-gap: 50px;
 }
 
 .card {
   width: 425px;
-  height: auto;
+  height: 650px;
   margin-bottom: 5px;
   padding: 20px;
   cursor: pointer;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  background-color: white;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
   line-height: 1.5;
-  box-shadow: 4px 4px 16px #dfdede;
-
-  transition: all 0.2s ease-in-out;
+  box-shadow: 26px 26px 26px #ecb724;
   position: relative;
-
   overflow: hidden;
+  transition: all 0.8s ease-in-out;
 }
 
-/* optional image zoom in on hover effect */
-/* .card img {
-  transition: transform 0.5s ease;
+.card img {
+  width: 100%;
+  min-height: 513.33px;
+  max-height: 513.33px;
+  object-fit: cover;
 }
-
-.card:hover img {
-  transform: scale(1.05);
-} */
 
 .card:hover {
-  transform: scale(1.03);
-}
-
-.image {
-  width: 100%;
+  transform: scale(1.05);
+  height: 780px;
 }
 
 .portrait {
@@ -54,31 +49,40 @@
 
 .card h2 {
   font-size: 0.75em;
-  color: #000000;
-  text-align: justify;
-  text-justify: inter-word;
+  color: #505050;
   cursor: pointer;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
   font-family: "Helvetica Neue", sans-serif;
-}
-
-.card:hover {
-  background: rgb(227, 241, 253);
-}
-
-/* Cultural Center location text */
-.card h6 {
-  color: rgb(99, 99, 99);
-}
-
-.card:hover .cardbottom {
-  color: rgb(129, 129, 129);
+  margin-top: 6px;
 }
 
 .content {
   font-size: 0.55em;
   color: rgb(114, 113, 113);
+  padding-top: 10px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+
+.card span {
+  /* color: rgb(86, 103, 255); */
+  color: #c165d1;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 2px;
+  float: right;
+  font-size: 20px;
+}
+
+.card span:hover {
+  color: #f21905;
 }
 
 .cardtext {
@@ -86,56 +90,14 @@
   padding-bottom: 0.5em;
 }
 
-/* cardbottom text are the gray categories below resource content/description */
-.cardbottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8em;
-  /* padding-top: 1.5em; */
-  position: absolute;
-  bottom: 0;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  color: rgb(223, 221, 221);
-  font-variant: small-caps;
-  font-family: Helvetica Neue, sans-serif;
-}
-
-/* The "Sorry! No resources Yet!" text */
-.main .sorry {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  font-weight: 700;
-  white-space: none;
-  color: rgb(197, 197, 197);
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  font-size: 0.75em;
-}
-
-@media (max-width: 1580px) {
+@media (max-width: 1430px) {
   .main {
-    margin: 60px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-  }
-}
-
-@media (max-width: 1180px) {
-  .main {
-    margin: 60px auto;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 950px) {
   .main {
-    margin: 50px auto;
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
   }
@@ -143,13 +105,59 @@
 
 @media (max-width: 625px) {
   .main {
-    margin: 40px auto;
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
 
-  .post {
+  .card {
     width: 350px;
+    height: 560px;
+  }
+
+  .card img {
+    min-height: 450px;
+    max-height: 450px;
+  }
+
+  .card h2 {
+    font-size: 0.6em;
+    margin-top: 2px;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+
+  .card:hover {
+    height: 690px;
+  }
+
+  .content {
+    margin-top: -25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    width: 280px;
+    height: 415px;
+  }
+
+  .card img {
+    min-height: 300px;
+    max-height: 300px;
+  }
+
+  .card h2 {
+    font-size: 0.5em;
+    margin-top: 0px;
+  }
+
+  .content {
+    visibility: hidden;
+  }
+
+  .card:hover {
+    height: 415px;
   }
 }
