@@ -20,32 +20,32 @@ export default function Wins() {
       {/* divs are outlined for reference in module.css file */}
     
       <div className={styles.main}>
-        <h2>I am the Wins Page</h2>
+        {/* <h2>I am the Wins Page</h2> */}
       </div>
-       <Element name="top"><div>Scroll to Section</div></Element>
-        <Link className={styles.scroll} activeClass="active" to="heritage" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+       <Element name="top"><div className={styles.scrollToSection}>Scroll to Section</div></Element>
+        <Link className={styles.scroll} activeClass="active" to="heritage" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Heritage
         </Link>
-        <Link className={styles.scroll} activeClass="active" to="contributions" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+        <Link className={styles.scroll} activeClass="active" to="contributions" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Contributions
         </Link>
-        <Link className={styles.scroll} activeClass="active" to="representation" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+        <Link className={styles.scroll} activeClass="active" to="representation" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Representation
         </Link>
-        <Link className={styles.scroll} activeClass="active" to="art" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+        <Link className={styles.scroll} activeClass="active" to="art" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Art
         </Link>
-        <Link className={styles.scroll} activeClass="active" to="cultural" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+        <Link className={styles.scroll} activeClass="active" to="cultural" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Cultural
         </Link>
         
-        
+      {/* The margins for the first four 'scroll to top' links have been reduced to 10px, except for the fifth one that is above the footer. */}
       <div className={styles.content}>
         
         <div className={styles["wins-section"]}>
          <Element name="heritage"><h3>AAPI Heritage Month</h3></Element>
           <WinsResources resources={heritageResources} category="heritage"/>
-          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+          <Link className={styles.scrollToTop} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Scroll to Top
         </Link>
         </div>
@@ -53,7 +53,7 @@ export default function Wins() {
          <div className={styles["wins-section"]}>
          <Element name="contributions"><h3>Contributions</h3></Element>
           <WinsResources resources={contributionsResources} category="contributions"/>
-          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+          <Link className={styles.scrollToTop} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Scroll to Top
         </Link>
         </div>
@@ -61,7 +61,7 @@ export default function Wins() {
          <div className={styles["wins-section"]}>
            <Element name="representation"><h3>Representation</h3></Element>
           <WinsResources resources={representationResources} category="representation"/>
-          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+          <Link className={styles.scrollToTop} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Scroll to Top
         </Link>
         </div>
@@ -69,7 +69,7 @@ export default function Wins() {
         <div className={styles["wins-section"]}>
           <Element name="art"><h3>Art</h3></Element>
           <WinsResources resources={artResources} category="art"/>
-          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+          <Link className={styles.scrollToTop} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Scroll to Top
         </Link>
         </div>
@@ -77,7 +77,7 @@ export default function Wins() {
         <div className={styles["wins-section"]}>
           <Element name="cultural"><h3>Cultural Centers</h3></Element>
           <WinsResources resources={culturalResources} category="cultural"/>
-          <Link className={styles.scroll} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '40px' }}>
+          <Link className={styles.scrollToTop} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '30px' }}>
             Scroll to Top
         </Link>
         </div>

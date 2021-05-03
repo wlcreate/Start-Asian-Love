@@ -1,10 +1,11 @@
+/* Initial background colors of the carousel slides: */
+/* background: #dbefff; */
+/* background: #419be0; */
+
 .container {
   /* testing out visibility of arrows, full-width of slides, and background colors */
   /* padding: 40px; */
-
-  background: #dbefff;
-
-  /* background: #419be0; */
+  background: #ffe66a;
 }
 
 .slick-slide img,
@@ -24,7 +25,7 @@
 
 .slick-slide h3 {
   font-size: 2.5em;
-  color: rgb(75, 75, 75);
+  color: rgb(53, 53, 53);
   line-height: 1.25;
   margin-left: 50px;
   margin-right: 50px;
