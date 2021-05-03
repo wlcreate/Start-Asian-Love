@@ -1,16 +1,28 @@
 import { contributions as contributionResources } from '../../../Wins-separate.js';
 import { Header } from '../../../components/Header'
 import { Footer } from '../../../components/Footer'
+import styles from '../../../styles/WinsID.module.css';
+import Link from 'next/link'
 
 const Contributor = (props) => {
-  const {id, title, image} = props.foundContributor
+  const {title, image, content, url} = props.foundContributor
 
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
-      <p>Contributor: {id}</p>
-      <p>Name: {title}</p>
-      <img src={image}></img>
+      <div className={styles.main}>
+        <p className={styles.title}>{title}</p>
+
+        <div className={styles.whiteBox}>
+          <img src={image}></img>
+          <p className={styles.text}>{content}</p>
+          <p><span><a href={url} target="_blank" rel="noopener noreferrer">Discover more about {title}</a></span></p>
+        </div>
+        
+        <Link href='/wins' passHref>
+            <div className={styles.backToWins}>Back To Wins</div>
+        </Link>
+      </div>
       <Footer />
     </div>
   ) 
