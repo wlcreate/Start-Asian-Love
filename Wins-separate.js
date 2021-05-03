@@ -13,7 +13,7 @@
 
 // • Updated Chloé Zhao's entry with Oscar win!
 
-
+// • Some titles (Morro Bay Landing, Wing Luke Museum) have been shortened for more consistent appearance and dimensions in the Wins page.
 
 export const art = [{
         "id": 1,
@@ -93,7 +93,7 @@ export const heritage = [
     },
     {
         "id": 4,
-        "title": "Landing of the First Filipinos in Morro Bay, California",
+        "title": "Landing of the First Filipinos",
         "url": "https://www.aaldef.org/blog/emil-guillermo-filipinos-here-first-at-morro-bay-pedro-de-unamuno/",
         "content": "The first Asians landed in Morro Bay, California, 33 years before the pilgrims arrived in Plymouth, Massachusetts in 1620. On October 18th, 1587, the Spanish sailor Pedro De Unamuno and his crew of Spaniard and Filipino deckhands sailed across the Pacific Ocean and arrived at Morro Bay, located along the central coast of California. The landing party claimed the area for Spain, but after an attack by indigenous Indians and the deaths of two crew members, further exploration was stopped.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145249/SAL%20Wins/win09a_rdaupe.png",
@@ -264,7 +264,7 @@ export const cultural = [{
     },
     {
         "id": 5,
-        "title": "Wing Luke Museum of the Asian Pacific American Experience",
+        "title": "Wing Luke Museum",
         "url": "https://www.wingluke.org/",
         "content": "As a National Park Service Affiliated Area and the first Smithsonian affiliate in the Pacific Northwest, the Wing Luke Museum of the Asian Pacific American Experience offers an authentic and unique perspective on the American story.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145394/SAL%20Wins/win25a_db0i66.png",

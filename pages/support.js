@@ -79,7 +79,7 @@ export default function Support() {
     <Header/>
 
       <div className={styles.main}>
-        <h2>I am the Support Page</h2>
+        {/* <h2>I am the Support Page</h2> */}
       </div>
       <div className={styles.content}>
         <Allyship currentAllyship={allyship} changeAllyship={changeAllyship}/>
@@ -87,12 +87,14 @@ export default function Support() {
 
         {/* Created the following div element to consolidate current filtered resources */}
 
-        <div className={styles.viewing}>
-          <p>Viewing</p>&nbsp;
-          <p className={styles.category}>{category}</p>&nbsp;
-          <p>resources for</p>&nbsp;
-          <p className={styles.allyship}>{allyship}</p>&nbsp;
-          <p>folx.</p>
+        {/* Consolidated the five <p> tags in lines 93-97 into one <p> tag, with two span elements for selected category and allyship. Updated the className from 'viewing' to main' for media queries */}
+
+        <div className={styles.main}>
+          <p>Viewing&nbsp;
+          <span className={styles.category}>{category}&nbsp;</span>
+          resources for&nbsp;
+          <span className={styles.allyship}>{allyship}&nbsp;</span>
+          folx.</p>
         </div>
 
         <Resources resourcesList={filterResources()}/>

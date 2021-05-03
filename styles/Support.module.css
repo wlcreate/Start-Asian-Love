@@ -5,7 +5,6 @@
 
 .main {
   text-align: center;
-  outline: 2px dashed blue;
 }
 
 .content {
@@ -14,26 +13,57 @@
 }
 
 /* "Viewing All Resources for Asian Folx" text */
-.viewing p {
+.main p {
   text-transform: uppercase;
   display: inline-block;
-  font-weight: 700;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  color: #4d005a;
 }
 
 /* Styling for the current selected allyship and categories */
 .category {
-  color: rgb(255, 123, 0);
+  color: #f21905;
 }
 
 .allyship {
-  color: rgb(255, 123, 0);
+  color: #f21905;
 }
 
-/* .content {
-  height: calc(100% - 100px);
-  padding: 1em;
-  font-size: 1.5em;
-} */
+@media (max-width: 1110px) {
+  .main p {
+    font-size: 1em;
+    font-weight: 800;
+    margin-top: 50px;
+  }
+}
 
-/* Pinning a header or footer according to height of middle content
-https://codepen.io/jdsteinbach/pen/YPPegq */
+@media (max-width: 950px) {
+  .main p {
+    font-size: 0.77em;
+    font-weight: 800;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  .main p {
+    font-size: 0.7em;
+    margin-top: 40px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 650px) {
+  .main p {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 450px) {
+  .main p {
+    font-size: 0.5em;
+  }
+}

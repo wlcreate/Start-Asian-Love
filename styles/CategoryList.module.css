@@ -1,25 +1,59 @@
+/* At first, I experimented with yellow, orange, and red buttons, but they weren't as flattering as purple buttons. 
+White or eggshell-color buttons looked okay, but it's a little easy to overlook the buttons if they are light in color. 
+Purple, black, dark gray, or purple gray hues also looked good. */
+
+/* Red text should be used very minimally if the background is yellow. When I tried red text lines on yellow, it was giving a Ronald McDonald/fast-food vibe. */
+
+/* Test colors for the buttons and text: */
+
+/* color: #f21905; */
+/* color: #4d005a; */
+/* background: #fdf6e0; */
+/* background: rgb(72, 40, 83); */
+/* background: rgb(58, 0, 85); */
+/* color: rgb(92, 92, 92); */
+
 .button {
-  width: 120px;
-  padding: 10px;
+  width: 152px;
+  padding: 12px;
   margin: 10px;
   font-size: 0.6em;
   border-radius: 4px;
   align-items: center;
   border: none;
-}
-
-.button:focus {
-  background-color: rgb(166, 199, 248);
+  background: #610172;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 6px 6px 12px #ecb724;
 }
 
 .button:hover {
-  background-color: rgb(206, 222, 248);
+  background-color: #9b00b6;
+  transition: all 0.2s ease-in-out;
+  color: white;
 }
 
+.button:focus {
+  background-color: #f21905;
+  color: white;
+}
+
+/* "Filter by Category" text */
+
 .main h2 {
-  font-size: 0.75em;
+  font-size: 1.25em;
+  font-weight: 800;
+  color: #4d005a;
+  margin-bottom: 10px;
 }
 
 .main p {
   font-size: 0.75em;
+}
+
+@media (max-width: 650px) {
+  .main h2 {
+    font-size: 1em;
+  }
 }

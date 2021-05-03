@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from '../styles/Carousel.module.css'
 
+// added 'arrows: false' in Line 19 since right arrow was creating a horizontal scroll bar.
 
 const Carousel = () => {
     let settings = {
@@ -15,6 +16,7 @@ const Carousel = () => {
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     pauseOnHover: true
   };
   return (
