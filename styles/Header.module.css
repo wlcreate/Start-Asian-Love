@@ -4,6 +4,8 @@
 
 We need to be careful with our color scheme, since it gives off athletic/sporty vibes with its similarity to the Los Angeles Lakers' purple and yellow color scheme. */
 
+@import url("https://use.typekit.net/wdx7jdm.css");
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -21,12 +23,15 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 .titlelogo {
   /* color: #f21905; */
   color: #ffdc2f;
-  font-size: 1.5em;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 900;
+  font-size: 2em;
+  font-family: reklame-script, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
   padding-bottom: 7px;
   padding-left: 130px;
-  font-style: bold;
+  /* font-style: bold; */
   white-space: nowrap;
 }
 
@@ -61,6 +66,8 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 
   .titlelogo {
     padding-left: 0px;
+    font-size: 1.45em;
+    margin-top: -8px;
   }
 
   .main div {

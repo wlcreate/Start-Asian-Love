@@ -26,34 +26,19 @@ const Carousel = () => {
                 <img src="/image01.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
-                <h3>
-                    The idea that we are today in 2021 still having conversations we were having in 1881, a year before the Chinese Exclusion Act in 1882, is painful and infuriating at the same time.
-                </h3>
-                <h3>
-                    - Gov. Gavin Newsom
-                </h3>
+                <img src="/image04.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
                 <img src="/image02.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
-                <h3>
-                    When you see those headlines and the names and faces of people, you see your own family -- your grandparents, your cousins, aunts and uncles.
-                </h3>
-                <h3>
-                    - Rachel Bartkowski
-                </h3>
+                <img src="/image05.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
             <img src="/image03.jpg"/>
             </div>
             <div className={styles["slick-slide"]}>
-                <h3>
-                    Anti-Asian hate hasn’t been just from the pandemic. It goes way back. This is deeper.
-                </h3>
-                <h3>
-                    - Manny Chong
-                </h3>
+                <img src="/image06.jpg"/>
             </div>
         </Slider>
       </div>

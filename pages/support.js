@@ -78,9 +78,15 @@ export default function Support() {
     <Head><title>Start Asian Love</title></Head>
     <Header/>
 
-      <div className={styles.main}>
-        {/* <h2>I am the Support Page</h2> */}
+    <div className={styles.supportTitle}>
+      <h2>Support</h2>
+    </div>
+
+      <div className={styles.description}>
+        <h4>Below you will find a consolidated list of resources we have put together.</h4>
+        <h4>You can filter the list by who the resource(s) are for as well as specifically what you are interested in.</h4>
       </div>
+
       <div className={styles.content}>
         <Allyship currentAllyship={allyship} changeAllyship={changeAllyship}/>
         <CategoryList currentCategory={category} changeCategory={changeCategory}/>
