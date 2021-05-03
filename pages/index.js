@@ -24,6 +24,7 @@ export default function Home() {
           </div>
 
             {/* Should there be a title/call to action above or below the video player? Testing to see if the video player and/or checkout text should be in the middle, beginning, or end of the content text */}
+            
             <VideoPlayer />
 
             {/* <Link href='/news/1' passHref>
