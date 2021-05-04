@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alata&family=Alfa+Slab+One&family=Calistoga&family=Lalezar&family=Patua+One&family=Playfair+Display:wght@800;900&family=Ramabhadra&family=Secular+One&family=Ultra&display=swap"); */
-
 @import url("https://use.typekit.net/wdx7jdm.css");
 
 html,
@@ -33,21 +31,95 @@ a {
 /* commenting out the viewport height (100vh) fixes the footer issue! */
 
 /* Reklame Script Regular
-
 font-family: reklame-script, sans-serif;
-
 font-weight: 400;
-
 font-style: normal;
 
 
 Reklame Script Bold
-
 font-family: reklame-script, sans-serif;
-
 font-weight: 700;
-
 font-style: normal; */
+
+/* Expressway Regular
+font-family: expressway, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Expressway Regular Italic
+font-family: expressway, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+
+Expressway ExtraLight
+font-family: expressway, sans-serif;
+font-weight: 200;
+font-style: normal; */
+
+/* Expressway ExtraLight Italic
+font-family: expressway, sans-serif;
+font-weight: 200;
+font-style: italic;
+
+
+Expressway Light
+font-family: expressway, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Expressway Light Italic
+font-family: expressway, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+
+Expressway Book
+font-family: expressway, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+Expressway Book Italic
+font-family: expressway, sans-serif;
+font-weight: 500;
+font-style: italic; */
+
+/* Expressway SemiBold
+font-family: expressway, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+
+Expressway SemiBold Italic
+font-family: expressway, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+
+Expressway Bold
+font-family: expressway, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Expressway Bold Italic
+font-family: expressway, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+Expressway ExtraBold
+font-family: expressway, sans-serif;
+font-weight: 800;
+font-style: normal; */
+
+/* Expressway ExtraBold Italic
+font-family: expressway, sans-serif;
+font-weight: 800;
+font-style: italic; */
 
 /* https://fonts.adobe.com/fonts/proxima-nova#fonts-section */
 /* 
@@ -175,3 +247,110 @@ Proxima Nova Condensed Extrabold
 font-family: proxima-nova-condensed, sans-serif;
 font-weight: 800;
 font-style: normal; */
+
+/* BigCity Grotesque Pro Thin Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 200;
+font-style: italic;
+
+
+BigCity Grotesque Pro Hairline Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 100;
+font-style: italic;
+
+
+BigCity Grotesque Pro Hairline
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 100;
+font-style: normal;
+
+
+BigCity Grotesque Pro Thin
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+
+BigCity Grotesque Pro Light
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+BigCity Grotesque Pro Light Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+
+BigCity Grotesque Pro Book
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+BigCity Grotesque Pro Book Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+
+BigCity Grotesque Pro Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+
+BigCity Grotesque Pro Regular
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+BigCity Grotesque Pro Medium Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+
+BigCity Grotesque Pro Medium
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+
+BigCity Grotesque Pro Bold
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+BigCity Grotesque Pro Bold Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+BigCity Grotesque Pro Black
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+
+BigCity Grotesque Pro Black Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 800;
+font-style: italic;
+
+
+BigCity Grotesque Pro Heavy
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 900;
+font-style: normal;
+
+
+BigCity Grotesque Pro Heavy Italic
+font-family: bigcity-grotesque-pro, sans-serif;
+font-weight: 900;
+font-style: italic; */
