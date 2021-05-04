@@ -17,8 +17,10 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   color: #6a1f77;
   /* color: #f21905; */
   margin-top: 50px;
-  font-size: 3.5em;
+  font-size: 4em;
+  font-family: expressway, sans-serif;
   font-weight: 800;
+  font-style: normal;
 }
 
 .main {
@@ -122,10 +124,14 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 800;
   white-space: nowrap;
   color: #875c8f;
+
+  font-family: expressway, sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .paginator div {

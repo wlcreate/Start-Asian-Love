@@ -9,6 +9,14 @@
   text-align: center;
 }
 
+.main h2 {
+  color: #6a1f77;
+  font-size: 4em;
+  font-family: expressway, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
 /* The card text size in the WinsResources component (which imports styling from WinsResources.module.css) is also being affected by the ".content" class in this Wins.module.css ??? Effect is most evident when the font size is changed. */
 
 .content {
@@ -21,20 +29,46 @@
 .description {
   margin-left: 10%;
   margin-right: 10%;
-  font-size: 1em;
+  font-size: 0.8em;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
   text-align: justify;
   text-justify: inter-word;
   margin-bottom: 0%;
   font-weight: 500;
   letter-spacing: 1px;
   color: #705474;
+  line-height: 1.25;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -30px;
+  font-size: 2em;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 0%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #705474;
+  line-height: 1.25;
   transition: all 0.3s ease-in-out;
 }
 
 .scroll {
   cursor: pointer;
   margin-top: 100px;
-  font-size: 1.25em;
+  font-size: 1.35em;
   padding: 12px;
   border-radius: 6px;
   letter-spacing: 0.25px;
@@ -45,6 +79,11 @@
   align-items: center;
   text-transform: uppercase;
   box-shadow: 6px 6px 12px #ecb724;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
 }
 
 .scroll:hover {
@@ -53,9 +92,9 @@
 }
 
 .scrollToSection {
-  font-size: 2em;
+  font-size: 2.25em;
   font-weight: 800;
-  color: #4d005a;
+  color: #6a1f77;
   margin-top: 40px;
   margin-bottom: 14px;
 }
@@ -65,12 +104,15 @@
   margin-top: 10px;
   font-size: 1.25em;
   font-weight: 700;
-  color: #fcb03d;
+  color: #f21905;
+  font-family: expressway, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.scrollToTop:hover {
+/* .scrollToTop:hover {
   color: #f21905;
-}
+} */
 
 .wins-section {
   display: column;
@@ -78,8 +120,10 @@
 
 /* The five category titles in the Wins page */
 .wins-section h3 {
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1.8em;
+  font-family: expressway, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   color: #4d005a;
   margin-top: 100px;
   margin-bottom: 10px;
