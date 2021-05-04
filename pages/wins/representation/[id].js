@@ -1,4 +1,4 @@
-import { representation as representationResources } from '../../../Wins-separate.js';
+import { representation as representationResources } from '../../../database/Wins-separate.js';
 import { Header } from '../../../components/Header'
 import { Footer } from '../../../components/Footer'
 import styles from '../../../styles/WinsID.module.css';

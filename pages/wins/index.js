@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
+import { art as artResources } from '../../database/Wins-separate';
+import { heritage as heritageResources } from '../../database/Wins-separate';
+import { contributions as contributionsResources } from '../../database/Wins-separate';
+import { representation as representationResources } from '../../database/Wins-separate';
+import { cultural as culturalResources } from '../../database/Wins-separate';
+import { WinsResources } from '../../components/WinsResources'
 import styles from '../../styles/Wins.module.css';
-import { art as artResources } from '../../Wins-separate';
-import { heritage as heritageResources } from '../../Wins-separate';
-import { contributions as contributionsResources } from '../../Wins-separate';
-import { representation as representationResources } from '../../Wins-separate';
-import { cultural as culturalResources } from '../../Wins-separate';
-import {WinsResources} from '../../components/WinsResources'
 
 import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 

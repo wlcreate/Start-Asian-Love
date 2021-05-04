@@ -1,4 +1,4 @@
-import { art as artResources } from '../../../Wins-separate.js';
+import { art as artResources } from '../../../database/Wins-separate.js';
 import { Header } from '../../../components/Header'
 import { Footer } from '../../../components/Footer'
 import styles from '../../../styles/WinsID.module.css';
