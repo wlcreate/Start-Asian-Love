@@ -99,10 +99,6 @@ export default function Home() {
           </div> */}
 
         </div>
-        
-        {/* <Link href='/news/1' passHref>
-          <div className={styles.checkout}>Check out the latest news</div>
-        </Link> */}
 
         <Footer/>
     </div>
