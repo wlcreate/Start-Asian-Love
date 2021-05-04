@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import styles from '../styles/Header.module.css';
 
-// "Title" div is now clickable
+
 
 export const Header = () => {
     const router = useRouter();
