@@ -6,6 +6,8 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
 
 /* The cards in the News, Support, and Win pages now all have the same width for consistency, and a box shadow effect with a darker yellow hue has been applied to all of them for depth. */
 
+@import url("https://use.typekit.net/wdx7jdm.css");
+
 .container {
   align-items: center;
   text-align: center;
