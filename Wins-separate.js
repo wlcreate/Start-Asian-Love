@@ -208,7 +208,7 @@ export const representation = [{
     {
         "id": 5,
         "title": "Chloé Zhao",
-        "url": "https://caviar.tv/losangeles/directors/chlozhao",
+        "url": "https://tisch.nyu.edu/grad-film/alumni/chloe-zhao",
         "field": "artist",
         "content": "Chloé Zhao is a Chinese American filmmaker, director, writer, and producer. Zhao is known for her critically acclaimed independent films, which include Songs My Brothers Taught Me (2015), The Rider (2017), and Nomadland (2020), which won Best Picture at the 93rd Academy Awards, and for which Zhao won the Oscar for Best Director. Zhao is the first Asian woman, first woman of color, and second woman to win Best Director.",
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619145334/SAL%20Wins/win20a_l09mhk.png",

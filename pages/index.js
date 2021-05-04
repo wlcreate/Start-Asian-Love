@@ -15,7 +15,7 @@ export default function Home() {
 
         <Header/>
         {/* <Carousel/> */}
-        <img className={styles.hero} src="SAL Home.jpg" alt="Start Asian Love"></img>
+        <img className={styles.hero} src="SAL Updated Hero.jpg" alt="Start Asian Love"></img>
 
         <div className={styles.content}>
 
@@ -75,12 +75,13 @@ export default function Home() {
             <div className={styles.graphic}><img src="graphic08.jpg" alt=""></img></div>
           </div>
           
-          <div className={styles.container}><Carousel/></div>
+          {/* <div className={styles.container}><Carousel/></div> */}
 
           <div className={styles.text}>
             <p>
-              Asian racism and hate is nothing new. It can be traced back to the <span><a href="https://www.history.com/topics/immigration/chinese-exclusion-act-1882" target="-blank" rel="noopener noreferrer">Chinese Exclusion Act of 1882</a></span>, which was the first law that restricted immigrants of a specific ethnic group, and seen throughout history all the way to the Atlanta spa shootings that occurred March 16, 2021. Everyday we can expect to wake up to a new report about another incident, and they aren’t stopping.
+              So what can we do? Anti-Asian hate won't disappear overnight, and neither will racism as a whole. But what we can do is support, learn, and celebrate each other for our differences and similarities. Know that you are not alone and that by consciously making the choice to choose love instead of hate you are helping combat hate.
             </p>
+            
           </div>
 
           {/* Second row of graphics */}
@@ -88,14 +89,14 @@ export default function Home() {
             <div className={styles.graphic}><img src="graphic04.jpg" alt=""></img></div>
             <div className={styles.graphic}><img src="graphic05.jpg" alt=""></img></div>
             <div className={styles.graphic}><img src="graphic09.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="graphic10.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="graphic11.jpg" alt=""></img></div>
           </div>
 
-          <div className={styles.text}>
-            <p>
-              So what can we do? Anti-Asian hate won't disappear overnight, and neither will racism as a whole. But what we can do is support, learn, and celebrate each other for our differences and similarities. Know that you are not alone and that by consciously making the choice to choose love instead of hate you are helping combat hate.
+          {/* <div className={styles.text}>
+            {/* <p>
+              Asian racism and hate is nothing new. It can be traced back to the <span><a href="https://www.history.com/topics/immigration/chinese-exclusion-act-1882" target="-blank" rel="noopener noreferrer">Chinese Exclusion Act of 1882</a></span>, which was the first law that restricted immigrants of a specific ethnic group, and seen throughout history all the way to the Atlanta spa shootings that occurred March 16, 2021. Everyday we can expect to wake up to a new report about another incident, and they aren’t stopping.
             </p>
-          </div>
+          </div> */}
 
         </div>
         

@@ -20,7 +20,8 @@ export default function Wins() {
       {/* divs are outlined for reference in module.css file */}
     
       <div className={styles.main}>
-        {/* <h2>I am the Wins Page</h2> */}
+        <h2>Wins</h2>
+        <p className={styles.intro}>In light of the anti-Asian hate across America, here are some moments, places, and people in American history to serve as reminders of our resilience and strength, that we belong here, and this is our home. What we have listed is a small piece of the pie, and this is only the beginning.</p> 
       </div>
        <Element name="top"><div className={styles.scrollToSection}>Scroll to Section</div></Element>
         <Link className={styles.scroll} activeClass="active" to="heritage" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
@@ -74,7 +75,7 @@ export default function Wins() {
 
         <div className={styles["wins-section"]}>
           <Element name="art"><h3>Art</h3></Element>
-          <p className={styles.description}>Art history has long been too white, too male, and too Western-centric. As more artists of color and artists from underrepresented backgrounds gain recogntion, we are eager to feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the expression and voices of all Asian artists.</p>
+          <p className={styles.description}>Art history has long been too white, too male, and too Western-centric. As more artists of color and artists from underrepresented backgrounds gain recognition, we are eager to feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the expression and voices of all Asian artists.</p>
           <WinsResources resources={artResources} category="art"/>
           <Link className={styles.scrollToTop} activeClass="active" to="top" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
             Scroll to Top

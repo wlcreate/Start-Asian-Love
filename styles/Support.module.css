@@ -6,15 +6,13 @@
 }
 
 .supportTitle {
-  color: #4d005a;
+  color: #6a1f77;
   /* color: #f21905; */
-  margin-top: -20px;
+  margin-top: -30px;
   margin-bottom: -80px;
-  font-size: 3em;
-  font-family: reklame-script, sans-serif;
-
-  font-weight: 700;
-
+  font-size: 3.25em;
+  font-family: expressway, sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -29,6 +27,11 @@
   padding: 10px;
   color: #4d005a;
   margin-bottom: 10px;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
 }
 
 .content {
@@ -45,6 +48,9 @@
   margin-top: 80px;
   margin-bottom: 0px;
   color: #4d005a;
+  font-family: expressway, sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 /* Styling for the current selected allyship and categories */

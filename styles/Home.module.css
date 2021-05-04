@@ -44,6 +44,12 @@
   box-shadow: 16px 16px 16px #ecb724;
   border-radius: 10px;
   margin-bottom: 50px;
+  line-height: 1.65;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 600;
+
+  font-style: normal;
 }
 
 /* The ".factcontainer" div contains the two fact divs with the numerical titles. 
@@ -64,7 +70,7 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 
 .graphicContainer {
   --min: 15ch;
-  --gap: 3rem;
+  --gap: 1rem;
 
   display: grid;
   grid-gap: var(--gap);
@@ -75,7 +81,7 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 
 .graphicContainerTwo {
   --min: 15ch;
-  --gap: 3rem;
+  --gap: 1rem;
 
   display: grid;
   grid-gap: var(--gap);
@@ -109,7 +115,13 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   box-shadow: 16px 16px 16px #ecb724;
   border-radius: 10px;
   overflow: hidden;
+  line-height: 1.65;
   transition: all 0.5s ease-in-out;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 600;
+
+  font-style: normal;
 }
 
 .facts:hover {
