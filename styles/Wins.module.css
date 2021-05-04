@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/wdx7jdm.css");
+
 .container {
   align-items: center;
   text-align: center;
@@ -14,6 +16,19 @@
   padding: 1em; */
   font-size: 2em;
   text-align: center;
+}
+
+.description {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 0%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #705474;
+  transition: all 0.3s ease-in-out;
 }
 
 .scroll {
@@ -77,10 +92,23 @@ https://codepen.io/jdsteinbach/pen/YPPegq */
   .wins-section h3 {
     font-size: 1.5em;
   }
+
+  .description {
+    font-size: 0.8em;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 @media (max-width: 625px) {
   .wins-section h3 {
     font-size: 1em;
+  }
+
+  .description {
+    font-size: 0.6em;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
   }
 }
