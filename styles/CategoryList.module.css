@@ -21,7 +21,7 @@ Purple, black, dark gray, or purple-grayish buttons also looked good. */
   width: 152px;
   padding: 12px;
   margin: 10px;
-  font-size: 0.6em;
+  font-size: 0.7em;
   border-radius: 4px;
   align-items: center;
   border: none;
@@ -30,6 +30,11 @@ Purple, black, dark gray, or purple-grayish buttons also looked good. */
   font-weight: 600;
   text-transform: uppercase;
   box-shadow: 6px 6px 12px #ecb724;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
 }
 
 .button:hover {
@@ -47,9 +52,12 @@ Purple, black, dark gray, or purple-grayish buttons also looked good. */
 
 .main h2 {
   font-size: 1.25em;
-  font-weight: 800;
+
   color: #4d005a;
   margin-bottom: 10px;
+  font-family: expressway, sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .main p {

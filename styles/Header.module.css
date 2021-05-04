@@ -47,10 +47,14 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 
 .main div {
   margin: 15px;
+  padding-right: 20px;
   cursor: pointer;
   font-size: 2.25em;
   font-weight: 700;
   color: white;
+  font-family: expressway, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .main div:hover {
@@ -85,6 +89,7 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 @media (max-width: 500px) {
   .main div {
     font-size: 1.1em;
+    padding-right: 0px;
   }
 }
 

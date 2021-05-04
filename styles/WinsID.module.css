@@ -15,6 +15,9 @@
   color: #610172;
   font-weight: 800;
   transition: all 0.5s ease-in-out;
+  font-family: expressway, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .whiteBox {
@@ -44,12 +47,20 @@
 .text {
   margin-top: 30px;
   transition: all 0.5s ease-in-out;
+  font-family: acumin-pro, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
 }
 
 .whiteBox span {
   color: #f21905;
   font-weight: 700;
   transition: all 0.5s ease-in-out;
+  font-family: expressway, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .whiteBox span:hover {
@@ -60,9 +71,12 @@
 .backToWins {
   cursor: pointer;
   margin: 60px auto;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 700;
   color: #610172;
+  font-family: expressway, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .backToWins:hover {
