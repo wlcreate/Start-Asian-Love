@@ -1,5 +1,5 @@
-import styles from '../styles/CategoryList.module.css';
-import resourcesData from '../database/SupportResources.js';
+import styles from '../../styles/CategoryList.module.css';
+import resourcesData from '../../database/SupportResources.js';
 
 const CategoryList = ({changeCategory}) => {
     const getCategories = (information) => {
