@@ -38,7 +38,7 @@ export default function Home() {
 
         <Header/>
         {/* <Carousel/> */}
-        <img className={styles.hero} src="SAL Updated Hero.jpg" alt="Start Asian Love"></img>
+        <img className={styles.hero} src="Hero.jpg" alt="Start Asian Love"></img>
 
         <div className={styles.content}>
 
