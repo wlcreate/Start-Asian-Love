@@ -1,4 +1,4 @@
-import styles from '../styles/WinsResources.module.css';
+import styles from '../../styles/WinsResources.module.css';
 import Link from 'next/link';
 
 export const WinsResources = (props) => {

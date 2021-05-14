@@ -1,5 +1,5 @@
-import styles from '../styles/AllyshipList.module.css';
-import resourcesData from '../database/SupportResources';
+import styles from '../../styles/AllyshipList.module.css';
+import resourcesData from '../../database/SupportResources';
 
 export const Allyship = ({changeAllyship}) => {
 

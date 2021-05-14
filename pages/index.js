@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Header } from '../components/Header'
+import { Header } from '../components/Layout/Header'
 import Carousel from '../components/Carousel.js'
-import VideoPlayer from '../components/VideoPlayer.js'
-import { Footer } from '../components/Footer'
+import VideoPlayer from '../components/Home/VideoPlayer.js'
+import { Footer } from '../components/Layout/Footer'
 // import Link from 'next/link';
 
 export default function Home() {
