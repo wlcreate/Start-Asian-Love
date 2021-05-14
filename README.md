@@ -1,9 +1,6 @@
 # Start Asian Love ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge)
-<p align=center>We're currently under construction!</p>
 
-<p align=center>
-  <img src="https://media.giphy.com/media/5t20H3tq99Y1DYFuEX/giphy.gif" alt="Three workers are doing various construction tasks for the room" width=40% />
-</p>
+<img width="1302" alt="Start-Asian-Love" src="https://user-images.githubusercontent.com/62153993/118204100-7ab1d400-b42b-11eb-85d6-50ba93df02a3.png">
 
 After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa Shootings that occurred on March 16, 2021 and rise of the Stop Asian Hate movement, Emmanuel Jose and Waverley Leung came together to work on Start Asian Love as our own way to take action. 
 
