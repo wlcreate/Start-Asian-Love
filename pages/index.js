@@ -69,10 +69,10 @@ export default function Home() {
 
           {/* First row of graphics */}
           <div className={styles.graphicContainer}>
-            <div className={styles.graphic}><img src="graphic07.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="graphic01.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="graphic03.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="graphic08.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic07.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic01.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic03.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic08.jpg" alt=""></img></div>
           </div>
           
           {/* <div className={styles.container}><Carousel/></div> */}
@@ -86,10 +86,10 @@ export default function Home() {
 
           {/* Second row of graphics */}
           <div className={styles.graphicContainerTwo}>
-            <div className={styles.graphic}><img src="graphic04.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="graphic05.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="graphic09.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="graphic11.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic04.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic05.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic09.jpg" alt=""></img></div>
+            <div className={styles.graphic}><img src="/Graphics/graphic11.jpg" alt=""></img></div>
           </div>
 
           {/* <div className={styles.text}>
