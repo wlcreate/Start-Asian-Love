@@ -9,9 +9,11 @@ import VideoPlayer from '../components/Home/VideoPlayer.js'
 export default function Home() {
   return (
     <div>
-
-      {/* Adding title! https://nextjs.org/docs/api-reference/next/head */}
-      <Head><title>Start Asian Love</title></Head>
+      <Head>
+        <title>Start Asian Love— Combat Hate. Choose Love.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement. Let's grow by understanding, supporting, and celebrating each other for who we are." />
+      </Head>
 
         <Header/>
         {/* <Carousel/> */}
@@ -24,8 +26,6 @@ export default function Home() {
               <span>Start Asian Love</span> is a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement. Through these resources we hope to raise awareness and encourage you to join the fight and support Asian Americans.
             </p>
           </div>
-
-            {/* Should there be a title/call to action above or below the video player? Testing to see if the video player and/or checkout text should be in the middle, beginning, or end of the content text */}
             
             <VideoPlayer />
 
@@ -107,5 +107,3 @@ export default function Home() {
 }
 
 // • Each paragraph is for now wrapped in their own divs to experiment with arrangement and display of text.
-
-// • The last paragraph is a great intro, and it is currently now the first div below the carousel.
