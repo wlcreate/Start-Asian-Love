@@ -1,8 +1,8 @@
-import { representation as representationResources } from '../../../database/Wins-separate.js';
+import Link from 'next/link'
+import styles from '../../../styles/Wins/WinsID.module.css';
 import { Header } from '../../../components/Layout/Header'
 import { Footer } from '../../../components/Layout/Footer'
-import styles from '../../../styles/WinsID.module.css';
-import Link from 'next/link'
+import { representation as representationResources } from '../../../database/Wins-separate.js';
 
 const Representative = (props) => {
   const {title, image, content, url} = props.foundRepresentative

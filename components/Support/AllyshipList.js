@@ -1,4 +1,4 @@
-import styles from '../../styles/AllyshipList.module.css';
+import styles from '../../styles/Support/AllyshipList.module.css';
 import resourcesData from '../../database/SupportResources';
 
 export const Allyship = ({changeAllyship}) => {

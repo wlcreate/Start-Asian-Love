@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// import Link from 'next/link';
+import styles from '../styles/Home/Home.module.css'
 import { Header } from '../components/Layout/Header'
+import { Footer } from '../components/Layout/Footer'
 import Carousel from '../components/Carousel.js'
 import VideoPlayer from '../components/Home/VideoPlayer.js'
-import { Footer } from '../components/Layout/Footer'
-// import Link from 'next/link';
 
 export default function Home() {
   return (

@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useState } from 'react';
+import styles from '../styles/Support/Support.module.css';
 import { Header } from '../components/Layout/Header'
 import { Footer } from '../components/Layout/Footer'
 import { Allyship } from '../components/Support/AllyshipList'
 import  CategoryList  from '../components/Support/CategoryList'
 import { Resources } from '../components/Support/Resources'
-import styles from '../styles/Support.module.css';
 import resourcesData from '../database/SupportResources';
 
 export default function Support() {

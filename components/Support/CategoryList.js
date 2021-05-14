@@ -1,4 +1,4 @@
-import styles from '../../styles/CategoryList.module.css';
+import styles from '../../styles/Support/CategoryList.module.css';
 import resourcesData from '../../database/SupportResources.js';
 
 const CategoryList = ({changeCategory}) => {

@@ -1,8 +1,8 @@
-import { cultural as culturalResources } from '../../../database/Wins-separate.js';
+import Link from 'next/link'
+import styles from '../../../styles/Wins/WinsID.module.css';
 import { Header } from '../../../components/Layout/Header'
 import { Footer } from '../../../components/Layout/Footer'
-import styles from '../../../styles/WinsID.module.css';
-import Link from 'next/link'
+import { cultural as culturalResources } from '../../../database/Wins-separate.js';
 
 const Cultural = (props) => {
   const {title, image, content, url, location} = props.foundCultural

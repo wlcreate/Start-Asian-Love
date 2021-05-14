@@ -1,5 +1,5 @@
-import styles from '../../styles/WinsResources.module.css';
 import Link from 'next/link';
+import styles from '../../styles/Wins/WinsResources.module.css';
 
 export const WinsResources = (props) => {
 
