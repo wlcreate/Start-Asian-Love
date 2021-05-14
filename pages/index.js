@@ -10,6 +10,9 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement." />
         <title>Start Asian Love— Combat Hate. Choose Love.</title>
 
         {/* Open Graph/Facebook */}
