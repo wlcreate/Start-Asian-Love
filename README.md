@@ -6,7 +6,7 @@ After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa
 
 Start Asian Love is a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement. Through these resources we hope to raise awareness and encourage you to join the fight and support Asian Americans.
 
-If you would like to contribute or give us feedback please fill out this [form](https://forms.gle/LQtZ5xgr16htNhdZ8)!
+✨ Check out the [live site](https://start-asian-love.vercel.app/) ✨ If you would like to contribute or give us feedback please fill out this [form](https://forms.gle/LQtZ5xgr16htNhdZ8)!
 
 ## Getting Started
 **Note**: In order to run this app locally, first you will need to get an API key from [News API](https://newsapi.org/)
