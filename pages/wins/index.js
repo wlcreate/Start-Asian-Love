@@ -14,14 +14,39 @@ import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from 'rea
 export default function Wins() {
   return (
     <div className={styles.container}>
-    <Head><title>Start Asian Love</title></Head>
+    <Head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="A reminder of Asian American moments, places, and people to honor and celebrate." />
+        <title>Start Asian Love | Wins</title>
+
+        {/* Favicon */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon_io/site.webmanifest" />
+
+        {/* Open Graph/Facebook */}
+        <meta property="og:type" content="website" key="ogtype" />
+        <meta property="og:url" content="https://start-asian-love.vercel.app/" key="ogurl" />
+        <meta property="og:title" content="Start Asian Love— Combat Hate. Choose Love." key="ogtitle" />
+        <meta property="og:description" content="A reminder of Asian American moments, places, and people to honor and celebrate." key="ogdesc" />
+        <meta property="og:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="ogimage" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" key="twcard" />
+        <meta property="twitter:url" content="https://metatags.io/" key="twurl" />
+        <meta property="twitter:title" content="Start Asian Love— Combat Hate. Choose Love." key="twtitle" />
+        <meta property="twitter:description" content="A reminder of Asian American moments, places, and people to honor and celebrate." key="twdesc" />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="twimage" />
+    </Head>
     <Header/>
 
       {/* divs are outlined for reference in module.css file */}
     
       <div className={styles.main}>
         <h2>Wins</h2>
-        <p className={styles.intro}>In light of the anti-Asian hate across America, here are some moments, places, and people in American history to serve as reminders of our resilience and strength, that we belong here, and this is our home. What we have listed is a small piece of the pie, and this is only the beginning.</p> 
+        <p className={styles.intro}>In light of the anti-Asian hate across America, here are some moments, places, and people in American history to serve as reminders of our resilience and strength, that we belong here, and this is our home. What we have listed is a small portion compared to the many, however this is only the beginning.</p> 
       </div>
        <Element name="top"><div className={styles.scrollToSection}>Scroll to Section</div></Element>
         <Link className={styles.scroll} activeClass="active" to="heritage" smooth={true} duration={250} style={{ display: 'inline-block', margin: '10px' }}>
