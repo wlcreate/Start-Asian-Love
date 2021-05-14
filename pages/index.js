@@ -10,9 +10,22 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Start Asian Love— Combat Hate. Choose Love.</title>
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement. Let's grow by understanding, supporting, and celebrating each other for who we are." />
+        <meta name="description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement." />
+        <title>Start Asian Love— Combat Hate. Choose Love.</title>
+
+        {/* Open Graph/Facebook */}
+        <meta property="og:type" content="website" key="ogtype" />
+        <meta property="og:url" content="https://start-asian-love.vercel.app/" key="ogurl" />
+        <meta property="og:title" content="Start Asian Love— Combat Hate. Choose Love." key="ogtitle" />
+        <meta property="og:description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement." key="ogdesc" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary" key="twcard" />
+        <meta property="twitter:url" content="https://metatags.io/" key="twurl" />
+        <meta property="twitter:title" content="Start Asian Love— Combat Hate. Choose Love." key="twtitle" />
+        <meta property="twitter:description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement." key="twdesc" />
       </Head>
 
         <Header/>
