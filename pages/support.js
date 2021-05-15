@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useState } from 'react';
+import styles from '../styles/Support/Support.module.css';
 import { Header } from '../components/Layout/Header'
 import { Footer } from '../components/Layout/Footer'
 import { Allyship } from '../components/Support/AllyshipList'
 import  CategoryList  from '../components/Support/CategoryList'
 import { Resources } from '../components/Support/Resources'
-import styles from '../styles/Support.module.css';
 import resourcesData from '../database/SupportResources';
 
 export default function Support() {
@@ -70,7 +70,32 @@ export default function Support() {
   return (
     
     <div className={styles.container}>
-    <Head><title>Start Asian Love</title></Head>
+    <Head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Resources on how you can support and be an ally to Asian Americans right now." />
+        <title>Start Asian Love | Support</title>
+
+        {/* Favicon */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon_io/site.webmanifest" />
+
+        {/* Open Graph/Facebook */}
+        <meta property="og:type" content="website" key="ogtype" />
+        <meta property="og:url" content="https://start-asian-love.vercel.app/" key="ogurl" />
+        <meta property="og:title" content="Start Asian Love— Combat Hate. Choose Love." key="ogtitle" />
+        <meta property="og:description" content="Resources on how you can support and be an ally to Asian Americans right now." key="ogdesc" />
+        <meta property="og:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="ogimage" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" key="twcard" />
+        <meta property="twitter:url" content="https://metatags.io/" key="twurl" />
+        <meta property="twitter:title" content="Start Asian Love— Combat Hate. Choose Love." key="twtitle" />
+        <meta property="twitter:description" content="Resources on how you can support and be an ally to Asian Americans right now." key="twdesc" />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="twimage" />
+    </Head>
     <Header/>
 
     <div className={styles.supportTitle}>
