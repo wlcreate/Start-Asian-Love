@@ -1,5 +1,5 @@
 import ReactPlayer from 'react-player/lazy'
-import styles from '../../styles/VideoPlayer.module.css'
+import styles from '../../styles/Home/VideoPlayer.module.css'
 
 const VideoPlayer = () => {
     return (
