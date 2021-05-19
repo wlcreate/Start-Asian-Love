@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 // import Link from 'next/link';
 import styles from '../styles/Home/Home.module.css'
 import { Header } from '../components/Layout/Header'
@@ -23,14 +24,14 @@ export default function Home() {
 
         {/* Open Graph/Facebook */}
         <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="https://start-asian-love.vercel.app/" key="ogurl" />
+        <meta property="og:url" content="https://www.startalove.com/" key="ogurl" />
         <meta property="og:title" content="Start Asian Love— Combat Hate. Choose Love." key="ogtitle" />
         <meta property="og:description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement." key="ogdesc" />
         <meta property="og:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="ogimage" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" key="twcard" />
-        <meta property="twitter:url" content="https://metatags.io/" key="twurl" />
+        <meta property="twitter:url" content="https://www.startalove.com/" key="twurl" />
         <meta property="twitter:title" content="Start Asian Love— Combat Hate. Choose Love." key="twtitle" />
         <meta property="twitter:description" content="We are a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement." key="twdesc" />
         <meta property="twitter:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="twimage" />
@@ -38,7 +39,7 @@ export default function Home() {
 
         <Header/>
         {/* <Carousel/> */}
-        <img className={styles.hero} src="Hero.jpg" alt="Start Asian Love"></img>
+        <Image className={styles.hero} src="/Hero.jpg" alt="Start Asian Love Hero" loading="lazy" width={1920} height={1200} layout="responsive"/>
 
         <div className={styles.content}>
 
@@ -90,10 +91,10 @@ export default function Home() {
 
           {/* First row of graphics */}
           <div className={styles.graphicContainer}>
-            <div className={styles.graphic}><img src="/Graphics/graphic07.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="/Graphics/graphic01.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="/Graphics/graphic03.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="/Graphics/graphic08.jpg" alt=""></img></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic07.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic01.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic03.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic08.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
           </div>
           
           {/* <div className={styles.container}><Carousel/></div> */}
@@ -107,10 +108,10 @@ export default function Home() {
 
           {/* Second row of graphics */}
           <div className={styles.graphicContainerTwo}>
-            <div className={styles.graphic}><img src="/Graphics/graphic04.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="/Graphics/graphic05.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="/Graphics/graphic09.jpg" alt=""></img></div>
-            <div className={styles.graphic}><img src="/Graphics/graphic11.jpg" alt=""></img></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic04.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic05.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic09.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
+            <div className={styles.graphic}><Image src="/Graphics/graphic11.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
           </div>
 
           {/* <div className={styles.text}>

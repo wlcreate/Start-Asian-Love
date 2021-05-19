@@ -58,7 +58,7 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 /* the media query does need to be tweaked, since the child divs are not completely centered when simulating device sizes. */
 
 .factcontainer {
-  --min: 15ch;
+  --min: 305px;
   --gap: 3rem;
 
   display: grid;
@@ -69,23 +69,17 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 /* Two graphic container divs created because one uses margin-top, and the other uses margin-bottom (depending on placement on home page) */
 
 .graphicContainer {
-  --min: 15ch;
-  --gap: 1rem;
-
   display: grid;
-  grid-gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 50px;
-  vertical-align: bottom;
 }
 
 .graphicContainerTwo {
-  --min: 15ch;
-  --gap: 1rem;
-
   display: grid;
-  grid-gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -103,6 +97,8 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 
 .graphic img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -126,6 +122,13 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 
 .facts:hover {
   color: black;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 35px 35px;
+    /* line-height: 0; */
+  }
 }
 
 /* .checkout {
