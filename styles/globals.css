@@ -8,6 +8,8 @@
   --primary-white: white;
   --primary-black: black;
 
+  --acumin-pro: acumin-pro, sans-serif; 
+
   --primary-transition: all 0.5s ease-in-out;
   --primary-shadow: 16px 16px 16px var(--shadow-yellow);
   --mobile-shadow: 12px 12px 12px var(--shadow-yellow)

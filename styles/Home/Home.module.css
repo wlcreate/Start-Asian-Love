@@ -1,13 +1,17 @@
-.hero {
-  width: 100%;
-}
-
 /* all of the content on the page */
 .content {
   padding-left: 70px;
   padding-right: 70px;
   color: rgb(83, 83, 83);
   line-height: 1.4;
+}
+
+.text, .facts {
+  line-height: 1.65;
+  font-size: 1.7em;
+  font-weight: 600;
+  font-family: var(--acumin-pro);
+  font-style: normal;
 }
 
 /* These are the paragraphs on the home page (nested in .content) */
@@ -18,12 +22,6 @@
   box-shadow: var(--primary-shadow);
   background: var(--primary-white);
   border-radius: 10px;
-  
-  line-height: 1.65;
-  font-size: 1.7em;
-  font-weight: 600;
-  font-family: acumin-pro, sans-serif;
-  font-style: normal;
 }
 
 /* The ".factcontainer" div contains the two fact divs with the numerical titles. 
@@ -46,12 +44,6 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   overflow: hidden;
   height: auto;
   transition: var(--primary-transition);
-
-  line-height: 1.65;
-  font-size: 1.7em;
-  font-family: acumin-pro, sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
 .facts h2 {
@@ -92,7 +84,6 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   display: block; /* deletes extra padding below images, since they are by default displayed inline. */
 }
 
-
 @media (min-width: 600px) {
   .facts:hover {
     color: black;
@@ -109,14 +100,17 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
     padding: 35px 35px;
   }
 
-  .text {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .text, .facts {
     padding: 25px;
     box-shadow: var(--mobile-shadow);
 
     line-height: 1.6;
     font-size: 1.4em;
+  }
+
+  .text {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .text p {
@@ -129,14 +123,6 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .facts {
-    padding: 25px;
-    box-shadow: var(--mobile-shadow);
-
-    line-height: 1.6;
-    font-size: 1.4em;;
   }
 
   .graphicRowOne, .graphicRowTwo {
