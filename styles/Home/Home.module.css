@@ -3,7 +3,10 @@
   padding-left: 70px;
   padding-right: 70px;
   color: rgb(83, 83, 83);
-  line-height: 1.4;
+}
+
+.content a, .content span {
+  color: var(--primary-red);
 }
 
 .text, .facts {
