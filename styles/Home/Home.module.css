@@ -61,7 +61,7 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 .graphicRowOne, .graphicRowTwo {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
 }
 
 .graphicRowOne {
@@ -87,7 +87,8 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   display: block; /* deletes extra padding below images, since they are by default displayed inline. */
 }
 
-@media (min-width: 600px) {
+/* screen must be at least a portrait tablet or small desktop for hover effects */
+@media (min-width: 940px) {
   .facts:hover {
     color: black;
   }
@@ -98,7 +99,8 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   }
 }
 
-@media (max-width: 600px) {
+/* screen must be no bigger than landscape phone or portrait tablet */
+@media (max-width: 768px) {
   .content {
     padding: 35px 35px;
   }
@@ -123,13 +125,13 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   .factcontainer {
     margin-top: 30px;
 
-    display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .graphicRowOne, .graphicRowTwo {
     grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .graphicRowOne {
