@@ -7,7 +7,7 @@
   align-items: center;
   bottom: 0;
   
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 500;
   font-family: var(--acumin-pro);
   font-style: normal;
@@ -30,6 +30,14 @@
     font-weight: 550;
   }
 }
+
+/* for most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .footer {
+    font-size: 1.5em;
+  }
+}
+
 
 /* screen must be no bigger than landscape phone or portrait tablet */
 @media (max-width: 768px) {

@@ -40,7 +40,7 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
   color: var(--primary-white);
   margin-left: 2em;
 
-  font-size: 2.15em;
+  font-size: 2.25em;
   font-family: var(--expressway);
   font-weight: 600;
   font-style: normal;
@@ -59,6 +59,16 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 
 /* header links stack below Start Asian Love title when resized */
 /* for most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .logo {
+    font-size: 2.5em;
+  }
+
+  .navItem {
+    font-size: 1.75em;
+  }
+}
+
 @media (max-width: 1170px) {
   .nav {
     flex-direction: column;
