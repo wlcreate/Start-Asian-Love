@@ -22,10 +22,10 @@
   transition: var(--primary-transition);
 }
 
-/* screen must be at least a portrait tablet or small desktop for hover effects */
+/* screen must be at least a small desktop for hover effects */
 @media (min-width: 940px) {
   .footer a:hover {
-    color: var(--primary-yellow);
+    color: var(--background-yellow);
     font-size: 1.2em;
     font-weight: 550;
   }
@@ -34,6 +34,14 @@
 /* screen must be no bigger than landscape phone or portrait tablet */
 @media (max-width: 768px) {
   .footer {
+    font-size: 1em;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .footer {
+    height: 80px;
     font-size: 0.6em;
   }
 }
