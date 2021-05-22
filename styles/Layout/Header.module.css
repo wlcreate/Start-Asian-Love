@@ -5,7 +5,6 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 .header {
   /* padding-left: 1rem; */
   /* height: 172px; */
-  cursor: pointer;
 
   background: url(https://res.cloudinary.com/dn1e07eul/image/upload/v1619843039/SAL/background-wallpaper-4k-gamer-2020-06-01-162712-6-3840x2160_t5bibd.jpg)
     no-repeat center center/cover;
@@ -38,7 +37,6 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 }
 
 .navItem {
-  cursor: pointer;
   color: var(--primary-white);
   margin-left: 2em;
 
