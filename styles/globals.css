@@ -2,13 +2,16 @@
 @import url("https://use.typekit.net/wdx7jdm.css");
 
 :root {
-  --primary-yellow: #ffe66a;
+  --logo-yellow: #ffdc2f;
+  --background-yellow: #ffe66a;
   --shadow-yellow: #ecb724;
   --primary-red: #f21905;
   --primary-white: white;
   --primary-black: black;
 
   --acumin-pro: acumin-pro, sans-serif; 
+  --reklame-script: reklame-script, sans-serif;
+  --expressway: expressway, sans-serif;
 
   --primary-transition: all 0.5s ease-in-out;
   --primary-shadow: 16px 16px 16px var(--shadow-yellow);
@@ -22,7 +25,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: var(--primary-yellow);
+  background: var(--background-yellow);
 }
 
 a {

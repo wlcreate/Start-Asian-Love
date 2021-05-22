@@ -1,104 +1,105 @@
-/* Container puts the title div and link divs side by side*/
-
 /* Similar to the footer, the purple header was looking a bit flat, and a darker purple hue/greater contrast looked better with the global yellow value, and reduces eye strain. To minimize the flat appearance, the header's height was increased, and I looked for a purple banner to add some styling.
 
 We need to be careful with our color scheme, since it gives off athletic/sporty vibes with its similarity to the Los Angeles Lakers' purple and yellow color scheme. */
 
-@import url("https://use.typekit.net/wdx7jdm.css");
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 1rem;
-  height: 172px;
+.header {
+  /* padding-left: 1rem; */
+  /* height: 172px; */
   cursor: pointer;
-  /* background: rgb(115, 17, 228); */
 
   background: url(https://res.cloudinary.com/dn1e07eul/image/upload/v1619843039/SAL/background-wallpaper-4k-gamer-2020-06-01-162712-6-3840x2160_t5bibd.jpg)
     no-repeat center center/cover;
-  background-position: 50% 54%;
+  background-position: 50% 52%;
 }
 
-.titlelogo {
-  /* color: #f21905; */
-  color: #ffdc2f;
-  font-size: 2em;
-  font-family: reklame-script, sans-serif;
-
-  font-weight: 700;
-
-  font-style: normal;
-  padding-bottom: 7px;
-  padding-left: 130px;
-  /* font-style: bold; */
-  white-space: nowrap;
-}
-
-.titlelogo:hover {
-  color: #f21905;
-}
-
-.main {
+.nav {
   display: flex;
-  justify-content: flex-end;
-  padding: 0rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.main div {
-  margin: 15px;
-  padding-right: 20px;
-  cursor: pointer;
-  font-size: 2.25em;
+.navMenu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin-right: 5em;
+}
+
+.logo {
+  color: var(--logo-yellow);
+  margin: 0.7em 2em;
+  
+  font-size: 3em;
   font-weight: 700;
-  color: white;
-  font-family: expressway, sans-serif;
+  font-family: var(--reklame-script);
+  font-style: normal;
+}
+
+.navItem {
+  cursor: pointer;
+  color: var(--primary-white);
+  margin-left: 2em;
+
+  font-size: 2.15em;
+  font-family: var(--expressway);
   font-weight: 600;
   font-style: normal;
 }
 
-.main div:hover {
-  color: #f21905;
-  /* color: #ffdc2f; */
+/* screen must be at least a portrait tablet or small desktop for hover effects */
+@media (min-width: 940px) {
+  .logo:hover {
+    color: var(--primary-red);
+  }
+  
+  .navItem:hover {
+    color: var(--primary-red);
+  }
 }
 
 /* header links stack below Start Asian Love title when resized */
+/* for most laptop and desktop screens */
 @media (max-width: 1170px) {
-  .container {
+  .nav {
     flex-direction: column;
   }
 
-  .titlelogo {
-    padding-left: 0px;
-    font-size: 1.45em;
-    margin-top: -8px;
+  .logo {
+    font-size: 3.5em;
+    margin-bottom: 0em;
   }
 
-  .main div {
-    margin-top: -20px;
-    padding-bottom: 15px;
-  }
-}
-
-@media (max-width: 600px) {
-  .main div {
-    font-size: 1.5em;
+  .navItem {
+    font-size: 2.25em;
+    margin-bottom: 15px;
   }
 }
 
-@media (max-width: 500px) {
-  .main div {
-    font-size: 1.1em;
-    padding-right: 0px;
+/* screen must be no bigger than landscape phone or portrait tablet */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2.75em;
+  }
+
+  .navItem {
+    font-size: 2em;
   }
 }
 
-@media (max-width: 400px) {
-  .main div {
-    font-size: 0.9em;
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .navMenu {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  .titlelogo {
-    font-size: 1.1em;
+  .logo {
+    font-size: 1.75em;
+  }
+
+  .navItem {
+    font-size: 1.15em;
   }
 }
