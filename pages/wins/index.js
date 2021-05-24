@@ -28,14 +28,14 @@ export default function Wins() {
 
         {/* Open Graph/Facebook */}
         <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="https://start-asian-love.vercel.app/" key="ogurl" />
+        <meta property="og:url" content="https://www.startalove.com/" key="ogurl" />
         <meta property="og:title" content="Start Asian Love— Combat Hate. Choose Love." key="ogtitle" />
         <meta property="og:description" content="A reminder of Asian American moments, places, and people to honor and celebrate." key="ogdesc" />
         <meta property="og:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="ogimage" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" key="twcard" />
-        <meta property="twitter:url" content="https://metatags.io/" key="twurl" />
+        <meta property="twitter:url" content="https://www.startalove.com/" key="twurl" />
         <meta property="twitter:title" content="Start Asian Love— Combat Hate. Choose Love." key="twtitle" />
         <meta property="twitter:description" content="A reminder of Asian American moments, places, and people to honor and celebrate." key="twdesc" />
         <meta property="twitter:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="twimage" />
