@@ -1,4 +1,23 @@
+/* importing Adobe font */
 @import url("https://use.typekit.net/wdx7jdm.css");
+
+:root {
+  --logo-yellow: #ffdc2f;
+  --background-yellow: #ffe66a;
+  --shadow-yellow: #ecb724;
+  --primary-red: #f21905;
+  --primary-white: white;
+  --primary-black: black;
+
+  --acumin-pro: acumin-pro, sans-serif; 
+  --reklame-script: reklame-script, sans-serif;
+  --expressway: expressway, sans-serif;
+
+  --primary-transition: all 0.5s ease-in-out;
+  --primary-shadow: 16px 16px 16px var(--shadow-yellow);
+  --mobile-shadow: 12px 12px 12px var(--shadow-yellow);
+}
+
 
 html,
 body {
@@ -6,10 +25,11 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: #ffe66a;
+  background: var(--background-yellow);
 }
 
 a {
+  cursor: pointer;
   color: inherit;
   text-decoration: none;
 }
@@ -24,11 +44,8 @@ a {
 
 .page-container {
   display: flex;
-  /* height: 100vh; */
   flex-direction: column;
 }
-
-/* commenting out the viewport height (100vh) fixes the footer issue! */
 
 /* Reklame Script Regular
 font-family: reklame-script, sans-serif;
