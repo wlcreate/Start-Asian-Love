@@ -502,4 +502,76 @@ export default [
     image:
       'https://res.cloudinary.com/dasridbwk/image/upload/v1621883708/spotify_razalm.jpg',
   },
+  {
+    id: 47,
+    title: "The White Ally Toolkit",
+    url: 'https://www.whiteallytoolkit.com/',
+    content: 'The White Ally Toolkit is a signature initiative of The Dialogue Company, LLC to help white anti-racism allies do their part in the fight against racism.',
+    category: ['education'],
+    allyship: ['white'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044105/SAL/image47_gcryyd.png'
+    },
+    {
+    id: 48,
+    title: 'Showing Up for Racial Justice - SURJ',
+    url: 'https://www.showingupforracialjustice.org/',
+    content: 'Showing Up for Racial Justice (SURJ) is a national network of groups and individuals organizing white people for racial and economic justice.',
+    category: ['education'],
+    allyship: ['white'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044110/SAL/image48_gzrjoe.png'
+    },
+    {
+    id: 49,
+    title: 'Anti-Racism Education: A Reading List',
+    url: 'https://www.thegoodtrade.com/features/books-on-race',
+    content: 'These anti-racism books compiled by The Good Trade address the topics of white privilege and systemic racism.',
+    category: ['education'],
+    allyship: ['white'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044114/SAL/image49_qt5c9e.png'
+    },
+    {
+    id: 50,
+    title: 'White Accomplices',
+    url: 'https://www.whiteaccomplices.org/',
+    content: 'This website was developed to support White people to act for racial justice. Resources are edited by Black, Brown, and People of Color.',
+    category: ['education'],
+    allyship: ['white'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044119/SAL/image50_zsm68f.png'
+    },
+    {
+    id: 51,
+    title: '10 Steps to Non-Optical Allyship',
+    url: 'https://www.vogue.co.uk/arts-and-lifestyle/article/non-optical-ally-guide',
+    content: 'In the wake of the death of George Floyd, writer Mireille Cassandra Harper took to Twitter to share "10 Steps To Non-Optical Allyship."',
+    category: ['education'],
+    allyship: ['white'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044126/SAL/image51_lv6hnm.png'
+    },
+    {
+    id: 52,
+    title: 'How to Talk to AAPI Friends about anti-AAPI Racism',
+    url: 'https://www.popsugar.com/fitness/how-to-talk-to-asian-american-friends-about-anti-aapi-racism-48222435?stream_view=1#photo-48223558',
+    content: 'If you are non-AAPI, here are 7 ways to check in with your Asian American and Pacific Islander friends without saying, "How Are You Doing?"',
+    category: ['education'],
+    allyship: ['white'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044133/SAL/image52_b9xvvr.png'
+    },
+    {
+    id: 53,
+    title: 'Jasmine M. Cho: Cookie Activist',
+    url: 'https://www.jasminemcho.com/',
+    content: 'Jasmine M. Cho is a Pittsburgh-based artist, author, and cookie activist most known for using portrait cookies to elevate representation for Asian Americans & Pacific Islanders.',
+    category: ['education', 'art'],
+    allyship: ['asian', 'all'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044140/SAL/image53_xdoumj.png'
+    },
+    {
+    id: 54,
+    title: 'NextShark',
+    url: 'https://nextshark.com/',
+    content: 'NextShark is a leading source covering Asian and Asian American news including business, culture, entertainment, politics, tech and lifestyle. ',
+    category: ['education'],
+    allyship: ['asian', 'all'],
+    image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622044148/SAL/image54_ybvbrr.png'
+    }
 ];
