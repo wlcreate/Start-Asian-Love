@@ -13,11 +13,6 @@ import { Footer } from '../../components/Layout/Footer'
 
 // • Testing to see if news images should/should not go to edges of cards. For now, I used object-fit css class for images, and line-clamping css properties to only show the first 3 lines of article content.
 
-// • For now, I repeated "{styles.container}" for lines 26 and 30 in so that the dashed outline page title is consistent with other page titles.
-
-// • Since the news grid is not a component like the grids in the support and wins pages, the div hierarchy is slightly different to render consistent styling.
-
-
 export const News = ({ pageNumber, articles }) => {
 
     const router = useRouter();
@@ -52,46 +47,46 @@ export const News = ({ pageNumber, articles }) => {
         </Head>
         <Header/>
 
-            <h2 id={styles.heading}>The Latest News</h2>
+            <h2 id={styles["page-heading"]}>The Latest News</h2>
             <div className={styles["articles-container-wrapper"]}>
                 <div className={styles["articles-container"]}>
                     {articles.map((article, index) => (
                         <div onClick={() => window.open(article.url,'_blank')} key={index} className={styles.article}>
                             {!!article.urlToImage && <img src={article.urlToImage} alt='news article image' loading="lazy" />}
-                            <h1>{article.title}</h1>
-                            <p>{article.description}</p>
-                            <h3><span>Read more</span></h3>
+                            <h3>{article.title}</h3>
+                            <p id={styles["article-description"]}>{article.description}</p>
+                            <p id={styles["article-cta"]}>Read more</p>
                         </div>
                     ))}
                 </div>
+            </div>
+            
+            {/* Paginator currently loads 10 pages, can be modified. */}
 
-                {/* Paginator currently loads 10 pages, can be modified. */}
-
-                <div className={styles.paginator}>
-                    <div 
-                        onClick={() => {
-                            if (pageNumber > 1) {
-                                router.push(`/news/${pageNumber - 1}`).then(() => window.scrollTo(0, 0));
-                            };
-                        }}
-                        className={pageNumber === 1 ? styles.disabled : styles.active}>Previous
-                    </div>
-
-                    <div>Page {pageNumber}</div>
-
-                    <div 
-                        onClick={() => {
-                            if (pageNumber < 10) {
-                                router.push(`/news/${pageNumber + 1}`).then(() => window.scrollTo(0, 0));
-                            };
-                        }}
-                        className={pageNumber === 10 ? styles.disabled : styles.active}>Next
-                    </div>
-
+            <div className={styles.paginator}>
+                <div 
+                    onClick={() => {
+                        if (pageNumber > 1) {
+                            router.push(`/news/${pageNumber - 1}`).then(() => window.scrollTo(0, 0));
+                        };
+                    }}
+                    className={pageNumber === 1 ? styles.disabled : styles.active}>Previous
                 </div>
+
+                <div>Page {pageNumber}</div>
+
+                <div 
+                    onClick={() => {
+                        if (pageNumber < 10) {
+                            router.push(`/news/${pageNumber + 1}`).then(() => window.scrollTo(0, 0));
+                        };
+                    }}
+                    className={pageNumber === 10 ? styles.disabled : styles.active}>Next
+                </div>
+
             </div>
 
-            <Footer/>
+        <Footer/>
         </div>
     );
 };
@@ -116,8 +111,6 @@ export const getServerSideProps = async pageContext => {
 // • The fetch request is using the phrase query of "stop asian hate," which brought back more relevant articles. Initially, there were some non-English articles, and then I set language to "en." UPDATE: added second query of "asians" and changed the sortBy attribute from "relevancy" to "publishedAt" for more current chronology. Some domains excluded for headline length, content, lack of images or lack of relevancy.
 
 // • https://newsapi.org/docs/endpoints/everything
-
-// • For the current 3x3 grid display, pageSize is set to 9.
 
 // • When I first created the .env file and added it to the gitignore file in this sub-branch, it appeared in the commit for some reason:
 
