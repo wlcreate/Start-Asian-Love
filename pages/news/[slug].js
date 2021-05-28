@@ -23,7 +23,7 @@ export const News = ({ pageNumber, articles }) => {
     const router = useRouter();
 
     return (
-        <div className={styles.container}>
+        <div>
         <Head>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />

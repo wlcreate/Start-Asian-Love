@@ -10,6 +10,7 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
 #heading {
   color: var(--primary-purple);
   margin-top: 50px;
+  margin-bottom: 65px;
   text-align: center;
   
   font-size: 4em;
@@ -28,46 +29,31 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
 
   display: grid;
   grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
-  column-gap: 1%;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  column-gap: 0px;
   grid-auto-flow: dense;
   justify-items: center;
 }
 
 .article {
-  width: 425px;
-  height: 425px;
-  /* margin-bottom: 5px; */
+  width: 380px;
+  height: 380px;
   cursor: pointer;
   border-radius: 8px;
   background-color: var(--primary-white);
 
   box-shadow: var(--primary-shadow);
   text-align: left;
-  text-justify: inter-word;
   overflow: hidden;
-  transition: all 0.8s ease-in-out;
-}
-
-.article:hover {
-  height: 555px;
-  transform: scale(1.05);
+  transition: var(--primary-transition);
 }
 
 .article img {
   width: 100%;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 260px;
+  max-height: 260px;
   object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
-
-/* optional image zoom in on hover effect */
-
-/* .post:hover img {
-  transform: scale(1.1);
-} */
 
 .article h1 {
   font-size: 1.5em;
@@ -119,10 +105,6 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   float: right;
 }
 
-.article span:hover {
-  color: #f21905;
-}
-
 .paginator {
   width: 100%;
   display: flex;
@@ -146,10 +128,6 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   cursor: pointer;
 }
 
-.paginator .active:hover {
-  color: #f21905;
-}
-
 .current-page {
   color: #f21905;
 }
@@ -159,26 +137,46 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   color: #f7cb54;
 }
 
-@media (max-width: 1430px) {
-  .main {
-    grid-template-columns: repeat(2, 1fr);
+/* screen must be at least a portrait tablet or small desktop for hover effects */
+@media (min-width: 940px) {
+  .article:hover {
+    height: 550px;
+  }
+  
+  .article span:hover {
+    color: var(--primary-red);
+  }
+
+  .paginator .active:hover {
+    color: var(--primary-red);
+  }
+}
+
+@media (max-width: 1366px) {
+  #heading {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+
+  .articles-container {
+    /* grid-template-columns: repeat(2, 1fr); */
   }
 }
 
 @media (max-width: 950px) {
-  .main {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+  .articles-container {
+    /* grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px; */
   }
 
   .paginator {
     font-size: 2em;
   }
 
-  .container h2 {
+  /* .container h2 {
     font-size: 3em;
     margin-bottom: 0px;
-  }
+  } */
 }
 
 @media (max-width: 625px) {
@@ -190,10 +188,10 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
     font-size: 1.5em;
   }
 
-  .container h2 {
+  /* .container h2 {
     font-size: 2.75em;
     margin-bottom: 0px;
-  }
+  } */
 }
 
 @media (max-width: 420px) {
@@ -201,10 +199,10 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
     font-size: 1.25em;
   }
 
-  .container h2 {
+  /* .container h2 {
     font-size: 2.25em;
     margin-bottom: 0px;
-  }
+  } */
 }
 
 @media (max-width: 320px) {
