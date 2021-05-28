@@ -64,6 +64,22 @@ export default function Support() {
         return resource.category[0] === category || resource.category[1] === category
       })
       return filteredResourcesByCategory
+
+      } else if (allyship === "white" && category === "All") {
+      let filteredResourcesByAllyship = resourcesData.filter(resource => {
+        return resource.allyship[0] === "white" || resource.allyship[1] === "white"
+      });
+
+      return filteredResourcesByAllyship
+    } else if (allyship === "white" && category !== "All") {
+      let filteredResourcesByAllyship = resourcesData.filter(resource => {
+        return resource.allyship[0] === "white" || resource.allyship[1] === "white"
+      });
+
+      let filteredResourcesByCategory = filteredResourcesByAllyship.filter(resource => {
+        return resource.category[0] === category || resource.category[1] === category
+      })
+      return filteredResourcesByCategory
     }
   }
 

@@ -222,6 +222,87 @@ export const representation = [{
         "content": "Simu Liu is a Chinese Canadian actor, writer, filmmaker, and stuntman. Liu is set to become the first Asian actor to lead a Marvel Studios film, as the star of Shang-Chi and the Legend of the Ten Rings (2021). Liu previously appeared in the tv series Kim's Convenience, Taken, and Orphan Black. The role of Shang-Chi holds special meaning for Liu, who shared that when he was a struggling actor playing superheroes at childrens' birthday parties, he could only play masked characters to hide his race." ,
         "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734010/SAL%20Wins/win29a_dnqo1h.png",
         "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1619734013/SAL%20Wins/win29b_nbsexl.png"
+    },
+    {
+        "id": 7,
+        "title": "Chloe Kim",
+        "url": "https://olympics.com/en/athletes/chloe-kim",
+        "field": "athlete",
+        "content": "Born in 2000, Chloe Kim is a second generation Korean American who started snowboarding when she was 4 years old. At the 2018 Winter Olympics Kim became known for being the youngest woman to win an Olympic snowboarding gold medal. However, even before the PyeongChang Olympics Kim was breaking records; in 2015 when she was 14 years old she was the youngest ever to win a gold medal at that year's X Games, and at the 2016 Winter Youth Olympic Games she was the first American woman to win gold and earned the highest snowboarding score.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889815/SAL%20Wins/win31a_qyfro9.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889820/SAL%20Wins/win31b_yp8r66.png"
+    },
+    {
+        "id": 8,
+        "title": "David Chang",
+        "url": "https://www.jpmorganchase.com/news-stories/how-david-chang-turned-his-dream-into-global-food-brand",
+        "field": "food",
+        "content": "Known as the 'bad-boy' of the culinary industry, the founder of the Momofuku restaurant group, and credited for increasing the popularity of modern Asian cuisine, David Chang is more than a chef. His unapologetic and bold personality has disrupted the industry and people's experience with food because of how he deconstructs recipes to bring something new.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889831/SAL%20Wins/win32a_zhxgfm.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889836/SAL%20Wins/win32b_jzwo4q.png"
+    },
+    {
+        "id": 9,
+        "title": "Hee Seo",
+        "url": "http://www.heeseofoundation.org/",
+        "field": "artist",
+        "content": "Hee Seo is a Korean American ballet dancer who is a principal dancer at the American Ballet Theatre (ABT). Although Seo started Russian ballet training at the age of 12 (an age considered to be a late start for a ballet dancer), she became one of the youngest ballerinas and first Korean ballerina to be promoted to principal dancer in the ABT's 75-year history. In 2015, Seo established the Hee Seo Foundation in Korea to help underprivileged prospective ballet dancers.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889846/SAL%20Wins/win33a_ge059o.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889851/SAL%20Wins/win33b_n4nwie.png"
+    },
+    {
+        "id": 10,
+        "title": "Katherine Luzuriaga",
+        "url": "https://time100.time.com/2013/04/18/time-100/slide/hannah-gay-katherine-luzuriaga-and-deborah-persaud/",
+        "field": "medicine",
+        "content": "Dr. Katherine Luzuriaga is a Filipino American and a world-renowned physician-scientist. Dr. Luzuriaga is lauded for her work in pediatrics, pediatric immunology, molecular medicine, and infectious diseases and rheumatology. In 2013, Dr. Luzuriaga and her all-female team of researchers were the first to functionally cure an infant of HIV. After treatment as a newborn, the child no longer needs any medication and shows no signs of the virus.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889859/SAL%20Wins/win34a_vwiwie.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889870/SAL%20Wins/win34b_dkjxpu.png"
+    },
+    {
+        "id": 11,
+        "title": "Roy Choi",
+        "url": "https://kogibbq.com/about-chef-roy/",
+        "field": "food",
+        "content": "Born in Seoul, Korea, and raised in Los Angeles, California, Roy Choi is one of the architects of the modern food truck movement. In his civic-minded TV show 'Broken Bread,' Choi addresses and merges traditional and modern street food culture with social media and community. With Jon Favreau, Choi is a co-host of 'The Chef Show' on Netflix. Choi is the co-owner, co-founder, and chef of Kogi BBQ, Chego!, Best Friend at Park MGM Las Vegas, and LocoL.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889885/SAL%20Wins/win35a_nopmha.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621889890/SAL%20Wins/win35b_mktfc4.png"
+    },
+    {
+        "id": 12,
+        "title": "Stella Abrera",
+        "url": "https://kaatsbaan.org/ms-abrera-bio",
+        "field": "artist",
+        "content": "Stella Abrera is a Filipina American ballet dancer. Abrera began dancing at the age of 5, and at the age of 17, she joined the American Ballet Theatre (ABT) as an apprentice. As a soloist, Abrera suffered a sciatic nerve injury that nearly ended her career in 2008. Abrera successfully recovered, and she was promoted to principal dancer in 2015, making her the first Filipina American to achieve the rank in ABT's history. After 24 years with ABT, Abrera retired in 2020, and she is now the artistic director of the dance cultural park Kaatsbaan, located in Tivoli, New York.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1622089169/SAL%20Wins/win36a_b2ipbd.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621890101/SAL%20Wins/win36b_mrl0hw.png"
+    },
+    {
+        "id": 13,
+        "title": "Yu Chang",
+        "url": "https://www.milb.com/player/yu-chang-644374",
+        "field": "athlete",
+        "content": "Born in 1995, Yu Chang is a Taiwanese American professional baseball infielder for the Cleveland Indians of Major League Baseball. At 18-years-old, Chang signed with the Indians in 2013 as an international free agent. Chang had his professional debut in 2014 with the AZL Indians and was ranked as Cleveland's sixth best prospect going into the 2018 season. In 2019, Chang was promoted to the major leagues.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621890111/SAL%20Wins/win37a_tmlncm.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621890114/SAL%20Wins/win37b_ars887.png"
+    },
+    {
+        "id": 14,
+        "title": "Chien-Shiung Wu",
+        "url": "https://www.atomicheritage.org/profile/chien-shiung-wu",
+        "field": "scientist",
+        "content": "Dr. Chien-Shiung Wu was a Chinese American nuclear physicist, often called the 'First Lady of Physics' for her groundbreaking impact on the field. Dr. Wu was the only Chinese person to work on the Manhattan Project. Dr. Wu was also notoriously overlooked for the Nobel Prize for Physics for her revolutionary experiment disproving the Law of Conservation of Parity, an experiment for which her male colleagues received the Nobel Prize.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621890124/SAL%20Wins/win38a_dswz1q.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621890127/SAL%20Wins/win38b_p1nfec.png"
+    },
+    {
+        "id": 15,
+        "title": "Lisa Ling",
+        "url": "https://www.cnn.com/profiles/lisa-ling-profile",
+        "field": "writer/journalist",
+        "content": "Born to Taiwanese and Chinese immigrants, Lisa Ling is a journalist, author, and television host. At a young age, Ling aspired to be a journalist and idolized Connie Chung. In 1999, Ling was a co-host of the ABC show The View and later became the host of National Geographic Explorer to cover international reporting. Ling is currently the host of the CNN documentary series This is Life with Lisa Ling, and she is slated to debut two new documentary projects with HBO Max.",
+        "image": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621890136/SAL%20Wins/win39a_oxzvay.png",
+        "portrait": "https://res.cloudinary.com/dn1e07eul/image/upload/v1621890140/SAL%20Wins/win39b_fjoxgn.png"
     }]
 
 ////////////////////////////////////////////////////////////////////////////////////////////
