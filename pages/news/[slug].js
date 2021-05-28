@@ -52,17 +52,15 @@ export const News = ({ pageNumber, articles }) => {
         </Head>
         <Header/>
 
-            <div className={styles.container}>
-                <h2>The Latest News</h2>
-            </div>
-            <div className='page-container'>
-                <div className={styles.main}>
+            <h2 id={styles.heading}>The Latest News</h2>
+            <div className={styles["articles-container-wrapper"]}>
+                <div className={styles["articles-container"]}>
                     {articles.map((article, index) => (
-                        <div onClick={() => window.open(article.url,'_blank')} key={index} className={styles.post}>
-                            {!!article.urlToImage && <img src={article.urlToImage} alt='news article image' />}
+                        <div onClick={() => window.open(article.url,'_blank')} key={index} className={styles.article}>
+                            {!!article.urlToImage && <img src={article.urlToImage} alt='news article image' loading="lazy" />}
                             <h1>{article.title}</h1>
                             <p>{article.description}</p>
-                            <h3> <span>Read more</span></h3>
+                            <h3><span>Read more</span></h3>
                         </div>
                     ))}
                 </div>

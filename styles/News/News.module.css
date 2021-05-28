@@ -6,52 +6,55 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
 
 /* The cards in the News, Support, and Win pages now all have the same width for consistency, and a box shadow effect with a darker yellow hue has been applied to all of them for depth. */
 
-@import url("https://use.typekit.net/wdx7jdm.css");
 
-.container {
-  align-items: center;
-  text-align: center;
-}
-
-.container h2 {
-  color: #6a1f77;
-  /* color: #f21905; */
+#heading {
+  color: var(--primary-purple);
   margin-top: 50px;
+  text-align: center;
+  
   font-size: 4em;
-  font-family: expressway, sans-serif;
+  font-family: var(--expressway);
   font-weight: 800;
   font-style: normal;
 }
 
-.main {
-  text-align: center;
-  margin: 60px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 60px;
+.articles-container-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.post {
+.articles-container {
+  text-align: center;
+
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  column-gap: 1%;
+  grid-auto-flow: dense;
+  justify-items: center;
+}
+
+.article {
   width: 425px;
   height: 425px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   cursor: pointer;
   border-radius: 8px;
-  background-color: white;
+  background-color: var(--primary-white);
 
-  box-shadow: 26px 26px 26px #ecb724;
+  box-shadow: var(--primary-shadow);
   text-align: left;
   text-justify: inter-word;
   overflow: hidden;
   transition: all 0.8s ease-in-out;
 }
 
-.post:hover {
+.article:hover {
   height: 555px;
   transform: scale(1.05);
 }
 
-.post img {
+.article img {
   width: 100%;
   min-height: 300px;
   max-height: 300px;
@@ -66,7 +69,7 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   transform: scale(1.1);
 } */
 
-.post h1 {
+.article h1 {
   font-size: 1.5em;
   color: #313131;
   text-align: left;
@@ -87,7 +90,7 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   -webkit-box-orient: vertical;
 }
 
-.post p {
+.article p {
   color: rgb(109, 109, 109);
   padding-left: 15px;
   padding-right: 15px;
@@ -107,7 +110,7 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   -webkit-box-orient: vertical;
 }
 
-.post span {
+.article span {
   /* color: rgb(86, 103, 255); */
   color: #9729ff;
   font-weight: 600;
@@ -116,7 +119,7 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   float: right;
 }
 
-.post span:hover {
+.article span:hover {
   color: #f21905;
 }
 
