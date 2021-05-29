@@ -28,7 +28,6 @@ Initially, each row of cards had different heights due to image size and length 
   grid-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   column-gap: 0px;
-  grid-auto-flow: dense;
   justify-items: center;
 }
 
@@ -143,67 +142,134 @@ Initially, each row of cards had different heights due to image size and length 
   }
 }
 
+/* most laptop and desktop screens */
 @media (max-width: 1366px) {
-  #heading {
+  #page-heading {
     margin-top: 25px;
     margin-bottom: 40px;
   }
 
   .articles-container {
-    /* grid-template-columns: repeat(2, 1fr); */
+    margin-left: 10px;
+    margin-right: 10px;
+
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 0px;
+  }
+
+  .article {
+    width: 300px;
+    height: 400px;
+
+    box-shadow: var(--mobile-shadow);
+  }
+
+  .article img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .article h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    height: 75px;
+    line-height: 1.2;
+  
+    font-size: 1.3em;
+  }
+
+  #article-description {
+    height: 70px;
+    line-height: 1.3;
+    
+    font-size: 0.9rem;
+
+    -webkit-line-clamp: 4;
+  }
+
+  #article-cta {
+    margin-top: 8px;
+
+    font-size: 1.15em;
   }
 }
 
-@media (max-width: 950px) {
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  #page-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 2.5em;
+  }
+
   .articles-container {
-    /* grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px; */
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 0px;
+  }
+
+  .article {
+    width: 320px;
+    height: 400px;
+
+    box-shadow: var(--mobile-shadow);
+  }
+
+  .article img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .article h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    height: 75px;
+    line-height: 1.2;
+  
+    font-size: 1.3em;
+  }
+
+  #article-description {
+    height: 70px;
+    line-height: 1.3;
+    
+    font-size: 0.9rem;
+
+    -webkit-line-clamp: 4;
+  }
+
+  #article-cta {
+    margin-top: 8px;
+
+    font-size: 1.15em;
   }
 
   .paginator {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-size: 1.75em;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  #page-heading {
     font-size: 2em;
   }
 
-  /* .container h2 {
-    font-size: 3em;
-    margin-bottom: 0px;
-  } */
-}
-
-@media (max-width: 625px) {
-  .article {
-    width: 350px;
-  }
-
   .paginator {
-    font-size: 1.5em;
-  }
+    margin-top: 10px;
+    margin-bottom: 5px;
 
-  /* .container h2 {
-    font-size: 2.75em;
-    margin-bottom: 0px;
-  } */
-}
-
-@media (max-width: 420px) {
-  .paginator {
     font-size: 1.25em;
-  }
-
-  /* .container h2 {
-    font-size: 2.25em;
-    margin-bottom: 0px;
-  } */
-}
-
-@media (max-width: 320px) {
-  .article {
-    width: 280px;
-  }
-
-  .paginator {
-    font-size: 1em;
-    margin-top: -20px;
-    margin-bottom: -10px;
   }
 }
