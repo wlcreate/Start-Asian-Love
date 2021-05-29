@@ -1,25 +1,25 @@
-@import url("https://use.typekit.net/wdx7jdm.css");
-
 /* Grid display of filtered resources */
-.main {
+.resources-container {
   margin: 50px auto;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-gap: 3rem;
+  column-gap: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
 }
 
 .card {
-  width: 425px;
-  height: auto;
-  margin-bottom: 5px;
+  width: 400px;
   padding: 20px;
-  cursor: pointer;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--primary-white);
   line-height: 1.5;
-  box-shadow: 26px 26px 26px #ecb724;
+  box-shadow: var(--primary-shadow);
+  
+  cursor: pointer;
 
-  transition: all 0.5s ease-in-out;
+  transition: var(--primary-transition);
   position: relative;
   overflow: hidden;
 }

@@ -4,8 +4,7 @@ export const Resources = ({resourcesList}) => {
 
     return (
         <div className='page-container'>
-            {/* <p>I am the Resources Component.</p> */}
-            <div className={styles.main}>
+            <div className={styles["resources-container"]}>
             {
                 resourcesList.length > 0
                 ?
@@ -17,7 +16,6 @@ export const Resources = ({resourcesList}) => {
                             <p className={styles.cardtext}>
                             <p className={styles.content}>{resource.content}</p>
                             <div className={styles.cardbottom}>
-                                {/* Should categories at bottom of cards be clickable? */}
                                 <div><p>{resource.category[0]}</p></div>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                                 <div><p>{resource.category[1]}</p></div>

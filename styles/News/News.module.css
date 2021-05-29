@@ -35,7 +35,7 @@ Initially, each row of cards had different heights due to image size and length 
   width: 380px;
   height: 380px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: var(--primary-white);
 
   box-shadow: var(--primary-shadow);
