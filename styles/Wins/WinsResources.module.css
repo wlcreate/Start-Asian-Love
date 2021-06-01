@@ -7,22 +7,25 @@
 .main {
   margin: 50px auto;
   margin-bottom: 10px;
+  
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 3rem;
+  column-gap: 0px;
+  justify-items: center;
 }
 
 .card {
-  width: 425px;
+  width: 400px;
   height: 650px;
   margin-bottom: 5px;
   padding: 20px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--primary-white);
   line-height: 1.5;
-  box-shadow: 26px 26px 26px #ecb724;
-  position: relative;
+  box-shadow: var(--primary-shadow);
+
   overflow: hidden;
   transition: all 0.8s ease-in-out;
 }
@@ -50,7 +53,7 @@
 }
 
 .card h2 {
-  font-size: 0.75em;
+  font-size: 0.7em;
   color: #505050;
   cursor: pointer;
   text-align: center;
@@ -93,9 +96,9 @@
 }
 
 @media (max-width: 1430px) {
-  .main {
+  /* .main {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
 
 @media (max-width: 950px) {
