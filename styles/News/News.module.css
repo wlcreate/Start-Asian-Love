@@ -142,6 +142,28 @@ Initially, each row of cards had different heights due to image size and length 
   }
 }
 
+/* hover effect for larger screens */
+@media (min-width: 1400px) {
+  .article {
+    width: 380px;
+    height: 355px;
+  }
+
+  .article:hover {
+    height: 465px;
+  }
+
+  .article h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    height: 75px;
+    line-height: 1.2;
+  
+    font-size: 1.4em;
+  }
+}
+
 /* most laptop and desktop screens */
 @media (max-width: 1366px) {
   #page-heading {
@@ -231,7 +253,7 @@ Initially, each row of cards had different heights due to image size and length 
   }
 
   #article-description {
-    height: 70px;
+    height: 75px;
     line-height: 1.3;
     
     font-size: 0.9rem;
@@ -240,7 +262,7 @@ Initially, each row of cards had different heights due to image size and length 
   }
 
   #article-cta {
-    margin-top: 8px;
+    margin-top: 5px;
 
     font-size: 1.15em;
   }
