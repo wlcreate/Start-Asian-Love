@@ -1,3 +1,39 @@
+// Dates and times are in ISO 8601 extended format: https://dencode.com/en/date/iso8601
+// • ISO 8601 explanation 1: https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/
+// • ISO 8601 explanation 2: https://thenextweb.com/news/how-to-manipulate-date-and-time-in-javascript
+
+
+// Unformatted example:         'June 1, 2021, 11:00 am, EDT'    
+// ISO 8601 extended format:    '2021-06-01T11:00:00-04:00'      
+
+
+// Basic Breakdown:
+// • YYYY-MM-DDTHH:mm:ss.sssZ
+// • YYYY: year
+// • MM: month                  (1 to 12)
+// • DD: date                   (1 to 31)
+// • HH: hour in 24-hour format (0 to 23)
+// • mm: minutes                (0 to 59)
+// • ss: seconds                (00 to 59)
+// • sss: milliseconds          (0 to 999)
+// • T is used to separate the date and time in the string
+// • If Z is present, the time is assumed to be in UTC. Otherwise, it assumes the local time.
+// • However, if T and Z are not present, the string’s created date may give different results in different browsers. 
+// • In the above case, to always have the same timezone for the date, add +HH:mm or -HH:mm to the end.
+
+
+// This site was used to convert date and time into ISO 8601 extended format: https://dencode.com/en/date/iso8601
+// For every event, millisecond value is omitted (the dencode.com site never included them).
+// If an event has no time/TBD, the default start is 12:00 am and the default end is 11:59 pm.
+// Most, but not all, events are in Eastern Time, so time zone is always indicated for each event.
+// Time Zone City Search: https://www.timeanddate.com/time/zone/
+
+
+// 'Category' and 'Image' attributes are completely optional, and we may not need ISO 8601 format.
+// • Current category types: 'art', 'rally', 'aapi businesses', 'food', 'safety', 'lgbtq', 'festival', 'virtual', 'awards' 
+// • Images are in 1:1 square aspect ratio, 800 x 800 pixels.
+
+
 // See comments for unformated dates and times.
 
 export default [
@@ -272,3 +308,17 @@ export default [
         image: 'https://res.cloudinary.com/dn1e07eul/image/upload/v1622507488/SAL%20Events/event20_tmane6.png'
     }
 ]
+
+
+// TEMPLATE for new event listings
+//     {
+//         id: '',
+//         title: '',
+//         description: '',
+//         location: '',
+//         category: '',
+//         startDate: '',
+//         endDate: '',
+//         url: '',
+//         image: ''
+//     }
