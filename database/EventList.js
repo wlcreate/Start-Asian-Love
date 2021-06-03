@@ -8,7 +8,7 @@
 // ISO 8601 with week number:   '2021-W22-2T11:00:00-04:00'      
 
 
-// Basic Breakdown:
+// Basic Breakdown of ISO 8601 extended format:
 // • YYYY-MM-DDTHH:mm:ss.sssZ
 // • YYYY: year
 // • MM: month                  (1 to 12)
@@ -37,7 +37,7 @@
 // • Images are in 1:1 square aspect ratio, 800 x 800 pixels.
 
 
-// See comments for unformated dates and times.
+// See comments for unformatted dates and times.
 
 export default [
 // Event id 1: Starts April 10 2021, Ends October 31 2021 (Sunday)
