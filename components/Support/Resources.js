@@ -9,23 +9,21 @@ export const Resources = ({resourcesList}) => {
                 resourcesList.length > 0
                 ?
                 resourcesList.map((resource) =>{
-                    return <div className={styles.card} key={resource.id}>
+                    return <div className={styles["resource-card"]} key={resource.id}>
                         <div onClick={() => window.open(resource.url,'_blank')}>
-                            <img className={styles.image} src={resource.image} alt="resource title"/>
-                            <div className={styles.titlebox}><h2>{resource.title}</h2></div>
-                            <p className={styles.cardtext}>
-                            <p className={styles.content}>{resource.content}</p>
-                            <div className={styles.cardbottom}>
-                                <div><p>{resource.category[0]}</p></div>
+                            <img src={resource.image} alt="resource title"/>
+                            <h2>{resource.title}</h2>
+                            <p className={styles.description}>{resource.content}</p>
+                            <div className={styles["categories"]}>
+                                <p>{resource.category[0]}</p>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <div><p>{resource.category[1]}</p></div>
+                                <p>{resource.category[1]}</p>
                             </div>
-                            </p>
                         </div>
                     </div>
                 })
                 :
-                <div className={styles.sorry}>Sorry! No resources yet!</div>
+                <div className={styles["no-resources-text"]}>Sorry! No resources yet!</div>
             }
             </div>
             <br/>

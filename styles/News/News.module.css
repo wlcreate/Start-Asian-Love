@@ -77,7 +77,7 @@ Initially, each row of cards had different heights due to image size and length 
 }
 
 #article-description {
-  color: rgb(109, 109, 109);
+  color: var(--description-text);
   margin-top: 0px;
   margin-bottom: 0px;
   height: 70px;

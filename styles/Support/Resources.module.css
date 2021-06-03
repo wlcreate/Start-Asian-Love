@@ -9,88 +9,90 @@
   justify-items: center;
 }
 
-.card {
+.resource-card {
   width: 400px;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--primary-white);
 
   box-shadow: var(--primary-shadow);
-  
-  cursor: pointer;
 
   transition: var(--primary-transition);
   position: relative;
   overflow: hidden;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
-.image {
+.resource-card img {
   width: 100%;
 }
 
-/* The titlebox is the headline for the resource title, I gave a fixed height so the contents in each card start at the same height. */
-
-.titlebox {
-  height: 1.9em;
-}
-
-.card h2 {
+.resource-card h2 {
   color: var(--primary-black);
+  margin-top: 8px;
+  margin-bottom: 0px;
+  height: 60px;
 
   text-align: center;
   letter-spacing: 0.5px;
 
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-family: var(--helvetica-neue);
   /* font-family: var(--proxima-nova-condensed); */
 }
 
-.card:hover .cardbottom {
-  /* color: #9b6ea3; */
-  color: var(--brighter-purple);
-  transition: var(--primary-transition);
-}
+.description {
+  color: var(--description-text);
+  margin-top: 8px;
+  padding-bottom: 1.15em;
 
-.content {
   font-size: 0.55em;
-  color: rgb(109, 109, 109);
+  font-family: var(--expressway);
 }
 
-.cardtext {
-  font-size: 0.95em;
-  padding-bottom: 0.5em;
-}
-
-/* cardbottom text are the gray categories below resource content/description */
-.cardbottom {
+.categories {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8em;
   position: absolute;
   bottom: 0;
-  font-weight: 700;
+
   letter-spacing: 0.8px;
   color: rgb(223, 221, 221);
+
   font-variant: small-caps;
-  font-family: Helvetica Neue, sans-serif;
+  font-size: 0.8em;
+  font-family: var(--helvetica-neue);
+  font-weight: 700;
 }
 
-/* The "Sorry! No resources Yet!" text */
-.main .sorry {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  font-weight: 700;
-  white-space: none;
-  color: rgb(197, 197, 197);
-  letter-spacing: 0.75px;
+.categories p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+/* when no resources text */
+.no-resources-text {
   text-transform: uppercase;
+  color: var(--primary-red);
+
   font-size: 1.25em;
-  color: #f21905;
+  font-family: var(--expressway);
+  font-weight: 700;
+}
+
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .resource-card {
+    cursor: pointer;
+  }
+
+  .resource-card:hover {
+    transform: scale(1.05);
+  }
+
+  .resource-card:hover .categories {
+    /* color: #9b6ea3; */
+    color: var(--brighter-purple);
+    transition: var(--primary-transition);
+  }
 }
 
 /* For grid consistency with the News and Wins pages, the Support page grid is in 3 columns */
@@ -114,23 +116,23 @@
     grid-gap: 20px;
   }
 
-  .card {
+  .resource-card {
     width: 350px;
     height: 490px;
   }
 
-  .cardbottom {
+  .categories {
     visibility: hidden;
   }
 }
 
 @media (max-width: 320px) {
-  .card {
+  .resource-card {
     width: 280px;
     height: 325px;
   }
 
-  .content {
+  .description {
     visibility: hidden;
   }
 }
