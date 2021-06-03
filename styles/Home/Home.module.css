@@ -1,8 +1,8 @@
 /* all of the content on the page */
 .content {
-  padding-left: 70px;
-  padding-right: 70px;
-  color: rgb(83, 83, 83);
+  margin-left: 70px;
+  margin-right: 70px;
+  color: var(--dark-grey);
 }
 
 .content a, .content span {
@@ -10,9 +10,9 @@
 }
 
 .text, .facts {
-  line-height: 1.65;
-  font-size: 1.7em;
-  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.5em;
+  font-weight: 400;
   font-family: var(--acumin-pro);
   font-style: normal;
 
@@ -104,7 +104,9 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 /* screen must be no bigger than landscape phone or portrait tablet */
 @media (max-width: 768px) {
   .content {
-    padding: 35px 35px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 35px;
   }
 
   .text, .facts {
@@ -148,5 +150,15 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 
   .graphic {
     box-shadow: var(--mobile-shadow);
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .text, .facts {
+    padding: 20px;
+
+    line-height: 1.25;
+    font-size: 1.25em;
   }
 }

@@ -47,7 +47,7 @@ export const News = ({ pageNumber, articles }) => {
         </Head>
         <Header/>
 
-            <h2 id={styles["page-heading"]}>The Latest News</h2>
+            <h2 className={"page-heading"}>The Latest News</h2>
             <div className={styles["articles-container-wrapper"]}>
                 <div className={styles["articles-container"]}>
                     {articles.map((article, index) => (

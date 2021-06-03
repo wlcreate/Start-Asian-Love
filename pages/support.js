@@ -85,7 +85,7 @@ export default function Support() {
 
   return (
     
-    <div className={styles.container}>
+    <div>
     <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -114,30 +114,27 @@ export default function Support() {
     </Head>
     <Header/>
 
-    <div className={styles.supportTitle}>
-      <h2>Support</h2>
-    </div>
+      <h2 className={"page-heading"}>Support</h2>
 
       <div className={styles.description}>
-        <p>Below you will find a growing list of resources we have put together.</p>
-        <p>Check back for updates and/or reach out if you would like to contribute!</p>
+        <p>As the <span>#StopAsianHate</span> movement has grown, so has the number of resources to educate about the Asian-American experience, Asian culture, places you can donate, etc. Consequently with this influx of information, it can be overwhelming to sort through and understand where to go to for what. As a result, we have decided to create our own list of resources to address this pain point, making it easier for you and others to know where to go. </p>
+        <p>Below you will find our growing list of resources. Check back for updates and if you know a great resource but don't see it listed please reach out to contribute!</p>
       </div>
 
-      <div className={styles.content}>
+      <div className={styles["filter-section"]}>
         <Allyship changeAllyship={changeAllyship}/>
         <CategoryList changeCategory={changeCategory}/>
-
-        <div className={styles.main}>
-          <p>Viewing&nbsp;
-          <span className={styles.category}>{category}&nbsp;</span>
-          resources for&nbsp;
-          <span className={styles.allyship}>{allyship}&nbsp;</span>
-          folx.</p>
-        </div>
-
-        <Resources resourcesList={filterResources()}/>
       </div>
-    
+
+      <p className={styles.viewing}>
+        Viewing&nbsp;
+        <span className={styles["selected-category"]}>{category}&nbsp;</span>
+        resources for&nbsp;
+        <span className={styles["selected-allyship"]}>{allyship}&nbsp;</span>
+        folx.
+      </p>
+
+      <Resources resourcesList={filterResources()}/>
 
       <Footer/>
       

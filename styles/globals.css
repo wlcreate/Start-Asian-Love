@@ -12,7 +12,8 @@
   --primary-red: #f21905;
   --primary-white: white;
   --primary-black: black;
-  --description-text: rgb(109, 109, 109);
+  --dark-grey: rgb(83, 83, 83);
+  --description-text-grey: rgb(109, 109, 109);
 
   --primary-purple: #6a1f77;
   --brighter-purple: #9729ff;
@@ -42,6 +43,45 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.page-heading {
+  color: var(--primary-purple);
+  text-align: center;
+
+  margin-top: 45px;
+  margin-bottom: 45px;
+  
+  font-size: 4em;
+  font-family: var(--expressway);
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .page-heading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .page-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 2.5em;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .page-heading {
+    font-size: 2em;
+  }
+}
+
 
 /* Reklame Script Regular
 font-family: reklame-script, sans-serif;

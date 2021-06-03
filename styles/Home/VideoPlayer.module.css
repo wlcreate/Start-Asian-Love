@@ -37,6 +37,7 @@ https://stackoverflow.com/questions/15376634/how-can-i-center-a-div-within-anoth
 @media (max-width: 1100px) {
   .container {
     width: 100%;
+    margin-left: -8px;
   }
 }
 
