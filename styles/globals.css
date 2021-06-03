@@ -1,3 +1,5 @@
+/* normalizing css between browsers */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 /* importing Adobe font */
 @import url("https://use.typekit.net/wdx7jdm.css");
 
@@ -29,12 +31,9 @@
 }
 
 
-html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   background: var(--background-yellow);
 }
 
@@ -42,10 +41,6 @@ a {
   cursor: pointer;
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* Reklame Script Regular

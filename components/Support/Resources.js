@@ -12,7 +12,7 @@ export const Resources = ({resourcesList}) => {
                     return <div className={styles["resource-card"]} key={resource.id}>
                         <div onClick={() => window.open(resource.url,'_blank')}>
                             <img src={resource.image} alt="resource title"/>
-                            <h2>{resource.title}</h2>
+                            <h3>{resource.title}</h3>
                             <p className={styles.description}>{resource.content}</p>
                             <div className={styles["categories"]}>
                                 <p>{resource.category[0]}</p>
