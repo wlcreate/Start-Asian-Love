@@ -4,7 +4,8 @@
 
 
 // Unformatted example:         'June 1, 2021, 11:00 am, EDT'    
-// ISO 8601 extended format:    '2021-06-01T11:00:00-04:00'      
+// ISO 8601 extended format:    '2021-06-01T11:00:00-04:00'
+// ISO 8601 with week number:   '2021-W22-2T11:00:00-04:00'      
 
 
 // Basic Breakdown:
@@ -20,6 +21,8 @@
 // • If Z is present, the time is assumed to be in UTC. Otherwise, it assumes the local time.
 // • However, if T and Z are not present, the string’s created date may give different results in different browsers. 
 // • In the above case, to always have the same timezone for the date, add +HH:mm or -HH:mm to the end.
+
+// • If W is present, 'W(#)' is the week number. The number before 'T' means Day (#) of that week, starting on Monday and ending on Sunday. June 1, 2021 falls on a Tuesday, which is Day 2 of that week.
 
 
 // This site was used to convert date and time into ISO 8601 extended format: https://dencode.com/en/date/iso8601
@@ -39,7 +42,10 @@
 export default [
 // Event id 1: Starts April 10 2021, Ends October 31 2021 (Sunday)
 // Sunday to Friday Hours: 10:00 am to 6:00 pm. Saturdays: 10:00 am to 9:00 pm.
-// EST/EDT (Eastern Daylight Time, currently 4 hours behind UTC time (5 hours when daylight savings ends). 
+// EST/EDT (Eastern Daylight Time, currently 4 hours behind UTC time (5 hours when daylight savings ends).
+// With Week Number: 
+// startDate: '2021-W14-6T10:00:00-04:00',
+// endDate: '2021-W43-7T18:00:00-04:00', 
     {
         id: '1',
         title: 'Kusama: Cosmic Nature',
@@ -53,6 +59,9 @@ export default [
     },
 
 // Event id 2: June 20 2021: 12:00 pm to 3:00 pm.
+// With Week Number: 
+// startDate: '2021-W24-7T12:00:00-04:00',
+// endDate: '2021-W24-7T15:00:00-04:00',
     {
         id: '2',
         title: 'Voting is Justice AAPI Rally',
@@ -68,6 +77,9 @@ export default [
 // Event id 3: 
 // Starts June 5 2021 at 11:00 am. 
 // Ends June 6 2021 at 6:00 pm.
+// With Week Number: 
+// startDate: '2021-W22-6T11:00:00-04:00,
+// endDate: '2021-W22-7T18:00:00-04:00',
     {
         id: '3',
         title: 'Asian Creatives & Entrepreneurs (ACE) Pop-Up Event',
@@ -82,6 +94,8 @@ export default [
 
 // Event id 4: June 5 2021: 3:00 pm to 10:00 pm. 
 // PST/PDT (Currently Pacific Daylight Time, 3 hours behind NYC).
+// startDate: '2021-W22-6T15:00:00-07:00',
+// endDate: '2021-W22-6T22:00:00-07:00',
     {
         id: '4',
         title: 'An AAPI Social Art Exhibition',
@@ -95,6 +109,8 @@ export default [
     },
 
 // Event id 5: June 11 2021: 8:00 pm to 11:00 pm.
+// startDate: '2021-W23-5T20:00:00-04:00',
+// endDate: '2021-W23-5T23:00:00-04:00',
     {
         id: '5',
         title: 'Chinatown Nights',
@@ -110,6 +126,9 @@ export default [
 // Event id 6: 
 // Starts May 20 2021 at 6:00 pm. 
 // Ends June 3 2021 at 6:00 pm.
+// With Week Number: 
+// startDate: '2021-W20-4T18:00:00-04:00',
+// endDate: '2021-W22-4T18:00:00-04:00',
     {
         id: '6',
         title: 'The Push Exhibition',
@@ -123,6 +142,9 @@ export default [
     },
 
 // Event id 7: June 12 2021: 1:00 pm to 3:00 pm.
+// With Week Number: 
+// startDate: '2021-W23-6T13:00:00-04:00',
+// endDate: '2021-W23-6T15:00:00-04:00',
     {
         id: '7',
         title: 'Nourishing Our Roots: Healing for Our Future',
@@ -136,6 +158,9 @@ export default [
     },
 
 // Event id 8: June 20 2021: 1:00 pm to 3:00 pm.
+// With Week Number: 
+// startDate: '2021-W24-7T13:00:00-04:00',
+// endDate: '2021-W24-7T15:00:00-04:00',
     {
         id: '8',
         title: 'Nourishing Our Roots: Seeding Our Rituals',
@@ -150,6 +175,9 @@ export default [
 
 // Event id 9: June 5 2021: 6:00 pm to 9:30 pm. 
 // CST/CDT (Currently Central Daylight Time, 1 hour behind NYC).
+// With Week Number: 
+// startDate: '2021-W22-6T18:00:00-05:00',
+// endDate: '2021-W22-6T21:30:00-05:00',
     {
         id: '9',
         title: 'AAPI Amplified',
@@ -164,6 +192,9 @@ export default [
 
 // Event id 10: June 5 2021: 2:00 pm to 3:30 pm.
 // PST/PDT (Currently Pacific Daylight Time, 3 hours behind NYC).
+// With Week Number: 
+// startDate: '2021-W22-6T14:00:00-07:00',
+// endDate: '2021-W22-6T15:30:00-07:00',
     {
         id: '10',
         title: 'Self Defense Seminar in support of the AAPI community',
@@ -178,6 +209,9 @@ export default [
 
 // Event id 11: June 11 2021: 11:00 am to 11:00 pm. 
 // Grand Rapids, MI has same time zone as NYC (EDT: Easter Daylight Time).
+// With Week Number: 
+// startDate: '2021-W23-5T11:00:00-04:00',
+// endDate: '2021-W23-6T23:00:00-04:00',
     {
         id: '11',
         title: 'Grand Rapids Asian-Pacific Festival',
@@ -191,6 +225,9 @@ export default [
     },
 
 // Event id 12: June 18 2021: 10:00 pm to 11:30 pm.
+// With Week Number: 
+// startDate: '2021-W24-5T22:00:00-04:00',
+// endDate: '2021-W24-5T23:30:00-04:00',
     {
         id: '12',
         title: 'Lotus Lounge',
@@ -204,6 +241,9 @@ export default [
     },
 
 // Event id 13: June 25 2021: 7:00 pm to 8:30 pm.
+// With Week Number: 
+// startDate: '2021-W25-5T19:00:00-04:00',
+// endDate: '2021-W25-5T20:30:00-04:00',
     {
         id: '13',
         title: 'AN ASIAN AMERICAN FILM THING',
@@ -217,6 +257,9 @@ export default [
     },
 
 // Event id 14: June 13 2021: 2:00 pm to 5:00 pm.
+// With Week Number: 
+// startDate: '2021-W23-7T14:00:00-04:00',
+// endDate: '2021-W23-7T17:00:00-04:00',
     {
         id: '14',
         title: 'Dragon Boat Festival',
@@ -230,6 +273,9 @@ export default [
     },
 
 // Event id 15: August 7 to August 8, 2021: Times TBD.
+// With Week Number: 
+// startDate: '2021-W31-6T00:00:00-04:00',
+// endDate: '2021-W31-7T23:59:00-04:00',
     {
         id: '15',
         title: 'Hong Kong Dragon Boat Festival',
@@ -243,6 +289,9 @@ export default [
     },
 
 // Event id 16: August 11 to August 22, 2021. Times TBD.
+// With Week Number: 
+// startDate: '2021-W32-3T00:00:00-04:00',
+// endDate: '2021-W33-7T23:59:00-04:00',
     {
         id: '16',
         title: 'Asian American International Film Festival',
@@ -256,6 +305,9 @@ export default [
     },
 
 // Event id 17: October 28 2021: 8:00 pm to 9:30 pm.
+// With Week Number: 
+// startDate: '2021-W43-4T20:00:00-04:00',
+// endDate: '2021-W43-4T21:30:00-04:00',
     {
         id: '17',
         title: '2021 Asia Game Changer Awards',
@@ -269,6 +321,9 @@ export default [
     },
 
 // Event id 18: June 11 2021: 7:30 pm to 9:00 pm.
+// With Week Number: 
+// startDate: '2021-W23-5T19:30:00-04:00',
+// endDate: '2021-W23-5T21:00:00-04:00',
     {
         id: '18',
         title: '2021 CrossCurrent Contemporary Dance Virtual Festival',
@@ -282,6 +337,9 @@ export default [
     },
 
 // Event id 19: June 23 2021: 12:00 to 1:00 pm.
+// With Week Number: 
+// startDate: '2021-W25-3T12:00:00-04:00',
+// endDate: '2021-W25-3T13:00:00-04:00',
     {
         id: '19',
         title: 'BRILLIANT BOBA: AMPLIFYING ASIAN VOICES',
@@ -296,6 +354,9 @@ export default [
 
 // Event id 20: June 12 2021: 11:00 am to 4:00 pm.
 // PST/PDT (Currently Pacific Daylight Time, 3 hours behind NYC).
+// With Week Number: 
+// startDate: '2021-W23-6T11:00:00-07:00',
+// endDate: '2021-W23-6T16:00:00-07:00',
     {
         id: '20',
         title: 'AAPI Heritage Day',
