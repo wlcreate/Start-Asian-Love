@@ -70,7 +70,13 @@
 }
 
 .section-paragraph {
+  margin-left: 30px;
+  margin-right: 30px;
+
   line-height: 1.25;
+
+  color: var(--dark-grey);
+
   font-size: 1em;
   font-family: var(--acumin-pro);
   font-weight: 400;
