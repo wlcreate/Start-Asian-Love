@@ -6,7 +6,7 @@
   border-radius: 10px;
 
   line-height: 1.25;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: var(--acumin-pro);
   font-weight: 400;
   font-style: normal;
@@ -38,13 +38,13 @@
 }
 
 .scrollToSection h3 {
-  font-size: 2.5em;
+  font-size: 2.8em;
 }
 
 .button {
-  padding: 12px;
+  padding: 15px;
   margin: 10px;
-  width: 160px;
+  width: 215px;
 
   border-radius: 10px;
   border: none;
@@ -55,7 +55,7 @@
   background: var(--primary-purple);
   box-shadow: 6px 6px 12px var(--shadow-yellow);
 
-  font-size: 1em;
+  font-size: 1.3em;
   font-family: var(--acumin-pro);
   font-weight: 600;
 }
@@ -89,13 +89,24 @@
   }
 
   .button:hover {
-    /* background-color: #9b00b6; */
     background-color: var(--brighter-purple);
     transition: all 0.2s ease-in-out;
   }
 }
 
-@media (max-width: 950px) {
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+}
+
+/* @media (max-width: 950px) {
   .wins-section h3 {
     font-size: 1.5em;
   }
@@ -118,4 +129,4 @@
     margin-right: 15%;
     text-align: left;
   }
-}
+} */
