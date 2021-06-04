@@ -9,6 +9,35 @@
   color: var(--primary-red);
 }
 
+.iframe-container-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  width: 65%;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  box-shadow: var(--primary-shadow);
+}
+
+.iframe-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .text, .facts {
   line-height: 1.5;
   font-size: 1.5em;
@@ -29,19 +58,24 @@
   border-radius: 10px;
 }
 
-/* The ".factcontainer" div contains the two fact divs with the numerical titles. 
-The side by side flex property is from Sylwia's friend, Stephanie Eckles: https://smolcss.dev/ */
+/* The ".fact-container" div contains the two fact divs with the numerical titles. */
 
-/* the media query does need to be tweaked, since the child divs are not completely centered when simulating device sizes. */
-
-.factcontainer {
+.fact-container {
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.facts h3 {
+  color: var(--primary-black);
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  margin: 4px;
+  transition: var(--primary-transition)
+}
+
 .facts {
-  margin: 0px;
   padding: 30px;
   box-shadow: var(--primary-shadow);
   background: var(--primary-white);
@@ -49,15 +83,6 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
   overflow: hidden;
   height: auto;
   transition: var(--primary-transition);
-}
-
-.facts h2 {
-  color: var(--primary-black);
-  font-size: 3em;
-  font-weight: 800;
-  text-align: center;
-  margin: 4px;
-  transition: var(--primary-transition)
 }
 
 .graphicRowOne, .graphicRowTwo {
@@ -75,7 +100,6 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
 }
 
 .graphic {
-  margin: 0px;
   overflow: hidden;
   transition: var(--primary-transition);
   box-shadow: var(--primary-shadow);
@@ -95,9 +119,26 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
     color: black;
   }
   
-  .facts:hover h2 {
+  .facts:hover h3 {
     color: var(--primary-red);
     font-size: 5em;
+  }
+}
+
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .iframe-container-wrapper {
+    padding: 8px;
+  }
+
+  .text, .facts {
+    line-height: 1.4;
+  }
+
+  .text {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 25px;
   }
 }
 
@@ -107,6 +148,16 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
     margin-right: 0px;
     margin-left: 0px;
     padding: 35px;
+  }
+
+  .iframe-container-wrapper {
+    width: 100%;
+
+    margin-left: -8px;
+  }
+
+  .iframe-container {
+    box-shadow: var(--mobile-shadow);
   }
 
   .text, .facts {
@@ -126,7 +177,7 @@ The side by side flex property is from Sylwia's friend, Stephanie Eckles: https:
     margin: 8px;
   }
 
-  .factcontainer {
+  .fact-container {
     margin-top: 30px;
 
     grid-gap: 2rem;
