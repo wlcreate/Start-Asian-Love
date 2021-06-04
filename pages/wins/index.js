@@ -85,9 +85,7 @@ export default function Wins() {
       <h2 className={'page-heading'}>Wins</h2>
 
       <div className={styles.description}>
-        <p>
-          In light of the anti-Asian hate across America, here are some moments, places, and people in American history to serve as reminders of our resilience and strength, that we belong here, and this is our home. What we have listed is a small portion compared to the many, however this is only the beginning.
-        </p>
+        <p>In light of the anti-Asian hate across America, here are some moments, places, and people in American history to serve as reminders of our resilience and strength, that we belong here, and this is our home. What we have listed is a small portion compared to the many, however this is only the beginning.</p>
       </div>
 
       <div className={styles["scroll-to-section"]}>
