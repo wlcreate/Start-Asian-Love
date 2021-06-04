@@ -83,9 +83,6 @@
   font-style: normal;
 }
 
-/* Pinning a header or footer according to height of middle content
-https://codepen.io/jdsteinbach/pen/YPPegq */
-
 @media (min-width: 940px) {
   .button {
     cursor: pointer;
