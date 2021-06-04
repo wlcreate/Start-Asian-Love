@@ -168,28 +168,3 @@
     font-size: 0.6em;
   }
 }
-
-/* @media (max-width: 950px) {
-  .wins-section h3 {
-    font-size: 1.5em;
-  }
-
-  .description {
-    font-size: 0.8em;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
-
-@media (max-width: 625px) {
-  .wins-section h3 {
-    font-size: 1em;
-  }
-
-  .description {
-    font-size: 0.6em;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: left;
-  }
-} */
