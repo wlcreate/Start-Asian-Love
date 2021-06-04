@@ -18,75 +18,79 @@
   color: var(--dark-grey);
 }
 
-.scroll {
-  cursor: pointer;
-  margin-top: 100px;
-  font-size: 1.35em;
-  padding: 12px;
-  border-radius: 6px;
-  letter-spacing: 0.25px;
-  background: #610172;
-  color: white;
-  width: 220px;
-  font-weight: 700;
-  align-items: center;
-  text-transform: uppercase;
-  box-shadow: 6px 6px 12px #ecb724;
-  font-family: acumin-pro, sans-serif;
-
-  font-weight: 400;
-
-  font-style: normal;
-}
-
-.scroll:hover {
-  background: #9b00b6;
-  transition: all 0.2s ease-in-out;
-}
-
 .scrollToSection {
-  font-size: 2.25em;
-  font-weight: 800;
-  color: #6a1f77;
   margin-top: 40px;
-  margin-bottom: 14px;
+  margin-bottom: 50px;
+
+  text-align: center;
 }
 
-.scrollToTop {
-  cursor: pointer;
-  margin-top: 10px;
-  font-size: 1.25em;
+.scrollToSection h3,
+.wins-section h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+
+  color: var(--primary-purple);
+
+  font-family: var(--expressway);
   font-weight: 700;
-  color: #f21905;
-  font-family: expressway, sans-serif;
-  font-weight: 600;
   font-style: normal;
 }
 
-/* .scrollToTop:hover {
-  color: #f21905;
-} */
+.scrollToSection h3 {
+  font-size: 2.5em;
+}
+
+.button {
+  padding: 12px;
+  margin: 10px;
+  width: 160px;
+
+  border-radius: 10px;
+  border: none;
+
+  text-transform: uppercase;
+
+  color: var(--primary-white);
+  background: var(--primary-purple);
+  box-shadow: 6px 6px 12px var(--shadow-yellow);
+
+  font-size: 1em;
+  font-family: var(--acumin-pro);
+  font-weight: 600;
+}
 
 .wins-section {
   font-size: 2em;
   text-align: center;
-
-  display: column;
 }
 
-/* The five category titles in the Wins page */
 .wins-section h3 {
-  font-size: 1.8em;
-  font-family: expressway, sans-serif;
-  font-weight: 600;
+  font-size: 2em;
+}
+
+.section-paragraph {
+  line-height: 1.25;
+  font-size: 1em;
+  font-family: var(--acumin-pro);
+  font-weight: 400;
   font-style: normal;
-  color: #4d005a;
-  margin-top: 100px;
-  margin-bottom: 10px;
 }
 
 /* Pinning a header or footer according to height of middle content
 https://codepen.io/jdsteinbach/pen/YPPegq */
+
+@media (min-width: 940px) {
+  .button {
+    cursor: pointer;
+  }
+
+  .button:hover {
+    /* background-color: #9b00b6; */
+    background-color: var(--brighter-purple);
+    transition: all 0.2s ease-in-out;
+  }
+}
 
 @media (max-width: 950px) {
   .wins-section h3 {
