@@ -28,7 +28,7 @@
 
 .resource-card h3 {
   color: var(--primary-black);
-  margin-top: 8px;
+  margin-top: 10px;
   margin-bottom: 0px;
   height: 60px;
 
@@ -111,6 +111,8 @@
   .resource-card h3 {
     letter-spacing: 0.25px;
     height: 62px;
+
+    font-size: 1.35em;
   }
 
   .description { 

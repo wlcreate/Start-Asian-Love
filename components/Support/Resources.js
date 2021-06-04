@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from '../../styles/Support/Resources.module.css';
 
 export const Resources = ({resourcesList}) => {
@@ -11,7 +12,7 @@ export const Resources = ({resourcesList}) => {
                 resourcesList.map((resource) =>{
                     return <div className={styles["resource-card"]} key={resource.id}>
                         <div onClick={() => window.open(resource.url,'_blank')}>
-                            <img src={resource.image} alt="resource title"/>
+                            <Image src={resource.image} alt="resource title" loading="lazy" width={200} height={150} layout="responsive"/>
                             <h3>{resource.title}</h3>
                             <p className={styles.description}>{resource.content}</p>
                             <div className={styles["categories"]}>
