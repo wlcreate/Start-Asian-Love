@@ -22,10 +22,6 @@
   overflow: hidden;
 }
 
-.resource-card img {
-  width: 100%;
-}
-
 .resource-card h3 {
   color: var(--primary-black);
   margin-top: 10px;
