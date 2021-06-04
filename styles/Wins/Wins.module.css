@@ -104,6 +104,8 @@
     margin: 25px;
     padding: 20px;
 
+    box-shadow: var(--mobile-shadow);
+
     line-height: 1.2;
     font-size: 1.15em;
   }
@@ -116,6 +118,8 @@
   }
   .button {
     padding: 12px;
+
+    box-shadow: 6px 6px 12px var(--shadow-yellow);
 
     width: 180px;
 
@@ -132,31 +136,36 @@
 /* screen must be no bigger than landscape phone or below */
 @media (max-width: 480px) {
   .description {
-    margin: 25px;
-    padding: 20px;
+    padding: 18px;
 
-    line-height: 1.2;
-    font-size: 1.15em;
+    line-height: 1.25;
+    font-size: 1em;
   }
   .description p {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .scrollToSection {
+    margin-bottom: 30px;
+  }
   .scrollToSection h3 {
-    font-size: 2.3em;
+    font-size: 1.8em;
   }
   .button {
-    padding: 12px;
+    padding: 10px;
 
-    width: 180px;
+    width: 150px;
+
+    font-size: 0.88em;
+  }
+  .wins-section h3 {
+    margin-left: 13px;
+    margin-right: 13px;
 
     font-size: 1em;
   }
-  .wins-section h3 {
-    font-size: 1.3em;
-  }
   .section-paragraph {
-    font-size: 0.75em;
+    font-size: 0.6em;
   }
 }
 
