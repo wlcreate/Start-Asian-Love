@@ -1,0 +1,68 @@
+.button {
+    padding: 12px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+
+    border: none;
+    text-transform: uppercase;
+    
+    color: var(--primary-white);
+    background: var(--primary-purple);
+    box-shadow: 6px 6px 12px var(--shadow-yellow);
+    
+    font-size: 1em;
+    font-family: var(--acumin-pro);
+    font-weight: 600;
+}
+
+/* screen must be at least a portrait tablet or small desktop for button effects */
+@media (min-width: 940px) {
+    .button {
+        cursor: pointer;
+    }
+
+    .button:hover {
+        /* background-color: #9b00b6; */
+        background-color: var(--brighter-purple);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .button:focus {
+        background-color: var(--primary-red);
+        color: var(--primary-white);
+    }
+}
+  
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+    .button {
+        padding: 12px;
+        width: 140px;
+
+        box-shadow: 6px 6px 8px var(--shadow-yellow);
+    }
+  }
+  
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+    .button {
+        padding: 10px;
+        width: 140px;
+
+        font-size: 0.9em;
+    }
+}
+  
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+    .button {
+        padding: 8px;
+        margin: 5px;
+        width: 120px;
+
+        box-shadow: 4px 4px 6px var(--shadow-yellow);
+
+        font-size: 0.75em;
+    }
+}
