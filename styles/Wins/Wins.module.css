@@ -1,68 +1,21 @@
-@import url("https://use.typekit.net/wdx7jdm.css");
-
-.container {
-  align-items: center;
-  text-align: center;
-}
-
-.main {
-  text-align: center;
-}
-
-.main h2 {
-  color: #6a1f77;
-  font-size: 4em;
-  font-family: expressway, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* The card text size in the WinsResources component (which imports styling from WinsResources.module.css) is also being affected by the ".content" class in this Wins.module.css ??? Effect is most evident when the font size is changed. */
-
-.content {
-  /* height: calc(100% - 100px);
-  padding: 1em; */
-  font-size: 2em;
-  text-align: center;
-}
-
 .description {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 0.8em;
-  font-family: acumin-pro, sans-serif;
+  margin: 40px 70px;
+  padding: 30px;
+  box-shadow: var(--primary-shadow);
+  background: var(--primary-white);
+  border-radius: 10px;
 
-  font-weight: 400;
-
-  font-style: normal;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-bottom: 0%;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #705474;
   line-height: 1.25;
-  transition: all 0.3s ease-in-out;
+  font-size: 1.5em;
+  font-family: var(--acumin-pro);
+  font-weight: 400;
+  font-style: normal;
 }
 
-.intro {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: -30px;
-  font-size: 2em;
-  font-family: acumin-pro, sans-serif;
+.description p {
+  text-align: center;
 
-  font-weight: 400;
-
-  font-style: normal;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-bottom: 0%;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #705474;
-  line-height: 1.25;
-  transition: all 0.3s ease-in-out;
+  color: var(--dark-grey);
 }
 
 .scroll {
@@ -115,6 +68,9 @@
 } */
 
 .wins-section {
+  font-size: 2em;
+  text-align: center;
+
   display: column;
 }
 

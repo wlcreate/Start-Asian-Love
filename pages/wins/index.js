@@ -82,12 +82,11 @@ export default function Wins() {
         <meta property="twitter:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="twimage" />
     </Head>
     <Header/>
-
-      {/* divs are outlined for reference in module.css file */}
     
-      <div className={styles.main}>
-        <h2>Wins</h2>
-        <p className={styles.intro}>In light of the anti-Asian hate across America, here are some moments, places, and people in American history to serve as reminders of our resilience and strength, that we belong here, and this is our home. What we have listed is a small portion compared to the many, however this is only the beginning.</p> 
+      <h2 className={"page-heading"}>Wins</h2>
+
+      <div className={styles.description}>
+        <p>In light of the anti-Asian hate across America, here are some moments, places, and people in American history to serve as reminders of our resilience and strength, that we belong here, and this is our home. What we have listed is a small portion compared to the many, however this is only the beginning.</p> 
       </div>
 
       <div className={styles.scrollToSection}>Scroll to Section</div>
@@ -98,7 +97,6 @@ export default function Wins() {
       <button onClick={gotoCultural} className={styles.scroll}>Cultural</button>
         
       {/* The margins for the first four 'scroll to top' links have been reduced to 10px, except for the fifth one that is above the footer. */}
-      <div className={styles.content}>
         
         <div className={styles["wins-section"]} ref={HeritageRef}>
          <h3>AAPI Heritage Month</h3>
@@ -134,7 +132,6 @@ export default function Wins() {
           <WinsResources resources={culturalResources} category="cultural"/>
         </div>
 
-      </div>
     <Footer/>
     </div>
 
