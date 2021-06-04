@@ -13,17 +13,12 @@ import { Footer } from '../../components/Layout/Footer'
 
 // • Testing to see if news images should/should not go to edges of cards. For now, I used object-fit css class for images, and line-clamping css properties to only show the first 3 lines of article content.
 
-// • For now, I repeated "{styles.container}" for lines 26 and 30 in so that the dashed outline page title is consistent with other page titles.
-
-// • Since the news grid is not a component like the grids in the support and wins pages, the div hierarchy is slightly different to render consistent styling.
-
-
 export const News = ({ pageNumber, articles }) => {
 
     const router = useRouter();
 
     return (
-        <div className={styles.container}>
+        <div>
         <Head>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,48 +47,46 @@ export const News = ({ pageNumber, articles }) => {
         </Head>
         <Header/>
 
-            <div className={styles.container}>
-                <h2>The Latest News</h2>
-            </div>
-            <div className='page-container'>
-                <div className={styles.main}>
+            <h2 className={"page-heading"}>The Latest News</h2>
+            <div className={styles["articles-container-wrapper"]}>
+                <div className={styles["articles-container"]}>
                     {articles.map((article, index) => (
-                        <div onClick={() => window.open(article.url,'_blank')} key={index} className={styles.post}>
-                            {!!article.urlToImage && <img src={article.urlToImage} alt='news article image' />}
-                            <h1>{article.title}</h1>
-                            <p>{article.description}</p>
-                            <h3> <span>Read more</span></h3>
+                        <div onClick={() => window.open(article.url,'_blank')} key={index} className={styles.article}>
+                            {!!article.urlToImage && <img src={article.urlToImage} alt='news article image' loading="lazy" />}
+                            <h3>{article.title}</h3>
+                            <p id={styles["article-description"]}>{article.description}</p>
+                            <p id={styles["article-cta"]}>Read more</p>
                         </div>
                     ))}
                 </div>
+            </div>
+            
+            {/* Paginator currently loads 10 pages, can be modified. */}
 
-                {/* Paginator currently loads 10 pages, can be modified. */}
-
-                <div className={styles.paginator}>
-                    <div 
-                        onClick={() => {
-                            if (pageNumber > 1) {
-                                router.push(`/news/${pageNumber - 1}`).then(() => window.scrollTo(0, 0));
-                            };
-                        }}
-                        className={pageNumber === 1 ? styles.disabled : styles.active}>Previous
-                    </div>
-
-                    <div>Page {pageNumber}</div>
-
-                    <div 
-                        onClick={() => {
-                            if (pageNumber < 10) {
-                                router.push(`/news/${pageNumber + 1}`).then(() => window.scrollTo(0, 0));
-                            };
-                        }}
-                        className={pageNumber === 10 ? styles.disabled : styles.active}>Next
-                    </div>
-
+            <div className={styles.paginator}>
+                <div 
+                    onClick={() => {
+                        if (pageNumber > 1) {
+                            router.push(`/news/${pageNumber - 1}`).then(() => window.scrollTo(0, 0));
+                        };
+                    }}
+                    className={pageNumber === 1 ? styles.disabled : styles.active}>Previous
                 </div>
+
+                <div>Page {pageNumber}</div>
+
+                <div 
+                    onClick={() => {
+                        if (pageNumber < 10) {
+                            router.push(`/news/${pageNumber + 1}`).then(() => window.scrollTo(0, 0));
+                        };
+                    }}
+                    className={pageNumber === 10 ? styles.disabled : styles.active}>Next
+                </div>
+
             </div>
 
-            <Footer/>
+        <Footer/>
         </div>
     );
 };
@@ -119,8 +112,6 @@ export const getServerSideProps = async pageContext => {
 
 // • https://newsapi.org/docs/endpoints/everything
 
-// • For the current 3x3 grid display, pageSize is set to 9.
-
 // • When I first created the .env file and added it to the gitignore file in this sub-branch, it appeared in the commit for some reason:
 
     // Solution to hide the .env file: https://stackoverflow.com/questions/38983153/git-ignore-env-files-not-working
@@ -128,7 +119,7 @@ export const getServerSideProps = async pageContext => {
         // git commit -m "Stopped tracking .env File"
 
     const apiResponse = await fetch(
-        `https://newsapi.org/v2/everything?&q="stopasianhate"&language=en&excludeDomains=propublica.org,freerepublic.com,boyculture.com,thesocietypages.org,people.cn,pjmedia.com,greenspun.com&sortBy=publishedAt&pageSize=9&page=${pageNumber}`,
+        `https://newsapi.org/v2/everything?&q="stopasianhate"&language=en&excludeDomains=propublica.org,freerepublic.com,boyculture.com,thesocietypages.org,people.cn,pjmedia.com,greenspun.com&sortBy=publishedAt&pageSize=12&page=${pageNumber}`,
         {
             headers: {
                 Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,

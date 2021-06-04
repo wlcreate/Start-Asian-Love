@@ -1,99 +1,168 @@
-@import url("https://use.typekit.net/wdx7jdm.css");
-
-.container {
-  align-items: center;
-  text-align: center;
-}
-
-.supportTitle {
-  color: #6a1f77;
-  /* color: #f21905; */
-  margin-top: -30px;
-  margin-bottom: -80px;
-  font-size: 3.25em;
-  font-family: expressway, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.main {
-  text-align: center;
-}
-
 .description {
-  margin: 20px auto;
+  margin: 40px 70px;
+  padding: 30px;
+  box-shadow: var(--primary-shadow);
+  background: var(--primary-white);
+  border-radius: 10px;
+
+  line-height: 1.25;
   font-size: 1.5em;
-  font-weight: 800;
-  padding: 10px;
-  color: #705474;
-  margin-bottom: 10px;
-  font-family: acumin-pro, sans-serif;
-
+  font-family: var(--acumin-pro);
   font-weight: 400;
-
   font-style: normal;
 }
 
-.content {
-  padding: 0.25em;
+.description span {
+  color: var(--primary-red);
+}
+
+.description p {
+  text-align: center;
+
+  color: var(--dark-grey);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.filter-section {
+  text-align: center;
+
+  margin: 50px 10px;
+  margin-bottom: 40px;
+}
+
+.filter-section h3, .viewing {
+  color: var(--primary-purple);
+  
+  font-family: var(--expressway);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.filter-section h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+
+  font-size: 2.5em;
+}
+
+.viewing {
+  text-transform: uppercase;
+  text-align: center;
+
   font-size: 2em;
 }
 
-/* "Viewing All Resources for Asian Folx" text */
-.main p {
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 1.2em;
-  font-weight: 800;
-  margin-top: 80px;
-  margin-bottom: 0px;
-  color: #4d005a;
-  font-family: expressway, sans-serif;
-  font-weight: 800;
-  font-style: normal;
+.selected-category {
+  color: var(--primary-red);
 }
 
-/* Styling for the current selected allyship and categories */
-.category {
-  color: #f21905;
+.selected-allyship {
+  color: var(--primary-red);
 }
 
-.allyship {
-  color: #f21905;
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .description p {
+    cursor: default;
+  }
+
+  .viewing {
+    cursor: default;
+  }
+
+  .viewing a:hover {
+    color: var(--brighter-purple);
+  }
 }
 
-@media (max-width: 1110px) {
-  .main p {
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .description {
+    padding: 25px;
+    box-shadow: var(--mobile-shadow);
+
+    line-height: 1.2;
+    font-size: 1.38em;
+  }
+
+  .description p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .filter-section h3 {
+    margin-bottom: 10px;
+  
+    font-size: 2.45em;
+  }
+
+  .viewing {
+    font-size: 1.8em;
+  }
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .description {
+    margin: 25px;
+    padding: 20px;
+
+    line-height: 1.2;
+    font-size: 1.15em;
+  }
+
+  .description p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .filter-section {
+    margin: 40px 10px;
+    margin-bottom: 30px;
+  }
+
+  .filter-section h3 {
+    margin-top: 18px;
+    margin-bottom: 6px;
+  
+    font-size: 2em;
+  }
+
+  .viewing {
+    font-size: 1.6em;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .page-heading {
+    font-size: 2em;
+  }
+
+  .description {
+    padding: 18px;
+
+    line-height: 1.25;
     font-size: 1em;
-    font-weight: 800;
-    margin-top: 50px;
   }
-}
 
-@media (max-width: 950px) {
-  .main p {
-    font-size: 0.77em;
-    font-weight: 800;
-    margin-top: 50px;
+  .description p {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-}
 
-@media (max-width: 770px) {
-  .main p {
-    font-size: 0.7em;
-    margin-top: 40px;
-    line-height: 1.6;
+  .filter-section {
+    margin-bottom: 20px;
   }
-}
 
-@media (max-width: 650px) {
-  .main p {
-    font-size: 0.7em;
+  .filter-section h3 {
+    margin-top: 15px;
+  
+    font-size: 1.5em;
   }
-}
 
-@media (max-width: 450px) {
-  .main p {
-    font-size: 0.5em;
+  .viewing {
+    font-size: 1.35em;
   }
 }

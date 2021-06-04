@@ -71,5 +71,11 @@ Some ideas we have in mind and would like to incorporate:
         <sub><b>Emmanuel Jose</b></sub>
       </a>         
     </td>
+    <td align="center">
+      <a href="https://github.com/sandaiiyahh">
+        <img src="https://avatars.githubusercontent.com/u/60532744?v=4" width="200px;" alt=""/><br/>
+        <sub><b>Sandy Dai</b></sub>
+      </a>         
+    </td>
   </tr>
 </table>

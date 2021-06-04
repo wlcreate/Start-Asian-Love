@@ -5,7 +5,6 @@ import styles from '../styles/Home/Home.module.css'
 import { Header } from '../components/Layout/Header'
 import { Footer } from '../components/Layout/Footer'
 import Carousel from '../components/Carousel.js'
-import VideoPlayer from '../components/Home/VideoPlayer.js'
 
 export default function Home() {
   return (
@@ -48,8 +47,12 @@ export default function Home() {
               <span>Start Asian Love</span> is a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement. Through these resources we hope to raise awareness and encourage you to join the fight and support Asian Americans.
             </p>
           </div>
-            
-          <VideoPlayer />
+
+          <div className={styles["iframe-container-wrapper"]}>  
+            <div className={styles["iframe-container"]}>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLL9IeepyId7qhVcWFLrXFC0BIKEe6eM5i" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+          </div>
 
             {/* <Link href='/news/1' passHref>
               <div className={styles.checkout}>Check out the latest news</div>
@@ -63,11 +66,11 @@ export default function Home() {
 
           {/* The factcontainer div wraps around the two fact divs and are side by side: https://smolcss.dev/ */}
 
-          <div className={styles.factcontainer}>
+          <div className={styles["fact-container"]}>
             <div className={styles.facts}>
-              <h2>
+              <h3>
                 3,795
-              </h2>
+              </h3>
               <p>
                 That’s the number of incidents received by the Stop AAPI Hate reporting center from March 19, 2020 to February 28, 2021.
               </p>
@@ -78,9 +81,9 @@ export default function Home() {
             </div>
 
             <div className={styles.facts}>
-              <h2>
+              <h3>
                 149%
-              </h2>
+              </h3>
               <p>
                 That’s the surge of anti-Asian hate crimes from 2019 compared to 2020 as reported by The Center for the Study of Hate and Extremism at California State University.
               </p> 
@@ -91,7 +94,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* First row of graphics */}
           <div className={styles.graphicRowOne}>
             <div className={styles.graphic}><Image src="/Graphics/graphic07.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
             <div className={styles.graphic}><Image src="/Graphics/graphic01.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
@@ -107,7 +109,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Second row of graphics */}
           <div className={styles.graphicRowTwo}>
             <div className={styles.graphic}><Image src="/Graphics/graphic04.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>
             <div className={styles.graphic}><Image src="/Graphics/graphic05.jpg" alt="" loading="lazy" width={374} height={374} layout="responsive"/></div>

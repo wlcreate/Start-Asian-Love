@@ -3,8 +3,7 @@ import { useState } from 'react';
 import styles from '../styles/Support/Support.module.css';
 import { Header } from '../components/Layout/Header'
 import { Footer } from '../components/Layout/Footer'
-import { Allyship } from '../components/Support/AllyshipList'
-import  CategoryList  from '../components/Support/CategoryList'
+import { ReusableButtons } from '../components/Support/ReusableButtons' 
 import { Resources } from '../components/Support/Resources'
 import resourcesData from '../database/SupportResources';
 
@@ -85,7 +84,7 @@ export default function Support() {
 
   return (
     
-    <div className={styles.container}>
+    <div>
     <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -114,32 +113,31 @@ export default function Support() {
     </Head>
     <Header/>
 
-    <div className={styles.supportTitle}>
-      <h2>Support</h2>
-    </div>
+      <h2 className={"page-heading"}>Support</h2>
 
       <div className={styles.description}>
-        <p>Below you will find a growing list of resources we have put together.</p>
-        <p>Check back for updates and/or reach out if you would like to contribute!</p>
+        <p>As the <span>#StopAsianHate</span> movement has grown, so has the number of resources to educate about the Asian-American experience, Asian culture, places you can donate, etc. Consequently with this influx of information, it can be overwhelming to sort through and understand where to go to for what. As a result, we have decided to create our own list of resources to address this pain point, making it easier for you and others to understand, share, and sort through all of this information. </p>
+        <p>Below you will find our growing list of resources. Check back for updates and if you know a great resource but don't see it listed please reach out to contribute!</p>
       </div>
 
-      <div className={styles.content}>
-        <Allyship changeAllyship={changeAllyship}/>
-        <CategoryList changeCategory={changeCategory}/>
-
-        <div className={styles.main}>
-          <p>Viewing&nbsp;
-          <span className={styles.category}>{category}&nbsp;</span>
-          resources for&nbsp;
-          <span className={styles.allyship}>{allyship}&nbsp;</span>
-          folx.</p>
-        </div>
-
-        <Resources resourcesList={filterResources()}/>
+      <div className={styles["filter-section"]}>
+        <h3>Who are these resources for?</h3>
+        <ReusableButtons buttonData={resourcesData} group={"allyships"} changeSelection={changeAllyship}/>
+        <h3>Filter by Category</h3>
+        <ReusableButtons buttonData={resourcesData} group={"categories"} changeSelection={changeCategory}/>
       </div>
-    
 
-      <Footer/>
+      <p className={styles.viewing}>
+        Viewing&nbsp;
+        <span className={styles["selected-category"]}>{category}&nbsp;</span>
+        resources for&nbsp;
+        <span className={styles["selected-allyship"]}>{allyship}&nbsp;</span>
+        <a href="https://www.merriam-webster.com/dictionary/folx" target="_blank" rel="noopener noreferrer">folx</a>.
+      </p>
+
+      <Resources resourcesList={filterResources()}/>
+
+    <Footer/>
       
     </div>
 
