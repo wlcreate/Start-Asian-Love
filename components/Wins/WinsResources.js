@@ -1,33 +1,33 @@
-import Link from 'next/link';
-import styles from '../../styles/Wins/WinsResources.module.css';
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../../styles/Wins/WinsResources.module.css";
 
 export const WinsResources = (props) => {
+  let { resources, category } = props;
 
-let {resources, category} = props
-
-    return (
-        <div className='page-container'>
-            <div className={styles.main}>
-            {resources.map((resource) =>{
-                    return <div className={styles.card} key={resource.id}>
-                            <Link href={`/wins/${category}/${resource.id}`}>
-                                <div>
-                                    <img className={styles.portrait} src={resource.portrait} alt="resource title"/>
-                                    <div className={styles.titlebox}><h2>{resource.title}</h2></div>
-                                    <p className={styles.cardtext}>
-                                        <p className={styles.content}>{resource.content}</p>
-                                        <span>Learn more</span>
-                                    </p>
-                                </div>
-                            </Link>
-                    </div>
-                })}
+  return (
+    <div className="page-container">
+      <div className={styles.main}>
+        {resources.map((resource) => {
+          return (
+            <div className={styles.card} key={resource.id}>
+              <Image
+                className={styles.portrait}
+                src={resource.portrait}
+                alt={`Image of ${resource.title}`}
+                loading="lazy"
+                width={200}
+                height={265}
+                layout="responsive"
+              />
+              <h4 className={styles.titlebox}>{resource.title}</h4>
+              <p className={styles.content}>{resource.content}</p>
+              <Link href={`/wins/${category}/${resource.id}`}>Learn more</Link>
             </div>
-            <br/>
-        </div>
-    )
-}
-
-// • Similar to the news page, the hover action triggers the card to expand, with a call to action (Learn more in Line 27) to prompt the user to read/visit the ID page.
-
-// • Ternaries for location and field attributes are commented out for consistent card display in Wins page.
+          );
+        })}
+      </div>
+      <br />
+    </div>
+  );
+};
