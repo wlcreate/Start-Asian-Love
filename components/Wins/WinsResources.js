@@ -19,7 +19,7 @@ export const WinsResources = (props) => {
               height={265}
               layout="responsive"
             />
-            <h4 className={styles.titlebox}>{resource.title}</h4>
+            <h4>{resource.title}</h4>
             <p>{resource.content}</p>
             <Link href={`/wins/${category}/${resource.id}`}>Learn more</Link>
           </div>
