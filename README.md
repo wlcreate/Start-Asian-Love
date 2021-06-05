@@ -22,8 +22,12 @@ npm install
 ```
 NEXT_PUBLIC_NEWS_KEY=YOUR-NEWS-API-KEY
 ```
-5. Run the development server
+5. Run the server
 ```bash
+# for deployed version:
+npm start
+
+# for development:
 npm run dev
 ```
 6. Access the project in your browser at [`localhost:3000`](http://localhost:3000)
@@ -54,8 +58,6 @@ Some ideas we have in mind and would like to incorporate:
 * [Next.js](https://nextjs.org)
 * [CSS](https://css-tricks.com)
 * [react-slick](https://www.npmjs.com/package/react-slick)
-* [react-player](https://github.com/CookPete/react-player)
-* [react-scroll](https://www.npmjs.com/package/react-scroll)
 
 ## Contributors
 <table>
