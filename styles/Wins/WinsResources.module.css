@@ -1,139 +1,123 @@
-@import url("https://use.typekit.net/wdx7jdm.css");
+.resources-container {
+  margin: 45px 50px;
+  margin-bottom: 60px;
 
-/* Similar to the news page, the hover action triggers the card to expand, with a call to action ("Learn more") to prompt the user to read/visit the ID page. */
-
-/* Grid display of filtered resources */
-
-.main {
-  margin: 50px auto;
-  margin-bottom: 10px;
-  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 3rem;
-  column-gap: 0px;
   justify-items: center;
 }
 
-.card {
-  width: 400px;
-  height: 650px;
-  margin-bottom: 5px;
+.resource {
+  width: 350px;
+  height: 515px;
   padding: 20px;
-  cursor: pointer;
   border-radius: 10px;
+
   background-color: var(--primary-white);
-  line-height: 1.5;
   box-shadow: var(--primary-shadow);
 
   overflow: hidden;
-  transition: all 0.8s ease-in-out;
 }
 
-.card img {
-  width: 100%;
-  min-height: 513.33px;
-  max-height: 513.33px;
-  object-fit: cover;
-}
+.resource h4 {
+  color: var(--primary-black);
 
-.card:hover {
-  transform: scale(1.05);
-  height: 780px;
-}
-
-.portrait {
-  width: 100%;
-}
-
-/* The titlebox is the headline for the resource title, added a fixed height so the contents in each card start at the same height. */
-
-.titlebox {
-  height: 1.9em;
-}
-
-.card h2 {
-  font-size: 0.7em;
-  color: #505050;
-  cursor: pointer;
+  height: 60px;
   text-align: center;
-  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 0px;
+
+  line-height: 1.2;
   letter-spacing: 0.5px;
-  font-family: "Helvetica Neue", sans-serif;
-  margin-top: 6px;
+  font-size: 0.75em;
+  font-family: var(--helvetica-neue);
 }
 
-.content {
-  font-size: 0.55em;
-  color: rgb(114, 113, 113);
-  padding-top: 10px;
-
+.resource p {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: left;
+
+  color: var(--dark-grey);
+
+  font-size: 0.5em;
+  font-family: var(--expressway);
 }
 
-.card span {
-  /* color: rgb(86, 103, 255); */
-  color: #c165d1;
-  font-weight: 600;
-  padding-left: 20px;
-  padding-right: 2px;
+.resource a {
+  color: var(--brighter-purple);
   float: right;
-  font-size: 20px;
+
+  margin-right: 6px;
+  margin-top: 6px;
+
+  font-size: 0.6em;
+  font-family: var(--proxima-nova-condensed);
+  font-weight: 600;
 }
 
-.card span:hover {
-  color: #f21905;
-}
-
-.cardtext {
+.resourcetext {
   font-size: 0.9em;
   padding-bottom: 0.5em;
 }
 
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .resource:hover {
+    height: 635px;
+    transition: var(--primary-transition);
+
+    cursor: pointer;
+  }
+
+  .resource a:hover {
+    color: #f21905;
+  }
+}
+
 @media (max-width: 1430px) {
-  /* .main {
+  /* .resources-container {
     grid-template-columns: repeat(2, 1fr);
   } */
 }
 
 @media (max-width: 950px) {
-  .main {
+  .resources-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
   }
 }
 
 @media (max-width: 625px) {
-  .main {
+  .resources-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
 
-  .card {
+  .resource {
     width: 350px;
     height: 560px;
   }
 
-  .card img {
+  .resource img {
     min-height: 450px;
     max-height: 450px;
   }
 
-  .card h2 {
+  .resource h4 {
     font-size: 0.6em;
     margin-top: 2px;
   }
 
-  .card:hover {
+  .resource:hover {
     transform: scale(1.03);
   }
 
-  .card:hover {
+  .resource:hover {
     height: 690px;
   }
 
@@ -143,17 +127,17 @@
 }
 
 @media (max-width: 320px) {
-  .card {
+  .resource {
     width: 280px;
     height: 415px;
   }
 
-  .card img {
+  .resource img {
     min-height: 300px;
     max-height: 300px;
   }
 
-  .card h2 {
+  .resource h4 {
     font-size: 0.5em;
     margin-top: 0px;
   }
@@ -162,7 +146,7 @@
     visibility: hidden;
   }
 
-  .card:hover {
+  .resource:hover {
     height: 415px;
   }
 }

@@ -135,13 +135,13 @@ export default function Wins() {
 
       <div className={styles["wins-section"]} ref={HeritageRef}>
         <h3>AAPI Heritage Month</h3>
-        <p>
+        <p className={styles["wins-section-description"]}>
           The history of Asian Americans is largely under taught and unknown in the United States,
           and Asian immigrants even predate the country itself. Unfortunately, the deadly March 16th
           Atlanta spa shootings is only the latest mark of a long, untold history of anti-Asian hate
           and violence.
         </p>
-        <p>
+        <p className={styles["wins-section-description"]}>
           We can begin to advance towards a better future for all by educating ourselves about the
           Asian American experience and history, which are marked by pain, resilience, and hope.
         </p>
@@ -150,12 +150,12 @@ export default function Wins() {
 
       <div className={styles["wins-section"]} ref={ContributionsRef}>
         <h3>Contributions</h3>
-        <p>
+        <p className={styles["wins-section-description"]}>
           While immigrants and Americans with ancestral ties to Asia have made profound
           contributions to the United States and the World across all fields, there are many who
           have received little to no recognition.
         </p>
-        <p>
+        <p className={styles["wins-section-description"]}>
           We have begun featuring AAPI individuals who have shaped our world in a myriad of ways,
           and we aim to highlight many more individuals whose stories should be told.
         </p>
@@ -164,11 +164,11 @@ export default function Wins() {
 
       <div className={styles["wins-section"]} ref={RepresentationRef}>
         <h3>Representation</h3>
-        <p>
+        <p className={styles["wins-section-description"]}>
           Representation Matters. With identity, it's hard to be what you can't see. It's hard to be
           what you don't know about.
         </p>
-        <p>
+        <p className={styles["wins-section-description"]}>
           Asians have long been marginalized, stereotyped, and made into caricatures in American
           media. Here, we will celebrate Asians who are pioneers, who show what is possible, and who
           show what it means to be Asian.
@@ -178,7 +178,7 @@ export default function Wins() {
 
       <div className={styles["wins-section"]} ref={ArtRef}>
         <h3>Art</h3>
-        <p>
+        <p className={styles["wins-section-description"]}>
           Art history has long been too white, too male, and too Western-centric. As more artists of
           color and artists from underrepresented backgrounds gain recognition, we are eager to
           feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the
@@ -189,11 +189,11 @@ export default function Wins() {
 
       <div className={styles["wins-section"]} ref={CulturalRef}>
         <h3>Cultural Centers</h3>
-        <p>
+        <p className={styles["wins-section-description"]}>
           With a growing global interest on Eastern art and culture, here are American institutions
           that preserve and celebrate Asian art, cultures, and perspectives.
         </p>
-        <p>
+        <p className={styles["wins-section-description"]}>
           In the wake of the COVID-19 pandemic, many of these institutions are reopening and offer
           immersive virtual and onsite experiences for guests.
         </p>

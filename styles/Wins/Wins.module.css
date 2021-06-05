@@ -25,9 +25,10 @@
   margin-bottom: 40px;
 }
 
-.scroll-to-section h3, .wins-section h3 {
+.scroll-to-section h3,
+.wins-section h3 {
   color: var(--primary-purple);
-  
+
   font-family: var(--expressway);
   font-weight: 700;
   font-style: normal;
@@ -71,7 +72,7 @@
   font-size: 1.6em;
 }
 
-.wins-section p {
+.wins-section-description {
   margin-left: 70px;
   margin-right: 70px;
 
@@ -141,9 +142,9 @@
     font-size: 1.3em;
   }
 
-  .wins-section p {
+  .wins-section-description {
     margin-top: 15px;
-    
+
     font-size: 0.65em;
   }
 }
@@ -185,8 +186,8 @@
 
     font-size: 1em;
   }
-  
-  .wins-section p {
+
+  .wins-section-description {
     margin-left: 22px;
     margin-right: 22px;
 
