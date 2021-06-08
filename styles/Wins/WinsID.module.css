@@ -43,19 +43,22 @@
 
 
 .backToWins {
-  cursor: pointer;
-  margin: 60px auto;
   font-size: 2.5em;
   font-weight: 700;
-  color: #610172;
-  font-family: expressway, sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-family: var(--expressway);
+
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: var(--primary-purple);
 }
 
 .backToWins:hover {
-  color: #f21905;
-  transition: all 0.3s ease-in-out;
+  color: var(--primary-red);
 }
 
 /* @media (max-width: 1170px) {
