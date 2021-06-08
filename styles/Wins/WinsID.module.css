@@ -8,10 +8,6 @@
   box-shadow: var(--primary-shadow);
 }
 
-.container img {
-  width: 100%;
-}
-
 .container p {
   font-size: 1.5em;
   font-family: var(--acumin-pro);
@@ -24,7 +20,6 @@
   color: var(--dark-grey);
 
   margin-top: 30px;
-
 }
 
 .container a {
@@ -74,7 +69,7 @@
 
     letter-spacing: 0.3px;
     line-height: 1.1;
-  
+
     margin-top: 20px;
   }
   .container a {
@@ -84,8 +79,7 @@
     font-size: 2.2em;
 
     margin-bottom: 20px;
-}
-  
+  }
 }
 
 /* screen must be no bigger than landscape phone or below */
@@ -104,7 +98,7 @@
 
     letter-spacing: 0.5px;
     line-height: 1.2;
-  
+
     margin-top: 10px;
   }
   .container a {
@@ -114,32 +108,5 @@
     font-size: 2em;
 
     margin-bottom: 20px;
-}
-}
-
-
-/* @media (max-width: 1170px) {
-  .whiteBox {
-    width: 90%;
-    font-size: 1.25em;
   }
 }
-
-@media (max-width: 650px) {
-  .whiteBox {
-    font-size: 0.8em;
-    margin: 10px auto;
-  }
-
-  .title {
-    font-size: 1.5em;
-    margin: 30px auto;
-    color: #610172;
-    font-weight: 700;
-  }
-
-  .backToWins {
-    margin: 30px auto;
-    font-size: 1.5em;
-  }
-} */
