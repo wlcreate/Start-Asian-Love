@@ -90,6 +90,29 @@
 
 /* screen must be no bigger than landscape phone or below */
 @media (max-width: 480px) {
+  .container {
+    width: 70%;
+    padding: 20px;
+    margin: 20px auto;
+
+    box-shadow: var(--mobile-shadow);
+  }
+  .container p {
+    font-size: 1.05em;
+
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+  
+    margin-top: 10px;
+  }
+  .container a {
+    font-size: 1.05em;
+  }
+  .backToWins {
+    font-size: 2em;
+
+    margin-bottom: 20px;
+}
 }
 
 
