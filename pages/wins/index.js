@@ -4,6 +4,7 @@ import styles from "../../styles/Wins/Wins.module.css";
 
 import { Header } from "../../components/Layout/Header";
 import { Footer } from "../../components/Layout/Footer";
+import ScrollButton from "../../components/Layout/ScrollButton";
 import { WinsResources } from "../../components/Wins/WinsResources";
 
 import { art as artResources } from "../../database/Wins-separate";
@@ -113,6 +114,7 @@ export default function Wins() {
 
       <h2 className={"page-heading"}>Wins</h2>
 
+      <ScrollButton scrollPoint={2500} />
       <div className={styles.description}>
         <p>
           In light of the anti-Asian hate across America, here are some moments, places, and people
