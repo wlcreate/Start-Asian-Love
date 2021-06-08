@@ -131,8 +131,6 @@ export default function Wins() {
         <button onClick={gotoCultural}>Cultural</button>
       </div>
 
-      {/* The margins for the first four 'scroll to top' links have been reduced to 10px, except for the fifth one that is above the footer. */}
-
       <div className={styles["wins-section"]} ref={HeritageRef}>
         <h3>AAPI Heritage Month</h3>
         <p className={styles["wins-section-description"]}>
@@ -184,7 +182,7 @@ export default function Wins() {
           feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the
           expression and voices of all Asian artists.
         </p>
-        <WinsResources resources={artResources} category="art" />
+        <WinsResources resources={artResources} category="art" scrollTo={gotoArt} />
       </div>
 
       <div className={styles["wins-section"]} ref={CulturalRef}>

@@ -9,7 +9,7 @@ const Artist = (props) => {
   const {title, image, content, url} = props.foundArtist
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,17 +37,17 @@ const Artist = (props) => {
           <meta property="twitter:image" content="https://res.cloudinary.com/dpqssv1uu/image/upload/v1621022082/StartAsianLove-og.jpg" key="twimage" />
       </Head>
       <Header />
-      <div className={styles.main}>
-        <p className={styles.title}>{title}</p>
+      <div>
+        <h1 className={"page-heading"}>{title}</h1>
 
-        <div className={styles.whiteBox}>
+        <div className={styles.container}>
           <img src={image}></img>
-          <p className={styles.text}>{content}</p>
-          <p><span><a href={url} target="_blank" rel="noopener noreferrer">Discover more about {title}</a></span></p>
+          <p>{content}</p>
+          <a href={url} target="_blank" rel="noopener noreferrer">Discover more about {title}</a>
         </div>
         
-        <Link href='/wins' passHref>
-            <div className={styles.backToWins}>Back To Wins</div>
+        <Link href='/wins' scroll={false}>
+            <a className={styles.backToWins}>Back To Wins</a>
         </Link>
       </div>
       <Footer />
