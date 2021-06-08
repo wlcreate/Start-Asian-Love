@@ -5,6 +5,11 @@ import styles from "../../styles/Layout/ScrollButton.module.css";
 const ScrollButton = ({ scrollPoint }) => {
   const [visible, setVisible] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+    return () => window.removeEventListener("scroll", toggleVisible);
+  });
+
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > scrollPoint) {
@@ -20,11 +25,6 @@ const ScrollButton = ({ scrollPoint }) => {
       behavior: "smooth",
     });
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisible);
-    return () => window.removeEventListener("scroll", toggleVisible);
-  });
 
   return (
     <div className={styles.button}>
