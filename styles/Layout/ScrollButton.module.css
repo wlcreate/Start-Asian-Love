@@ -1,8 +1,23 @@
 .button {
   position: fixed;
+  z-index: 1;
+
+  cursor: pointer;
+
   width: 80px;
   right: 20px;
   bottom: 25px;
-  z-index: 1;
-  cursor: pointer;
+}
+
+/* screen must be no bigger than landscape phone or portrait tablet */
+@media (max-width: 768px) {
+  .button {
+    bottom: 15px;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .button {
+  }
 }
