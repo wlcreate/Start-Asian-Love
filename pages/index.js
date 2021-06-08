@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "../styles/Home/Home.module.css";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
-import Carousel from "../components/Carousel.js";
 
 export default function Home() {
   return (
