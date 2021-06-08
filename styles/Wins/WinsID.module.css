@@ -37,11 +37,6 @@
   transition: var(--primary-transition);
 }
 
-.container a:hover {
-  font-size: 1.5em;
-}
-
-
 .backToWins {
   font-size: 2.5em;
   font-weight: 700;
@@ -57,9 +52,46 @@
   color: var(--primary-purple);
 }
 
-.backToWins:hover {
-  color: var(--primary-red);
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .container a:hover {
+    font-size: 1.5em;
+  }
+
+  .backToWins:hover {
+    color: var(--primary-red);
+  }
 }
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .container {
+    width: 75%;
+    margin: 40px auto;
+  }
+  .container p {
+    font-size: 1.3em;
+
+    letter-spacing: 0.3px;
+    line-height: 1.1;
+  
+    margin-top: 20px;
+  }
+  .container a {
+    font-size: 1.15em;
+  }
+  .backToWins {
+    font-size: 2.2em;
+
+    margin-bottom: 20px;
+}
+  
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+}
+
 
 /* @media (max-width: 1170px) {
   .whiteBox {
