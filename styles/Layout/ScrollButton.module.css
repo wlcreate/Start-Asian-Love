@@ -19,5 +19,8 @@
 /* screen must be no bigger than landscape phone or below */
 @media (max-width: 480px) {
   .button {
+    width: 55px;
+    right: 10px;
+    bottom: 10px;
   }
 }
