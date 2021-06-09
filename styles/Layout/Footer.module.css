@@ -20,6 +20,8 @@
 
 .footer p {
   margin: 0px;
+
+  text-align: center;
 }
 
 .footer a {
@@ -46,7 +48,7 @@
 /* screen must be no bigger than landscape phone or portrait tablet */
 @media (max-width: 768px) {
   .footer {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 
@@ -62,7 +64,6 @@
   }
 
   .footer p {
-    text-align: center;
     margin-top: 5px;
   }
 }
