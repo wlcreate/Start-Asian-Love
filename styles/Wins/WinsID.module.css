@@ -47,7 +47,7 @@
   color: var(--primary-purple);
 }
 
-/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+/* screen must be at least a portrait tablet or small desktop for hover effects */
 @media (min-width: 940px) {
   .container a:hover {
     font-size: 1.5em;

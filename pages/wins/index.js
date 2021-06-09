@@ -117,10 +117,21 @@ export default function Wins() {
       <ScrollButton scrollPoint={2500} />
       <div className={styles.description}>
         <p>
-          In light of the anti-Asian hate across America, here are some moments, places, and people
-          in American history to serve as reminders of our resilience and strength, that we belong
-          here, and this is our home. What we have listed is a small portion compared to the many,
-          however this is only the beginning.
+          In light of the anti-Asian hate across the United States, our anxiety, trauma,
+          frustration, and feelings of isolation have risen. Trying to navigate these feelings that
+          have been suppressed, ignored, and denied for so long has been difficult to say the least.
+        </p>
+        <p>
+          To help, we have started this collection of moments, places, and people to serve as a
+          reminder of our resilience and strength. Our history is part of American history, from the
+          building of the Transcontinental Railroad to the Internment of Japanese Americans, to
+          Kamala Harris becoming the first Black and Indian American woman to become Vice President
+          in the 2020 Presidential Election.
+        </p>
+        <p>
+          There is so much for us to celebrate, and we hope that this corner will serve as
+          inspiration for you to look forward to what's next. Remember, we are not invisible, we
+          belong here, this is our home, and no one can take that away from us.
         </p>
       </div>
 

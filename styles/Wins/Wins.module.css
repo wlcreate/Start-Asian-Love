@@ -101,7 +101,11 @@
 /* most laptop and desktop screens */
 @media (max-width: 1366px) {
   .description {
+    padding: 25px;
     box-shadow: var(--mobile-shadow);
+
+    line-height: 1.2;
+    font-size: 1.38em;
   }
 
   .button {

@@ -149,7 +149,7 @@ export default function Support() {
           Consequently with this influx of information, it can be overwhelming to sort through and
           understand where to go to for what. As a result, we have decided to create our own list of
           resources to address this pain point, making it easier for you and others to understand,
-          share, and sort through all of this information.{" "}
+          share, and sort through all of this information.
         </p>
         <p>
           Below you will find our growing list of resources. Check back for updates and if you know
