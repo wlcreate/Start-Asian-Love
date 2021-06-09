@@ -63,7 +63,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Image
+      {/* <Image
         className={styles.hero}
         src="/Hero.jpg"
         alt="Combat hate. Choose love. Let's grow by understanding, supporting, and celebrating each other for who we are."
@@ -71,7 +71,7 @@ export default function Home() {
         width={1920}
         height={1200}
         layout="responsive"
-      />
+      /> */}
 
       <div className={styles.content}>
         <div className={styles.text}>
