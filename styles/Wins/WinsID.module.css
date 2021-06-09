@@ -1,111 +1,112 @@
-@import url("https://use.typekit.net/wdx7jdm.css");
-
 .container {
-  align-items: center;
-  text-align: center;
-}
-
-.main {
-  text-align: center;
-}
-
-.title {
-  font-size: 3em;
-  margin: 50px auto;
-  color: #610172;
-  font-weight: 800;
-  transition: all 0.5s ease-in-out;
-  font-family: expressway, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.whiteBox {
-  background: white;
-  border-radius: 10px;
-  color: rgb(80, 80, 80);
   width: 50%;
-  height: auto;
   margin: 50px auto;
   padding: 30px;
-  position: relative;
-  box-shadow: 26px 26px 26px #ecb724;
+
+  border-radius: 10px;
+  background: var(--primary-white);
+  box-shadow: var(--primary-shadow);
+}
+
+.container p {
   font-size: 1.5em;
-  font-weight: 500;
+  font-family: var(--acumin-pro);
+  font-weight: 400;
+  font-style: normal;
+
   letter-spacing: 0.75px;
   line-height: 1.45;
-  text-align: left;
-  text-justify: inter-word;
-  transition: all 0.5s ease-in-out;
-}
 
-.whiteBox img {
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-}
+  color: var(--dark-grey);
 
-.text {
   margin-top: 30px;
-  transition: all 0.5s ease-in-out;
-  font-family: acumin-pro, sans-serif;
-
-  font-weight: 400;
-
-  font-style: normal;
 }
 
-.whiteBox span {
-  color: #f21905;
+.container a {
+  font-size: 1.4em;
+  font-family: var(--expressway);
   font-weight: 700;
-  transition: all 0.5s ease-in-out;
-  font-family: expressway, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
 
-.whiteBox span:hover {
-  font-size: 1.08em;
-  transition: all 0.5s ease-in-out;
+  color: var(--primary-red);
+
+  transition: var(--primary-transition);
 }
 
 .backToWins {
-  cursor: pointer;
-  margin: 60px auto;
   font-size: 2.5em;
   font-weight: 700;
-  color: #610172;
-  font-family: expressway, sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-family: var(--expressway);
+
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: var(--primary-purple);
 }
 
-.backToWins:hover {
-  color: #f21905;
-  transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 1170px) {
-  .whiteBox {
-    width: 90%;
-    font-size: 1.25em;
-  }
-}
-
-@media (max-width: 650px) {
-  .whiteBox {
-    font-size: 0.8em;
-    margin: 10px auto;
-  }
-
-  .title {
+/* screen must be at least a portrait tablet or small desktop for hover effects */
+@media (min-width: 940px) {
+  .container a:hover {
     font-size: 1.5em;
-    margin: 30px auto;
-    color: #610172;
-    font-weight: 700;
   }
 
+  .backToWins:hover {
+    color: var(--primary-red);
+  }
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .container {
+    width: 75%;
+    margin: 40px auto;
+  }
+  .container p {
+    font-size: 1.3em;
+
+    letter-spacing: 0.3px;
+    line-height: 1.1;
+
+    margin-top: 20px;
+  }
+  .container a {
+    font-size: 1.15em;
+  }
   .backToWins {
-    margin: 30px auto;
-    font-size: 1.5em;
+    font-size: 2.2em;
+
+    margin-bottom: 20px;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .container {
+    width: 70%;
+    padding: 20px;
+
+    margin: 20px auto;
+    margin-bottom: 90px;
+
+    box-shadow: var(--mobile-shadow);
+  }
+  .container p {
+    font-size: 1.05em;
+
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+
+    margin-top: 10px;
+  }
+  .container a {
+    font-size: 1.05em;
+  }
+  .backToWins {
+    font-size: 2em;
+
+    margin-bottom: 20px;
   }
 }

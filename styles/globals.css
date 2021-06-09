@@ -1,7 +1,7 @@
 /* normalizing css between browsers */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 /* importing Adobe font */
-@import url("https://use.typekit.net/wdx7jdm.css");
+@import url('https://use.typekit.net/wdx7jdm.css');
 
 :root {
   /* colors */
@@ -16,21 +16,20 @@
   --description-text-grey: rgb(109, 109, 109);
 
   --primary-purple: #6a1f77;
-  --brighter-purple: #9729ff;
+  --brighter-purple: #9b00b6;
 
   /* fonts */
-  --acumin-pro: acumin-pro, sans-serif; 
+  --acumin-pro: acumin-pro, sans-serif;
   --reklame-script: reklame-script, sans-serif;
   --expressway: expressway, sans-serif;
   --proxima-nova-condensed: proxima-nova-condensed, sans-serif;
-  --helvetica-neue: "Helvetica Neue", sans-serif;
+  --helvetica-neue: 'Helvetica Neue', sans-serif;
 
   /* misc. */
   --primary-transition: all 0.5s ease-in-out;
   --primary-shadow: 16px 16px 16px var(--shadow-yellow);
   --mobile-shadow: 12px 12px 12px var(--shadow-yellow);
 }
-
 
 body {
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -50,7 +49,7 @@ a {
 
   margin-top: 45px;
   margin-bottom: 45px;
-  
+
   font-size: 4em;
   font-family: var(--expressway);
   font-weight: 800;
@@ -81,7 +80,6 @@ a {
     font-size: 2em;
   }
 }
-
 
 /* Reklame Script Regular
 font-family: reklame-script, sans-serif;

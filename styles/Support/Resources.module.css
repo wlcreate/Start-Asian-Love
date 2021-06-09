@@ -121,6 +121,7 @@
   .resources-container {
     grid-gap: 2rem;
     column-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .resource-card {

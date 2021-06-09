@@ -1,158 +1,200 @@
-@import url("https://use.typekit.net/wdx7jdm.css");
-
-.container {
-  align-items: center;
-  text-align: center;
-}
-
-.main {
-  text-align: center;
-}
-
-.main h2 {
-  color: #6a1f77;
-  font-size: 4em;
-  font-family: expressway, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* The card text size in the WinsResources component (which imports styling from WinsResources.module.css) is also being affected by the ".content" class in this Wins.module.css ??? Effect is most evident when the font size is changed. */
-
-.content {
-  /* height: calc(100% - 100px);
-  padding: 1em; */
-  font-size: 2em;
-  text-align: center;
-}
-
 .description {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 0.8em;
-  font-family: acumin-pro, sans-serif;
+  margin: 40px 70px;
+  padding: 30px;
+  box-shadow: var(--primary-shadow);
+  background: var(--primary-white);
+  border-radius: 10px;
 
-  font-weight: 400;
-
-  font-style: normal;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-bottom: 0%;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #705474;
   line-height: 1.25;
-  transition: all 0.3s ease-in-out;
+  font-size: 1.5em;
+  font-family: var(--acumin-pro);
+  font-weight: 400;
+  font-style: normal;
 }
 
-.intro {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: -30px;
-  font-size: 2em;
-  font-family: acumin-pro, sans-serif;
+.description p {
+  text-align: center;
 
-  font-weight: 400;
-
-  font-style: normal;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-bottom: 0%;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #705474;
-  line-height: 1.25;
-  transition: all 0.3s ease-in-out;
+  color: var(--dark-grey);
 }
 
-.scroll {
-  cursor: pointer;
-  margin-top: 100px;
-  font-size: 1.35em;
+.scroll-to-section {
+  text-align: center;
+
+  margin: 50px 10px;
+  margin-bottom: 40px;
+}
+
+.scroll-to-section h3,
+.wins-section h3 {
+  color: var(--primary-purple);
+
+  font-family: var(--expressway);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.scroll-to-section h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+
+  font-size: 2.5em;
+}
+
+.scroll-to-section button {
   padding: 12px;
-  border-radius: 6px;
-  letter-spacing: 0.25px;
-  background: #610172;
-  color: white;
-  width: 220px;
-  font-weight: 700;
-  align-items: center;
+  margin: 10px;
+  width: 190px;
+
+  border-radius: 10px;
+  border: none;
+
   text-transform: uppercase;
-  box-shadow: 6px 6px 12px #ecb724;
-  font-family: acumin-pro, sans-serif;
 
-  font-weight: 400;
+  color: var(--primary-white);
+  background: var(--primary-purple);
+  box-shadow: 6px 6px 12px var(--shadow-yellow);
 
-  font-style: normal;
-}
-
-.scroll:hover {
-  background: #9b00b6;
-  transition: all 0.2s ease-in-out;
-}
-
-.scrollToSection {
-  font-size: 2.25em;
-  font-weight: 800;
-  color: #6a1f77;
-  margin-top: 40px;
-  margin-bottom: 14px;
-}
-
-.scrollToTop {
-  cursor: pointer;
-  margin-top: 10px;
-  font-size: 1.25em;
-  font-weight: 700;
-  color: #f21905;
-  font-family: expressway, sans-serif;
+  font-size: 1.1em;
+  font-family: var(--acumin-pro);
   font-weight: 600;
-  font-style: normal;
 }
-
-/* .scrollToTop:hover {
-  color: #f21905;
-} */
 
 .wins-section {
-  display: column;
+  font-size: 2em;
+  text-align: center;
 }
 
-/* The five category titles in the Wins page */
 .wins-section h3 {
-  font-size: 1.8em;
-  font-family: expressway, sans-serif;
-  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 12px;
+
+  font-size: 1.6em;
+}
+
+.wins-section-description {
+  margin-left: 70px;
+  margin-right: 70px;
+
+  line-height: 1.25;
+
+  color: var(--dark-grey);
+
+  font-size: 0.75em;
+  font-family: var(--acumin-pro);
+  font-weight: 400;
   font-style: normal;
-  color: #4d005a;
-  margin-top: 100px;
-  margin-bottom: 10px;
 }
 
-/* Pinning a header or footer according to height of middle content
-https://codepen.io/jdsteinbach/pen/YPPegq */
-
-@media (max-width: 950px) {
-  .wins-section h3 {
-    font-size: 1.5em;
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .scroll-to-section button {
+    cursor: pointer;
   }
 
+  .scroll-to-section button:hover {
+    background-color: var(--brighter-purple);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
   .description {
-    font-size: 0.8em;
-    margin-left: 15%;
-    margin-right: 15%;
+    padding: 25px;
+    box-shadow: var(--mobile-shadow);
+
+    line-height: 1.2;
+    font-size: 1.38em;
+  }
+
+  .button {
+    box-shadow: 6px 6px 12px var(--shadow-yellow);
   }
 }
 
-@media (max-width: 625px) {
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .description {
+    margin: 25px;
+    padding: 20px;
+
+    line-height: 1.2;
+    font-size: 1.15em;
+  }
+
+  .description p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .scroll-to-section h3 {
+    font-size: 2em;
+  }
+
+  .scroll-to-section button {
+    padding: 10px;
+
+    width: 160px;
+
+    font-size: 0.9em;
+  }
+
   .wins-section h3 {
+    margin-top: 40px;
+
+    font-size: 1.3em;
+  }
+
+  .wins-section-description {
+    margin-top: 15px;
+
+    font-size: 0.65em;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .description {
+    padding: 18px;
+    margin-bottom: 15px;
+
+    line-height: 1.25;
     font-size: 1em;
   }
 
-  .description {
-    font-size: 0.6em;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: left;
+  .description p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .scroll-to-section {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .scroll-to-section h3 {
+    font-size: 1.8em;
+  }
+
+  .scroll-to-section button {
+    margin: 8px;
+    width: 150px;
+
+    letter-spacing: 0.45px;
+    font-size: 0.8em;
+  }
+
+  .wins-section h3 {
+    margin-top: 30px;
+
+    font-size: 1em;
+  }
+
+  .wins-section-description {
+    margin-left: 22px;
+    margin-right: 22px;
+
+    font-size: 0.5em;
   }
 }
