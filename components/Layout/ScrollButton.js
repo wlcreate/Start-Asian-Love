@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import UpButton from "../../public/UpButton.svg";
+import UpButton from "../../public/Layout/UpButton.svg";
 import styles from "../../styles/Layout/ScrollButton.module.css";
 
 const ScrollButton = ({ scrollPoint }) => {
