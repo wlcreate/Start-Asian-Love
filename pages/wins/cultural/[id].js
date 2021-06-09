@@ -77,11 +77,11 @@ const Cultural = (props) => {
         <a href={url} target="_blank" rel="noopener noreferrer">
           Discover more about {title}
         </a>
-
-        <Link href="/wins" scroll={false}>
-          <a className={styles.backToWins}>Back To Wins</a>
-        </Link>
       </div>
+
+      <Link href="/wins" scroll={false}>
+        <a className={styles.backToWins}>Back To Wins</a>
+      </Link>
       <Footer />
     </div>
   );
