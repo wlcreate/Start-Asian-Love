@@ -83,7 +83,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles["iframe-container-wrapper"]}>
+        {/* <div className={styles["iframe-container-wrapper"]}>
           <div className={styles["iframe-container"]}>
             <iframe
               width="560"
@@ -94,7 +94,7 @@ export default function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
-        </div>
+        </div> */}
 
         {/* <Link href='/news/1' passHref>
               <div className={styles.checkout}>Check out the latest news</div>
