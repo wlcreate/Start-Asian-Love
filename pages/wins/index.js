@@ -184,7 +184,7 @@ export default function Wins() {
           feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the
           expression and voices of all Asian artists.
         </p>
-        <WinsResources resources={artResources} category="art" scrollTo={gotoArt} />
+        <WinsResources resources={artResources} category="art" />
       </div>
 
       <div className={styles["wins-section"]} ref={CulturalRef}>

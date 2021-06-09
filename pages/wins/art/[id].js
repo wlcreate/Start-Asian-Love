@@ -62,28 +62,26 @@ const Artist = (props) => {
         />
       </Head>
       <Header />
-      <div>
-        <h1 className={"page-heading"}>{title}</h1>
+      <h1 className={"page-heading"}>{title}</h1>
 
-        <div className={styles.container}>
-          <Image
-            src={image}
-            alt={`Image of ${title}`}
-            loading="lazy"
-            width={616}
-            height={462}
-            layout="responsive"
-          />
-          <p>{content}</p>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            Discover more about {title}
-          </a>
-        </div>
-
-        <Link href="/wins" scroll={false}>
-          <a className={styles.backToWins}>Back To Wins</a>
-        </Link>
+      <div className={styles.container}>
+        <Image
+          src={image}
+          alt={`Image of ${title}`}
+          loading="lazy"
+          width={616}
+          height={462}
+          layout="responsive"
+        />
+        <p>{content}</p>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          Discover more about {title}
+        </a>
       </div>
+
+      <Link href="/wins" scroll={false}>
+        <a className={styles.backToWins}>Back To Wins</a>
+      </Link>
       <Footer />
     </div>
   );
