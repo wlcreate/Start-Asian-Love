@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-// import Link from 'next/link';
 import styles from "../styles/Home/Home.module.css";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
@@ -63,7 +62,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      {/* <Image
+      <Image
         className={styles.hero}
         src="/Hero.jpg"
         alt="Combat hate. Choose love. Let's grow by understanding, supporting, and celebrating each other for who we are."
@@ -71,7 +70,7 @@ export default function Home() {
         width={1920}
         height={1200}
         layout="responsive"
-      /> */}
+      />
 
       <div className={styles.content}>
         <div className={styles.text}>
@@ -83,7 +82,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* <div className={styles["iframe-container-wrapper"]}>
+        <div className={styles["iframe-container-wrapper"]}>
           <div className={styles["iframe-container"]}>
             <iframe
               width="560"
@@ -94,11 +93,7 @@ export default function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
-        </div> */}
-
-        {/* <Link href='/news/1' passHref>
-              <div className={styles.checkout}>Check out the latest news</div>
-            </Link> */}
+        </div>
 
         <div className={styles.text}>
           <p>
@@ -160,8 +155,8 @@ export default function Home() {
               src="/Graphics/graphic01.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>
@@ -170,8 +165,8 @@ export default function Home() {
               src="/Graphics/graphic02.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>
@@ -180,8 +175,8 @@ export default function Home() {
               src="/Graphics/graphic03.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>
@@ -190,8 +185,8 @@ export default function Home() {
               src="/Graphics/graphic04.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>
@@ -212,8 +207,8 @@ export default function Home() {
               src="/Graphics/graphic05.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>
@@ -222,8 +217,8 @@ export default function Home() {
               src="/Graphics/graphic06.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>
@@ -232,8 +227,8 @@ export default function Home() {
               src="/Graphics/graphic07.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>
@@ -242,8 +237,8 @@ export default function Home() {
               src="/Graphics/graphic08.jpg"
               alt=""
               loading="lazy"
-              width={374}
-              height={374}
+              width={205}
+              height={205}
               layout="responsive"
             />
           </div>

@@ -1,9 +1,3 @@
-/* The article cards are currently dislayed as a grid, but this can be changed.
-
-Initially, each row of cards had different heights due to image size and length of headline and content. For consistent card size, fixed heights were assignd to the child divs in the cards, and clamping effects were added to only show the first 3 lines of article content (see line 85). */
-
-/* The cards in the News, Support, and Win pages now all have the same width for consistency, and a box shadow effect with a darker yellow hue has been applied to all of them for depth. */
-
 .articles-container-wrapper {
   display: flex;
   flex-direction: column;

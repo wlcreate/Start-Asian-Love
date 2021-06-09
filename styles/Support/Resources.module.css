@@ -1,4 +1,3 @@
-/* Grid display of filtered resources */
 .resources-container {
   margin: 50px auto;
 
@@ -55,7 +54,7 @@
 
   font-variant: small-caps;
   font-size: 1.5em;
-  font-family: var(--helvetica-neue);
+  font-family: var(--proxima-nova-condensed);
   font-weight: 700;
 }
 
