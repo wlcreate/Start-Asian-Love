@@ -157,7 +157,7 @@ export default function Home() {
         <div className={styles.graphicRowOne}>
           <div className={styles.graphic}>
             <Image
-              src="/Graphics/graphic07.jpg"
+              src="/Graphics/graphic01.jpg"
               alt=""
               loading="lazy"
               width={374}
@@ -167,7 +167,7 @@ export default function Home() {
           </div>
           <div className={styles.graphic}>
             <Image
-              src="/Graphics/graphic01.jpg"
+              src="/Graphics/graphic02.jpg"
               alt=""
               loading="lazy"
               width={374}
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
           <div className={styles.graphic}>
             <Image
-              src="/Graphics/graphic08.jpg"
+              src="/Graphics/graphic04.jpg"
               alt=""
               loading="lazy"
               width={374}
@@ -209,16 +209,6 @@ export default function Home() {
         <div className={styles.graphicRowTwo}>
           <div className={styles.graphic}>
             <Image
-              src="/Graphics/graphic04.jpg"
-              alt=""
-              loading="lazy"
-              width={374}
-              height={374}
-              layout="responsive"
-            />
-          </div>
-          <div className={styles.graphic}>
-            <Image
               src="/Graphics/graphic05.jpg"
               alt=""
               loading="lazy"
@@ -229,7 +219,7 @@ export default function Home() {
           </div>
           <div className={styles.graphic}>
             <Image
-              src="/Graphics/graphic09.jpg"
+              src="/Graphics/graphic06.jpg"
               alt=""
               loading="lazy"
               width={374}
@@ -239,7 +229,17 @@ export default function Home() {
           </div>
           <div className={styles.graphic}>
             <Image
-              src="/Graphics/graphic11.jpg"
+              src="/Graphics/graphic07.jpg"
+              alt=""
+              loading="lazy"
+              width={374}
+              height={374}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.graphic}>
+            <Image
+              src="/Graphics/graphic08.jpg"
               alt=""
               loading="lazy"
               width={374}
