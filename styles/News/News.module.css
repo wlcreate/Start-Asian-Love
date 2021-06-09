@@ -126,9 +126,8 @@
 }
 
 /* hover effect for larger screens */
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .article {
-    width: 380px;
     height: 355px;
   }
 

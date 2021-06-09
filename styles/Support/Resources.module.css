@@ -1,9 +1,8 @@
 .resources-container {
-  margin: 50px auto;
+  margin: 50px 35px;
 
   display: grid;
   grid-gap: 3rem;
-  column-gap: 0px;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   justify-items: center;
 }
@@ -92,8 +91,6 @@
 @media (max-width: 1366px) {
   .resources-container {
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .resource-card {
@@ -118,7 +115,6 @@
 @media (max-width: 768px) {
   .resources-container {
     grid-gap: 2rem;
-    column-gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 

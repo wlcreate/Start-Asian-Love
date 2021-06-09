@@ -77,7 +77,7 @@
 }
 
 /* hover effect for larger screens */
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .resource:hover {
     height: 635px;
   }
