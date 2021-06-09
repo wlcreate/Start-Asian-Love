@@ -32,7 +32,8 @@ Initially, each row of cards had different heights due to image size and length 
   transition: var(--primary-transition);
 }
 
-.article h3, #article-description {
+.article h3,
+#article-description {
   margin-left: 12px;
   margin-right: 12px;
 
@@ -70,7 +71,7 @@ Initially, each row of cards had different heights due to image size and length 
   margin-bottom: 0px;
   height: 70px;
   line-height: 1.4;
-  
+
   font-family: var(--expressway);
 }
 
@@ -93,7 +94,7 @@ Initially, each row of cards had different heights due to image size and length 
   color: var(--primary-purple);
   display: flex;
   justify-content: center;
-  
+
   font-size: 2.5em;
   font-family: var(--expressway);
   font-weight: 600;
@@ -112,11 +113,11 @@ Initially, each row of cards had different heights due to image size and length 
   .article:hover {
     height: 390px;
   }
-  
+
   #article-cta:hover {
     color: var(--primary-red);
   }
-  
+
   .paginator .active:hover {
     color: var(--primary-red);
   }
@@ -147,7 +148,7 @@ Initially, each row of cards had different heights due to image size and length 
 
     height: 75px;
     line-height: 1.2;
-  
+
     font-size: 1.4em;
   }
 }
@@ -183,14 +184,14 @@ Initially, each row of cards had different heights due to image size and length 
 
     height: 75px;
     line-height: 1.2;
-  
+
     font-size: 1.3em;
   }
 
   #article-description {
     height: 55px;
     line-height: 1.3;
-    
+
     font-size: 0.9rem;
   }
 
@@ -236,14 +237,14 @@ Initially, each row of cards had different heights due to image size and length 
 
     height: 75px;
     line-height: 1.2;
-  
+
     font-size: 1.3em;
   }
 
   #article-description {
     height: 75px;
     line-height: 1.3;
-    
+
     font-size: 0.9rem;
 
     -webkit-line-clamp: 4;

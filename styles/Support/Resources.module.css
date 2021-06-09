@@ -31,9 +31,8 @@
   text-align: center;
   letter-spacing: 0.5px;
 
-  font-size: 1.4em;
-  font-family: var(--helvetica-neue);
-  /* font-family: var(--proxima-nova-condensed); */
+  font-size: 1.6em;
+  font-family: var(--proxima-nova-condensed);
 }
 
 .description {
@@ -52,7 +51,7 @@
   bottom: 0;
 
   letter-spacing: 0.8px;
-  color: rgb(83, 83, 83);;
+  color: rgb(83, 83, 83);
 
   font-variant: small-caps;
   font-size: 1.5em;
@@ -111,7 +110,7 @@
     font-size: 1.35em;
   }
 
-  .description { 
+  .description {
     font-size: 1.1em;
   }
 }
@@ -162,7 +161,7 @@
   .resource-card {
     width: 280px;
   }
-  
+
   .resource-card h3 {
     height: 50px;
 

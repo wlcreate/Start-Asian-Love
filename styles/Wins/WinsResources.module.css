@@ -31,7 +31,7 @@
   line-height: 1.2;
   letter-spacing: 0.5px;
   font-size: 0.75em;
-  font-family: var(--helvetica-neue);
+  font-family: var(--proxima-nova-condensed);
 }
 
 .resource p {
@@ -92,10 +92,9 @@
     box-shadow: var(--mobile-shadow);
   }
 
-
   .resource h4 {
     line-height: 1.15;
-    
+
     font-size: 0.7em;
   }
 
@@ -107,7 +106,7 @@
   .resource a {
     margin-right: 2px;
     margin-top: 2px;
-  
+
     font-size: 0.6em;
   }
 }
@@ -117,7 +116,7 @@
   .resources-container {
     margin: 45px 50px;
     margin-bottom: 60px;
-  
+
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 
@@ -146,7 +145,7 @@
   .resources-container {
     margin: 40px 50px;
     margin-bottom: 60px;
-  
+
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     row-gap: 40px;
   }
