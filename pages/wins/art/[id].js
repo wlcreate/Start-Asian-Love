@@ -62,7 +62,7 @@ const Artist = (props) => {
         />
       </Head>
       <Header />
-      <h1 className={"page-heading"}>{title}</h1>
+      <h2 className={"page-heading"}>{title}</h2>
 
       <div className={styles.container}>
         <Image
