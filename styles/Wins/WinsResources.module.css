@@ -1,165 +1,176 @@
-@import url("https://use.typekit.net/wdx7jdm.css");
+.resources-container {
+  margin: 45px 50px;
+  margin-bottom: 60px;
 
-/* Similar to the news page, the hover action triggers the card to expand, with a call to action ("Learn more") to prompt the user to read/visit the ID page. */
-
-/* Grid display of filtered resources */
-
-.main {
-  margin: 50px auto;
-  margin-bottom: 10px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
 }
 
-.card {
-  width: 425px;
-  height: 650px;
-  margin-bottom: 5px;
+.resource {
+  width: 350px;
+  height: 515px;
   padding: 20px;
-  cursor: pointer;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  line-height: 1.5;
-  box-shadow: 26px 26px 26px #ecb724;
-  position: relative;
+
+  background-color: var(--primary-white);
+  box-shadow: var(--primary-shadow);
+
   overflow: hidden;
-  transition: all 0.8s ease-in-out;
 }
 
-.card img {
-  width: 100%;
-  min-height: 513.33px;
-  max-height: 513.33px;
-  object-fit: cover;
-}
+.resource h4 {
+  color: var(--primary-black);
 
-.card:hover {
-  transform: scale(1.05);
-  height: 780px;
-}
-
-.portrait {
-  width: 100%;
-}
-
-/* The titlebox is the headline for the resource title, added a fixed height so the contents in each card start at the same height. */
-
-.titlebox {
-  height: 1.9em;
-}
-
-.card h2 {
-  font-size: 0.75em;
-  color: #505050;
-  cursor: pointer;
+  height: 60px;
   text-align: center;
-  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 0px;
+
+  line-height: 1.2;
   letter-spacing: 0.5px;
-  font-family: "Helvetica Neue", sans-serif;
-  margin-top: 6px;
+  font-size: 0.75em;
+  font-family: var(--proxima-nova-condensed);
 }
 
-.content {
-  font-size: 0.55em;
-  color: rgb(114, 113, 113);
-  padding-top: 10px;
-
+.resource p {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: left;
+
+  color: var(--dark-grey);
+
+  font-size: 0.5em;
+  font-family: var(--expressway);
 }
 
-.card span {
-  /* color: rgb(86, 103, 255); */
-  color: #c165d1;
-  font-weight: 600;
-  padding-left: 20px;
-  padding-right: 2px;
+.resource a {
+  color: var(--brighter-purple);
   float: right;
-  font-size: 20px;
+
+  margin-right: 6px;
+  margin-top: 6px;
+
+  font-size: 0.6em;
+  font-family: var(--proxima-nova-condensed);
+  font-weight: 600;
 }
 
-.card span:hover {
-  color: #f21905;
-}
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .resource:hover {
+    height: 580px;
+    transition: var(--primary-transition);
 
-.cardtext {
-  font-size: 0.9em;
-  padding-bottom: 0.5em;
-}
+    cursor: default;
+  }
 
-@media (max-width: 1430px) {
-  .main {
-    grid-template-columns: repeat(2, 1fr);
+  .resource a:hover {
+    color: var(--primary-red);
+
+    cursor: pointer;
   }
 }
 
-@media (max-width: 950px) {
-  .main {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+/* hover effect for larger screens */
+@media (min-width: 1366px) {
+  .resource:hover {
+    height: 635px;
   }
 }
 
-@media (max-width: 625px) {
-  .main {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .resource {
+    width: 320px;
+    height: 470px;
+
+    box-shadow: var(--mobile-shadow);
   }
 
-  .card {
-    width: 350px;
-    height: 560px;
+  .resource h4 {
+    line-height: 1.15;
+
+    font-size: 0.7em;
   }
 
-  .card img {
-    min-height: 450px;
-    max-height: 450px;
+  .resource p {
+    margin-top: 8px;
+    margin-bottom: 15px;
   }
 
-  .card h2 {
-    font-size: 0.6em;
+  .resource a {
+    margin-right: 2px;
     margin-top: 2px;
-  }
 
-  .card:hover {
-    transform: scale(1.03);
-  }
-
-  .card:hover {
-    height: 690px;
-  }
-
-  .content {
-    margin-top: -25px;
+    font-size: 0.6em;
   }
 }
 
-@media (max-width: 320px) {
-  .card {
-    width: 280px;
-    height: 415px;
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .resources-container {
+    margin: 45px 50px;
+    margin-bottom: 60px;
+
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 
-  .card img {
-    min-height: 300px;
-    max-height: 300px;
+  .resource {
+    width: 290px;
+    height: 525px;
   }
 
-  .card h2 {
-    font-size: 0.5em;
+  .resource h4 {
+    font-size: 0.6em;
+  }
+
+  .resource p {
     margin-top: 0px;
+
+    font-size: 0.45em;
   }
 
-  .content {
-    visibility: hidden;
+  .resource a {
+    font-size: 0.55em;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .resources-container {
+    margin: 40px 50px;
+    margin-bottom: 60px;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    row-gap: 40px;
   }
 
-  .card:hover {
-    height: 415px;
+  .resource {
+    width: 270px;
+    height: 485px;
+  }
+
+  .resource h4 {
+    margin-top: 10px;
+    height: 53px;
+
+    font-size: 0.58em;
+  }
+
+  .resource p {
+    margin-bottom: 10px;
+
+    font-size: 0.42em;
+  }
+
+  .resource a {
+    margin-right: 0px;
+
+    font-size: 0.52em;
   }
 }

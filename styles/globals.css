@@ -1,364 +1,79 @@
+/* normalizing css between browsers */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/* importing Adobe font */
 @import url("https://use.typekit.net/wdx7jdm.css");
 
-html,
+:root {
+  /* colors */
+  --logo-yellow: #ffdc2f;
+  --background-yellow: #ffe66a;
+  --shadow-yellow: #ecb724;
+
+  --primary-red: #f21905;
+  --primary-white: white;
+  --primary-black: black;
+  --dark-grey: rgb(83, 83, 83);
+  --description-text-grey: rgb(109, 109, 109);
+
+  --primary-purple: #6a1f77;
+  --brighter-purple: #9b00b6;
+
+  /* fonts */
+  --reklame-script: reklame-script, sans-serif;
+  --expressway: expressway, sans-serif;
+  --proxima-nova-condensed: proxima-nova-condensed, sans-serif;
+  --acumin-pro: acumin-pro, sans-serif;
+
+  /* misc. */
+  --primary-transition: all 0.5s ease-in-out;
+  --primary-shadow: 16px 16px 16px var(--shadow-yellow);
+  --mobile-shadow: 12px 12px 12px var(--shadow-yellow);
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: #ffe66a;
+  background: var(--background-yellow);
 }
 
 a {
+  cursor: pointer;
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.page-heading {
+  color: var(--primary-purple);
+  text-align: center;
+
+  margin-top: 45px;
+  margin-bottom: 45px;
+
+  font-size: 4em;
+  font-family: var(--expressway);
+  font-weight: 800;
+  font-style: normal;
 }
 
-* {
-  box-sizing: border-box;
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .page-heading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
-.page-container {
-  display: flex;
-  /* height: 100vh; */
-  flex-direction: column;
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .page-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 2.5em;
+  }
 }
 
-/* commenting out the viewport height (100vh) fixes the footer issue! */
-
-/* Reklame Script Regular
-font-family: reklame-script, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-
-Reklame Script Bold
-font-family: reklame-script, sans-serif;
-font-weight: 700;
-font-style: normal; */
-
-/* Expressway Regular
-font-family: expressway, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-
-Expressway Regular Italic
-font-family: expressway, sans-serif;
-font-weight: 400;
-font-style: italic;
-
-
-Expressway ExtraLight
-font-family: expressway, sans-serif;
-font-weight: 200;
-font-style: normal; */
-
-/* Expressway ExtraLight Italic
-font-family: expressway, sans-serif;
-font-weight: 200;
-font-style: italic;
-
-
-Expressway Light
-font-family: expressway, sans-serif;
-font-weight: 300;
-font-style: normal;
-
-
-Expressway Light Italic
-font-family: expressway, sans-serif;
-font-weight: 300;
-font-style: italic;
-
-
-Expressway Book
-font-family: expressway, sans-serif;
-font-weight: 500;
-font-style: normal;
-
-
-Expressway Book Italic
-font-family: expressway, sans-serif;
-font-weight: 500;
-font-style: italic; */
-
-/* Expressway SemiBold
-font-family: expressway, sans-serif;
-font-weight: 600;
-font-style: normal;
-
-
-Expressway SemiBold Italic
-font-family: expressway, sans-serif;
-font-weight: 600;
-font-style: italic;
-
-
-Expressway Bold
-font-family: expressway, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-
-Expressway Bold Italic
-font-family: expressway, sans-serif;
-font-weight: 700;
-font-style: italic;
-
-
-Expressway ExtraBold
-font-family: expressway, sans-serif;
-font-weight: 800;
-font-style: normal; */
-
-/* Expressway ExtraBold Italic
-font-family: expressway, sans-serif;
-font-weight: 800;
-font-style: italic; */
-
-/* https://fonts.adobe.com/fonts/proxima-nova#fonts-section */
-/* 
-Proxima Nova Black
-
-font-family: proxima-nova, sans-serif;
-font-weight: 900;
-font-style: normal;
-
-
-Proxima Nova Bold
-
-font-family: proxima-nova, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-
-Proxima Nova Bold Italic
-
-font-family: proxima-nova, sans-serif;
-font-weight: 700;
-font-style: italic;
-
-
-Proxima Nova Extrabold
-
-font-family: proxima-nova, sans-serif;
-font-weight: 800;
-font-style: normal;
-
-
-Proxima Nova Regular
-
-font-family: proxima-nova, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-
-Proxima Nova Italic
-
-font-family: proxima-nova, sans-serif;
-font-weight: 400;
-font-style: italic;
-
-
-Proxima Nova Extra Condensed Black
-
-font-family: proxima-nova-extra-condensed, sans-serif;
-font-weight: 900;
-font-style: normal;
-
-
-Proxima Nova Extra Condensed Bold Italic
-
-font-family: proxima-nova-extra-condensed, sans-serif;
-font-weight: 700;
-font-style: italic;
-
-
-Proxima Nova Extra Condensed Bold
-
-font-family: proxima-nova-extra-condensed, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-
-Proxima Nova Extra Condensed Italic
-
-font-family: proxima-nova-extra-condensed, sans-serif;
-font-weight: 400;
-font-style: italic;
-
-
-Proxima Nova Extra Condensed Regular
-
-font-family: proxima-nova-extra-condensed, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-
-Proxima Nova Extra Condensed Extrabold
-
-font-family: proxima-nova-extra-condensed, sans-serif;
-font-weight: 800;
-font-style: normal;
-
-
-Proxima Nova Condensed Black
-
-font-family: proxima-nova-condensed, sans-serif;
-font-weight: 900;
-font-style: normal;
-
-
-Proxima Nova Condensed Bold
-
-font-family: proxima-nova-condensed, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-
-Proxima Nova Condensed Bold Italic
-
-font-family: proxima-nova-condensed, sans-serif;
-font-weight: 700;
-font-style: italic;
-
-
-Proxima Nova Condensed Regular
-
-font-family: proxima-nova-condensed, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-
-Proxima Nova Condensed Italic
-
-font-family: proxima-nova-condensed, sans-serif;
-font-weight: 400;
-font-style: italic;
-
-
-Proxima Nova Condensed Extrabold
-
-font-family: proxima-nova-condensed, sans-serif;
-font-weight: 800;
-font-style: normal; */
-
-/* BigCity Grotesque Pro Thin Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 200;
-font-style: italic;
-
-
-BigCity Grotesque Pro Hairline Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 100;
-font-style: italic;
-
-
-BigCity Grotesque Pro Hairline
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 100;
-font-style: normal;
-
-
-BigCity Grotesque Pro Thin
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 200;
-font-style: normal;
-
-
-BigCity Grotesque Pro Light
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 300;
-font-style: normal;
-
-
-BigCity Grotesque Pro Light Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 300;
-font-style: italic;
-
-
-BigCity Grotesque Pro Book
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-
-BigCity Grotesque Pro Book Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 400;
-font-style: italic;
-
-
-BigCity Grotesque Pro Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 500;
-font-style: italic;
-
-
-BigCity Grotesque Pro Regular
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 500;
-font-style: normal;
-
-
-BigCity Grotesque Pro Medium Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 600;
-font-style: italic;
-
-
-BigCity Grotesque Pro Medium
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 600;
-font-style: normal;
-
-
-BigCity Grotesque Pro Bold
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-
-BigCity Grotesque Pro Bold Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 700;
-font-style: italic;
-
-
-BigCity Grotesque Pro Black
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 800;
-font-style: normal;
-
-
-BigCity Grotesque Pro Black Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 800;
-font-style: italic;
-
-
-BigCity Grotesque Pro Heavy
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 900;
-font-style: normal;
-
-
-BigCity Grotesque Pro Heavy Italic
-font-family: bigcity-grotesque-pro, sans-serif;
-font-weight: 900;
-font-style: italic; */
-
-/* Acumin Pro Regular
-
-font-family: acumin-pro, sans-serif;
-
-font-weight: 400;
-
-font-style: normal; */
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .page-heading {
+    font-size: 2em;
+  }
+}

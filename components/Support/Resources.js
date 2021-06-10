@@ -1,36 +1,39 @@
-import styles from '../../styles/Support/Resources.module.css';
+import Image from "next/image";
+import styles from "../../styles/Support/Resources.module.css";
 
-export const Resources = ({resourcesList}) => {
-
-    return (
-        <div className='page-container'>
-            {/* <p>I am the Resources Component.</p> */}
-            <div className={styles.main}>
-            {
-                resourcesList.length > 0
-                ?
-                resourcesList.map((resource) =>{
-                    return <div className={styles.card} key={resource.id}>
-                        <div onClick={() => window.open(resource.url,'_blank')}>
-                            <img className={styles.image} src={resource.image} alt="resource title"/>
-                            <div className={styles.titlebox}><h2>{resource.title}</h2></div>
-                            <p className={styles.cardtext}>
-                            <p className={styles.content}>{resource.content}</p>
-                            <div className={styles.cardbottom}>
-                                {/* Should categories at bottom of cards be clickable? */}
-                                <div><p>{resource.category[0]}</p></div>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                <div><p>{resource.category[1]}</p></div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                })
-                :
-                <div className={styles.sorry}>Sorry! No resources yet!</div>
-            }
-            </div>
-            <br/>
-        </div>
-    )
-}
+export const Resources = ({ resourcesList }) => {
+  return (
+    <div className="page-container">
+      <div className={styles["resources-container"]}>
+        {resourcesList.length > 0 ? (
+          resourcesList.map((resource) => {
+            return (
+              <div className={styles["resource-card"]} key={resource.id}>
+                <div onClick={() => window.open(resource.url, "_blank")}>
+                  <Image
+                    src={resource.image}
+                    alt={`Image of ${resource.title}`}
+                    loading="lazy"
+                    width={200}
+                    height={150}
+                    layout="responsive"
+                  />
+                  <h3>{resource.title}</h3>
+                  <p className={styles.description}>{resource.content}</p>
+                  <div className={styles["categories"]}>
+                    <p>{resource.category[0]}</p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <p>{resource.category[1]}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <div className={styles["no-resources-text"]}>Sorry! No resources yet!</div>
+        )}
+      </div>
+      <br />
+    </div>
+  );
+};

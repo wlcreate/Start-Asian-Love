@@ -1,8 +1,6 @@
 ## Description
 
-Related Issue: 
-
-<!-- If merging to main, write "closes" followed by the issue # for a single issue or "resolves" for more than one issue -->
+Related Issue:
 
 <!-- Include what you changed, why you chose this approach -->
 
@@ -17,6 +15,7 @@ Resources:
 ## Self-check
 
 Please check all that apply:
+
 <!-- Put an `x` for the applicable box: -->
 
 - [ ] I have reviewed my code, refactored it to the best of my abilities and deleted all unnecessary code
@@ -29,12 +28,12 @@ Please check all that apply:
 
 |     | Type                       |
 | --- | -------------------------- |
-|    | :bug: Bug fix              |
-|  ✓  | :sparkles: New feature     |
-|    | :hammer: Refactoring       |
-|    | :100: Add tests            |
-|    | :link: Update dependencies |
-|    | :scroll: Docs              |
+|     | :bug: Bug fix              |
+| ✓   | :sparkles: New feature     |
+|     | :hammer: Refactoring       |
+|     | :100: Add tests            |
+|     | :link: Update dependencies |
+|     | :scroll: Docs              |
 
 ## Updates
 

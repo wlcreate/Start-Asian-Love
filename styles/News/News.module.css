@@ -1,100 +1,35 @@
-/* The article cards are currently dislayed as a grid, but this can be changed.
-
-Initially, each row of cards had different heights due to image size and length of headline and content. For consistent card size, fixed heights were assignd to the child divs in the cards, and clamping effects were added to only show the first 3 lines of article content (see line 85).
-
-I've noticed that several websites use the Proxima Nova typeface for bold headlines, so I imported the font from Adobe Fonts into the global CSS file, but we can use other fonts too! */
-
-/* The cards in the News, Support, and Win pages now all have the same width for consistency, and a box shadow effect with a darker yellow hue has been applied to all of them for depth. */
-
-@import url("https://use.typekit.net/wdx7jdm.css");
-
-.container {
-  align-items: center;
-  text-align: center;
+.articles-container-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.container h2 {
-  color: #6a1f77;
-  /* color: #f21905; */
-  margin-top: 50px;
-  font-size: 4em;
-  font-family: expressway, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.main {
+.articles-container {
   text-align: center;
-  margin: 60px auto;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 60px;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  column-gap: 0px;
+  justify-items: center;
 }
 
-.post {
-  width: 425px;
-  height: 425px;
-  margin-bottom: 5px;
+.article {
+  width: 380px;
+  height: 380px;
   cursor: pointer;
-  border-radius: 8px;
-  background-color: white;
+  border-radius: 10px;
+  background-color: var(--primary-white);
 
-  box-shadow: 26px 26px 26px #ecb724;
+  box-shadow: var(--primary-shadow);
   text-align: left;
-  text-justify: inter-word;
   overflow: hidden;
-  transition: all 0.8s ease-in-out;
+  transition: var(--primary-transition);
 }
 
-.post:hover {
-  height: 555px;
-  transform: scale(1.05);
-}
-
-.post img {
-  width: 100%;
-  min-height: 300px;
-  max-height: 300px;
-  object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-/* optional image zoom in on hover effect */
-
-/* .post:hover img {
-  transform: scale(1.1);
-} */
-
-.post h1 {
-  font-size: 1.5em;
-  color: #313131;
-  text-align: left;
-  cursor: pointer;
-  margin-bottom: 2px;
-  letter-spacing: 0.25px;
-  font-family: proxima-nova-condensed, sans-serif;
-  font-weight: 700;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 16px;
-  height: 95px;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-.post p {
-  color: rgb(109, 109, 109);
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 1em;
-  line-height: 1.45;
-  margin-top: 15px;
-  height: 70px;
+.article h3,
+#article-description {
+  margin-left: 12px;
+  margin-right: 12px;
 
   /* clamping the description text to 3 lines
   https://css-tricks.com/line-clampin/
@@ -107,111 +42,231 @@ I've noticed that several websites use the Proxima Nova typeface for bold headli
   -webkit-box-orient: vertical;
 }
 
-.post span {
-  /* color: rgb(86, 103, 255); */
-  color: #9729ff;
-  font-weight: 600;
-  padding-left: 15px;
-  padding-right: 25px;
-  float: right;
+.article img {
+  width: 100%;
+  min-height: 260px;
+  max-height: 260px;
+  object-fit: cover;
 }
 
-.post span:hover {
-  color: #f21905;
+.article h3 {
+  color: var(--primary-black);
+  margin-top: 12px;
+  height: 85px;
+
+  font-size: 1.5em;
+  font-family: var(--proxima-nova-condensed);
+  font-weight: 700;
+}
+
+#article-description {
+  color: var(--description-text-grey);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 70px;
+  line-height: 1.4;
+
+  font-family: var(--expressway);
+}
+
+#article-cta {
+  color: var(--brighter-purple);
+  float: right;
+
+  margin-right: 12px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+
+  font-size: 1.25em;
+  font-family: var(--proxima-nova-condensed);
+  font-weight: 600;
 }
 
 .paginator {
-  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: var(--primary-purple);
   display: flex;
   justify-content: center;
-  font-size: 3em;
-  font-weight: 800;
-  white-space: nowrap;
-  color: #875c8f;
 
-  font-family: expressway, sans-serif;
-  font-weight: 800;
-  font-style: normal;
+  font-size: 2.5em;
+  font-family: var(--expressway);
+  font-weight: 600;
 }
 
 .paginator div {
   margin: 25px;
-  padding-bottom: 20px;
 }
 
-.paginator .active {
-  cursor: pointer;
+.disabled {
+  color: #875c8f;
 }
 
-.paginator .active:hover {
-  color: #f21905;
-}
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .article:hover {
+    height: 390px;
+  }
 
-.current-page {
-  color: #f21905;
-}
+  #article-cta:hover {
+    color: var(--primary-red);
+  }
 
-.paginator .disabled {
-  cursor: not-allowed;
-  color: #f7cb54;
-}
+  .paginator .active:hover {
+    color: var(--primary-red);
+  }
 
-@media (max-width: 1430px) {
-  .main {
-    grid-template-columns: repeat(2, 1fr);
+  .paginator .active {
+    cursor: pointer;
+  }
+
+  .paginator .disabled {
+    cursor: not-allowed;
   }
 }
 
-@media (max-width: 950px) {
-  .main {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+/* hover effect for larger screens */
+@media (min-width: 1366px) {
+  .article {
+    height: 355px;
+  }
+
+  .article:hover {
+    height: 465px;
+  }
+
+  .article h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    height: 75px;
+    line-height: 1.2;
+
+    font-size: 1.4em;
+  }
+}
+
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  #page-heading {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+
+  .articles-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .article {
+    height: 290px;
+
+    box-shadow: var(--mobile-shadow);
+  }
+
+  .article img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .article h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    height: 75px;
+    line-height: 1.2;
+
+    font-size: 1.3em;
+  }
+
+  #article-description {
+    height: 55px;
+    line-height: 1.3;
+
+    font-size: 0.9rem;
+  }
+
+  #article-cta {
+    margin-top: 10px;
+
+    font-size: 1.15em;
+  }
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  #page-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 2.5em;
+  }
+
+  .articles-container {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 0px;
+  }
+
+  .article {
+    width: 320px;
+    height: 400px;
+
+    box-shadow: var(--mobile-shadow);
+  }
+
+  .article img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .article h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    height: 75px;
+    line-height: 1.2;
+
+    font-size: 1.3em;
+  }
+
+  #article-description {
+    height: 75px;
+    line-height: 1.3;
+
+    font-size: 0.9rem;
+
+    -webkit-line-clamp: 4;
+  }
+
+  #article-cta {
+    margin-top: 5px;
+
+    font-size: 1.15em;
   }
 
   .paginator {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-size: 1.75em;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  #page-heading {
     font-size: 2em;
   }
 
-  .container h2 {
-    font-size: 3em;
-    margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 625px) {
-  .post {
-    width: 350px;
-  }
-
   .paginator {
-    font-size: 1.5em;
-  }
+    margin-top: 10px;
+    margin-bottom: 5px;
 
-  .container h2 {
-    font-size: 2.75em;
-    margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 420px) {
-  .paginator {
     font-size: 1.25em;
-  }
-
-  .container h2 {
-    font-size: 2.25em;
-    margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 320px) {
-  .post {
-    width: 280px;
-  }
-
-  .paginator {
-    font-size: 1em;
-    margin-top: -20px;
-    margin-bottom: -10px;
   }
 }
