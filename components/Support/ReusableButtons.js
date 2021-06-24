@@ -1,4 +1,4 @@
-import styles from '../../styles/Support/ReusableButtons.module.css';
+import styles from '../../styles/Support/ReusableButtons.module.scss';
 
 export const ReusableButtons = ({buttonData, group, changeSelection}) => {
 

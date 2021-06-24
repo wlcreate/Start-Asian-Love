@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import styles from "../styles/Support/Support.module.css";
+import styles from "../styles/Support/Support.module.scss";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
 import { ReusableButtons } from "../components/Support/ReusableButtons";

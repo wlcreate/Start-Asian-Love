@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/Support/Resources.module.css";
+import styles from "../../styles/Support/Resources.module.scss";
 
 export const Resources = ({ resourcesList }) => {
   return (
