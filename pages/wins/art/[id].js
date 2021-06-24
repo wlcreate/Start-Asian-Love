@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../../styles/Wins/WinsID.module.css";
+import styles from "../../../styles/Wins/WinsID.module.scss";
 import { Header } from "../../../components/Layout/Header";
 import { Footer } from "../../../components/Layout/Footer";
 import { art as artResources } from "../../../database/Wins-separate.js";

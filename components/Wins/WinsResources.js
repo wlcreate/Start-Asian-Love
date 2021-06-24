@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/Wins/WinsResources.module.css";
+import styles from "../../styles/Wins/WinsResources.module.scss";
 
 export const WinsResources = (props) => {
   let { resources, category } = props;
