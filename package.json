@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
+    "lint": "next lint"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0"
