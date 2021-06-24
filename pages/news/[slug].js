@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router';
-import styles from '../../styles/News/News.module.css';
+import styles from '../../styles/News/News.module.scss';
 import { Header } from '../../components/Layout/Header'
 import { Footer } from '../../components/Layout/Footer'
 
