@@ -76,13 +76,15 @@ export default function About() {
       <div className={styles["profile-container"]}>
       <div className={styles.profile}>
         <h3>Waverley Leung</h3>
-        <Image src={waverleyPhoto} alt="Picture of Waverley"/>
+        <div className={styles["profile-pic"]}>
+          <Image src={waverleyPhoto} alt="Picture of Waverley"/>
+        </div>
         <p>
-          Quote: "It is good to have an end to journey toward; but it is the journey that matters in
+          "It is good to have an end to journey toward; but it is the journey that matters in
           the end." - Ernest Hemingway
         </p>
         <p>
-          Bio: Born and raised in NYC, Waverley Leung is a proud "ABC" (American Born Chinese). She
+          Born and raised in NYC, Waverley Leung is a proud "ABC" (American Born Chinese). She
           has a creative background as a dancer and arts administrator, and has found a new way to
           express herself through coding. As someone with many interests, Waverley embraces being a
           beginner and is passionate about learning, growth, collaboration, diversity, inclusion,
@@ -94,13 +96,15 @@ export default function About() {
       </div>
       <div className={styles.profile}>
         <h3>Emmanuel Jose</h3>
-        <Image src={emmanuelPhoto} alt="Picture of Emmanuel"/>
+        <div className={styles["profile-pic"]}>
+          <Image src={emmanuelPhoto} alt="Picture of Emmanuel" className={styles["profile-pic"]}/>
+        </div>
         <p>
-          Quote: “Do not go where the path may lead, go instead where there is no path and leave a
+          “Do not go where the path may lead, go instead where there is no path and leave a
           trail.” - Ralph Waldo Emerson
         </p>
         <p>
-          Bio: Born in Quezon City in the Philippines, Emmanuel Jose immigrated to the United States
+          Born in Quezon City in the Philippines, Emmanuel Jose immigrated to the United States
           at the age of 6. Emmanuel is a proud gay Filipino American and artist-turned-coder, with a
           penchant for turning paper into art. He views tech as an exciting, evolving medium full of
           possibility, believes that inaction is not an option, and hopes that Start Asian Love
@@ -111,13 +115,15 @@ export default function About() {
       </div>
       <div className={styles.profile}>
         <h3>Sandy Dai</h3>
-        <Image src={sandyPhoto} alt="Picture of Sandy"/>
+        <div className={styles["profile-pic"]}>
+          <Image src={sandyPhoto} alt="Picture of Sandy"/>
+        </div>
         <p>
-          Quote: "The tragedy of life is not death but what we let die inside of us while we live."
+          "The tragedy of life is not death but what we let die inside of us while we live."
           - Robin S.Sharma
         </p>
         <p>
-          Bio: Sandy Dai is a Chinese-American software developer from NYC. Growing up with
+          Sandy Dai is a Chinese-American software developer from NYC. Growing up with
           immigrant parents and spending a majority of her adolescent school years in Manhattan
           Chinatown gave her a personal attachment to her heritage and the lively neighborhood.
           Amidst the rising number of anti-Asian hate crimes reported all over social media, she was
@@ -128,10 +134,12 @@ export default function About() {
       </div>
       <div className={styles.profile}>
         <h3>Daniel Kwon</h3>
-        <Image src={danielPhoto} alt="Picture of Daniel"/>
-        <p>Quote: "Life is either a daring adventure or nothing at all." - Helen Keller</p>
+        <div className={styles["profile-pic"]}>
+          <Image src={danielPhoto} alt="Picture of Daniel" className={styles["profile-pic"]}/>
+        </div>
+        <p>"Life is either a daring adventure or nothing at all." - Helen Keller</p>
         <p>
-          Bio: Born in the city of Suwon in South Korea, Daniel immigrated to the United States at
+          Born in the city of Suwon in South Korea, Daniel immigrated to the United States at
           the age of 2 to Queens, New York. Shaped by his upbringing and healthcare background,
           Daniel views coding as a powerful engine for social good and collaboration. Through Start
           Asian Love, Daniel hopes to combat AAPI hate through empowerment, education and by

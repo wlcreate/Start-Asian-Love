@@ -17,14 +17,14 @@
     margin-bottom: 60px;
   
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-gap: 3rem;
     justify-items: center;
   }
 
   .profile {
-    width: 400px;
-    height: 515px;
+    width: 450px;
+    height: 525px;
     padding: 20px;
     border-radius: 10px;
   
@@ -50,4 +50,9 @@
         font-size: 1em;
         font-family: var(--expressway);
     }
+
   }
+
+.profile-pic {
+    margin-left: 112.5px;
+}
