@@ -95,5 +95,11 @@ Some ideas we have in mind and would like to incorporate:
         <sub><b>Sandy Dai</b></sub>
       </a>         
     </td>
+        <td align="center">
+      <a href="https://github.com/danielkwon89">
+        <img src="https://avatars.githubusercontent.com/u/37312930?v=4" width="200px;" alt=""/><br/>
+        <sub><b>Sandy Dai</b></sub>
+      </a>         
+    </td>
   </tr>
 </table>
