@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
+import styles from "../styles/About/About.module.scss"
 
 export default function About() {
   return (
@@ -60,8 +61,8 @@ export default function About() {
         />
       </Head>
       <Header />
-      <h1>About Page</h1>
-      <div>
+      <h1 className="page-heading">About Page</h1>
+      <div className={styles.description}>
         <p>
           After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa Shootings
           that occurred on March 16, 2021 and rise of the Stop Asian Hate movement, Waverley Leung
