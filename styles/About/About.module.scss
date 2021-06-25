@@ -11,3 +11,43 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  .profile-container {
+    margin: 45px 100px;
+    margin-bottom: 60px;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 3rem;
+    justify-items: center;
+  }
+
+  .profile {
+    width: 400px;
+    height: 515px;
+    padding: 20px;
+    border-radius: 10px;
+  
+    background-color: var(--primary-white);
+    box-shadow: var(--primary-shadow);
+
+    h3 {
+        color: var(--primary-black);
+
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 0px;
+
+        font-size: 2em;
+        font-family: var(--proxima-nova-condensed);
+    }
+
+    p {
+        text-align: left;
+      
+        color: var(--dark-grey);
+      
+        font-size: 1em;
+        font-family: var(--expressway);
+    }
+  }

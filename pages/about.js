@@ -2,7 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
-import styles from "../styles/About/About.module.scss"
+import styles from "../styles/About/About.module.scss";
+import waverleyPhoto from '../public/Profile/Waverley-Leung-Profile.jpeg';
+import emmanuelPhoto from '../public/Profile/Emmanuel-Jose-Profile.jpeg';
+import sandyPhoto from '../public/Profile/Sandy-Dai-Profile.jpeg';
+import danielPhoto from '../public/Profile/Daniel-Kwon-Profile.jpeg';
 
 export default function About() {
   return (
@@ -10,10 +14,7 @@ export default function About() {
       <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Learn more about Start Asian Love and the team."
-        />
+        <meta name="description" content="Learn more about Start Asian Love and the team." />
         <title>Start Asian Love | About</title>
 
         {/* Favicon */}
@@ -72,8 +73,10 @@ export default function About() {
           Start Asian Love to fight against injustice and for equality.
         </p>
       </div>
-      <div>
+      <div className={styles["profile-container"]}>
+      <div className={styles.profile}>
         <h3>Waverley Leung</h3>
+        <Image src={waverleyPhoto} alt="Picture of Waverley"/>
         <p>
           Quote: "It is good to have an end to journey toward; but it is the journey that matters in
           the end." - Ernest Hemingway
@@ -89,8 +92,9 @@ export default function About() {
           (another) anime and/or K-drama, and exploring culture through food.
         </p>
       </div>
-      <div>
+      <div className={styles.profile}>
         <h3>Emmanuel Jose</h3>
+        <Image src={emmanuelPhoto} alt="Picture of Emmanuel"/>
         <p>
           Quote: “Do not go where the path may lead, go instead where there is no path and leave a
           trail.” - Ralph Waldo Emerson
@@ -105,8 +109,9 @@ export default function About() {
           stroller on the streets of Washington Heights in New York City.
         </p>
       </div>
-      <div>
+      <div className={styles.profile}>
         <h3>Sandy Dai</h3>
+        <Image src={sandyPhoto} alt="Picture of Sandy"/>
         <p>
           Quote: "The tragedy of life is not death but what we let die inside of us while we live."
           - Robin S.Sharma
@@ -121,8 +126,9 @@ export default function About() {
           attractions NYC always has to offer.
         </p>
       </div>
-      <div>
+      <div className={styles.profile}>
         <h3>Daniel Kwon</h3>
+        <Image src={danielPhoto} alt="Picture of Daniel"/>
         <p>Quote: "Life is either a daring adventure or nothing at all." - Helen Keller</p>
         <p>
           Bio: Born in the city of Suwon in South Korea, Daniel immigrated to the United States at
@@ -133,6 +139,7 @@ export default function About() {
           can find Daniel and his fiancée strolling through Riverside Park and rock climbing (mostly
           falling) at Steep Rock West.
         </p>
+      </div>
       </div>
       <Footer />
     </div>
