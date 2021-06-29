@@ -74,7 +74,7 @@
 }
 
 .profile-pic {
-  margin-left: 112.5px;
+  margin-left: 25%;
 }
 
 .icon {
@@ -138,5 +138,29 @@
   .description p {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .profile-container {
+    margin: 45px 0px;
+    margin-bottom: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-gap: 3rem;
+    justify-items: center;
+  }
+
+  .profile {
+    width: 355px;
+    height: 660px;
+    padding: 30px;
+    border-radius: 10px;
+
+    background-color: var(--primary-white);
+    box-shadow: var(--primary-shadow);
+  }
+
+  .profile-pic {
+    margin-left: 18%;
   }
 }
