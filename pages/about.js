@@ -117,11 +117,11 @@ export default function About() {
             their skills to stand up for their values. In her free time, you can often find Waverley
             exploring culture through food.
           </p>
-          <LinkedInIcon
-            onClick={() => window.open("https://www.linkedin.com/in/waverley-leung/", "_blank")}
-          />
           <TwitterIcon
             onClick={() => window.open("https://twitter.com/waverley_place", "_blank")}
+          />
+          <LinkedInIcon
+            onClick={() => window.open("https://www.linkedin.com/in/waverley-leung/", "_blank")}
           />
           <GitHubIcon onClick={() => window.open("https://github.com/wlcreate", "_blank")} />
           <PortfolioIcon onClick={() => window.open("https://waverley-leung.com", "_blank")} />
@@ -148,11 +148,11 @@ export default function About() {
             Emmanuel can be found with his partner wheeling their two spoiled rescue pups in a
             stroller on the streets of Washington Heights in NYC.
           </p>
-          <LinkedInIcon
-            onClick={() => window.open("https://www.linkedin.com/in/emmanuelpjose/", "_blank")}
-          />
           <TwitterIcon
             onClick={() => window.open("https://twitter.com/Emmanuel_Labor", "_blank")}
+          />
+          <LinkedInIcon
+            onClick={() => window.open("https://www.linkedin.com/in/emmanuelpjose/", "_blank")}
           />
           <GitHubIcon onClick={() => window.open("https://github.com/emjose", "_blank")} />
           <PortfolioIcon onClick={() => window.open("https://www.emmanuel-jose.com/", "_blank")} />
@@ -175,10 +175,10 @@ export default function About() {
             it. In her free time, you can find Sandy at the latest food spots or exploring the
             coolest attractions NYC always has to offer.
           </p>
+          <TwitterIcon onClick={() => window.open("https://twitter.com/sandaiiyahh", "_blank")} />
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/sandydaii/", "_blank")}
           />
-          <TwitterIcon onClick={() => window.open("https://twitter.com/sandaiiyahh", "_blank")} />
           <GitHubIcon onClick={() => window.open("https://github.com/sandaiiyahh", "_blank")} />
           <PortfolioIcon onClick={() => window.open("https://sandydai.com/", "_blank")} />
         </div>
@@ -197,10 +197,10 @@ export default function About() {
             Daniel and his fiancée strolling through Riverside Park and rock climbing (mostly
             falling) at Steep Rock West.
           </p>
+          <TwitterIcon onClick={() => window.open("https://twitter.com/dwonkaniel", "_blank")} />
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/danielkwon89/", "_blank")}
           />
-          <TwitterIcon onClick={() => window.open("https://twitter.com/dwonkaniel", "_blank")} />
           <GitHubIcon onClick={() => window.open("https://github.com/danielkwon89", "_blank")} />
         </div>
       </div>
