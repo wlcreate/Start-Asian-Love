@@ -10,6 +10,9 @@ import sandyPhoto from "../public/Profile/Sandy-Dai-Profile.jpeg";
 import danielPhoto from "../public/Profile/Daniel-Kwon-Profile.jpeg";
 
 import LinkedInIcon from "../public/Profile/LinkedIn.svg";
+import TwitterIcon from "../public/Profile/Twitter.svg";
+import GitHubIcon from "../public/Profile/GitHub.svg";
+import PortfolioIcon from "../public/Profile/Portfolio.svg";
 
 export default function About() {
   return (
@@ -99,6 +102,11 @@ export default function About() {
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/waverley-leung/", "_blank")}
           />
+          <TwitterIcon
+            onClick={() => window.open("https://twitter.com/waverley_place", "_blank")}
+          />
+          <GitHubIcon onClick={() => window.open("https://github.com/wlcreate", "_blank")} />
+          <PortfolioIcon onClick={() => window.open("https://waverley-leung.com", "_blank")} />
         </div>
         <div className={styles.profile}>
           <h3>Emmanuel Jose</h3>
@@ -125,6 +133,11 @@ export default function About() {
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/emmanuelpjose/", "_blank")}
           />
+          <TwitterIcon
+            onClick={() => window.open("https://twitter.com/Emmanuel_Labor", "_blank")}
+          />
+          <GitHubIcon onClick={() => window.open("https://github.com/emjose", "_blank")} />
+          <PortfolioIcon onClick={() => window.open("https://www.emmanuel-jose.com/", "_blank")} />
         </div>
         <div className={styles.profile}>
           <h3>Sandy Dai</h3>
@@ -147,6 +160,9 @@ export default function About() {
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/sandydaii/", "_blank")}
           />
+          <TwitterIcon onClick={() => window.open("https://twitter.com/sandaiiyahh", "_blank")} />
+          <GitHubIcon onClick={() => window.open("https://github.com/sandaiiyahh", "_blank")} />
+          <PortfolioIcon onClick={() => window.open("https://sandydai.com/", "_blank")} />
         </div>
         <div className={styles.profile}>
           <h3>Daniel Kwon</h3>
@@ -166,6 +182,8 @@ export default function About() {
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/danielkwon89/", "_blank")}
           />
+          <TwitterIcon onClick={() => window.open("https://twitter.com/dwonkaniel", "_blank")} />
+          <GitHubIcon onClick={() => window.open("https://github.com/danielkwon89", "_blank")} />
         </div>
       </div>
       <Footer />
