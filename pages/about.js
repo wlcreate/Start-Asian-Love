@@ -127,12 +127,20 @@ export default function About() {
           </p>
           <TwitterIcon
             onClick={() => window.open("https://twitter.com/waverley_place", "_blank")}
+            className={styles.icon}
           />
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/waverley-leung/", "_blank")}
+            className={styles.icon}
           />
-          <GitHubIcon onClick={() => window.open("https://github.com/wlcreate", "_blank")} />
-          <PortfolioIcon onClick={() => window.open("https://waverley-leung.com", "_blank")} />
+          <GitHubIcon
+            onClick={() => window.open("https://github.com/wlcreate", "_blank")}
+            className={styles.icon}
+          />
+          <PortfolioIcon
+            onClick={() => window.open("https://waverley-leung.com", "_blank")}
+            className={styles.icon}
+          />
         </div>
         <div className={styles.profile}>
           <h3>Emmanuel Jose</h3>
@@ -158,12 +166,20 @@ export default function About() {
           </p>
           <TwitterIcon
             onClick={() => window.open("https://twitter.com/Emmanuel_Labor", "_blank")}
+            className={styles.icon}
           />
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/emmanuelpjose/", "_blank")}
+            className={styles.icon}
           />
-          <GitHubIcon onClick={() => window.open("https://github.com/emjose", "_blank")} />
-          <PortfolioIcon onClick={() => window.open("https://www.emmanuel-jose.com/", "_blank")} />
+          <GitHubIcon
+            onClick={() => window.open("https://github.com/emjose", "_blank")}
+            className={styles.icon}
+          />
+          <PortfolioIcon
+            onClick={() => window.open("https://www.emmanuel-jose.com/", "_blank")}
+            className={styles.icon}
+          />
         </div>
         <div className={styles.profile}>
           <h3>Sandy Dai</h3>
@@ -183,12 +199,22 @@ export default function About() {
             it. In her free time, you can find Sandy at the latest food spots or exploring the
             coolest attractions NYC always has to offer.
           </p>
-          <TwitterIcon onClick={() => window.open("https://twitter.com/sandaiiyahh", "_blank")} />
+          <TwitterIcon
+            onClick={() => window.open("https://twitter.com/sandaiiyahh", "_blank")}
+            className={styles.icon}
+          />
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/sandydaii/", "_blank")}
+            className={styles.icon}
           />
-          <GitHubIcon onClick={() => window.open("https://github.com/sandaiiyahh", "_blank")} />
-          <PortfolioIcon onClick={() => window.open("https://sandydai.com/", "_blank")} />
+          <GitHubIcon
+            onClick={() => window.open("https://github.com/sandaiiyahh", "_blank")}
+            className={styles.icon}
+          />
+          <PortfolioIcon
+            onClick={() => window.open("https://sandydai.com/", "_blank")}
+            className={styles.icon}
+          />
         </div>
         <div className={styles.profile}>
           <h3>Daniel Kwon</h3>
@@ -205,11 +231,18 @@ export default function About() {
             Daniel and his fiancée strolling through Riverside Park and rock climbing (mostly
             falling) at Steep Rock West.
           </p>
-          <TwitterIcon onClick={() => window.open("https://twitter.com/dwonkaniel", "_blank")} />
+          <TwitterIcon
+            onClick={() => window.open("https://twitter.com/dwonkaniel", "_blank")}
+            className={styles.icon}
+          />
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/danielkwon89/", "_blank")}
+            className={styles.icon}
           />
-          <GitHubIcon onClick={() => window.open("https://github.com/danielkwon89", "_blank")} />
+          <GitHubIcon
+            onClick={() => window.open("https://github.com/danielkwon89", "_blank")}
+            className={styles.icon}
+          />
         </div>
       </div>
       <Footer />

@@ -45,7 +45,7 @@
 .profile {
   width: 450px;
   height: 590px;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
 
   background-color: var(--primary-white);
@@ -75,4 +75,9 @@
 
 .profile-pic {
   margin-left: 112.5px;
+}
+
+.icon {
+  cursor: pointer;
+  margin-right: 8px;
 }
