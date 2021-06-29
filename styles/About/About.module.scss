@@ -81,3 +81,62 @@
   cursor: pointer;
   margin-right: 8px;
 }
+
+/* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
+@media (min-width: 940px) {
+  .description p {
+    cursor: default;
+  }
+}
+
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .description {
+    padding: 25px;
+    box-shadow: var(--mobile-shadow);
+
+    line-height: 1.2;
+    font-size: 1.38em;
+  }
+
+  .description p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .profile-container {
+    margin: 45px 150px;
+    margin-bottom: 60px;
+  }
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .description {
+    margin: 25px;
+    padding: 20px;
+
+    line-height: 1.2;
+    font-size: 1.15em;
+  }
+
+  .description p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .description {
+    padding: 18px;
+
+    line-height: 1.25;
+    font-size: 1em;
+  }
+
+  .description p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
