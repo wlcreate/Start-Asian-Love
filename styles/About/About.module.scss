@@ -1,58 +1,77 @@
 .description {
-    margin: 40px 70px;
-    padding: 30px;
-    box-shadow: var(--primary-shadow);
-    background: var(--primary-white);
-    border-radius: 10px;
-  
-    line-height: 1.25;
-    font-size: 1.5em;
-    font-family: var(--acumin-pro);
-    font-weight: 400;
-    font-style: normal;
+  margin: 40px 70px;
+  padding: 30px;
+  box-shadow: var(--primary-shadow);
+  background: var(--primary-white);
+  border-radius: 10px;
+
+  line-height: 1.25;
+  font-size: 1.5em;
+  font-family: var(--acumin-pro);
+  font-weight: 400;
+  font-style: normal;
+
+  p {
+    text-align: center;
+
+    color: var(--dark-grey);
+  }
+}
+
+.team {
+  text-align: center;
+  color: var(--primary-purple);
+
+  margin-top: 50px;
+  margin-bottom: 12px;
+
+  font-size: 3em;
+
+  font-family: var(--expressway);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.profile-container {
+  margin: 45px 100px;
+  margin-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
+}
+
+.profile {
+  width: 450px;
+  height: 525px;
+  padding: 20px;
+  border-radius: 10px;
+
+  background-color: var(--primary-white);
+  box-shadow: var(--primary-shadow);
+
+  h3 {
+    color: var(--primary-black);
+
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0px;
+
+    font-size: 2em;
+    font-family: var(--proxima-nova-condensed);
   }
 
-  .profile-container {
-    margin: 45px 100px;
-    margin-bottom: 60px;
-  
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-gap: 3rem;
-    justify-items: center;
+  p {
+    text-align: left;
+
+    color: var(--dark-grey);
+
+    font-size: 1em;
+    font-family: var(--expressway);
   }
-
-  .profile {
-    width: 450px;
-    height: 525px;
-    padding: 20px;
-    border-radius: 10px;
-  
-    background-color: var(--primary-white);
-    box-shadow: var(--primary-shadow);
-
-    h3 {
-        color: var(--primary-black);
-
-        text-align: center;
-        margin-top: 8px;
-        margin-bottom: 0px;
-
-        font-size: 2em;
-        font-family: var(--proxima-nova-condensed);
-    }
-
-    p {
-        text-align: left;
-      
-        color: var(--dark-grey);
-      
-        font-size: 1em;
-        font-family: var(--expressway);
-    }
-
-  }
+}
 
 .profile-pic {
-    margin-left: 112.5px;
+  margin-left: 112.5px;
 }
