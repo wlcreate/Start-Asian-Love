@@ -117,27 +117,21 @@
     padding: 25px;
 
     line-height: 1.2;
-    font-size: 1.25em;
-  }
-
-  .description p {
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }
 
 /* screen must be no bigger than landscape phone or below */
 @media (max-width: 480px) {
   .description {
-    padding: 18px;
+    padding: 22px;
 
     line-height: 1.25;
-    font-size: 1em;
-  }
+    font-size: 1.25em;
 
-  .description p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 
   .profile-container {
@@ -152,12 +146,16 @@
 
   .profile {
     width: 355px;
-    height: 660px;
+    height: 740px;
     padding: 30px;
     border-radius: 10px;
 
     background-color: var(--primary-white);
     box-shadow: var(--primary-shadow);
+
+    p {
+      font-size: 1.1em;
+    }
   }
 
   .profile-pic {

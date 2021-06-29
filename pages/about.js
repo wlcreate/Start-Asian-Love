@@ -68,7 +68,7 @@ export default function About() {
         />
       </Head>
       <Header />
-      <h1 className="page-heading">About Page</h1>
+      <h1 className="page-heading">Who We Are</h1>
       <div className={styles.description}>
         <p>
           After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa Shootings
