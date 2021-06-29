@@ -78,6 +78,24 @@ export default function About() {
           and Daniel Kwon who bring their own voices and experiences. We hope to continue growing
           Start Asian Love to fight against injustice and for equality.
         </p>
+        <p>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/dmitri13"
+            title="dmitri13"
+            target="_blank"
+            rel="noopener noreferrer">
+            dmitri13
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.iconfinder.com/zlaten/icon-sets"
+            title="Pixel Bazaar"
+            target="_blank"
+            rel="noopener noreferrer">
+            Pixel Bazaar
+          </a>{" "}
+        </p>
       </div>
       <h2 className={styles.team}>The SAL Squad</h2>
       <div className={styles["profile-container"]}>
