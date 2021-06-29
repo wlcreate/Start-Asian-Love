@@ -86,14 +86,22 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer">
             dmitri13
-          </a>{" "}
-          and{" "}
+          </a>
+          ,{" "}
           <a
             href="https://www.iconfinder.com/zlaten/icon-sets"
             title="Pixel Bazaar"
             target="_blank"
             rel="noopener noreferrer">
             Pixel Bazaar
+          </a>
+          , and{" "}
+          <a
+            href="https://www.iconfinder.com/Kalashnyk"
+            title="Kalash"
+            target="_blank"
+            rel="noopener noreferrer">
+            Kalash
           </a>{" "}
         </p>
       </div>
