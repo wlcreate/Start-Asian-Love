@@ -106,7 +106,7 @@ export default function About() {
           </div>
           <p>
             "I want to use my new knowledge and skills from transitioning into tech to make
-            meaningful positive impacts in the world; Start Asian Love has allowed me to do so."
+            meaningful positive impacts in the world."
           </p>
           <p>
             Born and raised in NYC, Waverley Leung is a proud "ABC" (American Born Chinese). She has
@@ -146,7 +146,7 @@ export default function About() {
             of possibility, believes that inaction is not an option, and hopes that Start Asian Love
             becomes a platform for education, expression, and empowerment for all. In his free time,
             Emmanuel can be found with his partner wheeling their two spoiled rescue pups in a
-            stroller on the streets of Washington Heights in New York City.
+            stroller on the streets of Washington Heights in NYC.
           </p>
           <LinkedInIcon
             onClick={() => window.open("https://www.linkedin.com/in/emmanuelpjose/", "_blank")}
