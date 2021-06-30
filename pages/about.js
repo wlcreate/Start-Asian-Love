@@ -224,7 +224,7 @@ export default function About() {
           <p>"I joined Start Asian Love to share AAPI stories that engender feelings of positivity and belonging in our community—a community that has been made to feel like outsiders in our own country for generations."</p>
           <p>
             Born in South Korea, Daniel immigrated to the United States at the
-            age of 2 to Queens, New York. Shaped by his upbringing and healthcare background, Daniel
+            age of two to Queens, New York. Shaped by his upbringing and healthcare background, Daniel
             views coding as a powerful engine for social good and collaboration. Through SAL, Daniel hopes to combat AAPI hate through empowerment, education and by reclaiming
             the narrative around the AAPI experience in America. During his free time, you can find
             Daniel and his fiancée strolling through Riverside Park and rock climbing at Steep Rock West.
