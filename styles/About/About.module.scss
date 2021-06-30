@@ -105,8 +105,7 @@
   }
 
   .profile-container {
-    margin: 45px 150px;
-    margin-bottom: 60px;
+    margin: 45px 100px;
   }
 }
 
@@ -136,18 +135,14 @@
 
   .profile-container {
     margin: 45px 0px;
-    margin-bottom: 60px;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
-    grid-gap: 3rem;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 
   .profile {
-    width: 355px;
-    height: 740px;
-    padding: 30px;
+    width: 270px;
+    height: 850px;
+    padding: 25px;
     border-radius: 10px;
 
     background-color: var(--primary-white);
@@ -159,6 +154,6 @@
   }
 
   .profile-pic {
-    margin-left: 18%;
+    margin-left: 8.5%;
   }
 }

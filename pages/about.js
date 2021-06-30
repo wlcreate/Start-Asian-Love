@@ -152,8 +152,8 @@ export default function About() {
             />
           </div>
           <p>
-            “Do not go where the path may lead, go instead where there is no path and leave a
-            trail.” - Ralph Waldo Emerson
+            "What does it mean to be unapologetically Asian? Start Asian Love is helping me to
+            answer that question as I discover my voice and power as an Asian American."
           </p>
           <p>
             Born in Quezon City in the Philippines, Emmanuel Jose immigrated to the United States at
@@ -187,8 +187,8 @@ export default function About() {
             <Image src={sandyPhoto} alt="Picture of Sandy" />
           </div>
           <p>
-            "The tragedy of life is not death but what we let die inside of us while we live." -
-            Robin S.Sharma
+            "In contributing to Start Asian Love, I, too, can remain in touch with my heritage while
+            doing my part as a fellow Asian American to support the community."
           </p>
           <p>
             Sandy Dai is a Chinese-American software developer from NYC. Growing up with immigrant
