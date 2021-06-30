@@ -221,15 +221,13 @@ export default function About() {
           <div className={styles["profile-pic"]}>
             <Image src={danielPhoto} alt="Picture of Daniel" className={styles["profile-pic"]} />
           </div>
-          <p>"Life is either a daring adventure or nothing at all." - Helen Keller</p>
+          <p>"I joined Start Asian Love to share AAPI stories that engender feelings of positivity and belonging in the AAPI community—a community that has been made to feel like outsiders in their own country for generations."</p>
           <p>
-            Born in the city of Suwon in South Korea, Daniel immigrated to the United States at the
+            Born in South Korea, Daniel immigrated to the United States at the
             age of 2 to Queens, New York. Shaped by his upbringing and healthcare background, Daniel
-            views coding as a powerful engine for social good and collaboration. Through Start Asian
-            Love, Daniel hopes to combat AAPI hate through empowerment, education and by reclaiming
+            views coding as a powerful engine for social good and collaboration. Through SAL, Daniel hopes to combat AAPI hate through empowerment, education and by reclaiming
             the narrative around the AAPI experience in America. During his free time, you can find
-            Daniel and his fiancée strolling through Riverside Park and rock climbing (mostly
-            falling) at Steep Rock West.
+            Daniel and his fiancée strolling through Riverside Park and rock climbing at Steep Rock West.
           </p>
           <TwitterIcon
             onClick={() => window.open("https://twitter.com/dwonkaniel", "_blank")}
