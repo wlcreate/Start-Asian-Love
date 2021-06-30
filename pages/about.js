@@ -221,7 +221,7 @@ export default function About() {
           <div className={styles["profile-pic"]}>
             <Image src={danielPhoto} alt="Picture of Daniel" className={styles["profile-pic"]} />
           </div>
-          <p>"I joined Start Asian Love to share AAPI stories that engender feelings of positivity and belonging in the AAPI community—a community that has been made to feel like outsiders in their own country for generations."</p>
+          <p>"I joined Start Asian Love to share AAPI stories that engender feelings of positivity and belonging in our community—a community that has been made to feel like outsiders in our own country for generations."</p>
           <p>
             Born in South Korea, Daniel immigrated to the United States at the
             age of 2 to Queens, New York. Shaped by his upbringing and healthcare background, Daniel
