@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRef } from "react";
-import styles from "../../styles/Wins/Wins.module.css";
+import styles from "../../styles/Wins/Wins.module.scss";
 
 import { Header } from "../../components/Layout/Header";
 import { Footer } from "../../components/Layout/Footer";

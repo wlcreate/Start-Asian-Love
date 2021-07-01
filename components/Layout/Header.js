@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../../styles/Layout/Header.module.css';
+import styles from '../../styles/Layout/Header.module.scss';
 
 export const Header = () => (
     <header className={styles.header}>
@@ -11,6 +11,11 @@ export const Header = () => (
                 <li className={styles.navItem}>
                     <Link href="/">
                         <a>Home</a>
+                    </Link>
+                </li>
+                <li className={styles.navItem}>
+                    <Link href="/about">
+                        <a>About</a>
                     </Link>
                 </li>
                 <li className={styles.navItem}> 

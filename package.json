@@ -6,19 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
+    "lint": "next lint"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
-    "next": "^10.2.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.35.1"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.1"
   },
   "husky": {
     "hooks": {

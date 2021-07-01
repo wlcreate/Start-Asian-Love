@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/Support/Resources.module.css";
+import styles from "../../styles/Support/Resources.module.scss";
 
 export const Resources = ({ resourcesList }) => {
   return (
@@ -33,7 +33,6 @@ export const Resources = ({ resourcesList }) => {
           <div className={styles["no-resources-text"]}>Sorry! No resources yet!</div>
         )}
       </div>
-      <br />
     </div>
   );
 };
