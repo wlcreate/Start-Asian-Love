@@ -22,10 +22,10 @@
   text-align: center;
   color: var(--primary-purple);
 
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 12px;
 
-  font-size: 3em;
+  font-size: 2.5em;
 
   font-family: var(--expressway);
   font-weight: 700;
@@ -77,6 +77,10 @@
   margin-left: 25%;
 }
 
+.profile-quote {
+  font-style: italic;
+}
+
 .icon {
   cursor: pointer;
   margin-right: 8px;
@@ -97,35 +101,31 @@
 
     line-height: 1.2;
     font-size: 1.38em;
+
+    p {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
   }
 
-  .description p {
-    margin-top: 12px;
-    margin-bottom: 12px;
+  .team {
+    font-size: 2.45em;
   }
 
   .profile-container {
-    margin: 45px 100px;
+    margin: 40px 100px;
+    margin-bottom: 60px;
   }
 }
 
 /* screen must be no bigger than portrait tablet */
 @media (max-width: 768px) {
   .description {
-    margin: 30px;
-    padding: 25px;
+    margin: 25px;
+    padding: 20px;
 
     line-height: 1.2;
-  }
-}
-
-/* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
-  .description {
-    padding: 22px;
-
-    line-height: 1.25;
-    font-size: 1.25em;
+    font-size: 1.15em;
 
     p {
       margin-top: 10px;
@@ -133,8 +133,29 @@
     }
   }
 
+  .team {
+    margin-top: 40px;
+
+    font-size: 2em;
+  }
+
   .profile-container {
-    margin: 45px 0px;
+    margin-top: 30px;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .description {
+    padding: 18px;
+
+    line-height: 1.25;
+    font-size: 1em;
+  }
+
+  .profile-container {
+    margin-left: 0px;
+    margin-right: 0px;
 
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
@@ -143,10 +164,6 @@
     width: 270px;
     height: 850px;
     padding: 25px;
-    border-radius: 10px;
-
-    background-color: var(--primary-white);
-    box-shadow: var(--primary-shadow);
 
     p {
       font-size: 1.1em;

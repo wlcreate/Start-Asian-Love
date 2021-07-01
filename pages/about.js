@@ -105,16 +105,16 @@ export default function About() {
           </a>{" "}
         </p>
       </div>
-      <h2 className={styles.team}>The SAL Squad</h2>
+      <h3 className={styles.team}>Meet Squad SAL</h3>
       <div className={styles["profile-container"]}>
         <div className={styles.profile}>
           <h3>Waverley Leung</h3>
           <div className={styles["profile-pic"]}>
             <Image src={waverleyPhoto} alt="Picture of Waverley" />
           </div>
-          <p>
-            "I want to use my new knowledge and skills from transitioning into tech to make
-            meaningful positive impacts in the world."
+          <p className={styles["profile-quote"]}>
+            "Start Asian Love has allowed me to use my new knowledge and skills from transitioning
+            into tech to make a meaningful positive impact in the world."
           </p>
           <p>
             Born and raised in NYC, Waverley Leung is a proud "ABC" (American Born Chinese). She has
@@ -151,7 +151,7 @@ export default function About() {
               className={styles["profile-pic"]}
             />
           </div>
-          <p>
+          <p className={styles["profile-quote"]}>
             "What does it mean to be unapologetically Asian? Start Asian Love is helping me to
             answer that question as I discover my voice and power as an Asian American."
           </p>
@@ -186,7 +186,7 @@ export default function About() {
           <div className={styles["profile-pic"]}>
             <Image src={sandyPhoto} alt="Picture of Sandy" />
           </div>
-          <p>
+          <p className={styles["profile-quote"]}>
             "In contributing to Start Asian Love, I, too, can remain in touch with my heritage while
             doing my part as a fellow Asian American to support the community."
           </p>
@@ -221,13 +221,18 @@ export default function About() {
           <div className={styles["profile-pic"]}>
             <Image src={danielPhoto} alt="Picture of Daniel" className={styles["profile-pic"]} />
           </div>
-          <p>"I joined Start Asian Love to share AAPI stories that engender feelings of positivity and belonging in our community—a community that has been made to feel like outsiders in our own country for generations."</p>
+          <p className={styles["profile-quote"]}>
+            "I joined Start Asian Love to share AAPI stories that engender feelings of positivity
+            and belonging in our community—a community that has been made to feel like outsiders in
+            our own country for generations."
+          </p>
           <p>
-            Born in South Korea, Daniel immigrated to the United States at the
-            age of two to Queens, New York. Shaped by his upbringing and healthcare background, Daniel
-            views coding as a powerful engine for social good and collaboration. Through SAL, Daniel hopes to combat AAPI hate through empowerment, education and by reclaiming
-            the narrative around the AAPI experience in America. During his free time, you can find
-            Daniel and his fiancée strolling through Riverside Park and rock climbing at Steep Rock West.
+            Born in South Korea, Daniel immigrated to the United States at the age of two to Queens,
+            New York. Shaped by his upbringing and healthcare background, Daniel views coding as a
+            powerful engine for social good and collaboration. Through SAL, Daniel hopes to combat
+            AAPI hate through empowerment, education and by reclaiming the narrative around the AAPI
+            experience in America. During his free time, you can find Daniel and his fiancée
+            strolling through Riverside Park and rock climbing at Steep Rock West.
           </p>
           <TwitterIcon
             onClick={() => window.open("https://twitter.com/dwonkaniel", "_blank")}

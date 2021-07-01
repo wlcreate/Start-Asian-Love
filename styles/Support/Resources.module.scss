@@ -1,5 +1,6 @@
 .resources-container {
   margin: 50px 35px;
+  margin-bottom: 60px;
 
   display: grid;
   grid-gap: 3rem;
@@ -89,10 +90,6 @@
 
 /* most laptop and desktop screens */
 @media (max-width: 1366px) {
-  .resources-container {
-    margin-bottom: 30px;
-  }
-
   .resource-card {
     width: 340px;
 

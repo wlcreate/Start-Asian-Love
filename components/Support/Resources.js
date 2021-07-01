@@ -33,7 +33,6 @@ export const Resources = ({ resourcesList }) => {
           <div className={styles["no-resources-text"]}>Sorry! No resources yet!</div>
         )}
       </div>
-      <br />
     </div>
   );
 };
