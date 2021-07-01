@@ -79,6 +79,21 @@ export default function About() {
           Start Asian Love to fight against injustice and for equality.
         </p>
         <p>
+          Since the rise of hate crimes and violence during the COVID-19 pandemic, the AAPI
+          community has been left grappling with feelings of fear, helplessness, anger, and
+          alienation. It's in this climate where we've started to unpack our identity and
+          perspectives as Asian Americans while asking hard questions about our place in this
+          country: Where are the Asian American figures and stories in American history and culture?
+          Are we an invisible race?
+        </p>
+        <p>
+          Start Asian Love was created to be a space where the community can celebrate their
+          heritage by learning about prominent AAPI figures and stories. It's a space to connect
+          over our shared experiences and make a positive impact by transforming our feelings of
+          helplessness and rage into civic engagement and action. Start Asian Love is our platform
+          to say we belong here, we're not invisible and to embrace being unapologetically Asian.
+        </p>
+        <p>
           Icons made by{" "}
           <a
             href="https://www.flaticon.com/authors/dmitri13"
