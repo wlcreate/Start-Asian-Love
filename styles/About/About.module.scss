@@ -55,11 +55,20 @@
     color: var(--primary-black);
 
     text-align: center;
-    margin-top: 8px;
-    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
     font-size: 2em;
     font-family: var(--proxima-nova-condensed);
+  }
+
+  .profile-pic {
+    margin-left: 25%;
+  }
+
+  .profile-quote {
+    font-style: italic;
+    text-align: center;
   }
 
   p {
@@ -71,14 +80,6 @@
     font-size: 1em;
     font-family: var(--expressway);
   }
-}
-
-.profile-pic {
-  margin-left: 25%;
-}
-
-.profile-quote {
-  font-style: italic;
 }
 
 .icon {
@@ -162,15 +163,19 @@
 
   .profile {
     width: 270px;
-    height: 850px;
+    height: 690px;
     padding: 25px;
 
-    p {
-      font-size: 1.1em;
+    h3 {
+      font-size: 1.5em;
     }
-  }
 
-  .profile-pic {
-    margin-left: 8.5%;
+    .profile-pic {
+      margin-left: 8%;
+    }
+
+    p {
+      font-size: 0.9em;
+    }
   }
 }
