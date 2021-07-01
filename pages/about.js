@@ -4,10 +4,10 @@ import styles from "../styles/About/About.module.scss";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
 
-import waverleyPhoto from "../public/Profile/Waverley-Leung-Profile.jpeg";
-import emmanuelPhoto from "../public/Profile/Emmanuel-Jose-Profile.jpeg";
-import sandyPhoto from "../public/Profile/Sandy-Dai-Profile.jpeg";
-import danielPhoto from "../public/Profile/Daniel-Kwon-Profile.jpeg";
+import waverleyPhoto from "../public/Profile/Waverley-Leung-Profile.jpg";
+import emmanuelPhoto from "../public/Profile/Emmanuel-Jose-Profile.jpg";
+import sandyPhoto from "../public/Profile/Sandy-Dai-Profile.jpg";
+import danielPhoto from "../public/Profile/Daniel-Kwon-Profile.jpg";
 
 import LinkedInIcon from "../public/Profile/LinkedIn.svg";
 import TwitterIcon from "../public/Profile/Twitter.svg";
