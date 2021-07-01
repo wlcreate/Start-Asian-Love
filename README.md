@@ -2,7 +2,7 @@
 
 <img width="1302" alt="Start-Asian-Love" src="https://user-images.githubusercontent.com/62153993/118204100-7ab1d400-b42b-11eb-85d6-50ba93df02a3.png">
 
-After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa Shootings that occurred on March 16, 2021 and rise of the Stop Asian Hate movement, Emmanuel Jose and Waverley Leung came together to work on Start Asian Love as our own way to take action.
+After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa Shootings that occurred on March 16, 2021 and rise of the Stop Asian Hate movement, Waverley Leung and Emmanuel Jose came together to work on Start Asian Love as their own way to take action. Since the first version of the website, the team has grown to include Sandy Dai and Daniel Kwon who bring their own voices and experiences. We hope to continue growing Start Asian Love to fight against injustice and for equality.
 
 Start Asian Love is a safe space that educates and consolidates resources related to Asian racism, Asian American history, and the Stop Asian Hate movement. Through these resources we hope to raise awareness and encourage you to join the fight and support Asian Americans.
 
@@ -42,11 +42,15 @@ npm run dev
 
 ## Features
 
-As of May 4th, Start Asian Love has Home, News, Support, and Wins pages.
+As of July 1st, Start Asian Love has Home, About, News, Support, and Wins pages.
 
 ### Home Page
 
 Users learn about the rise of Anti-Asian incidents and crimes, as well as Asian racism, in the United States. A youtube playlist, graphics, and text is displayed for the user to interact with.
+
+### About Page
+
+Users learn more about the history and mission of Start Asian Love, as well as the team behind it.
 
 ### News Page
 
@@ -64,7 +68,7 @@ Since this is a very heavy topic that can be traumatizing, depressing, and frust
 
 Some ideas we have in mind and would like to incorporate:
 
-- An events section on the News page, which will display rallies, training workshops, etc.
+- An events section which will display rallies, training workshops, etc.
 - Continue to add resources to the Support page and Wins page
 - Create interactive features to engage users more
   - For example, a map that displays information about Anti-Asian incidents and crimes
@@ -72,7 +76,8 @@ Some ideas we have in mind and would like to incorporate:
 ## Tech Stack
 
 - [Next.js](https://nextjs.org)
-- [CSS](https://css-tricks.com)
+- [Sass](https://sass-lang.com)
+- [Vercel](https://vercel.com)
 
 ## Contributors
 
@@ -80,24 +85,24 @@ Some ideas we have in mind and would like to incorporate:
   <tr>
     <td align="center">
       <a href="https://github.com/wlcreate">
-        <img src="https://avatars0.githubusercontent.com/u/62153993?s=460&v=4" width="200px;" alt=""/><br/><sub><b>Waverley Leung</b></sub>
+        <img src="https://avatars0.githubusercontent.com/u/62153993?s=460&v=4" width="200px;" alt="Waverley Leung's GitHub profile picture"/><br/><sub><b>Waverley Leung</b></sub>
       </a>         
     </td>
     <td align="center">
       <a href="https://github.com/emjose">
-        <img src="https://avatars.githubusercontent.com/u/61435324?v=4" width="200px;" alt=""/><br/>
+        <img src="https://avatars.githubusercontent.com/u/61435324?v=4" width="200px;" alt="Emmanuel Jose's GitHub profile picture"/><br/>
         <sub><b>Emmanuel Jose</b></sub>
       </a>         
     </td>
     <td align="center">
       <a href="https://github.com/sandaiiyahh">
-        <img src="https://avatars.githubusercontent.com/u/60532744?v=4" width="200px;" alt=""/><br/>
+        <img src="https://avatars.githubusercontent.com/u/60532744?v=4" width="200px;" alt="Sandy Dai's GitHub profile picture"/><br/>
         <sub><b>Sandy Dai</b></sub>
       </a>         
     </td>
         <td align="center">
       <a href="https://github.com/danielkwon89">
-        <img src="https://avatars.githubusercontent.com/u/37312930?v=4" width="200px;" alt=""/><br/>
+        <img src="https://avatars.githubusercontent.com/u/37312930?v=4" width="200px;" alt="Daniel Kwon's GitHub profile picture"/><br/>
         <sub><b>Daniel Kwon</b></sub>
       </a>         
     </td>
