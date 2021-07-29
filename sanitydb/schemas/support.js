@@ -21,32 +21,45 @@ export default {
       {
         name: "category",
         title: "Category",
-        type: "string",
+        type: "array",
         options: {
-          list: [
-            { title: "all", value: "all"},
-            { title: "education", value: "education"},
-            { title: "safety", value: "safety"},
-            { title: "financial", value: "financial"},
-            { title: "legal", value: "legal"},
-            { title: "volunteer", value: "volunteer"},
-            { title: "health", value: "health"},
-            { title: "art", value: "art"}
-          ]
-        }
+          layout: "grid"
+        },
+        of: [{
+          type: "string",
+          title: "Category",
+          options: {
+            list: [
+              { title: "education", value: "education"},
+              { title: "safety", value: "safety"},
+              { title: "financial", value: "financial"},
+              { title: "legal", value: "legal"},
+              { title: "volunteer", value: "volunteer"},
+              { title: "health", value: "health"},
+              { title: "art", value: "art"}
+            ]
+          }
+        }]
       },
       {
         name: "allyship",
         title: "Allyship",
-        type: "string",
+        type: "array",
         options: {
-          list: [
-            { title: "all", value: "all"},
-            { title: "asian", value: "asian"},
-            { title: "bipoc", value: "bipoc"},
-            { title: "white", value: "white"},
-          ]
-        }
+          layout: "grid"
+        },
+        of: [{
+          type: "string",
+          title: "Allyship",
+          options: {
+            list: [
+              { title: "all", value: "all"},
+              { title: "asian", value: "asian"},
+              { title: "bipoc", value: "bipoc"},
+              { title: "white", value: "white"},
+            ]
+          }
+        }]
       },
       {
         name: "image",
