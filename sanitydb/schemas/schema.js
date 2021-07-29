@@ -4,7 +4,8 @@ import createSchema from "part:@sanity/base/schema-creator";
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import team from "./team";
-import support from "./support"
+import support from "./support";
+import wins from "./wins";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -15,6 +16,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     team,
-    support
+    support,
+    wins,
   ]),
 });

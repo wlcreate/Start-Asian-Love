@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { array } from "prop-types";
 
 export default {
