@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "../../styles/About/Profile.module.scss";
 
 import LinkedInIcon from "../../public/Profile/LinkedIn.svg";
 import TwitterIcon from "../../public/Profile/Twitter.svg";
@@ -13,6 +14,7 @@ export const Profile = ({ profileData }) => {
         <Image src={profileData.image} alt={$`Picture of {profileData.name}`} />
       </div>
       <p className={styles["profile-quote"]}>{profileData.quote}</p>
+      <p className={styles["profile-bio"]}>{profileData.bio}</p>
       <TwitterIcon
         onClick={() => window.open($`{profileData.social.twitter}`, "_blank")}
         className={styles.icon}
