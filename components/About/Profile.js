@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import LinkedInIcon from "../../public/Profile/LinkedIn.svg";
 import TwitterIcon from "../../public/Profile/Twitter.svg";
 import GitHubIcon from "../../public/Profile/GitHub.svg";
