@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/About/About.module.scss";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
+import { ProfileContainer } from "../components/About/ProfileContainer";
 
 import waverleyPhoto from "../public/Profile/Waverley-Leung-Profile.jpg";
 import emmanuelPhoto from "../public/Profile/Emmanuel-Jose-Profile.jpg";
@@ -121,6 +122,7 @@ export default function About() {
         </p>
       </div>
       <h3 className={styles.team}>Meet Squad SAL</h3>
+      <ProfileContainer profiles={profiles} />
       <div className={styles["profile-container"]}>
         <div className={styles.profile}>
           <h3>Waverley Leung</h3>
