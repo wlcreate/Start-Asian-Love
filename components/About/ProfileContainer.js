@@ -1,3 +1,4 @@
+import styles from "../../styles/About/ProfileContainer.module.scss";
 import { Profile } from "./Profile";
 
 export const ProfileContainer = ({ profiles }) => {

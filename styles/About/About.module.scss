@@ -34,16 +34,6 @@
   font-style: normal;
 }
 
-.profile-container {
-  margin: 45px 200px;
-  margin-bottom: 60px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-gap: 3rem;
-  justify-items: center;
-}
-
 .profile {
   width: 450px;
   height: 600px;
