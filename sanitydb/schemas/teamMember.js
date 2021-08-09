@@ -2,8 +2,8 @@
 import { array } from "prop-types";
 
 export default {
-  name: "team",
-  title: "Team",
+  name: "teamMember",
+  title: "Team Member",
   type: "document",
   fields: [
     {
