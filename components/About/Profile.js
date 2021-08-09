@@ -8,7 +8,6 @@ import GitHubIcon from "../../public/Profile/GitHub.svg";
 import PortfolioIcon from "../../public/Profile/Portfolio.svg";
 
 export const Profile = ({ name, image, social, bio, quote }) => {
-  console.log(social);
   return (
     <div className={styles.profile}>
       <h3>{name}</h3>

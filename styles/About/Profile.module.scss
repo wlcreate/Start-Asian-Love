@@ -23,8 +23,11 @@
   }
 
   .profile-quote {
-    font-style: italic;
     text-align: center;
+    color: var(--dark-grey);
+
+    font-style: italic;
+    font-family: var(--expressway);
   }
 
   .profile-bio {
