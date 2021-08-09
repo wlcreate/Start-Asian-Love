@@ -5,7 +5,7 @@ import { Footer } from "../components/Layout/Footer";
 import { ProfileContainer } from "../components/About/ProfileContainer";
 import { sanityClient } from "../lib/sanity";
 
-const profilesQuery = `*[_type == "teamMember"]{
+const profilesQuery = `*[_type == "teamMember"] | order(_createdAt desc){
   _id,
   name,
   quote,
