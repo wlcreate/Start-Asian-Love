@@ -11,24 +11,24 @@ export const Profile = ({ profileData }) => {
     <div className={styles.profile}>
       <h3>{profileData.name}</h3>
       <div className={styles["profile-pic"]}>
-        <Image src={profileData.image} alt={$`Picture of {profileData.name}`} />
+        <Image src={profileData.image} alt={`Picture of ${profileData.name}`} />
       </div>
       <p className={styles["profile-quote"]}>{profileData.quote}</p>
       <p className={styles["profile-bio"]}>{profileData.bio}</p>
       <TwitterIcon
-        onClick={() => window.open($`{profileData.social.twitter}`, "_blank")}
+        onClick={() => window.open(`${profileData.social.twitter}`, "_blank")}
         className={styles.icon}
       />
       <LinkedInIcon
-        onClick={() => window.open($`{profileData.social.linkedIn}`, "_blank")}
+        onClick={() => window.open(`${profileData.social.linkedIn}`, "_blank")}
         className={styles.icon}
       />
       <GitHubIcon
-        onClick={() => window.open($`{profileData.social.gitHub}`, "_blank")}
+        onClick={() => window.open(`${profileData.social.gitHub}`, "_blank")}
         className={styles.icon}
       />
       <PortfolioIcon
-        onClick={() => window.open($`{profileData.social.portfolio}`, "_blank")}
+        onClick={() => window.open(`${profileData.social.portfolio}`, "_blank")}
         className={styles.icon}
       />
     </div>
