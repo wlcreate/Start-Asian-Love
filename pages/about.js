@@ -3,8 +3,18 @@ import styles from "../styles/About/About.module.scss";
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
 import { ProfileContainer } from "../components/About/ProfileContainer";
+import { sanityClient } from "../lib/sanity";
 
-export default function About() {
+const profilesQuery = `*[_type == "teamMember"]{
+  _id,
+  name,
+  quote,
+  social,
+  image,
+  bio
+}`;
+
+export default function About({ profiles }) {
   return (
     <div>
       <Head>
@@ -115,4 +125,11 @@ export default function About() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const profiles = await sanityClient.fetch(profilesQuery);
+  return {
+    props: { profiles },
+  };
 }
