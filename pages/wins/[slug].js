@@ -6,9 +6,8 @@ import { Header } from "../../components/Layout/Header";
 import { Footer } from "../../components/Layout/Footer";
 import { sanityClient } from "../../lib/sanity";
 
-const winQuery = `*[_type == "wins" && slug.current == $slug][0] {
+const winQuery = `*[_type == "wins" && $slug == _id] {
   _id,
-  slug,
   category,
   content,
   field,
@@ -19,9 +18,6 @@ const winQuery = `*[_type == "wins" && slug.current == $slug][0] {
 }`;
 
 export default function Win({ data, preview }) {
-  // const { title, image, content, url } = props.foundRepresentative;
-  console.log("data", data);
-
   return <></>;
   // return (
   //     <div>
@@ -102,16 +98,14 @@ export default function Win({ data, preview }) {
 }
 
 export async function getStaticPaths() {
-  console.log("SLUGG", slug);
+  // console.log("SLUGG", slug);
   const paths = await sanityClient.fetch(
-    `*[_type == "wins" && defined(slug.current)]{
+    `*[_type == "wins" && defined(_id)]{
       "params": {
-        "slug": slug.current
+        "slug": _id
       }
     }`,
   );
-  console.log("PATHS", paths);
-
   return {
     paths,
     fallback: true,
@@ -120,7 +114,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
-  const win = await sanityClient.fetch(winQuery);
-  console.log("winnn", win);
+  const win = await sanityClient.fetch(winQuery, { slug });
   return { props: { data: { win }, preview: true } };
 }
