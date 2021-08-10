@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/Wins/WinsResources.module.scss";
 import { urlFor, PortableText } from "../../lib/sanity";
 
-export const WinsResources = ({ resources, category }) => {
+export const WinsResources = ({ resources }) => {
   return (
     <div className={styles["resources-container"]}>
       {resources.map((resource) => {
@@ -20,7 +20,7 @@ export const WinsResources = ({ resources, category }) => {
             />
             <h4>{resource.title}</h4>
             <PortableText blocks={resource.content} />
-            <Link href={`/wins/${category}/${resource.id}`}>Learn more</Link>
+            <Link href={`/wins/${resource._id}`}>Learn more</Link>
           </div>
         );
       })}
