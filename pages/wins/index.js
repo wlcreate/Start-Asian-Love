@@ -170,7 +170,7 @@ export default function Wins({
           We can begin to advance towards a better future for all by educating ourselves about the
           Asian American experience and history, which are marked by pain, resilience, and hope.
         </p>
-        {/* <WinsResources resources={heritageResources} category="heritage" /> */}
+        <WinsResources resources={heritageResources} category="heritage" />
       </div>
 
       <div className={styles["wins-section"]} ref={ContributionsRef}>
@@ -184,7 +184,7 @@ export default function Wins({
           We have begun featuring AAPI individuals who have shaped our world in a myriad of ways,
           and we aim to highlight many more individuals whose stories should be told.
         </p>
-        {/* <WinsResources resources={contributionsResources} category="contributions" /> */}
+        <WinsResources resources={contributionsResources} category="contributions" />
       </div>
 
       <div className={styles["wins-section"]} ref={RepresentationRef}>
@@ -198,7 +198,7 @@ export default function Wins({
           media. Here, we will celebrate Asians who are pioneers, who show what is possible, and who
           show what it means to be Asian.
         </p>
-        {/* <WinsResources resources={representationResources} category="representation" /> */}
+        <WinsResources resources={representationResources} category="representation" />
       </div>
 
       <div className={styles["wins-section"]} ref={ArtRef}>
@@ -209,7 +209,7 @@ export default function Wins({
           feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the
           expression and voices of all Asian artists.
         </p>
-        {/* <WinsResources resources={artResources} category="art" /> */}
+        <WinsResources resources={artResources} category="art" />
       </div>
 
       <div className={styles["wins-section"]} ref={CulturalRef}>
@@ -222,7 +222,7 @@ export default function Wins({
           In the wake of the COVID-19 pandemic, many of these institutions are reopening and offer
           immersive virtual and onsite experiences for guests.
         </p>
-        {/* <WinsResources resources={culturalResources} category="cultural" /> */}
+        <WinsResources resources={culturalResources} category="cultural" />
       </div>
 
       <Footer />
