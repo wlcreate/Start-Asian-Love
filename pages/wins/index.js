@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRef } from "react";
 import styles from "../../styles/Wins/Wins.module.scss";
+import { sanityClient } from "../lib/sanity";
 
 import { Header } from "../../components/Layout/Header";
 import { Footer } from "../../components/Layout/Footer";
@@ -13,7 +14,18 @@ import { contributions as contributionsResources } from "../../database/Wins-sep
 import { representation as representationResources } from "../../database/Wins-separate";
 import { cultural as culturalResources } from "../../database/Wins-separate";
 
-export default function Wins() {
+const winsQuery = `*[_type == "wins"] {
+  _id,
+  category,
+  content,
+  field,
+  image,
+  title,
+  url,
+  location
+}`;
+
+export default function Wins({ wins }) {
   const HeritageRef = useRef(null);
   const ArtRef = useRef(null);
   const RepresentationRef = useRef(null);
@@ -214,4 +226,11 @@ export default function Wins() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const wins = await sanityClient.fetch(winsQuery);
+  return {
+    props: { wins },
+  };
 }
