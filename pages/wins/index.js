@@ -1,18 +1,12 @@
 import Head from "next/head";
 import { useRef } from "react";
 import styles from "../../styles/Wins/Wins.module.scss";
-import { sanityClient } from "../lib/sanity";
+import { sanityClient } from "../../lib/sanity";
 
 import { Header } from "../../components/Layout/Header";
 import { Footer } from "../../components/Layout/Footer";
 import ScrollButton from "../../components/Layout/ScrollButton";
 import { WinsResources } from "../../components/Wins/WinsResources";
-
-import { art as artResources } from "../../database/Wins-separate";
-import { heritage as heritageResources } from "../../database/Wins-separate";
-import { contributions as contributionsResources } from "../../database/Wins-separate";
-import { representation as representationResources } from "../../database/Wins-separate";
-import { cultural as culturalResources } from "../../database/Wins-separate";
 
 const winsQuery = `*[_type == "wins"] {
   _id,
@@ -25,7 +19,13 @@ const winsQuery = `*[_type == "wins"] {
   location
 }`;
 
-export default function Wins({ wins }) {
+export default function Wins({
+  culturalResources,
+  heritageResources,
+  representationResources,
+  contributionsResources,
+  artResources,
+}) {
   const HeritageRef = useRef(null);
   const ArtRef = useRef(null);
   const RepresentationRef = useRef(null);
@@ -66,6 +66,8 @@ export default function Wins({ wins }) {
       behavior: "smooth",
     });
   };
+
+  console.log("cultural", culturalResources);
 
   return (
     <div>
@@ -168,7 +170,7 @@ export default function Wins({ wins }) {
           We can begin to advance towards a better future for all by educating ourselves about the
           Asian American experience and history, which are marked by pain, resilience, and hope.
         </p>
-        <WinsResources resources={heritageResources} category="heritage" />
+        {/* <WinsResources resources={heritageResources} category="heritage" /> */}
       </div>
 
       <div className={styles["wins-section"]} ref={ContributionsRef}>
@@ -182,7 +184,7 @@ export default function Wins({ wins }) {
           We have begun featuring AAPI individuals who have shaped our world in a myriad of ways,
           and we aim to highlight many more individuals whose stories should be told.
         </p>
-        <WinsResources resources={contributionsResources} category="contributions" />
+        {/* <WinsResources resources={contributionsResources} category="contributions" /> */}
       </div>
 
       <div className={styles["wins-section"]} ref={RepresentationRef}>
@@ -196,7 +198,7 @@ export default function Wins({ wins }) {
           media. Here, we will celebrate Asians who are pioneers, who show what is possible, and who
           show what it means to be Asian.
         </p>
-        <WinsResources resources={representationResources} category="representation" />
+        {/* <WinsResources resources={representationResources} category="representation" /> */}
       </div>
 
       <div className={styles["wins-section"]} ref={ArtRef}>
@@ -207,7 +209,7 @@ export default function Wins({ wins }) {
           feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the
           expression and voices of all Asian artists.
         </p>
-        <WinsResources resources={artResources} category="art" />
+        {/* <WinsResources resources={artResources} category="art" /> */}
       </div>
 
       <div className={styles["wins-section"]} ref={CulturalRef}>
@@ -220,7 +222,7 @@ export default function Wins({ wins }) {
           In the wake of the COVID-19 pandemic, many of these institutions are reopening and offer
           immersive virtual and onsite experiences for guests.
         </p>
-        <WinsResources resources={culturalResources} category="cultural" />
+        {/* <WinsResources resources={culturalResources} category="cultural" /> */}
       </div>
 
       <Footer />
@@ -230,7 +232,18 @@ export default function Wins({ wins }) {
 
 export async function getStaticProps() {
   const wins = await sanityClient.fetch(winsQuery);
+  const culturalResources = wins.filter((win) => win.category === "cultural");
+  const heritageResources = wins.filter((win) => win.category === "heritage");
+  const representationResources = wins.filter((win) => win.category === "representation");
+  const contributionsResources = wins.filter((win) => win.category === "contributions");
+  const artResources = wins.filter((win) => win.category === "art");
   return {
-    props: { wins },
+    props: {
+      culturalResources,
+      heritageResources,
+      representationResources,
+      contributionsResources,
+      artResources,
+    },
   };
 }
