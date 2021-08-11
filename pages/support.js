@@ -6,9 +6,19 @@ import { Footer } from "../components/Layout/Footer";
 import { ReusableButtons } from "../components/Support/ReusableButtons";
 import ScrollButton from "../components/Layout/ScrollButton";
 import { Resources } from "../components/Support/Resources";
-import resourcesData from "../database/SupportResources";
+import { sanityClient } from "../lib/sanity";
 
-export default function Support() {
+const supportQuery = `*[_type == "support"]{
+  _id, 
+  title, 
+  url, 
+  allyship, 
+  category, 
+  description, 
+  image
+  }`;
+
+export default function Support({ resourcesData }) {
   const [allyship, setAllyship] = useState("all");
   const [category, setCategory] = useState("All");
 
@@ -24,6 +34,7 @@ export default function Support() {
   // the default being anyone && all
   // otherwise, since the resources first depend on the allyship, filter the resources by allyship then by category (unless allyship is anyone)
   // future: if a resource has more than 2 categories?
+
   const filterResources = () => {
     if (allyship === "all" && category === "All") {
       return resourcesData;
@@ -190,4 +201,11 @@ export default function Support() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const resourcesData = await sanityClient.fetch(supportQuery);
+  return {
+    props: { resourcesData },
+  };
 }
