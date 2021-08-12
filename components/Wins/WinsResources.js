@@ -1,18 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Wins/WinsResources.module.scss";
+import { urlFor, PortableText } from "../../lib/sanity";
 
-export const WinsResources = (props) => {
-  let { resources, category } = props;
-
+export const WinsResources = ({ resources }) => {
   return (
     <div className={styles["resources-container"]}>
       {resources.map((resource) => {
         return (
-          <div className={styles.resource} key={resource.id}>
+          <div className={styles.resource} key={resource._id}>
             <Image
               className={styles.portrait}
-              src={resource.portrait}
+              src={urlFor(resource.image).url()}
               alt={`Image of ${resource.title}`}
               loading="lazy"
               width={200}
@@ -20,8 +19,8 @@ export const WinsResources = (props) => {
               layout="responsive"
             />
             <h4>{resource.title}</h4>
-            <p>{resource.content}</p>
-            <Link href={`/wins/${category}/${resource.id}`}>Learn more</Link>
+            <PortableText blocks={resource.content} />
+            <Link href={`/wins/${resource._id}`}>Learn more</Link>
           </div>
         );
       })}

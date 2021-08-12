@@ -1,21 +1,36 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../../styles/Wins/WinsID.module.scss";
-import { Header } from "../../../components/Layout/Header";
-import { Footer } from "../../../components/Layout/Footer";
-import { art as artResources } from "../../../database/Wins-separate.js";
+import { urlFor, sanityClient, usePreviewSubscription, PortableText } from "../../lib/sanity";
+import styles from "../../styles/Wins/WinsID.module.scss";
+import { Header } from "../../components/Layout/Header";
+import { Footer } from "../../components/Layout/Footer";
 
-const Artist = (props) => {
-  const { title, image, content, url } = props.foundArtist;
+const winQuery = `*[_type == "wins" && $slug == _id][0] {
+  _id,
+  category,
+  content,
+  field,
+  image,
+  title,
+  url,
+  location
+}`;
+
+export default function Win({ data, preview }) {
+  const { data: win } = usePreviewSubscription(winQuery, {
+    params: { slug: data?.win._id },
+    initialData: data,
+    enabled: preview,
+  });
 
   return (
     <div>
       <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content={`Read for more information about ${title}`} />
-        <title>Start Asian Love | {title}</title>
+        <meta name="description" content={`Read for more information about ${win.title}`} />
+        <title>Start Asian Love | {win.title}</title>
 
         {/* Favicon */}
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
@@ -33,7 +48,7 @@ const Artist = (props) => {
         />
         <meta
           property="og:description"
-          content={`Read for more information about ${title}`}
+          content={`Read for more information about ${win.title}`}
           key="ogdesc"
         />
         <meta
@@ -52,7 +67,7 @@ const Artist = (props) => {
         />
         <meta
           property="twitter:description"
-          content={`Read for more information about ${title}`}
+          content={`Read for more information about ${win.title}`}
           key="twdesc"
         />
         <meta
@@ -62,20 +77,24 @@ const Artist = (props) => {
         />
       </Head>
       <Header />
-      <h2 className={"page-heading"}>{title}</h2>
+      <h2 className={"page-heading"}>{win.title}</h2>
 
       <div className={styles.container}>
-        <Image
-          src={image}
-          alt={`Image of ${title}`}
-          loading="lazy"
-          width={616}
-          height={462}
-          layout="responsive"
-        />
-        <p>{content}</p>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          Discover more about {title}
+        {!urlFor(win.image).url() ? (
+          <></>
+        ) : (
+          <Image
+            src={urlFor(win.image).url()}
+            alt={`Image of ${win.title}`}
+            loading="lazy"
+            width={616}
+            height={462}
+            layout="responsive"
+          />
+        )}
+        <PortableText blocks={win.content} />
+        <a href={win.url} target="_blank" rel="noopener noreferrer">
+          Discover more about {win.title}
         </a>
       </div>
 
@@ -85,16 +104,24 @@ const Artist = (props) => {
       <Footer />
     </div>
   );
-};
+}
 
-Artist.getInitialProps = ({ query }) => {
-  let foundArtist = artResources.find((resource) => {
-    return resource.id === parseInt(query.id);
-  });
-
+export async function getStaticPaths() {
+  const paths = await sanityClient.fetch(
+    `*[_type == "wins" && defined(_id)]{
+      "params": {
+        "slug": _id
+      }
+    }`,
+  );
   return {
-    foundArtist,
+    paths,
+    fallback: false,
   };
-};
+}
 
-export default Artist;
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  const win = await sanityClient.fetch(winQuery, { slug });
+  return { props: { data: { win }, preview: true } };
+}
