@@ -8,7 +8,7 @@ export const WinsResources = ({ resources }) => {
     <div className={styles["resources-container"]}>
       {resources.map((resource) => {
         return (
-          <div className={styles.resource} key={resource.id}>
+          <div className={styles.resource} key={resource._id}>
             <Image
               className={styles.portrait}
               src={urlFor(resource.image).url()}

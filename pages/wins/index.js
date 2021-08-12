@@ -67,8 +67,6 @@ export default function Wins({
     });
   };
 
-  console.log("cultural", culturalResources);
-
   return (
     <div>
       <Head>
