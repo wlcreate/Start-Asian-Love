@@ -21,11 +21,12 @@ export const ReusableButtons = ({buttonData, group, changeSelection}) => {
     }
 
     const allButtonTexts = [...getButtonTexts(buttonData)];
+    const alphabeticalButtons = allButtonTexts.sort((a, b) => a.localeCompare(b))
     
     return (
         <div>
             {
-                allButtonTexts.map((text, i)=>{
+                alphabeticalButtons.map((text, i)=>{
                     return <button className={styles.button} type="button" onClick={()=> changeSelection(text)} key={i}>{text}</button>
                 })
             }
