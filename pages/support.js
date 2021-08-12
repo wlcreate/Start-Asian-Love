@@ -6,9 +6,19 @@ import { Footer } from "../components/Layout/Footer";
 import { ReusableButtons } from "../components/Support/ReusableButtons";
 import ScrollButton from "../components/Layout/ScrollButton";
 import { Resources } from "../components/Support/Resources";
-import resourcesData from "../database/SupportResources";
+import { sanityClient } from "../lib/sanity";
 
-export default function Support() {
+const supportQuery = `*[_type == "support"]{
+  _id, 
+  title, 
+  url, 
+  allyship, 
+  category, 
+  description, 
+  image
+  }`;
+
+export default function Support({ resources }) {
   const [allyship, setAllyship] = useState("all");
   const [category, setCategory] = useState("All");
 
@@ -24,23 +34,24 @@ export default function Support() {
   // the default being anyone && all
   // otherwise, since the resources first depend on the allyship, filter the resources by allyship then by category (unless allyship is anyone)
   // future: if a resource has more than 2 categories?
+
   const filterResources = () => {
     if (allyship === "all" && category === "All") {
-      return resourcesData;
+      return resources;
     } else if (allyship === "all" && category !== "All") {
-      let filteredResourcesByCategory = resourcesData.filter((resource) => {
+      let filteredResourcesByCategory = resources.filter((resource) => {
         return resource.category[0] === category || resource.category[1] === category;
       });
 
       return filteredResourcesByCategory;
     } else if (allyship === "asian" && category === "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "asian" || resource.allyship[1] === "asian";
       });
 
       return filteredResourcesByAllyship;
     } else if (allyship === "asian" && category !== "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "asian" || resource.allyship[1] === "asian";
       });
 
@@ -50,13 +61,13 @@ export default function Support() {
 
       return filteredResourcesByCategory;
     } else if (allyship === "bipoc" && category === "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "bipoc" || resource.allyship[1] === "bipoc";
       });
 
       return filteredResourcesByAllyship;
     } else if (allyship === "bipoc" && category !== "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "bipoc" || resource.allyship[1] === "bipoc";
       });
 
@@ -65,13 +76,13 @@ export default function Support() {
       });
       return filteredResourcesByCategory;
     } else if (allyship === "white" && category === "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "white" || resource.allyship[1] === "white";
       });
 
       return filteredResourcesByAllyship;
     } else if (allyship === "white" && category !== "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "white" || resource.allyship[1] === "white";
       });
 
@@ -160,13 +171,13 @@ export default function Support() {
       <div className={styles["filter-section"]}>
         <h3>Who are these resources for?</h3>
         <ReusableButtons
-          buttonData={resourcesData}
+          buttonData={resources}
           group={"allyships"}
           changeSelection={changeAllyship}
         />
         <h3>Filter by Category</h3>
         <ReusableButtons
-          buttonData={resourcesData}
+          buttonData={resources}
           group={"categories"}
           changeSelection={changeCategory}
         />
@@ -190,4 +201,11 @@ export default function Support() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const resources = await sanityClient.fetch(supportQuery);
+  return {
+    props: { resources },
+  };
 }

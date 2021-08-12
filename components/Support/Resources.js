@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/Support/Resources.module.scss";
+import { urlFor } from "../../lib/sanity";
 
 export const Resources = ({ resourcesList }) => {
   return (
@@ -11,7 +12,7 @@ export const Resources = ({ resourcesList }) => {
               <div className={styles["resource-card"]} key={resource.id}>
                 <div onClick={() => window.open(resource.url, "_blank")}>
                   <Image
-                    src={resource.image}
+                    src={urlFor(resource.image).url()}
                     alt={`Image of ${resource.title}`}
                     loading="lazy"
                     width={200}
@@ -19,7 +20,7 @@ export const Resources = ({ resourcesList }) => {
                     layout="responsive"
                   />
                   <h3>{resource.title}</h3>
-                  <p className={styles.description}>{resource.content}</p>
+                  <p className={styles.description}>{resource.description}</p>
                   <div className={styles["categories"]}>
                     <p>{resource.category[0]}</p>
                     &nbsp;&nbsp;&nbsp;&nbsp;
