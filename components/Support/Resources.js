@@ -37,5 +37,3 @@ export const Resources = ({ resourcesList }) => {
     </div>
   );
 };
-
-// Hello World

@@ -18,7 +18,7 @@ const supportQuery = `*[_type == "support"]{
   image
   }`;
 
-export default function Support({ resourcesData }) {
+export default function Support({ resources }) {
   const [allyship, setAllyship] = useState("all");
   const [category, setCategory] = useState("All");
 
@@ -37,21 +37,21 @@ export default function Support({ resourcesData }) {
 
   const filterResources = () => {
     if (allyship === "all" && category === "All") {
-      return resourcesData;
+      return resources;
     } else if (allyship === "all" && category !== "All") {
-      let filteredResourcesByCategory = resourcesData.filter((resource) => {
+      let filteredResourcesByCategory = resources.filter((resource) => {
         return resource.category[0] === category || resource.category[1] === category;
       });
 
       return filteredResourcesByCategory;
     } else if (allyship === "asian" && category === "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "asian" || resource.allyship[1] === "asian";
       });
 
       return filteredResourcesByAllyship;
     } else if (allyship === "asian" && category !== "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "asian" || resource.allyship[1] === "asian";
       });
 
@@ -61,13 +61,13 @@ export default function Support({ resourcesData }) {
 
       return filteredResourcesByCategory;
     } else if (allyship === "bipoc" && category === "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "bipoc" || resource.allyship[1] === "bipoc";
       });
 
       return filteredResourcesByAllyship;
     } else if (allyship === "bipoc" && category !== "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "bipoc" || resource.allyship[1] === "bipoc";
       });
 
@@ -76,13 +76,13 @@ export default function Support({ resourcesData }) {
       });
       return filteredResourcesByCategory;
     } else if (allyship === "white" && category === "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "white" || resource.allyship[1] === "white";
       });
 
       return filteredResourcesByAllyship;
     } else if (allyship === "white" && category !== "All") {
-      let filteredResourcesByAllyship = resourcesData.filter((resource) => {
+      let filteredResourcesByAllyship = resources.filter((resource) => {
         return resource.allyship[0] === "white" || resource.allyship[1] === "white";
       });
 
@@ -171,13 +171,13 @@ export default function Support({ resourcesData }) {
       <div className={styles["filter-section"]}>
         <h3>Who are these resources for?</h3>
         <ReusableButtons
-          buttonData={resourcesData}
+          buttonData={resources}
           group={"allyships"}
           changeSelection={changeAllyship}
         />
         <h3>Filter by Category</h3>
         <ReusableButtons
-          buttonData={resourcesData}
+          buttonData={resources}
           group={"categories"}
           changeSelection={changeCategory}
         />
@@ -204,8 +204,8 @@ export default function Support({ resourcesData }) {
 }
 
 export async function getStaticProps() {
-  const resourcesData = await sanityClient.fetch(supportQuery);
+  const resources = await sanityClient.fetch(supportQuery);
   return {
-    props: { resourcesData },
+    props: { resources },
   };
 }
