@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { urlFor, sanityClient, usePreviewSubscription, PortableText } from "../../lib/sanity";
 import styles from "../../styles/Wins/WinsID.module.scss";
 import { Header } from "../../components/Layout/Header";
 import { Footer } from "../../components/Layout/Footer";
-import { urlFor, sanityClient, usePreviewSubscription, PortableText } from "../../lib/sanity";
 
 const winQuery = `*[_type == "wins" && $slug == _id][0] {
   _id,
@@ -116,7 +116,7 @@ export async function getStaticPaths() {
   );
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 
