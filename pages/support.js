@@ -1,12 +1,13 @@
 import Head from "next/head";
 import { useState } from "react";
+import { sanityClient } from "../lib/sanity";
 import styles from "../styles/Support/Support.module.scss";
+
 import { Header } from "../components/Layout/Header";
 import { Footer } from "../components/Layout/Footer";
 import { ReusableButtons } from "../components/Support/ReusableButtons";
 import ScrollButton from "../components/Layout/ScrollButton";
 import { Resources } from "../components/Support/Resources";
-import { sanityClient } from "../lib/sanity";
 
 const supportQuery = `*[_type == "support"]{
   _id, 
