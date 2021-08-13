@@ -5,7 +5,7 @@ import styles from "../styles/Support/Support.module.scss";
 
 import { ReusableButtons } from "../components/Support/ReusableButtons";
 import ScrollButton from "../components/Layout/ScrollButton";
-import { Resources } from "../components/Support/Resources";
+import { SupportResourcesContainer } from "../components/Support/SupportResourcesContainer";
 
 const supportQuery = `*[_type == "support"]{
   _id, 
@@ -166,13 +166,13 @@ export default function Support({ resources }) {
         <h3>Who are these resources for?</h3>
         <ReusableButtons
           buttonData={resources}
-          group={"allyships"}
+          group="allyships"
           changeSelection={changeAllyship}
         />
         <h3>Filter by Category</h3>
         <ReusableButtons
           buttonData={resources}
-          group={"categories"}
+          group="categories"
           changeSelection={changeCategory}
         />
       </div>
@@ -191,7 +191,7 @@ export default function Support({ resources }) {
         .
       </p>
 
-      <Resources resourcesList={filterResources()} />
+      <SupportResourcesContainer resourcesList={filterResources()} />
     </div>
   );
 }

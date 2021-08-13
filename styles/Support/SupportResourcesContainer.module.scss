@@ -1,0 +1,33 @@
+.resources-container {
+  margin: 50px 35px;
+  margin-bottom: 60px;
+
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  justify-items: center;
+}
+
+.no-resources-text {
+  text-transform: uppercase;
+  color: var(--primary-red);
+
+  font-size: 1.25em;
+  font-family: var(--expressway);
+  font-weight: 700;
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .resources-container {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .resources-container {
+    margin-top: 30px;
+  }
+}
