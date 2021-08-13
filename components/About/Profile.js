@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/About/Profile.module.scss";
+import styles from "../../styles/About/components/Profile.module.scss";
 import { urlFor } from "../../lib/sanity";
 
 import LinkedInIcon from "../../public/Profile/LinkedIn.svg";

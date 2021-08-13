@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { urlFor, PortableText } from "../../lib/sanity";
-import styles from "../../styles/Wins/WinsResource.module.scss";
+import styles from "../../styles/Wins/components/WinsResource.module.scss";
 
 export const WinsResource = ({ resource }) => {
   return (

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { sanityClient } from "../lib/sanity";
-import styles from "../styles/About/About.module.scss";
+import styles from "../styles/About/page/About.module.scss";
 
 import { ProfilesContainer } from "../components/About/ProfilesContainer";
 

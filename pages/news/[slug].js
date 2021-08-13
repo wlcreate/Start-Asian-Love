@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import styles from "../../styles/News/News.module.scss";
+import styles from "../../styles/News/page/News.module.scss";
 
 // • News code was adapted from the Next.js news site tutorial: https://youtu.be/xtItzwYG6oQ
 

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { urlFor, sanityClient, usePreviewSubscription, PortableText } from "../../lib/sanity";
-import styles from "../../styles/Wins/WinsID.module.scss";
+import styles from "../../styles/Wins/page/WinsID.module.scss";
 
 const winQuery = `*[_type == "wins" && $slug == _id][0] {
   _id,

@@ -1,4 +1,4 @@
-import styles from "../../styles/Support/SupportResourcesContainer.module.scss";
+import styles from "../../styles/Support/components/SupportResourcesContainer.module.scss";
 
 import { SupportResource } from "./SupportResource";
 

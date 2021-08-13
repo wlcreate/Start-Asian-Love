@@ -1,4 +1,4 @@
-import styles from "../../styles/Wins/WinsResourcesContainer.module.scss";
+import styles from "../../styles/Wins/components/WinsResourcesContainer.module.scss";
 
 import { WinsResource } from "./WinsResource";
 

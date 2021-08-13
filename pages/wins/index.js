@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRef } from "react";
 import { sanityClient } from "../../lib/sanity";
-import styles from "../../styles/Wins/Wins.module.scss";
+import styles from "../../styles/Wins/page/Wins.module.scss";
 
 import ScrollButton from "../../components/Layout/ScrollButton";
 import { WinsResourcesContainer } from "../../components/Wins/WinsResourcesContainer";

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import UpButton from "../../public/Layout/UpButton.svg";
-import styles from "../../styles/Layout/ScrollButton.module.scss";
+import styles from "../../styles/Layout/components/ScrollButton.module.scss";
 
 const ScrollButton = ({ scrollPoint }) => {
   const [visible, setVisible] = useState(false);

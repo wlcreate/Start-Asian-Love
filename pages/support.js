@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import { sanityClient } from "../lib/sanity";
-import styles from "../styles/Support/Support.module.scss";
+import styles from "../styles/Support/page/Support.module.scss";
 
 import { ReusableButtons } from "../components/Support/ReusableButtons";
 import ScrollButton from "../components/Layout/ScrollButton";
