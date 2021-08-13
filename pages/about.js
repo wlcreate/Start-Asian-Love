@@ -2,8 +2,6 @@ import Head from "next/head";
 import { sanityClient } from "../lib/sanity";
 import styles from "../styles/About/About.module.scss";
 
-import { Header } from "../components/Layout/Header";
-import { Footer } from "../components/Layout/Footer";
 import { ProfileContainer } from "../components/About/ProfileContainer";
 
 const profilesQuery = `*[_type == "teamMember"] | order(_createdAt desc){
@@ -68,8 +66,9 @@ export default function About({ profiles }) {
           key="twimage"
         />
       </Head>
-      <Header />
+
       <h1 className="page-heading">Who We Are</h1>
+
       <div className={styles.description}>
         <p>
           After the increase of attacks on Asian Americans since COVID-19, the Atlanta Spa Shootings
@@ -123,7 +122,6 @@ export default function About({ profiles }) {
       </div>
       <h3 className={styles.team}>Meet Squad SAL</h3>
       <ProfileContainer profiles={profiles} />
-      <Footer />
     </div>
   );
 }

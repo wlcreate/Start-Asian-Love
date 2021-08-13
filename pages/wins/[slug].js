@@ -4,9 +4,6 @@ import Image from "next/image";
 import { urlFor, sanityClient, usePreviewSubscription, PortableText } from "../../lib/sanity";
 import styles from "../../styles/Wins/WinsID.module.scss";
 
-import { Header } from "../../components/Layout/Header";
-import { Footer } from "../../components/Layout/Footer";
-
 const winQuery = `*[_type == "wins" && $slug == _id][0] {
   _id,
   category,
@@ -77,8 +74,8 @@ export default function Win({ data, preview }) {
           key="twimage"
         />
       </Head>
-      <Header />
-      <h2 className={"page-heading"}>{win.title}</h2>
+
+      <h1 className={"page-heading"}>{win.title}</h1>
 
       <div className={styles.container}>
         {!urlFor(win.image).url() ? (
@@ -102,7 +99,6 @@ export default function Win({ data, preview }) {
       <Link href="/wins" scroll={false}>
         <a className={styles.backToWins}>Back To Wins</a>
       </Link>
-      <Footer />
     </div>
   );
 }

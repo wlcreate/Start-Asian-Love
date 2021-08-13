@@ -2,9 +2,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "../../styles/News/News.module.scss";
 
-import { Header } from "../../components/Layout/Header";
-import { Footer } from "../../components/Layout/Footer";
-
 // • News code was adapted from the Next.js news site tutorial: https://youtu.be/xtItzwYG6oQ
 
 // • "Slug" is the unique identifying part of a web address, usually the endpoint: https://developer.mozilla.org/en-US/docs/Glossary/Slug
@@ -71,9 +68,9 @@ export const News = ({ pageNumber, articles }) => {
           key="twimage"
         />
       </Head>
-      <Header />
 
-      <h2 className={"page-heading"}>The Latest News</h2>
+      <h1 className={"page-heading"}>The Latest News</h1>
+
       <div className={styles["articles-container-wrapper"]}>
         <div className={styles["articles-container"]}>
           {articles.map((article, index) => (
@@ -117,8 +114,6 @@ export const News = ({ pageNumber, articles }) => {
           Next
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -2,9 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home/Home.module.scss";
 
-import { Header } from "../components/Layout/Header";
-import { Footer } from "../components/Layout/Footer";
-
 export default function Home() {
   return (
     <div>
@@ -62,7 +59,6 @@ export default function Home() {
         />
       </Head>
 
-      <Header />
       <Image
         className={styles.hero}
         src="/Hero.jpg"
@@ -252,8 +248,6 @@ export default function Home() {
             </p>
           </div> */}
       </div>
-
-      <Footer />
     </div>
   );
 }

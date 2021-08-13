@@ -3,8 +3,6 @@ import { useRef } from "react";
 import { sanityClient } from "../../lib/sanity";
 import styles from "../../styles/Wins/Wins.module.scss";
 
-import { Header } from "../../components/Layout/Header";
-import { Footer } from "../../components/Layout/Footer";
 import ScrollButton from "../../components/Layout/ScrollButton";
 import { WinsResources } from "../../components/Wins/WinsResources";
 
@@ -122,11 +120,11 @@ export default function Wins({
           key="twimage"
         />
       </Head>
-      <Header />
 
-      <h2 className={"page-heading"}>Wins</h2>
+      <h1 className={"page-heading"}>Wins</h1>
 
       <ScrollButton scrollPoint={2500} />
+
       <div className={styles.description}>
         <p>
           In light of the anti-Asian hate across the United States, our anxiety, trauma,
@@ -222,8 +220,6 @@ export default function Wins({
         </p>
         <WinsResources resources={culturalResources} />
       </div>
-
-      <Footer />
     </div>
   );
 }

@@ -3,8 +3,6 @@ import { useState } from "react";
 import { sanityClient } from "../lib/sanity";
 import styles from "../styles/Support/Support.module.scss";
 
-import { Header } from "../components/Layout/Header";
-import { Footer } from "../components/Layout/Footer";
 import { ReusableButtons } from "../components/Support/ReusableButtons";
 import ScrollButton from "../components/Layout/ScrollButton";
 import { Resources } from "../components/Support/Resources";
@@ -30,11 +28,6 @@ export default function Support({ resources }) {
   const changeCategory = (chosenCategory) => {
     setCategory(chosenCategory);
   };
-
-  // filters the resources based on the allyship and category chosen by the user
-  // the default being anyone && all
-  // otherwise, since the resources first depend on the allyship, filter the resources by allyship then by category (unless allyship is anyone)
-  // future: if a resource has more than 2 categories?
 
   const filterResources = () => {
     if (allyship === "all" && category === "All") {
@@ -149,11 +142,11 @@ export default function Support({ resources }) {
           key="twimage"
         />
       </Head>
-      <Header />
 
-      <h2 className={"page-heading"}>Support</h2>
+      <h1 className={"page-heading"}>Support</h1>
 
       <ScrollButton scrollPoint={5000} />
+
       <div className={styles.description}>
         <p>
           As the <span>#StopAsianHate</span> movement has grown, so has the number of resources to
@@ -199,7 +192,6 @@ export default function Support({ resources }) {
       </p>
 
       <Resources resourcesList={filterResources()} />
-      <Footer />
     </div>
   );
 }
