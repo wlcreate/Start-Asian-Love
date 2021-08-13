@@ -1,0 +1,30 @@
+.resources-container {
+  margin: 45px 50px;
+  margin-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .resources-container {
+    margin: 45px 50px;
+    margin-bottom: 60px;
+
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .resources-container {
+    margin: 40px 50px;
+    margin-bottom: 60px;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    row-gap: 40px;
+  }
+}
