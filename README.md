@@ -44,19 +44,31 @@ npm run dev
 
 **Note**: In order to have write access to SAL's Sanity Studio you will need to be added as a project member by Waverley!
 
-1. From the main project directory move into the sanity folder
+1. Install the sanity cli
+
+```
+npm install -g @sanity/cli
+```
+
+2. From the main project directory move into the sanity folder
 
 ```bash
 cd sanitydb
 ```
 
-2. Launch Sanity Studio
+3. Install for existing sanity project
+
+```
+sanity install
+```
+
+4. Launch Sanity Studio
 
 ```bash
 sanity start
 ```
 
-3. Access the studio in your browser at [`localhost:3333`](http://localhost:3333)
+5. Access the studio in your browser at [`localhost:3333`](http://localhost:3333)
 
 ## Features
 
