@@ -1,7 +1,7 @@
 import styles from "../../styles/About/ProfileContainer.module.scss";
 import { Profile } from "./Profile";
 
-export const ProfileContainer = ({ profiles }) => {
+export const ProfilesContainer = ({ profiles }) => {
   return (
     <div className={styles["profile-container"]}>
       {profiles?.map((profileData) => {

@@ -2,7 +2,7 @@ import Head from "next/head";
 import { sanityClient } from "../lib/sanity";
 import styles from "../styles/About/About.module.scss";
 
-import { ProfileContainer } from "../components/About/ProfileContainer";
+import { ProfilesContainer } from "../components/About/ProfilesContainer";
 
 const profilesQuery = `*[_type == "teamMember"] | order(_createdAt desc){
   _id,
@@ -121,7 +121,7 @@ export default function About({ profiles }) {
         </p>
       </div>
       <h3 className={styles.team}>Meet Squad SAL</h3>
-      <ProfileContainer profiles={profiles} />
+      <ProfilesContainer profiles={profiles} />
     </div>
   );
 }
