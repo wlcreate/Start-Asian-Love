@@ -1,6 +1,6 @@
 import styles from "../../styles/Support/components/ReusableButtons.module.scss";
 
-export const ReusableButtons = ({ buttonData, group, changeSelection }) => {
+export const FilterButtons = ({ buttonData, group, changeSelection }) => {
   const getButtonTexts = (information) => {
     let buttonTexts = new Set();
 

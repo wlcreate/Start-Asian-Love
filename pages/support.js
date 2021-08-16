@@ -3,7 +3,7 @@ import { useState } from "react";
 import { sanityClient } from "../lib/sanity";
 import styles from "../styles/Support/page/Support.module.scss";
 
-import { ReusableButtons } from "../components/Support/ReusableButtons";
+import { FilterButtons } from "../components/Support/FilterButtons";
 import ScrollButton from "../components/Layout/ScrollButton";
 import { SupportResourcesContainer } from "../components/Support/SupportResourcesContainer";
 
@@ -164,17 +164,9 @@ export default function Support({ resources }) {
 
       <div className={styles["filter-section"]}>
         <h3>Who are these resources for?</h3>
-        <ReusableButtons
-          buttonData={resources}
-          group="allyships"
-          changeSelection={changeAllyship}
-        />
+        <FilterButtons buttonData={resources} group="allyships" changeSelection={changeAllyship} />
         <h3>Filter by Category</h3>
-        <ReusableButtons
-          buttonData={resources}
-          group="categories"
-          changeSelection={changeCategory}
-        />
+        <FilterButtons buttonData={resources} group="categories" changeSelection={changeCategory} />
       </div>
 
       <p className={styles.viewing}>
