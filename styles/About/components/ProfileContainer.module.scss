@@ -1,0 +1,34 @@
+.profile-container {
+  margin: 45px 200px;
+  margin-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
+}
+
+/* most laptop and desktop screens */
+@media (max-width: 1366px) {
+  .profile-container {
+    margin: 40px 100px;
+    margin-bottom: 60px;
+  }
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .profile-container {
+    margin-top: 30px;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .profile-container {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}

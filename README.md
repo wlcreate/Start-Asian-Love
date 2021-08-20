@@ -21,8 +21,8 @@ Start Asian Love is a safe space that educates and consolidates resources relate
 npm install
 ```
 
-5. In the main root directory of the project, create an `.env` file
-6. In the `.env` file, create an environment variable to store the News API key:
+5. In the main root directory of the project, create an `.env.local` file
+6. In the `.env.local` file, create an environment variable to store the News API key:
 
 ```
 NEXT_PUBLIC_NEWS_KEY=YOUR-NEWS-API-KEY
@@ -39,6 +39,36 @@ npm run dev
 ```
 
 6. Access the project in your browser at [`localhost:3000`](http://localhost:3000)
+
+### For Sanity
+
+**Note**: In order to have write access to SAL's Sanity Studio you will need to be added as a project member by Waverley!
+
+1. Install the sanity cli
+
+```
+npm install -g @sanity/cli
+```
+
+2. From the main project directory move into the sanity folder
+
+```bash
+cd sanitydb
+```
+
+3. Install for existing sanity project
+
+```
+sanity install
+```
+
+4. Launch Sanity Studio
+
+```bash
+sanity start
+```
+
+5. Access the studio in your browser at [`localhost:3333`](http://localhost:3333)
 
 ## Features
 
@@ -76,7 +106,8 @@ Some ideas we have in mind and would like to incorporate:
 ## Tech Stack
 
 - [Next.js](https://nextjs.org)
-- [Sass](https://sass-lang.com)
+- [SASS](https://sass-lang.com)
+- [Sanity](http://sanity.io)
 - [Vercel](https://vercel.com)
 
 ## Contributors

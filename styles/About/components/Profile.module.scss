@@ -1,0 +1,75 @@
+.profile {
+  width: 450px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 10px;
+
+  background-color: var(--primary-white);
+  box-shadow: var(--primary-shadow);
+
+  h3 {
+    color: var(--primary-black);
+
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    font-size: 2em;
+    font-family: var(--proxima-nova-condensed);
+  }
+
+  .profile-pic {
+    margin-left: 25%;
+  }
+
+  .profile-quote {
+    text-align: center;
+    color: var(--dark-grey);
+
+    font-style: italic;
+    font-family: var(--expressway);
+  }
+
+  .profile-bio {
+    text-align: left;
+
+    color: var(--dark-grey);
+
+    line-height: 1.3;
+    font-size: 1em;
+    font-family: var(--expressway);
+  }
+}
+
+.icon {
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+/* screen must be no bigger than portrait tablet */
+@media (max-width: 768px) {
+  .profile {
+    height: 610px;
+  }
+}
+
+/* screen must be no bigger than landscape phone or below */
+@media (max-width: 480px) {
+  .profile {
+    width: 270px;
+    height: 690px;
+    padding: 25px;
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    .profile-pic {
+      margin-left: 8%;
+    }
+
+    .profile-bio {
+      font-size: 0.9em;
+    }
+  }
+}

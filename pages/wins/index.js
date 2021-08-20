@@ -1,19 +1,29 @@
 import Head from "next/head";
 import { useRef } from "react";
-import styles from "../../styles/Wins/Wins.module.scss";
+import { sanityClient } from "../../lib/sanity";
+import styles from "../../styles/Wins/page/Wins.module.scss";
 
-import { Header } from "../../components/Layout/Header";
-import { Footer } from "../../components/Layout/Footer";
 import ScrollButton from "../../components/Layout/ScrollButton";
-import { WinsResources } from "../../components/Wins/WinsResources";
+import { WinsResourcesContainer } from "../../components/Wins/WinsResourcesContainer";
 
-import { art as artResources } from "../../database/Wins-separate";
-import { heritage as heritageResources } from "../../database/Wins-separate";
-import { contributions as contributionsResources } from "../../database/Wins-separate";
-import { representation as representationResources } from "../../database/Wins-separate";
-import { cultural as culturalResources } from "../../database/Wins-separate";
+const winsQuery = `*[_type == "wins"] {
+  _id,
+  category,
+  content,
+  field,
+  image,
+  title,
+  url,
+  location
+}`;
 
-export default function Wins() {
+export default function Wins({
+  culturalResources,
+  heritageResources,
+  representationResources,
+  contributionsResources,
+  artResources,
+}) {
   const HeritageRef = useRef(null);
   const ArtRef = useRef(null);
   const RepresentationRef = useRef(null);
@@ -110,11 +120,11 @@ export default function Wins() {
           key="twimage"
         />
       </Head>
-      <Header />
 
-      <h2 className={"page-heading"}>Wins</h2>
+      <h1 className={"page-heading"}>Wins</h1>
 
       <ScrollButton scrollPoint={2500} />
+
       <div className={styles.description}>
         <p>
           In light of the anti-Asian hate across the United States, our anxiety, trauma,
@@ -156,7 +166,7 @@ export default function Wins() {
           We can begin to advance towards a better future for all by educating ourselves about the
           Asian American experience and history, which are marked by pain, resilience, and hope.
         </p>
-        <WinsResources resources={heritageResources} category="heritage" />
+        <WinsResourcesContainer resources={heritageResources} />
       </div>
 
       <div className={styles["wins-section"]} ref={ContributionsRef}>
@@ -170,7 +180,7 @@ export default function Wins() {
           We have begun featuring AAPI individuals who have shaped our world in a myriad of ways,
           and we aim to highlight many more individuals whose stories should be told.
         </p>
-        <WinsResources resources={contributionsResources} category="contributions" />
+        <WinsResourcesContainer resources={contributionsResources} />
       </div>
 
       <div className={styles["wins-section"]} ref={RepresentationRef}>
@@ -184,7 +194,7 @@ export default function Wins() {
           media. Here, we will celebrate Asians who are pioneers, who show what is possible, and who
           show what it means to be Asian.
         </p>
-        <WinsResources resources={representationResources} category="representation" />
+        <WinsResourcesContainer resources={representationResources} />
       </div>
 
       <div className={styles["wins-section"]} ref={ArtRef}>
@@ -195,7 +205,7 @@ export default function Wins() {
           feature innovative, groundbreaking Asian artists, and spotlight platforms that amplify the
           expression and voices of all Asian artists.
         </p>
-        <WinsResources resources={artResources} category="art" />
+        <WinsResourcesContainer resources={artResources} />
       </div>
 
       <div className={styles["wins-section"]} ref={CulturalRef}>
@@ -208,10 +218,26 @@ export default function Wins() {
           In the wake of the COVID-19 pandemic, many of these institutions are reopening and offer
           immersive virtual and onsite experiences for guests.
         </p>
-        <WinsResources resources={culturalResources} category="cultural" />
+        <WinsResourcesContainer resources={culturalResources} />
       </div>
-
-      <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const wins = await sanityClient.fetch(winsQuery);
+  const culturalResources = wins.filter((win) => win.category === "cultural");
+  const heritageResources = wins.filter((win) => win.category === "heritage");
+  const representationResources = wins.filter((win) => win.category === "representation");
+  const contributionsResources = wins.filter((win) => win.category === "contributions");
+  const artResources = wins.filter((win) => win.category === "art");
+  return {
+    props: {
+      culturalResources,
+      heritageResources,
+      representationResources,
+      contributionsResources,
+      artResources,
+    },
+  };
 }
