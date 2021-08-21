@@ -16,11 +16,13 @@ const winQuery = `*[_type == "wins" && $slug == _id][0] {
 }`;
 
 export default function Win({ data, preview }) {
-  const { data: win } = usePreviewSubscription(winQuery, {
-    params: { slug: data?.win._id },
-    initialData: data,
-    enabled: preview,
-  });
+  // const { data: win } = usePreviewSubscription(winQuery, {
+  //   params: { slug: data?.win._id },
+  //   initialData: data,
+  //   enabled: preview,
+  // });
+
+  const { win } = data;
 
   return (
     <div>
