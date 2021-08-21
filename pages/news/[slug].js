@@ -145,7 +145,7 @@ export const getServerSideProps = async (pageContext) => {
   // git commit -m "Stopped tracking .env File"
 
   const apiResponse = await fetch(
-    `https://newsapi.org/v2/everything?&q="stopasianhate"&language=en&excludeDomains=propublica.org,freerepublic.com,boyculture.com,thesocietypages.org,people.cn,pjmedia.com,greenspun.com&sortBy=publishedAt&pageSize=12&page=${pageNumber}`,
+    `https://newsapi.org/v2/everything?&q=(asian AND asian racism)&language=en&excludeDomains=propublica.org,freerepublic.com,boyculture.com,thesocietypages.org,people.cn,pjmedia.com,greenspun.com&sortBy=publishedAt&pageSize=12&page=${pageNumber}`,
     {
       headers: {
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
