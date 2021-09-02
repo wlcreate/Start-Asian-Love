@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@use "../../variables.scss" as *;
 
 .header {
   /* padding-left: 1rem; */
@@ -27,7 +27,7 @@
   color: $logo-yellow;
   margin: 0.7em 2em;
 
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 700;
   font-family: $reklame-script;
   font-style: normal;

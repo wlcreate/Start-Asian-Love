@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@use "../../variables.scss" as *;
 /* The red footer was looking a bit flat against the yellow, and I tried out an svg pattern generated from heropattern.com */
 
 .footer {
