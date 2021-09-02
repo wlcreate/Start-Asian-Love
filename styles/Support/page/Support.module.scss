@@ -62,7 +62,7 @@
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .description p {
     cursor: default;
   }
@@ -77,7 +77,7 @@
 }
 
 /* most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .description {
     padding: 25px;
     box-shadow: $mobile-shadow;
@@ -103,7 +103,7 @@
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .description {
     margin: 25px;
     padding: 20px;
@@ -135,7 +135,7 @@
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .description {
     padding: 18px;
 
