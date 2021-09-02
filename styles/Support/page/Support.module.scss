@@ -1,27 +1,29 @@
+@import "../../variables.scss";
+
 .description {
   margin: 40px 70px;
   padding: 30px;
-  box-shadow: var(--primary-shadow);
-  background: var(--primary-white);
+  box-shadow: $primary-shadow;
+  background: $primary-white;
   border-radius: 10px;
 
   line-height: 1.25;
   font-size: 1.5em;
-  font-family: var(--acumin-pro);
+  font-family: $acumin-pro;
   font-weight: 400;
   font-style: normal;
-}
 
-.description span {
-  color: var(--primary-red);
-}
+  span {
+    color: $primary-red;
+  }
 
-.description p {
-  text-align: center;
+  p {
+    text-align: center;
 
-  color: var(--dark-grey);
-  margin-top: 15px;
-  margin-bottom: 15px;
+    color: $dark-grey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .filter-section {
@@ -29,22 +31,22 @@
 
   margin: 50px 10px;
   margin-bottom: 40px;
+
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+
+    font-size: 2.5em;
+  }
 }
 
 .filter-section h3,
 .viewing {
-  color: var(--primary-purple);
+  color: $primary-purple;
 
-  font-family: var(--expressway);
+  font-family: $expressway;
   font-weight: 700;
   font-style: normal;
-}
-
-.filter-section h3 {
-  margin-top: 25px;
-  margin-bottom: 12px;
-
-  font-size: 2.5em;
 }
 
 .viewing {
@@ -54,12 +56,9 @@
   font-size: 2em;
 }
 
-.selected-category {
-  color: var(--primary-red);
-}
-
+.selected-category,
 .selected-allyship {
-  color: var(--primary-red);
+  color: $primary-red;
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
@@ -73,7 +72,7 @@
   }
 
   .viewing a:hover {
-    color: var(--brighter-purple);
+    color: $brighter-purple;
   }
 }
 
@@ -81,7 +80,7 @@
 @media (max-width: 1366px) {
   .description {
     padding: 25px;
-    box-shadow: var(--mobile-shadow);
+    box-shadow: $mobile-shadow;
 
     line-height: 1.2;
     font-size: 1.38em;
@@ -121,13 +120,13 @@
   .filter-section {
     margin: 40px 10px;
     margin-bottom: 30px;
-  }
 
-  .filter-section h3 {
-    margin-top: 18px;
-    margin-bottom: 6px;
+    h3 {
+      margin-top: 18px;
+      margin-bottom: 6px;
 
-    font-size: 2em;
+      font-size: 2em;
+    }
   }
 
   .viewing {
@@ -146,12 +145,12 @@
 
   .filter-section {
     margin-bottom: 20px;
-  }
 
-  .filter-section h3 {
-    margin-top: 15px;
+    h3 {
+      margin-top: 15px;
 
-    font-size: 1.5em;
+      font-size: 1.5em;
+    }
   }
 
   .viewing {
