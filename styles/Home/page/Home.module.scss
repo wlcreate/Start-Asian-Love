@@ -70,23 +70,21 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.facts h3 {
-  color: $primary-black;
-  font-size: 3em;
-  font-weight: 800;
-  text-align: center;
-  margin: 4px;
-  transition: $primary-transition;
-}
-
 .facts {
   padding: 30px;
   box-shadow: $primary-shadow;
   background: $primary-white;
   border-radius: 10px;
-  overflow: hidden;
-  height: auto;
   transition: $primary-transition;
+
+  h3 {
+    color: $primary-black;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    margin: 4px;
+    transition: $primary-transition;
+  }
 }
 
 .graphicRowOne,
