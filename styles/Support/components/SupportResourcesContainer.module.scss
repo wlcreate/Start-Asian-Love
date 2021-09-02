@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .resources-container {
   margin: 50px 35px;
   margin-bottom: 60px;
@@ -10,15 +12,15 @@
 
 .no-resources-text {
   text-transform: uppercase;
-  color: var(--primary-red);
+  color: $primary-red;
 
   font-size: 1.25em;
-  font-family: var(--expressway);
+  font-family: $expressway;
   font-weight: 700;
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .resources-container {
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -26,7 +28,7 @@
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .resources-container {
     margin-top: 30px;
   }
