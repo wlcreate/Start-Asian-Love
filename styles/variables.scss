@@ -23,8 +23,8 @@ $brighter-purple: #9b00b6;
 
 // misc
 $primary-transition: all 0.5s ease-in-out;
-$primary-shadow: 16px 16px 16px var($shadow-yellow);
-$mobile-shadow: 12px 12px 12px var($shadow-yellow);
+$primary-shadow: 16px 16px 16px $shadow-yellow;
+$mobile-shadow: 12px 12px 12px $shadow-yellow;
 
 // breakpoints
 
