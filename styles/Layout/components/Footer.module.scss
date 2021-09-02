@@ -1,3 +1,4 @@
+@import "../../variables.scss";
 /* The red footer was looking a bit flat against the yellow, and I tried out an svg pattern generated from heropattern.com */
 
 .footer {
@@ -10,50 +11,50 @@
 
   font-size: 1.75em;
   font-weight: 500;
-  font-family: var(--acumin-pro);
+  font-family: $acumin-pro;
   font-style: normal;
 
-  color: var(--primary-white);
-  background-color: var(--primary-red);
+  color: $primary-white;
+  background-color: $primary-red;
   background-image: url(/Layout/Footer.svg);
-}
 
-.footer p {
-  margin: 0px;
+  p {
+    margin: 0px;
 
-  text-align: center;
-}
+    text-align: center;
+  }
 
-.footer a {
-  color: var(--primary-white);
-  transition: var(--primary-transition);
+  a {
+    color: $primary-white;
+    transition: $primary-transition;
+  }
 }
 
 /* screen must be at least a small desktop for hover effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .footer a:hover {
-    color: var(--background-yellow);
+    color: $background-yellow;
     font-size: 1.2em;
     font-weight: 550;
   }
 }
 
 /* for most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .footer {
     font-size: 1.5em;
   }
 }
 
 /* screen must be no bigger than landscape phone or portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .footer {
     font-size: 1.3em;
   }
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .footer {
     height: 80px;
 
@@ -61,9 +62,9 @@
 
     padding-left: 10px;
     padding-right: 10px;
-  }
 
-  .footer p {
-    margin-top: 5px;
+    p {
+      margin-top: 5px;
+    }
   }
 }
