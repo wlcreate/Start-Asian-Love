@@ -1,13 +1,15 @@
-/* all of the content on the page */
+@import "../../variables.scss";
+
+// all of the content on the page
 .content {
   margin-left: 70px;
   margin-right: 70px;
-  color: var(--dark-grey);
-}
+  color: $dark-grey;
 
-.content a,
-.content span {
-  color: var(--primary-red);
+  a,
+  span {
+    color: $primary-red;
+  }
 }
 
 .iframe-container-wrapper {
@@ -22,7 +24,15 @@
   width: 100%;
   overflow: hidden;
 
-  box-shadow: var(--primary-shadow);
+  box-shadow: $primary-shadow;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .iframe-container::after {
@@ -31,20 +41,12 @@
   content: "";
 }
 
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .text,
 .facts {
   line-height: 1.5;
   font-size: 1.5em;
   font-weight: 400;
-  font-family: var(--acumin-pro);
+  font-family: $acumin-pro;
   font-style: normal;
 
   cursor: default;
@@ -55,8 +57,8 @@
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 30px;
-  box-shadow: var(--primary-shadow);
-  background: var(--primary-white);
+  box-shadow: $primary-shadow;
+  background: $primary-white;
   border-radius: 10px;
 }
 
@@ -69,22 +71,22 @@
 }
 
 .facts h3 {
-  color: var(--primary-black);
+  color: $primary-black;
   font-size: 3em;
   font-weight: 800;
   text-align: center;
   margin: 4px;
-  transition: var(--primary-transition);
+  transition: $primary-transition;
 }
 
 .facts {
   padding: 30px;
-  box-shadow: var(--primary-shadow);
-  background: var(--primary-white);
+  box-shadow: $primary-shadow;
+  background: $primary-white;
   border-radius: 10px;
   overflow: hidden;
   height: auto;
-  transition: var(--primary-transition);
+  transition: $primary-transition;
 }
 
 .graphicRowOne,
@@ -104,32 +106,32 @@
 
 .graphic {
   overflow: hidden;
-  transition: var(--primary-transition);
-  box-shadow: var(--primary-shadow);
+  transition: $primary-transition;
+  box-shadow: $primary-shadow;
   border-radius: 8px;
-}
 
-.graphic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; /* deletes extra padding below images, since they are by default displayed inline. */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* deletes extra padding below images, since they are by default displayed inline. */
+  }
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .facts:hover {
-    color: black;
+    color: $primary-black;
   }
 
   .facts:hover h3 {
-    color: var(--primary-red);
+    color: $primary-red;
     font-size: 5em;
   }
 }
 
 /* most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .iframe-container-wrapper {
     padding: 8px;
   }
@@ -147,7 +149,7 @@
 }
 
 /* screen must be no bigger than landscape phone or portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .content {
     margin-right: 0px;
     margin-left: 0px;
@@ -161,13 +163,13 @@
   }
 
   .iframe-container {
-    box-shadow: var(--mobile-shadow);
+    box-shadow: $mobile-shadow;
   }
 
   .text,
   .facts {
     padding: 25px;
-    box-shadow: var(--mobile-shadow);
+    box-shadow: $mobile-shadow;
 
     line-height: 1.6;
     font-size: 1.4em;
@@ -176,10 +178,10 @@
   .text {
     margin-top: 20px;
     margin-bottom: 20px;
-  }
 
-  .text p {
-    margin: 8px;
+    p {
+      margin: 8px;
+    }
   }
 
   .fact-container {
@@ -206,12 +208,12 @@
   }
 
   .graphic {
-    box-shadow: var(--mobile-shadow);
+    box-shadow: $mobile-shadow;
   }
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .text,
   .facts {
     padding: 20px;
