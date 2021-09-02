@@ -1,41 +1,43 @@
+@import "../../variables.scss";
+
 .container {
   width: 50%;
   margin: 50px auto;
   padding: 30px;
 
   border-radius: 10px;
-  background: var(--primary-white);
-  box-shadow: var(--primary-shadow);
-}
+  background: $primary-white;
+  box-shadow: $primary-shadow;
 
-.container p {
-  font-size: 1.5em;
-  font-family: var(--acumin-pro);
-  font-weight: 400;
-  font-style: normal;
+  p {
+    font-size: 1.5em;
+    font-family: $acumin-pro;
+    font-weight: 400;
+    font-style: normal;
 
-  letter-spacing: 0.75px;
-  line-height: 1.45;
+    letter-spacing: 0.75px;
+    line-height: 1.45;
 
-  color: var(--dark-grey);
+    color: $dark-grey;
 
-  margin-top: 30px;
-}
+    margin-top: 30px;
+  }
 
-.container a {
-  font-size: 1.4em;
-  font-family: var(--expressway);
-  font-weight: 700;
+  a {
+    font-size: 1.4em;
+    font-family: $expressway;
+    font-weight: 700;
 
-  color: var(--primary-red);
+    color: $primary-red;
 
-  transition: var(--primary-transition);
+    transition: $primary-transition;
+  }
 }
 
 .backToWins {
   font-size: 2.5em;
   font-weight: 700;
-  font-family: var(--expressway);
+  font-family: $expressway;
 
   margin-bottom: 30px;
 
@@ -44,37 +46,40 @@
 
   cursor: pointer;
 
-  color: var(--primary-purple);
+  color: $primary-purple;
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .container a:hover {
     font-size: 1.5em;
   }
 
   .backToWins:hover {
-    color: var(--primary-red);
+    color: $primary-red;
   }
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .container {
     width: 75%;
     margin: 40px auto;
-  }
-  .container p {
-    font-size: 1.3em;
 
-    letter-spacing: 0.3px;
-    line-height: 1.1;
+    p {
+      font-size: 1.3em;
 
-    margin-top: 20px;
+      letter-spacing: 0.3px;
+      line-height: 1.1;
+
+      margin-top: 20px;
+    }
+
+    a {
+      font-size: 1.15em;
+    }
   }
-  .container a {
-    font-size: 1.15em;
-  }
+
   .backToWins {
     font-size: 2.2em;
 
@@ -83,7 +88,7 @@
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .container {
     width: 70%;
     padding: 20px;
@@ -91,19 +96,22 @@
     margin: 20px auto;
     margin-bottom: 90px;
 
-    box-shadow: var(--mobile-shadow);
-  }
-  .container p {
-    font-size: 1.05em;
+    box-shadow: $mobile-shadow;
 
-    letter-spacing: 0.5px;
-    line-height: 1.2;
+    p {
+      font-size: 1.05em;
 
-    margin-top: 10px;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+
+      margin-top: 10px;
+    }
+
+    a {
+      font-size: 1.05em;
+    }
   }
-  .container a {
-    font-size: 1.05em;
-  }
+
   .backToWins {
     font-size: 2em;
 
