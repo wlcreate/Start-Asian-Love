@@ -1,4 +1,4 @@
-import styles from "../../styles/Support/components/ReusableButtons.module.scss";
+import styles from "../../styles/Support/components/FilterButtons.module.scss";
 
 export const FilterButtons = ({ buttonData, group, changeSelection }) => {
   const getButtonTexts = (information) => {

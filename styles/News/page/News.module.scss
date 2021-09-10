@@ -1,3 +1,5 @@
+@use "../../variables.scss" as *;
+
 .articles-container-wrapper {
   display: flex;
   flex-direction: column;
@@ -18,12 +20,28 @@
   height: 380px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: var(--primary-white);
+  background-color: $primary-white;
 
-  box-shadow: var(--primary-shadow);
+  box-shadow: $primary-shadow;
   text-align: left;
   overflow: hidden;
-  transition: var(--primary-transition);
+  transition: $primary-transition;
+
+  img {
+    width: 100%;
+    min-height: 260px;
+    max-height: 260px;
+    object-fit: cover;
+  }
+  h3 {
+    color: $primary-black;
+    margin-top: 12px;
+    height: 85px;
+
+    font-size: 1.5em;
+    font-family: $proxima-nova-condensed;
+    font-weight: 700;
+  }
 }
 
 .article h3,
@@ -42,35 +60,18 @@
   -webkit-box-orient: vertical;
 }
 
-.article img {
-  width: 100%;
-  min-height: 260px;
-  max-height: 260px;
-  object-fit: cover;
-}
-
-.article h3 {
-  color: var(--primary-black);
-  margin-top: 12px;
-  height: 85px;
-
-  font-size: 1.5em;
-  font-family: var(--proxima-nova-condensed);
-  font-weight: 700;
-}
-
 #article-description {
-  color: var(--description-text-grey);
+  color: $description-text-grey;
   margin-top: 0px;
   margin-bottom: 0px;
   height: 70px;
   line-height: 1.4;
 
-  font-family: var(--expressway);
+  font-family: $expressway;
 }
 
 #article-cta {
-  color: var(--brighter-purple);
+  color: $brighter-purple;
   float: right;
 
   margin-right: 12px;
@@ -78,24 +79,24 @@
   margin-bottom: 0px;
 
   font-size: 1.25em;
-  font-family: var(--proxima-nova-condensed);
+  font-family: $proxima-nova-condensed;
   font-weight: 600;
 }
 
 .paginator {
   margin-top: 25px;
   margin-bottom: 20px;
-  color: var(--primary-purple);
+  color: $primary-purple;
   display: flex;
   justify-content: center;
 
   font-size: 2.5em;
-  font-family: var(--expressway);
+  font-family: $expressway;
   font-weight: 600;
-}
 
-.paginator div {
-  margin: 25px;
+  div {
+    margin: 25px;
+  }
 }
 
 .disabled {
@@ -103,17 +104,17 @@
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .article:hover {
     height: 390px;
   }
 
   #article-cta:hover {
-    color: var(--primary-red);
+    color: $primary-red;
   }
 
   .paginator .active:hover {
-    color: var(--primary-red);
+    color: $primary-red;
   }
 
   .paginator .active {
@@ -126,28 +127,28 @@
 }
 
 /* hover effect for larger screens */
-@media (min-width: 1366px) {
+@media (min-width: $laptop) {
   .article {
     height: 355px;
+
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+
+      height: 75px;
+      line-height: 1.2;
+
+      font-size: 1.4em;
+    }
   }
 
   .article:hover {
     height: 465px;
   }
-
-  .article h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-
-    height: 75px;
-    line-height: 1.2;
-
-    font-size: 1.4em;
-  }
 }
 
 /* most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   #page-heading {
     margin-top: 25px;
     margin-bottom: 40px;
@@ -161,24 +162,24 @@
   .article {
     height: 290px;
 
-    box-shadow: var(--mobile-shadow);
-  }
+    box-shadow: $mobile-shadow;
 
-  .article img {
-    width: 100%;
-    min-height: 200px;
-    max-height: 200px;
-    object-fit: cover;
-  }
+    img {
+      width: 100%;
+      min-height: 200px;
+      max-height: 200px;
+      object-fit: cover;
+    }
 
-  .article h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
 
-    height: 75px;
-    line-height: 1.2;
+      height: 75px;
+      line-height: 1.2;
 
-    font-size: 1.3em;
+      font-size: 1.3em;
+    }
   }
 
   #article-description {
@@ -196,7 +197,7 @@
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   #page-heading {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -214,24 +215,24 @@
     width: 320px;
     height: 400px;
 
-    box-shadow: var(--mobile-shadow);
-  }
+    box-shadow: $mobile-shadow;
 
-  .article img {
-    width: 100%;
-    min-height: 200px;
-    max-height: 200px;
-    object-fit: cover;
-  }
+    img {
+      width: 100%;
+      min-height: 200px;
+      max-height: 200px;
+      object-fit: cover;
+    }
 
-  .article h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
 
-    height: 75px;
-    line-height: 1.2;
+      height: 75px;
+      line-height: 1.2;
 
-    font-size: 1.3em;
+      font-size: 1.3em;
+    }
   }
 
   #article-description {
@@ -258,7 +259,7 @@
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   #page-heading {
     font-size: 2em;
   }

@@ -1,13 +1,15 @@
+@use "../../variables.scss" as *;
+
 .description {
   margin: 40px 70px;
   padding: 30px;
-  box-shadow: var(--primary-shadow);
-  background: var(--primary-white);
+  box-shadow: $primary-shadow;
+  background: $primary-white;
   border-radius: 10px;
 
   line-height: 1.25;
   font-size: 1.5em;
-  font-family: var(--acumin-pro);
+  font-family: $acumin-pro;
   font-weight: 400;
   font-style: normal;
 
@@ -16,36 +18,36 @@
 
     margin-bottom: 25px;
 
-    color: var(--dark-grey);
+    color: $dark-grey;
   }
 }
 
 .team {
   text-align: center;
-  color: var(--primary-purple);
+  color: $primary-purple;
 
   margin-top: 25px;
   margin-bottom: 12px;
 
   font-size: 2.5em;
 
-  font-family: var(--expressway);
+  font-family: $expressway;
   font-weight: 700;
   font-style: normal;
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .description p {
     cursor: default;
   }
 }
 
 /* most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .description {
     padding: 25px;
-    box-shadow: var(--mobile-shadow);
+    box-shadow: $mobile-shadow;
 
     line-height: 1.2;
     font-size: 1.38em;
@@ -57,7 +59,7 @@
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .description {
     margin: 25px;
     padding: 20px;
@@ -74,7 +76,7 @@
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .description {
     padding: 18px;
 

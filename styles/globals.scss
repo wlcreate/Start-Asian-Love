@@ -1,37 +1,10 @@
+@use "variables";
+
 /* normalizing css between browsers */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-/* importing Adobe font */
-@import url("https://use.typekit.net/wdx7jdm.css");
-
-:root {
-  /* colors */
-  --logo-yellow: #ffdc2f;
-  --background-yellow: #ffe66a;
-  --shadow-yellow: #ecb724;
-
-  --primary-red: #f21905;
-  --primary-white: white;
-  --primary-black: black;
-  --dark-grey: rgb(83, 83, 83);
-  --description-text-grey: rgb(109, 109, 109);
-
-  --primary-purple: #6a1f77;
-  --brighter-purple: #9b00b6;
-
-  /* fonts */
-  --reklame-script: reklame-script, sans-serif;
-  --expressway: expressway, sans-serif;
-  --proxima-nova-condensed: proxima-nova-condensed, sans-serif;
-  --acumin-pro: acumin-pro, sans-serif;
-
-  /* misc. */
-  --primary-transition: all 0.5s ease-in-out;
-  --primary-shadow: 16px 16px 16px var(--shadow-yellow);
-  --mobile-shadow: 12px 12px 12px var(--shadow-yellow);
-}
 
 body {
-  background: var(--background-yellow);
+  background: variables.$background-yellow;
 }
 
 a {
@@ -41,20 +14,20 @@ a {
 }
 
 .page-heading {
-  color: var(--primary-purple);
+  color: variables.$primary-purple;
   text-align: center;
 
   margin-top: 45px;
   margin-bottom: 45px;
 
   font-size: 4em;
-  font-family: var(--expressway);
+  font-family: variables.$expressway;
   font-weight: 800;
   font-style: normal;
 }
 
 /* most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: variables.$laptop) {
   .page-heading {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -62,7 +35,7 @@ a {
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: variables.$tablet) {
   .page-heading {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -72,7 +45,7 @@ a {
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: variables.$mobile) {
   .page-heading {
     font-size: 2em;
   }

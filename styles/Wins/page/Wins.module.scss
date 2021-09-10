@@ -1,21 +1,23 @@
+@use "../../variables.scss" as *;
+
 .description {
   margin: 40px 70px;
   padding: 30px;
-  box-shadow: var(--primary-shadow);
-  background: var(--primary-white);
+  box-shadow: $primary-shadow;
+  background: $primary-white;
   border-radius: 10px;
 
   line-height: 1.25;
   font-size: 1.5em;
-  font-family: var(--acumin-pro);
+  font-family: $acumin-pro;
   font-weight: 400;
   font-style: normal;
-}
 
-.description p {
-  text-align: center;
+  p {
+    text-align: center;
 
-  color: var(--dark-grey);
+    color: $dark-grey;
+  }
 }
 
 .scroll-to-section {
@@ -23,53 +25,53 @@
 
   margin: 50px 10px;
   margin-bottom: 40px;
+
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+
+    font-size: 2.5em;
+  }
+
+  button {
+    padding: 12px;
+    margin: 10px;
+    width: 190px;
+
+    border-radius: 10px;
+    border: none;
+
+    text-transform: uppercase;
+
+    color: $primary-white;
+    background: $primary-purple;
+    box-shadow: 6px 6px 12px $shadow-yellow;
+
+    font-size: 1.1em;
+    font-family: $acumin-pro;
+    font-weight: 600;
+  }
 }
 
 .scroll-to-section h3,
 .wins-section h3 {
-  color: var(--primary-purple);
+  color: $primary-purple;
 
-  font-family: var(--expressway);
+  font-family: $expressway;
   font-weight: 700;
   font-style: normal;
-}
-
-.scroll-to-section h3 {
-  margin-top: 25px;
-  margin-bottom: 12px;
-
-  font-size: 2.5em;
-}
-
-.scroll-to-section button {
-  padding: 12px;
-  margin: 10px;
-  width: 190px;
-
-  border-radius: 10px;
-  border: none;
-
-  text-transform: uppercase;
-
-  color: var(--primary-white);
-  background: var(--primary-purple);
-  box-shadow: 6px 6px 12px var(--shadow-yellow);
-
-  font-size: 1.1em;
-  font-family: var(--acumin-pro);
-  font-weight: 600;
 }
 
 .wins-section {
   font-size: 2em;
   text-align: center;
-}
 
-.wins-section h3 {
-  margin-top: 50px;
-  margin-bottom: 12px;
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 12px;
 
-  font-size: 1.6em;
+    font-size: 1.6em;
+  }
 }
 
 .wins-section-description {
@@ -78,31 +80,31 @@
 
   line-height: 1.25;
 
-  color: var(--dark-grey);
+  color: $dark-grey;
 
   font-size: 0.75em;
-  font-family: var(--acumin-pro);
+  font-family: $acumin-pro;
   font-weight: 400;
   font-style: normal;
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover or cursor effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .scroll-to-section button {
     cursor: pointer;
   }
 
   .scroll-to-section button:hover {
-    background-color: var(--brighter-purple);
+    background-color: $brighter-purple;
     transition: all 0.2s ease-in-out;
   }
 }
 
 /* most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .description {
     padding: 25px;
-    box-shadow: var(--mobile-shadow);
+    box-shadow: $mobile-shadow;
 
     line-height: 1.2;
     font-size: 1.38em;
@@ -114,12 +116,12 @@
   }
 
   .button {
-    box-shadow: 6px 6px 12px var(--shadow-yellow);
+    box-shadow: 6px 6px 12px $shadow-yellow;
   }
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .description {
     margin: 25px;
     padding: 20px;
@@ -133,16 +135,18 @@
     }
   }
 
-  .scroll-to-section h3 {
-    font-size: 2em;
-  }
+  .scroll-to-section {
+    h3 {
+      font-size: 2em;
+    }
 
-  .scroll-to-section button {
-    padding: 10px;
+    button {
+      padding: 10px;
 
-    width: 160px;
+      width: 160px;
 
-    font-size: 0.9em;
+      font-size: 0.9em;
+    }
   }
 
   .wins-section h3 {
@@ -159,7 +163,7 @@
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .description {
     padding: 18px;
     margin-bottom: 15px;
@@ -171,18 +175,18 @@
   .scroll-to-section {
     margin-top: 40px;
     margin-bottom: 0px;
-  }
 
-  .scroll-to-section h3 {
-    font-size: 1.8em;
-  }
+    h3 {
+      font-size: 1.8em;
+    }
 
-  .scroll-to-section button {
-    margin: 8px;
-    width: 150px;
+    button {
+      margin: 8px;
+      width: 150px;
 
-    letter-spacing: 0.45px;
-    font-size: 0.8em;
+      letter-spacing: 0.45px;
+      font-size: 0.8em;
+    }
   }
 
   .wins-section h3 {

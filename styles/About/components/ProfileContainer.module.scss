@@ -1,3 +1,5 @@
+@use "../../variables.scss" as *;
+
 .profile-container {
   margin: 45px 200px;
   margin-bottom: 60px;
@@ -9,7 +11,7 @@
 }
 
 /* most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .profile-container {
     margin: 40px 100px;
     margin-bottom: 60px;
@@ -17,14 +19,14 @@
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .profile-container {
     margin-top: 30px;
   }
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .profile-container {
     margin-left: 0px;
     margin-right: 0px;

@@ -1,6 +1,4 @@
-/* Similar to the footer, the purple header was looking a bit flat, and a darker purple hue/greater contrast looked better with the global yellow value, and reduces eye strain. To minimize the flat appearance, the header's height was increased, and I looked for a purple banner to add some styling.
-
-We need to be careful with our color scheme, since it gives off athletic/sporty vibes with its similarity to the Los Angeles Lakers' purple and yellow color scheme. */
+@use "../../variables.scss" as *;
 
 .header {
   /* padding-left: 1rem; */
@@ -26,39 +24,39 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 }
 
 .logo {
-  color: var(--logo-yellow);
-  margin: 0.7em 2em;
+  color: $logo-yellow;
+  margin: 0.7em auto;
 
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 700;
-  font-family: var(--reklame-script);
+  font-family: $reklame-script;
   font-style: normal;
 }
 
 .navItem {
-  color: var(--primary-white);
+  color: $primary-white;
   margin-left: 2em;
 
-  font-size: 2.25em;
-  font-family: var(--expressway);
+  font-size: 2.18em;
+  font-family: $expressway;
   font-weight: 600;
   font-style: normal;
 }
 
 /* screen must be at least a portrait tablet or small desktop for hover effects */
-@media (min-width: 940px) {
+@media (min-width: $desktop) {
   .logo:hover {
-    color: var(--primary-red);
+    color: $primary-red;
   }
 
   .navItem:hover {
-    color: var(--primary-red);
+    color: $primary-red;
   }
 }
 
 /* header links stack below Start Asian Love title when resized */
 /* for most laptop and desktop screens */
-@media (max-width: 1366px) {
+@media (max-width: $laptop) {
   .logo {
     font-size: 2.5em;
   }
@@ -85,7 +83,7 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 }
 
 /* screen must be no bigger than landscape phone or portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .logo {
     font-size: 2.75em;
   }
@@ -96,7 +94,7 @@ We need to be careful with our color scheme, since it gives off athletic/sporty 
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .navMenu {
     margin-top: 10px;
     margin-bottom: 10px;
