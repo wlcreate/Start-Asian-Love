@@ -1,4 +1,5 @@
 @use "variables";
+@use "mixins";
 
 /* normalizing css between browsers */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
@@ -14,39 +15,5 @@ a {
 }
 
 .page-heading {
-  color: variables.$primary-purple;
-  text-align: center;
-
-  margin-top: 45px;
-  margin-bottom: 45px;
-
-  font-size: 4em;
-  font-family: variables.$expressway;
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* most laptop and desktop screens */
-@media (max-width: variables.$laptop) {
-  .page-heading {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-
-/* screen must be no bigger than portrait tablet */
-@media (max-width: variables.$tablet) {
-  .page-heading {
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    font-size: 2.5em;
-  }
-}
-
-/* screen must be no bigger than landscape phone or below */
-@media (max-width: variables.$mobile) {
-  .page-heading {
-    font-size: 2em;
-  }
+  @include mixins.page-heading(4em, 45px, 45px);
 }
