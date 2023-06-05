@@ -1,0 +1,38 @@
+/* importing Adobe font */
+@import url("https://use.typekit.net/wdx7jdm.css");
+
+// fonts
+$reklame-script: reklame-script, sans-serif;
+$expressway: expressway, sans-serif;
+$proxima-nova-condensed: proxima-nova-condensed, sans-serif;
+$acumin-pro: acumin-pro, sans-serif;
+
+// colors
+$logo-yellow: #ffdc2f;
+$background-yellow: #ffe66a;
+$shadow-yellow: #ecb724;
+
+$primary-red: #f21905;
+$primary-white: white;
+$primary-black: black;
+$dark-grey: rgb(83, 83, 83);
+$description-text-grey: rgb(109, 109, 109);
+
+$primary-purple: #6a1f77;
+$brighter-purple: #9b00b6;
+
+// misc
+$primary-transition: all 0.5s ease-in-out;
+$primary-shadow: 16px 16px 16px $shadow-yellow;
+$mobile-shadow: 12px 12px 12px $shadow-yellow;
+
+// breakpoints
+
+// portrait tablet or small desktop
+$desktop: 940px;
+// most laptop and desktop
+$laptop: 1366px;
+// landscape phone or portrait tablet
+$tablet: 768px;
+// landscape phone or below
+$mobile: 480px;

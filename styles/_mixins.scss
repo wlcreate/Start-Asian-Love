@@ -1,0 +1,58 @@
+@use "variables";
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media screen and (max-width: variables.$desktop) {
+      @content;
+    }
+  }
+
+  /* most laptop and desktop screens */
+  @else if $point == laptop {
+    @media screen and (min-width: variables.$laptop) {
+      @content;
+    }
+  }
+
+  /* screen must be no bigger than portrait tablet */
+  @else if $point == tablet {
+    @media screen and (max-width: variables.$tablet) {
+      @content;
+    }
+  }
+
+  /* screen must be no bigger than landscape phone or below */
+  @else if $point == mobile {
+    @media screen and (max-width: variables.$mobile) {
+      @content;
+    }
+  }
+}
+
+@mixin page-heading($size, $top, $bottom) {
+  color: variables.$primary-purple;
+  text-align: center;
+
+  margin-top: $top;
+  margin-bottom: $bottom;
+
+  font-size: $size;
+  font-family: variables.$expressway;
+  font-weight: 800;
+
+  @include breakpoint(laptop) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint(tablet) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 2.5em;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2em;
+  }
+}

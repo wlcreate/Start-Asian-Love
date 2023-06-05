@@ -1,3 +1,5 @@
+@use "../../variables.scss" as *;
+
 .resources-container {
   margin: 45px 50px;
   margin-bottom: 60px;
@@ -9,7 +11,7 @@
 }
 
 /* screen must be no bigger than portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
   .resources-container {
     margin: 45px 50px;
     margin-bottom: 60px;
@@ -19,7 +21,7 @@
 }
 
 /* screen must be no bigger than landscape phone or below */
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
   .resources-container {
     margin: 40px 50px;
     margin-bottom: 60px;
